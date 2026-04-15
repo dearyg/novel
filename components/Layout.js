@@ -21,17 +21,30 @@ function MoonIcon() {
   );
 }
 
-export default function Layout({ children, novelTitle }) {
+export default function Layout({ children }) {
   const { theme, toggle } = useTheme();
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <header className="sticky top-0 z-40 border-b border-border bg-surface/80 backdrop-blur-md">
-        <div className="max-w-4xl mx-auto flex items-center justify-between px-5 h-14">
-          <Link href="/" className="text-sm font-semibold text-primary hover:text-accent transition-colors truncate max-w-[60%]">
-            {novelTitle || "Novel"}
+    <div className="min-h-screen flex flex-col bg-bg">
+      {/* Top bar */}
+      <header className="sticky top-0 z-40 bg-surface/95 backdrop-blur-md border-b border-border">
+        <div className="max-w-6xl mx-auto flex items-center justify-between px-4 h-14">
+          <Link href="/" className="flex items-center gap-2.5">
+            <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+              </svg>
+            </div>
+            <span className="text-sm font-bold text-primary">NovelForge</span>
           </Link>
-          <div className="flex items-center gap-3">
+
+          <nav className="hidden sm:flex items-center gap-6 text-sm text-secondary">
+            <Link href="/" className="hover:text-primary transition-colors">Browse</Link>
+            <Link href="/#ai-features" className="hover:text-primary transition-colors">AI Features</Link>
+          </nav>
+
+          <div className="flex items-center gap-2">
             <button
               onClick={toggle}
               className="p-2 rounded-lg text-secondary hover:text-primary hover:bg-surface-alt transition-colors"
@@ -45,10 +58,19 @@ export default function Layout({ children, novelTitle }) {
 
       <main className="flex-1">{children}</main>
 
-      <footer className="border-t border-border py-8 text-center">
-        <p className="text-xs text-muted">
-          Built with AI assistance — Next.js + Supabase
-        </p>
+      <footer className="border-t border-border bg-surface py-10">
+        <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted">
+          <div className="flex items-center gap-2">
+            <div className="w-5 h-5 rounded bg-accent/20 flex items-center justify-center">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-accent">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+              </svg>
+            </div>
+            NovelForge
+          </div>
+          <p>AI-powered novel platform. Built with Next.js + Supabase.</p>
+        </div>
       </footer>
     </div>
   );

@@ -5,21 +5,26 @@
   --font-serif: "Merriweather", Georgia, serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 
-  /* Semantic color tokens — overridden by .light class */
-  --color-bg: #0f0f0f;
-  --color-surface: #181818;
-  --color-surface-alt: #222222;
-  --color-border: #2a2a2a;
-  --color-primary: #ededed;
-  --color-secondary: #a0a0a0;
-  --color-muted: #5a5a5a;
-  --color-body: #c8c8c8;
-  --color-body-emphasis: #d8d8d8;
-  --color-accent: #6c9cff;
+  /* Semantic tokens */
+  --color-bg: #0c0c0e;
+  --color-surface: #16161a;
+  --color-surface-alt: #1e1e24;
+  --color-surface-raised: #25252d;
+  --color-border: #2a2a33;
+  --color-border-light: #353540;
+  --color-primary: #ededef;
+  --color-secondary: #a0a0ab;
+  --color-muted: #5a5a66;
+  --color-body: #c8c8d0;
+  --color-body-emphasis: #dcdce2;
+  --color-accent: #7c6af6;
+  --color-accent-hover: #8d7eff;
   --color-highlight: #f0b866;
+  --color-green: #4ade80;
+  --color-orange: #fb923c;
+  --color-rose: #fb7185;
+  --color-blue: #60a5fa;
 }
-
-/* ---- Base ---- */
 
 html {
   scroll-behavior: smooth;
@@ -33,44 +38,41 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ---- Light theme override ---- */
-
+/* Light theme */
 html.light {
-  --color-bg: #fafafa;
+  --color-bg: #f8f8fa;
   --color-surface: #ffffff;
-  --color-surface-alt: #f3f3f3;
-  --color-border: #e2e2e2;
-  --color-primary: #111111;
-  --color-secondary: #555555;
-  --color-muted: #999999;
-  --color-body: #333333;
-  --color-body-emphasis: #222222;
-  --color-accent: #3b6fd4;
-  --color-highlight: #c47a10;
+  --color-surface-alt: #f0f0f4;
+  --color-surface-raised: #e8e8ee;
+  --color-border: #dcdce4;
+  --color-border-light: #ebebf0;
+  --color-primary: #111118;
+  --color-secondary: #555566;
+  --color-muted: #9999aa;
+  --color-body: #333344;
+  --color-body-emphasis: #222233;
+  --color-accent: #6c5ce7;
+  --color-accent-hover: #5a4bd6;
+  --color-highlight: #b8860b;
+  --color-green: #16a34a;
+  --color-orange: #ea580c;
+  --color-rose: #e11d48;
+  --color-blue: #2563eb;
 }
-
-/* ---- Prose content — serif for readability ---- */
 
 .prose-content {
   font-family: var(--font-serif);
 }
-
-/* ---- Selection ---- */
 
 ::selection {
   background-color: var(--color-accent);
   color: white;
 }
 
-/* ---- Scrollbar (thin, subtle) ---- */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 3px; }
 
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background: var(--color-border);
-  border-radius: 3px;
-}
+/* Line clamp utility */
+.line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }

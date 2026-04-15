@@ -1,0 +1,20 @@
+# Context — The Senior Observer
+
+The **source of truth** for the novel. Mirrors what's stored in Supabase (`novels.manifest` and `chapters.blueprint`).
+
+Paste these into any AI session to align new chapter generation with the universe's rules.
+
+## Files
+
+- **`master-schema.md`** — the architectural V.2030 schema. Core metaphors, 20-chapter manifest, somatic constants, audit-mode logic, Discovery Log library. Stored in `novels.manifest`.
+- **`system-manifest.json`** — the JSON manifest with global variables and chapter metadata.
+- **`chapters/chapter-NN-blueprint.md`** — per-chapter narrative blueprint. Role, setting, character profiles, narrative beats, stylistic constraints, mandatory footer. Stored in `chapters.blueprint`.
+
+## The Pipeline
+
+```
+Human-written blueprint  ─►  AI-evolved prose  ─►  Reader-selected style
+(chapters/*.md)              (chapters.content)     (chapter_styles.content)
+```
+
+The writer never writes prose directly. They write a blueprint, feed it + the master schema to the AI, and the AI produces the chapter. Each subsequent "iteration" can refine the prose further.

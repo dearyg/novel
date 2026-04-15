@@ -1,0 +1,42 @@
+{
+  "system_manifest": {
+    "novel_title": "The Senior Observer",
+    "build_version": "2030.04.14",
+    "author_uid": "Jeff_Zhang_Senior_SDE",
+    "global_variables": {
+      "user_location": "Seattle",
+      "user_landmark": "the Space Needle",
+      "somatic_trigger_light": "Amber (580nm)",
+      "somatic_trigger_scent": "Scorched Sage"
+    }
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "0x01: The Observer",
+      "instance": "Jeff_Zhang",
+      "location_key": "Irvine_TurtleRock",
+      "somatic_bleed": "Vacheron_Constantin_Amalfi",
+      "tech_metaphor": "Shared Cache Leakage",
+      "discovery_log": "/* Discovery Log: 0x01 */\nif (Observer.current() == Observer.next()) {\n    throw IdentityConflict(\"Partition integrity compromised.\");\n}"
+    },
+    {
+      "id": 2,
+      "title": "0x02: Priority Inversion",
+      "instance": "Julian_Vance",
+      "location_key": "Amalfi_Coast_Yacht",
+      "somatic_bleed": "Walnut_Phone_and_ADHD_Static",
+      "tech_metaphor": "Priority Inversion / System Recursion",
+      "discovery_log": "/* Discovery Log: 0x02 */\nif (Afterlife.is_running() && Reality.is_running()) {\n    throw StackOverflow(\"Simulation nested within Simulation.\");\n}"
+    },
+    {
+      "id": 3,
+      "title": "0x03: Pointer Aliasing",
+      "instance": "Jeff_Zhang",
+      "location_key": "Irvine_Home_Theater",
+      "somatic_bleed": "Seattle_Rain_and_Concrete",
+      "tech_metaphor": "Pointer Aliasing / Synchronized Inputs",
+      "discovery_log": "/* Discovery Log: 0x03 */\nif (Input(Instance_A) == Input(Instance_B)) {\n    Memory.merge_pointers();\n    throw ViewportConflict(\"Two instances rendering identical coordinates.\");\n}"
+    }
+  ]
+}

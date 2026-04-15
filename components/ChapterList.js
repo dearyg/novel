@@ -1,20 +1,20 @@
 import Link from "next/link";
 import { useReadingProgress } from "../lib/useReadingProgress";
 
-export default function ChapterList({ chapters }) {
+export default function ChapterList({ chapters, novelSlug }) {
   const { isRead, getLastRead } = useReadingProgress();
-  const lastRead = getLastRead();
+  const lastRead = getLastRead(novelSlug);
 
   return (
     <div className="space-y-2">
       {chapters.map((ch) => {
-        const read = isRead(ch.chapter_number);
+        const read = isRead(novelSlug, ch.chapter_number);
         const isContinue = ch.chapter_number === lastRead;
 
         return (
           <Link
             key={ch.id}
-            href={`/chapter/${ch.chapter_number}`}
+            href={`/novel/${novelSlug}/${ch.chapter_number}`}
             className="group flex items-center gap-4 px-4 py-3 rounded-lg border border-transparent hover:border-border hover:bg-surface-alt transition-all"
           >
             <span className="text-xs font-mono text-muted w-8 shrink-0">

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { supabase } from "../lib/supabase";
 
-export default function StyleSelector({ chapterNumber, onStyleChange }) {
+export default function StyleSelector({ chapterId, onStyleChange }) {
   const [styles, setStyles] = useState([]);
   const [active, setActive] = useState("default");
   const [loading, setLoading] = useState(false);
@@ -11,12 +11,12 @@ export default function StyleSelector({ chapterNumber, onStyleChange }) {
       const { data } = await supabase
         .from("chapter_styles")
         .select("style_key, style_label")
-        .eq("chapter_number", chapterNumber);
+        .eq("chapter_id", chapterId);
       setStyles(data || []);
     }
-    loadStyles();
+    if (chapterId) loadStyles();
     setActive("default");
-  }, [chapterNumber]);
+  }, [chapterId]);
 
   async function handleSelect(styleKey) {
     if (styleKey === active) return;
@@ -31,7 +31,7 @@ export default function StyleSelector({ chapterNumber, onStyleChange }) {
     const { data } = await supabase
       .from("chapter_styles")
       .select("content, code_footer")
-      .eq("chapter_number", chapterNumber)
+      .eq("chapter_id", chapterId)
       .eq("style_key", styleKey)
       .single();
     setLoading(false);
