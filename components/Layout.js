@@ -36,11 +36,11 @@ export default function Layout({ children }) {
                 <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
               </svg>
             </div>
-            <span className="text-sm font-bold text-primary">NovelForge</span>
+            <span className="text-sm font-bold text-primary">The Senior Observer</span>
           </Link>
 
           <nav className="hidden sm:flex items-center gap-6 text-sm text-secondary">
-            <Link href="/" className="hover:text-primary transition-colors">Browse</Link>
+            <Link href="/#chapters" className="hover:text-primary transition-colors">Chapters</Link>
             <Link href="/#ai-features" className="hover:text-primary transition-colors">AI Features</Link>
           </nav>
 
@@ -60,16 +60,21 @@ export default function Layout({ children }) {
 
       <footer className="border-t border-border bg-surface py-10">
         <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted">
-          <div className="flex items-center gap-2">
-            <div className="w-5 h-5 rounded bg-accent/20 flex items-center justify-center">
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-accent">
-                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
-              </svg>
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2">
+              <div className="w-5 h-5 rounded bg-accent/20 flex items-center justify-center">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-accent">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                </svg>
+              </div>
+              &copy; {new Date().getFullYear()} Alayido, LLC
             </div>
-            NovelForge
+            <span className="hidden sm:inline text-border">|</span>
+            <Link href="/about" className="hover:text-primary transition-colors">About</Link>
+            <Link href="/privacy" className="hover:text-primary transition-colors">Privacy</Link>
           </div>
-          <p>AI-powered novel platform. Built with Next.js + Supabase.</p>
+          <p className="hidden sm:block">A techno-existential thriller. AI-enhanced reading experience.</p>
         </div>
       </footer>
     </div>

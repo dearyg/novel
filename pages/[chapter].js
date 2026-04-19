@@ -1,27 +1,26 @@
 import { useEffect, useState, useCallback } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import Layout from "../../../components/Layout";
-import CodeFooter from "../../../components/CodeFooter";
-import StyleSelector from "../../../components/StyleSelector";
-import { AuditToggle, highlightTerms } from "../../../components/AuditHighlighter";
-import { getAllNovelSlugs, getNovelBySlug, getChaptersByNovel, getChapter, getAdjacentChapters } from "../../../lib/supabase";
-import { useReadingProgress } from "../../../lib/useReadingProgress";
-import { useReaderVariables } from "../../../lib/useReaderVariables";
+import Layout from "../components/Layout";
+import CodeFooter from "../components/CodeFooter";
+import StyleSelector from "../components/StyleSelector";
+import { AuditToggle, highlightTerms } from "../components/AuditHighlighter";
+import ReaderSettings from "../components/ReaderSettings";
+import { getNovelBySlug, getChaptersByNovel, getChapter, getAdjacentChapters } from "../lib/supabase";
+import { useReadingProgress } from "../lib/useReadingProgress";
+import { useReaderVariables } from "../lib/useReaderVariables";
+
+const SLUG = "the-senior-observer";
 
 export async function getStaticPaths() {
   try {
-    const slugs = await getAllNovelSlugs();
-    const paths = [];
-    for (const slug of slugs) {
-      const novel = await getNovelBySlug(slug);
-      if (!novel) continue;
-      const chapters = await getChaptersByNovel(novel.id);
-      for (const ch of chapters) {
-        paths.push({ params: { slug, chapter: String(ch.chapter_number) } });
-      }
-    }
-    return { paths, fallback: "blocking" };
+    const novel = await getNovelBySlug(SLUG);
+    if (!novel) return { paths: [], fallback: "blocking" };
+    const chapters = await getChaptersByNovel(novel.id);
+    return {
+      paths: chapters.map((ch) => ({ params: { chapter: String(ch.chapter_number) } })),
+      fallback: "blocking",
+    };
   } catch {
     return { paths: [], fallback: "blocking" };
   }
@@ -29,7 +28,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   try {
-    const novel = await getNovelBySlug(params.slug);
+    const novel = await getNovelBySlug(SLUG);
     if (!novel) return { notFound: true };
     const chapterNumber = Number(params.chapter);
     const [chapter, adjacent] = await Promise.all([
@@ -66,12 +65,12 @@ function ScrollProgress() {
   );
 }
 
-function ChapterNav({ novel, prev, next }) {
+function ChapterNav({ prev, next }) {
   return (
     <div className="flex items-center justify-between gap-3 py-4">
       {prev ? (
         <Link
-          href={`/novel/${novel.slug}/${prev.chapter_number}`}
+          href={`/${prev.chapter_number}`}
           className="flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-sm text-secondary hover:text-primary hover:border-accent/30 transition-colors"
         >
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="15 18 9 12 15 6" /></svg>
@@ -80,7 +79,7 @@ function ChapterNav({ novel, prev, next }) {
       ) : <div />}
 
       <Link
-        href={`/novel/${novel.slug}`}
+        href="/"
         className="px-4 py-2 rounded-lg border border-border text-xs text-muted hover:text-primary hover:border-accent/30 transition-colors"
       >
         Contents
@@ -88,7 +87,7 @@ function ChapterNav({ novel, prev, next }) {
 
       {next ? (
         <Link
-          href={`/novel/${novel.slug}/${next.chapter_number}`}
+          href={`/${next.chapter_number}`}
           className="flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-sm text-secondary hover:text-primary hover:border-accent/30 transition-colors"
         >
           <span className="hidden sm:inline">Next</span>
@@ -103,7 +102,7 @@ export default function ChapterPage({ novel, chapter, prev, next }) {
   const [auditMode, setAuditMode] = useState(false);
   const [styleOverride, setStyleOverride] = useState(null);
   const { markRead } = useReadingProgress();
-  const { variables, interpolate } = useReaderVariables(novel.variables || {});
+  const { variables, interpolate, requestLocation, locationRequested, settings, updateSetting } = useReaderVariables(novel.variables || {});
 
   useEffect(() => {
     if (chapter) markRead(novel.slug, chapter.chapter_number);
@@ -137,10 +136,8 @@ export default function ChapterPage({ novel, chapter, prev, next }) {
       <Layout>
         <article className="py-6 md:py-10 px-4">
           <div className="max-w-[70ch] mx-auto">
-            {/* Top nav */}
-            <ChapterNav novel={novel} prev={prev} next={next} />
+            <ChapterNav prev={prev} next={next} />
 
-            {/* Chapter header */}
             <div className="mt-6 mb-8 border-b border-border pb-6">
               <p className="text-[11px] tracking-wider uppercase text-muted mb-1.5">
                 {novel.title}
@@ -149,13 +146,21 @@ export default function ChapterPage({ novel, chapter, prev, next }) {
                 Chapter {chapter.chapter_number}: {chapter.title}
               </h1>
 
-              {/* Reader toolbar */}
               <div className="flex items-center justify-between gap-3 mt-4 flex-wrap">
                 <StyleSelector chapterId={chapter.id} onStyleChange={handleStyleChange} />
-                <AuditToggle enabled={auditMode} onToggle={() => setAuditMode((m) => !m)} />
+                <div className="flex items-center gap-2">
+                  <ReaderSettings
+                    variables={variables}
+                    settings={settings}
+                    updateSetting={updateSetting}
+                    locationRequested={locationRequested}
+                    requestLocation={requestLocation}
+                    autoOpen={!locationRequested}
+                  />
+                  <AuditToggle enabled={auditMode} onToggle={() => setAuditMode((m) => !m)} />
+                </div>
               </div>
 
-              {/* Localized reading indicator */}
               {variables.user_location && (
                 <div className="mt-3 inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-accent/5 border border-accent/20 text-[11px] text-accent">
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -166,7 +171,6 @@ export default function ChapterPage({ novel, chapter, prev, next }) {
               )}
             </div>
 
-            {/* Prose */}
             <div className="prose-content space-y-5 text-[17px] leading-[1.9] text-body">
               {paragraphs.map((para, i) => {
                 if (!para.trim()) return null;
@@ -192,12 +196,10 @@ export default function ChapterPage({ novel, chapter, prev, next }) {
               })}
             </div>
 
-            {/* Code footer */}
             <CodeFooter code={displayCodeFooter} />
 
-            {/* Bottom nav */}
             <div className="mt-12 border-t border-border">
-              <ChapterNav novel={novel} prev={prev} next={next} />
+              <ChapterNav prev={prev} next={next} />
               {!next && (
                 <p className="text-center text-xs text-muted py-4 italic">
                   You've reached the latest chapter. Check back for updates.
