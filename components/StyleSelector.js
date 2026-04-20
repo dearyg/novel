@@ -23,7 +23,7 @@ export default function StyleSelector({ chapterId, onStyleChange }) {
 
     if (styleKey === "default") {
       setActive("default");
-      onStyleChange(null);
+      onStyleChange(null, "original");
       return;
     }
 
@@ -38,7 +38,7 @@ export default function StyleSelector({ chapterId, onStyleChange }) {
 
     if (data) {
       setActive(styleKey);
-      onStyleChange(data);
+      onStyleChange(data, styleKey);
     }
   }
 

@@ -1,6 +1,21 @@
 import { useState, useEffect } from "react";
 
-const CONFIGURABLE_VARS = [
+const THEMES = [
+  { key: "horror", label: "Horror", desc: "Dark, dread-building, visceral" },
+  { key: "chill", label: "Chill", desc: "Calm, meditative, ambient" },
+  { key: "romantic", label: "Romantic", desc: "Warm, intimate, tender" },
+  { key: "suspense", label: "Suspense", desc: "Tense, paranoid, cliffhangers" },
+  { key: "noir", label: "Noir", desc: "Hardboiled, cynical, shadowy" },
+  { key: "cyberpunk", label: "Cyberpunk", desc: "Neon, tech-slang, gritty" },
+];
+
+const LENGTHS = [
+  { key: "short", label: "Short", desc: "~40% — key beats only" },
+  { key: "standard", label: "Standard", desc: "Same as original" },
+  { key: "extended", label: "Extended", desc: "~160% — expanded detail" },
+];
+
+const TEXT_VARS = [
   {
     key: "reader_name",
     label: "Your Name",
@@ -27,12 +42,47 @@ const CONFIGURABLE_VARS = [
   },
 ];
 
+const OPENAI_KEY_STORAGE = "novel_openai_key";
+
 export default function ReaderSettings({ variables, settings, updateSetting, locationRequested, requestLocation, autoOpen }) {
   const [open, setOpen] = useState(false);
+  const [openaiKey, setOpenaiKey] = useState("");
+  const [keyTestStatus, setKeyTestStatus] = useState(null);
 
   useEffect(() => {
     if (autoOpen) setOpen(true);
   }, [autoOpen]);
+
+  useEffect(() => {
+    try {
+      setOpenaiKey(localStorage.getItem(OPENAI_KEY_STORAGE) || "");
+    } catch {}
+  }, []);
+
+  function handleOpenaiKeyChange(value) {
+    setOpenaiKey(value);
+    setKeyTestStatus(null);
+    try {
+      if (value) {
+        localStorage.setItem(OPENAI_KEY_STORAGE, value);
+      } else {
+        localStorage.removeItem(OPENAI_KEY_STORAGE);
+      }
+    } catch {}
+  }
+
+  async function testOpenaiKey() {
+    if (!openaiKey) return;
+    setKeyTestStatus("testing");
+    try {
+      const res = await fetch("https://api.openai.com/v1/models", {
+        headers: { Authorization: `Bearer ${openaiKey}` },
+      });
+      setKeyTestStatus(res.ok ? "valid" : "invalid");
+    } catch {
+      setKeyTestStatus("invalid");
+    }
+  }
 
   return (
     <>
@@ -52,7 +102,7 @@ export default function ReaderSettings({ variables, settings, updateSetting, loc
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
           <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={() => setOpen(false)} />
           <div className="relative bg-surface border border-border rounded-2xl shadow-2xl w-full max-w-md max-h-[85vh] overflow-y-auto">
-            <div className="sticky top-0 bg-surface border-b border-border px-5 py-4 flex items-center justify-between rounded-t-2xl">
+            <div className="sticky top-0 bg-surface border-b border-border px-5 py-4 flex items-center justify-between rounded-t-2xl z-10">
               <h2 className="text-base font-semibold text-primary">Reader Settings</h2>
               <button
                 onClick={() => setOpen(false)}
@@ -66,8 +116,14 @@ export default function ReaderSettings({ variables, settings, updateSetting, loc
 
             <div className="p-5 space-y-6">
               <p className="text-xs text-muted leading-relaxed">
-                Personalize how the story reads for you. These settings change variables woven into the prose.
+                Personalize how the story reads for you. Changes are saved locally in your browser.
               </p>
+
+              {/* --- Identity & Location --- */}
+              <div className="space-y-1">
+                <h3 className="text-[10px] font-bold text-muted uppercase tracking-widest">Identity & Location</h3>
+                <div className="h-px bg-border" />
+              </div>
 
               {/* Location */}
               <div className="space-y-2">
@@ -103,8 +159,8 @@ export default function ReaderSettings({ variables, settings, updateSetting, loc
                 )}
               </div>
 
-              {/* Configurable variables */}
-              {CONFIGURABLE_VARS.map((v) => (
+              {/* Text variable inputs */}
+              {TEXT_VARS.map((v) => (
                 <div key={v.key} className="space-y-2">
                   <label className="text-xs font-semibold text-primary uppercase tracking-wider">
                     {v.label}
@@ -128,9 +184,114 @@ export default function ReaderSettings({ variables, settings, updateSetting, loc
                 </div>
               ))}
 
+              {/* --- AI Reading Experience --- */}
+              <div className="space-y-1 pt-2">
+                <h3 className="text-[10px] font-bold text-muted uppercase tracking-widest">AI Reading Experience</h3>
+                <div className="h-px bg-border" />
+              </div>
+
+              {/* Theme */}
+              <div className="space-y-2">
+                <label className="text-xs font-semibold text-primary uppercase tracking-wider">Theme</label>
+                <p className="text-xs text-muted">AI restyles the chapter to match this mood</p>
+                <div className="grid grid-cols-2 gap-2">
+                  <button
+                    onClick={() => updateSetting("ai_theme", undefined)}
+                    className={`px-3 py-2 rounded-lg border text-xs text-left transition-colors ${
+                      !settings.ai_theme
+                        ? "border-accent text-accent bg-accent/10"
+                        : "border-border text-secondary hover:border-primary/30"
+                    }`}
+                  >
+                    <span className="font-medium block">Original</span>
+                    <span className="text-[10px] text-muted">Author's voice</span>
+                  </button>
+                  {THEMES.map((t) => (
+                    <button
+                      key={t.key}
+                      onClick={() => updateSetting("ai_theme", t.key)}
+                      className={`px-3 py-2 rounded-lg border text-xs text-left transition-colors ${
+                        settings.ai_theme === t.key
+                          ? "border-accent text-accent bg-accent/10"
+                          : "border-border text-secondary hover:border-primary/30"
+                      }`}
+                    >
+                      <span className="font-medium block">{t.label}</span>
+                      <span className="text-[10px] text-muted">{t.desc}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Length */}
+              <div className="space-y-2">
+                <label className="text-xs font-semibold text-primary uppercase tracking-wider">Length</label>
+                <p className="text-xs text-muted">How much detail the AI includes</p>
+                <div className="flex gap-2">
+                  {LENGTHS.map((l) => (
+                    <button
+                      key={l.key}
+                      onClick={() => updateSetting("ai_length", l.key === "standard" ? undefined : l.key)}
+                      className={`flex-1 px-3 py-2 rounded-lg border text-xs text-center transition-colors ${
+                        (settings.ai_length || "standard") === l.key
+                          ? "border-accent text-accent bg-accent/10"
+                          : "border-border text-secondary hover:border-primary/30"
+                      }`}
+                    >
+                      <span className="font-medium block">{l.label}</span>
+                      <span className="text-[10px] text-muted">{l.desc}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* --- Image Generation --- */}
+              <div className="space-y-1 pt-2">
+                <h3 className="text-[10px] font-bold text-muted uppercase tracking-widest">Image Generation</h3>
+                <div className="h-px bg-border" />
+              </div>
+
+              <div className="space-y-2">
+                <label className="text-xs font-semibold text-primary uppercase tracking-wider">OpenAI API Key</label>
+                <p className="text-xs text-muted">
+                  Generate themed scene illustrations with DALL-E 3. Your key is stored locally and sent directly to OpenAI — it never touches our servers.
+                </p>
+                <div className="flex gap-2">
+                  <input
+                    type="password"
+                    value={openaiKey}
+                    onChange={(e) => handleOpenaiKeyChange(e.target.value)}
+                    placeholder="sk-..."
+                    className="flex-1 px-3 py-2 rounded-lg bg-surface-alt border border-border text-sm text-primary placeholder:text-muted/50 focus:outline-none focus:border-accent/50 transition-colors font-mono text-xs"
+                  />
+                  <button
+                    onClick={testOpenaiKey}
+                    disabled={!openaiKey || keyTestStatus === "testing"}
+                    className="px-3 py-2 rounded-lg border border-border text-xs text-secondary hover:text-primary hover:border-accent/30 transition-colors disabled:opacity-50"
+                  >
+                    {keyTestStatus === "testing" ? "..." : "Test"}
+                  </button>
+                </div>
+                {keyTestStatus === "valid" && (
+                  <p className="text-[10px] text-green">Key is valid.</p>
+                )}
+                {keyTestStatus === "invalid" && (
+                  <p className="text-[10px] text-rose">Key is invalid or expired.</p>
+                )}
+                {openaiKey && (
+                  <button
+                    onClick={() => handleOpenaiKeyChange("")}
+                    className="text-[10px] text-muted hover:text-accent transition-colors"
+                  >
+                    Remove key
+                  </button>
+                )}
+              </div>
+
               <div className="pt-2 border-t border-border">
                 <p className="text-[10px] text-muted leading-relaxed">
-                  Settings are stored locally in your browser. They personalize the prose — the underlying story remains the same.
+                  Text restyling is free. Image generation uses your OpenAI key (~$0.04-0.08/image).
+                  All settings are stored locally in your browser.
                 </p>
               </div>
             </div>

@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/Layout";
@@ -6,9 +6,62 @@ import CodeFooter from "../components/CodeFooter";
 import StyleSelector from "../components/StyleSelector";
 import { AuditToggle, highlightTerms } from "../components/AuditHighlighter";
 import ReaderSettings from "../components/ReaderSettings";
+import HeroImage from "../components/HeroImage";
 import { getNovelBySlug, getChaptersByNovel, getChapter, getAdjacentChapters } from "../lib/supabase";
 import { useReadingProgress } from "../lib/useReadingProgress";
 import { useReaderVariables } from "../lib/useReaderVariables";
+
+function useRestyle(chapterId, settings, activeStyle) {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const abortRef = useRef(null);
+
+  useEffect(() => {
+    const theme = settings.ai_theme;
+    if (!theme) {
+      setData(null);
+      setLoading(false);
+      setError(null);
+      return;
+    }
+
+    const length = settings.ai_length || "standard";
+    const style = activeStyle || "original";
+
+    abortRef.current?.abort();
+    const controller = new AbortController();
+    abortRef.current = controller;
+
+    setLoading(true);
+    setError(null);
+
+    fetch("/api/restyle", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ chapterId, theme, length, style }),
+      signal: controller.signal,
+    })
+      .then((res) => {
+        if (!res.ok) throw new Error("Restyle failed");
+        return res.json();
+      })
+      .then((json) => {
+        setData(json);
+        setLoading(false);
+      })
+      .catch((err) => {
+        if (err.name !== "AbortError") {
+          setError(err.message);
+          setLoading(false);
+        }
+      });
+
+    return () => controller.abort();
+  }, [chapterId, settings.ai_theme, settings.ai_length, activeStyle]);
+
+  return { data, loading, error };
+}
 
 const SLUG = "the-senior-observer";
 
@@ -101,8 +154,11 @@ function ChapterNav({ prev, next }) {
 export default function ChapterPage({ novel, chapter, prev, next }) {
   const [auditMode, setAuditMode] = useState(false);
   const [styleOverride, setStyleOverride] = useState(null);
+  const [activeStyleKey, setActiveStyleKey] = useState("original");
   const { markRead } = useReadingProgress();
   const { variables, interpolate, requestLocation, locationRequested, settings, updateSetting } = useReaderVariables(novel.variables || {});
+
+  const restyle = useRestyle(chapter?.id, settings, activeStyleKey);
 
   useEffect(() => {
     if (chapter) markRead(novel.slug, chapter.chapter_number);
@@ -110,17 +166,20 @@ export default function ChapterPage({ novel, chapter, prev, next }) {
 
   useEffect(() => {
     setStyleOverride(null);
+    setActiveStyleKey("original");
   }, [chapter?.id]);
 
-  const handleStyleChange = useCallback((data) => {
+  const handleStyleChange = useCallback((data, styleKey) => {
     setStyleOverride(data);
+    setActiveStyleKey(styleKey || "original");
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
   if (!chapter) return null;
 
-  const rawContent = styleOverride?.content || chapter.content;
-  const rawCodeFooter = styleOverride?.code_footer ?? chapter.code_footer;
+  const aiContent = restyle.data && !restyle.loading ? restyle.data : null;
+  const rawContent = aiContent?.content || styleOverride?.content || chapter.content;
+  const rawCodeFooter = aiContent?.code_footer ?? styleOverride?.code_footer ?? chapter.code_footer;
   const displayContent = interpolate(rawContent);
   const displayCodeFooter = interpolate(rawCodeFooter);
   const paragraphs = displayContent.split("\n\n");
@@ -170,6 +229,24 @@ export default function ChapterPage({ novel, chapter, prev, next }) {
                 </div>
               )}
             </div>
+
+            <HeroImage
+              chapterNumber={chapter.chapter_number}
+              theme={settings.ai_theme}
+              defaultSrc={`/images/chapters/ch${chapter.chapter_number}.webp`}
+            />
+
+            {restyle.loading && (
+              <div className="flex items-center gap-3 px-4 py-3 mb-6 rounded-lg bg-accent/5 border border-accent/20">
+                <div className="w-4 h-4 border-2 border-accent/30 border-t-accent rounded-full animate-spin" />
+                <span className="text-xs text-accent">Restyling chapter with AI...</span>
+              </div>
+            )}
+            {restyle.error && (
+              <div className="flex items-center gap-3 px-4 py-3 mb-6 rounded-lg bg-rose/5 border border-rose/20">
+                <span className="text-xs text-rose">Restyle failed. Showing original.</span>
+              </div>
+            )}
 
             <div className="prose-content space-y-5 text-[17px] leading-[1.9] text-body">
               {paragraphs.map((para, i) => {

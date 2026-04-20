@@ -311,3 +311,22 @@ $BP3$
 ELSE blueprint END
 FROM ch
 WHERE chapters.id = ch.id;
+
+-- =============================================
+-- AI RESTYLE CACHE
+-- =============================================
+
+CREATE TABLE chapter_variants (
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  chapter_id uuid NOT NULL REFERENCES chapters(id) ON DELETE CASCADE,
+  theme text NOT NULL,
+  length text NOT NULL DEFAULT 'standard',
+  style text NOT NULL DEFAULT 'original',
+  content text NOT NULL,
+  code_footer text,
+  created_at timestamptz DEFAULT now(),
+  UNIQUE(chapter_id, theme, length, style)
+);
+
+ALTER TABLE chapter_variants ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "Public read chapter_variants" ON chapter_variants FOR SELECT USING (true);
