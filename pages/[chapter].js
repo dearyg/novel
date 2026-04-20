@@ -7,9 +7,30 @@ import StyleSelector from "../components/StyleSelector";
 import { AuditToggle, highlightTerms } from "../components/AuditHighlighter";
 import ReaderSettings from "../components/ReaderSettings";
 import HeroImage from "../components/HeroImage";
+import SomaticBleed from "../components/animations/SomaticBleed";
 import { getNovelBySlug, getChaptersByNovel, getChapter, getAdjacentChapters } from "../lib/supabase";
 import { useReadingProgress } from "../lib/useReadingProgress";
 import { useReaderVariables } from "../lib/useReaderVariables";
+
+function ProseReveal({ children, className = "" }) {
+  const ref = useRef(null);
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setVisible(true); observer.disconnect(); } },
+      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+  return (
+    <div ref={ref} className={`prose-reveal ${visible ? "visible" : ""} ${className}`}>
+      {children}
+    </div>
+  );
+}
 
 function useRestyle(chapterId, settings, activeStyle) {
   const [data, setData] = useState(null);
@@ -191,6 +212,7 @@ export default function ChapterPage({ novel, chapter, prev, next }) {
       </Head>
 
       <ScrollProgress />
+      <SomaticBleed />
 
       <Layout>
         <article className="py-6 md:py-10 px-4">
@@ -201,7 +223,7 @@ export default function ChapterPage({ novel, chapter, prev, next }) {
               <p className="text-[11px] tracking-wider uppercase text-muted mb-1.5">
                 {novel.title}
               </p>
-              <h1 className="text-xl md:text-2xl font-bold text-primary">
+              <h1 className="text-xl md:text-2xl font-bold text-primary amber-flicker">
                 Chapter {chapter.chapter_number}: {chapter.title}
               </h1>
 
@@ -255,20 +277,25 @@ export default function ChapterPage({ novel, chapter, prev, next }) {
                 const isInlineCode = para.startsWith("`") && para.endsWith("`");
                 if (isInlineCode) {
                   return (
-                    <p key={i}>
-                      <code className="text-accent text-sm bg-surface-alt px-1.5 py-0.5 rounded font-mono">
-                        {para.slice(1, -1)}
-                      </code>
-                    </p>
+                    <ProseReveal key={i}>
+                      <p>
+                        <code className="text-accent text-sm bg-surface-alt px-1.5 py-0.5 rounded font-mono">
+                          {para.slice(1, -1)}
+                        </code>
+                      </p>
+                    </ProseReveal>
                   );
                 }
 
                 const hasDialogue = /[""\u201C\u201D]/.test(para);
+                const isAmberMention = /amber|580\s*nm|scorched sage/i.test(para);
 
                 return (
-                  <p key={i} className={hasDialogue ? "text-body-emphasis" : ""}>
-                    {auditMode ? highlightTerms(para) : para}
-                  </p>
+                  <ProseReveal key={i}>
+                    <p className={`${hasDialogue ? "text-body-emphasis" : ""} ${isAmberMention ? "amber-flicker" : ""}`} style={isAmberMention ? { "--flicker-delay": `${i * 0.3}s` } : undefined}>
+                      {auditMode ? highlightTerms(para) : para}
+                    </p>
+                  </ProseReveal>
                 );
               })}
             </div>
