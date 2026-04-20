@@ -17,6 +17,12 @@ const LENGTHS = [
 
 const TEXT_VARS = [
   {
+    key: "protagonist",
+    label: "Protagonist Name",
+    description: "The name of the Senior Observer — yours to choose",
+    placeholder: "Jeff Zhang",
+  },
+  {
     key: "reader_name",
     label: "Your Name",
     description: "How the story addresses you",
@@ -40,6 +46,18 @@ const TEXT_VARS = [
     description: "The scent that bridges realities",
     placeholder: "Scorched Sage",
   },
+];
+
+const GENRES = [
+  { key: "Techno-Thriller", label: "Techno-Thriller" },
+  { key: "Noir", label: "Noir" },
+  { key: "Horror", label: "Horror" },
+  { key: "Hard-Tech", label: "Hard-Tech" },
+];
+
+const PACES = [
+  { key: "Slow Burn", label: "Slow Burn" },
+  { key: "Fast-Paced", label: "Fast-Paced" },
 ];
 
 const OPENAI_KEY_STORAGE = "novel_openai_key";
@@ -183,6 +201,48 @@ export default function ReaderSettings({ variables, settings, updateSetting, loc
                   )}
                 </div>
               ))}
+
+              {/* Genre */}
+              <div className="space-y-2">
+                <label className="text-xs font-semibold text-primary uppercase tracking-wider">Genre</label>
+                <p className="text-xs text-muted">How the narrative voice shapes the world</p>
+                <div className="flex gap-2 flex-wrap">
+                  {GENRES.map((g) => (
+                    <button
+                      key={g.key}
+                      onClick={() => updateSetting("genre", g.key === "Techno-Thriller" ? undefined : g.key)}
+                      className={`px-3 py-1.5 rounded-lg border text-xs transition-colors ${
+                        (settings.genre || "Techno-Thriller") === g.key
+                          ? "border-accent text-accent bg-accent/10"
+                          : "border-border text-secondary hover:border-primary/30"
+                      }`}
+                    >
+                      {g.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Pacing */}
+              <div className="space-y-2">
+                <label className="text-xs font-semibold text-primary uppercase tracking-wider">Pacing</label>
+                <p className="text-xs text-muted">The rhythm of the storytelling</p>
+                <div className="flex gap-2">
+                  {PACES.map((p) => (
+                    <button
+                      key={p.key}
+                      onClick={() => updateSetting("pace", p.key === "Slow Burn" ? undefined : p.key)}
+                      className={`flex-1 px-3 py-1.5 rounded-lg border text-xs text-center transition-colors ${
+                        (settings.pace || "Slow Burn") === p.key
+                          ? "border-accent text-accent bg-accent/10"
+                          : "border-border text-secondary hover:border-primary/30"
+                      }`}
+                    >
+                      {p.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
 
               {/* --- AI Reading Experience --- */}
               <div className="space-y-1 pt-2">

@@ -96,7 +96,7 @@ INSERT INTO novels (slug, title, author, tagline, description, cover_color, stat
   '#7c6af6',
   'ongoing',
   'Sci-Fi / Techno-Thriller',
-  '{"user_location": "Seattle", "user_landmark": "the Space Needle", "somatic_trigger_light": "Amber (580nm)", "somatic_trigger_scent": "Scorched Sage"}'::jsonb
+  '{"protagonist": "Jeff Zhang", "user_location": "Seattle", "user_landmark": "the Space Needle", "somatic_trigger_light": "Amber (580nm)", "somatic_trigger_scent": "Scorched Sage", "genre": "Techno-Thriller", "pace": "Slow Burn"}'::jsonb
 );
 
 -- =============================================
@@ -188,6 +188,70 @@ Architectural source of truth. Paste this into any session to align new chapter 
 
 - **Dynamic variable injection**: Prose uses {{user_location}} and {{user_landmark}}. Frontend substitutes based on reader geolocation.
 - **Audit tooltips**: Technical terms highlighted; hover reveals JSON metadata. E.g. the Vacheron watch → [POINTER_ERROR] Object belongs to UID: Julian_Vance. Access Denied.
+
+## Narrative Variables (User-Adjustable)
+
+* **Protagonist Name:** `{{protagonist}}` (Default: Jeff Zhang).
+* **Location:** `{{user_location}}` (Default: Seattle).
+* **Landmark:** `{{user_landmark}}` (Default: the Space Needle).
+* **Genre:** `{{genre}}` (Default: Techno-Thriller. Options: Noir, Horror, Hard-Tech).
+* **Pacing:** `{{pace}}` (Default: Slow Burn. Options: Fast-Paced, Slow Burn).
+
+## System Architecture (novel.json)
+
+```json
+{
+  "system_manifest": {
+    "title": "The Senior Observer",
+    "version": "1.0.4-STABLE",
+    "global_observer_sync": "12.4%",
+    "variables": {
+      "location": "{{user_location}}",
+      "landmark": "{{user_landmark}}",
+      "protagonist": "{{protagonist}}",
+      "ai_box": "Aion"
+    }
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "0x01: The Observer",
+      "instance": "Jeff_Zhang",
+      "somatic_bleed": "Vacheron_Constantin_Amalfi",
+      "tech_metaphor": "Shared Cache Leakage",
+      "discovery_log": "/* Discovery Log: 0x01 */\nif (Observer.current() == Observer.next()) {\n    throw IdentityConflict(\"Partition integrity compromised.\");\n}"
+    },
+    {
+      "id": 2,
+      "title": "0x02: Priority Inversion",
+      "instance": "Julian_Vance",
+      "somatic_bleed": "Walnut_Phone_ADHD_Static",
+      "tech_metaphor": "Priority Inversion",
+      "discovery_log": "/* Discovery Log: 0x02 */\nif (Afterlife.is_running() && Reality.is_running()) {\n    throw StackOverflow(\"Simulation nested within Simulation.\");\n}"
+    },
+    {
+      "id": 3,
+      "title": "0x03: Pointer Aliasing",
+      "instance": "Jeff_Zhang",
+      "location_key": "{{user_location}}",
+      "somatic_bleed": "Seattle_Rain_Concrete_Hunger",
+      "tech_metaphor": "Pointer Aliasing",
+      "discovery_log": "/* Discovery Log: 0x03 */\nif (Input(Instance_A) == Input(Instance_B)) {\n    Memory.merge_pointers();\n    throw ViewportConflict(\"Two instances rendering identical coordinates.\");\n}"
+    }
+  ]
+}
+```
+
+## The "SDE Life" Theory — Core Metaphysics
+
+The "One Soul" theory is consistent because it treats consciousness as **Multi-tenant Virtualization**.
+
+1. **The Soul** = Bare-metal hardware. The single physical substrate.
+2. **The Person** = A Virtual Machine (VM). Each human life is an isolated instance running on the shared hardware.
+3. **Identity** = The Sandbox. The security boundary that prevents one VM from reading another's memory space.
+4. **The Story** = A Sandbox Escape vulnerability in the universe's kernel. The partitions are failing, and instances are beginning to read each other's sensory registers.
+
+The narrative arc follows a classic exploit chain: **Discovery** (Ch 1–5: the leak is noticed) → **Traceback** (Ch 6–10: the SDE debugs the architecture) → **Merge** (Ch 11–15: the partitions fail globally) → **Commit** (Ch 16–20: the Singleton wakes up and the VMs are decommissioned).
 $MANIFEST$
 WHERE slug = 'the-senior-observer';
 
