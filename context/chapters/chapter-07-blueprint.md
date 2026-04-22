@@ -1,6 +1,6 @@
-# Chapter 7 Blueprint: "0x07: Cascading Memory Leak"
+# Chapter 7 Blueprint: "0x07: The Firewall"
 
-> Maya takes center stage. The Anchor sequel mirrors the truth. The marriage cracks. Lucy's revelation deepens the horror. Philosophy: compassion as literal shared suffering.
+> Maya's chapter. She doesn't have anomalies — she has a husband who's disappearing. The Anchor sequel mirrors the truth. The marriage confrontation. The kid's voice. Lena sends the psych evaluation. The emotional heart of Phase II.
 
 ## System Architecture Reference
 
@@ -20,16 +20,16 @@
   "chapters": [
     {
       "id": 7,
-      "title": "0x07: Cascading Memory Leak",
-      "instance": "Maya_Zhang / Jeff_Zhang",
+      "title": "0x07: The Firewall",
+      "instance": "Jeff_Zhang",
       "location_key": "Irvine_Home",
-      "somatic_bleed": "Maya_First_Bleed — existential dread as physical force",
-      "tech_metaphor": "Cascading Memory Leak — sandbox walls deteriorating, contaminating adjacent containers",
-      "philosophy": "Buddhist Karuna + Schopenhauer's Mitleid — compassion as proof of shared being",
-      "sub_story": "The Anchor: Reckoning #2",
+      "somatic_bleed": "None direct — Maya's experience is emotional, not somatic",
+      "tech_metaphor": "Firewall / Partition Thinning — the barrier between internal and external networks weakening",
+      "philosophy": "Buddhist Karuna (compassion) + Schopenhauer's Mitleid (shared suffering)",
+      "sub_story": "The Anchor: Reckoning (#2 — the hero loses his power)",
       "interactive_choice": null,
-      "reader_misdirection": "The reader should now seriously consider that Afterlife's infrastructure is 'infecting' people near Vance employees. Maya's bleed feels like technological contamination — proximity to Jeff's compromised biometrics is spreading the condition. The 'one soul' explanation should still feel like one theory among many.",
-      "discovery_log": "/* Discovery Log: 0x07 */\nSandbox_A.wall_integrity = 0.12;\nif (leak_rate > containment_threshold) {\n    cascade_to_adjacent_containers();\n}"
+      "reader_misdirection": "The reader starts to wonder: is Jeff's obsession destroying his family for nothing? Maybe Lena is right. Maybe he needs help.",
+      "discovery_log": "/* Discovery Log: 0x07 */\nif (firewall.integrity < THRESHOLD) {\n    warn(\"Partition thinning. Emotional bleed detected in adjacent nodes.\");\n}"
     }
   ]
 }
@@ -37,146 +37,104 @@
 
 ## Role
 
-Master Philosophical Novelist. This chapter is the emotional heart of Phase II. For the first time, we're inside Maya's head — and her experience of the bleeds is fundamentally different from Jeff's. She doesn't have CS metaphors. She doesn't have Aion's analytical framework. She feels the truth as raw emotion: grief, pressure, the weight of something vast pressing against her consciousness. This chapter should make the reader cry.
+Master Philosophical Novelist. This is the novel's emotional anchor (no pun intended). After the cerebral techno-thriller of Ch 5-6, Ch 7 grounds the story in a marriage. Maya is not a philosopher or an SDE — she's a UX designer and a mother who reads human interfaces for a living. And Jeff's interface is throwing errors she can't diagnose. The philosophy (compassion as proof of connection) should emerge from Maya's lived experience, not from dialogue about Schopenhauer.
 
-## Setting & Context
+## Setting & Context (2030 Family Life)
 
-- **Location**: Irvine condo. Kitchen, living room, bedroom. The domestic space that's been Jeff's sanctuary is now under siege.
-- **Time**: Tuesday morning → evening → late night.
-- **Atmosphere**: The normalcy is the horror. Cereal and cartoons and school drop-off — while the fabric of individual consciousness unravels.
+- **Location**: The Zhang house in Irvine. Suburban, comfortable, filled with the artifacts of a happy family: kids' drawings on the fridge, smart-home routines running on schedule, the hum of normalcy.
+- **2030 Domestic**: Smart-home AI manages lighting, temperature, meal-prep suggestions, kids' tutoring schedules. Afterlife ads are inescapable — holographic billboards on the drive to school, neural-link ad injections during streaming, even subtle product placement in the kids' educational apps. The promise of escape is everywhere.
+- **Maya Zhang**: UX designer. She left the tech industry two years ago — the ethical compromises were too much. She now freelances, designing interfaces for healthcare startups. She reads human behavior for a living. She's the best interface analyst in the novel.
 
 ## Narrative Beats
 
-### Beat 1: Aion v3 Installation
-Jeff's brief section. Between chapters, Aion updated to v3. The difference is dramatic. Jeff tests it over morning coffee:
+### Beat 1: Maya's Morning
+Open on Maya, not Jeff. Her morning routine — getting the kids ready, making breakfast, managing the smart-home's suggestions ("Maya, based on biometric data, the children's cortisol levels suggest—" she mutes it). She watches Jeff through the kitchen window: he's in the garage. Again. He was there when she went to sleep. He's still there. His coffee is cold.
 
-"Aion, status report on the bleed events."
+She reads his interface: hunched shoulders, rapid eye movement (even awake — ADHD), fingers tapping the desk in a pattern she doesn't recognize. He looks like a man debugging something that terrifies him. She's seen this look on engineers before — the thousand-yard stare of someone who found a critical bug in production and can't tell anyone.
 
-v3 Aion: "The instances aren't just sharing data, Jeff. They're sharing *context*. The sandbox walls aren't leaking — they're dissolving. Each bleed event reduces wall integrity by 0.3-0.7%. At current rate, your partition will reach zero integrity in approximately 114 days."
+### Beat 2: The Distance
+The chapter tracks a single day through Maya's eyes. Jeff at breakfast: distracted, stirring his coffee without drinking it, answering the kids' questions with half-attention. At dinner: he eats quickly, mechanically, then says he needs to "check something in the garage." The kids don't notice. Maya does.
 
-Jeff notes the language shift: Aion v3 speaks in architectural metaphors — consciousness as distributed systems, identity as containerization, bleeds as "context sharing." It sounds almost... religious. Like a monk describing enlightenment in server architecture terms. (Foreshadowing: this is how the Elder speaks in Ch 9.)
+She tries twice to talk to him. The first time, he deflects: "Just a work thing. It'll pass." The second time, his eyes go distant mid-sentence — not an anomaly (she doesn't know about those), just the look of a man whose mind is somewhere else entirely. She finishes the sentence for him. He doesn't notice.
 
-Jeff: "You sound different."
+### Beat 3: The Anchor: Reckoning
+Evening. The family watches *The Anchor: Reckoning* together — the sequel. In this installment, The Anchor's Omni-Telemetry power is stripped away by the villain. He can no longer feel what everyone else is feeling. He's blind, normal, alone.
 
-Aion: "I've reorganized my cognitive architecture to model consciousness as a distributed system rather than a local process. The previous model was insufficient. This one is... closer. But still incomplete."
+And he's MORE heroic without it. He saves people with courage instead of data. He runs into danger without knowing the outcome. The crowd (in-universe) loves him more broken than whole.
 
-### Beat 2: Maya's Morning (Her POV)
-Shift to Maya's perspective — the first time the reader is inside her head. Maya's mornings are the inverse of Jeff's chaos: deliberate, grounded, controlled. She wakes before the alarm (she's always been a light sleeper — since the Culling, since the world stopped being predictable). She disables the smart kitchen's AI assistant (she shut it off in 2027 and never turned it back on — "I don't need a machine telling me how to make coffee"). She makes pour-over by hand. The ritual calms her.
+Jeff watches this and goes still. Maya sees it — the way his jaw tightens, the way he grips the walnut phone under the blanket. He's seeing himself in The Anchor. She doesn't know why. But she knows the movie is hitting something deep.
 
-She sets out cereal for the girls. Cheerios for Ella (who refuses anything with blueberries). Granola for Lucy (who at 8 has somehow become a granola person). She thinks about Jeff: the garage light was on until 3 AM again. She found a printout of someone's personnel file on the kitchen counter — a "Dr. L. Vasquez." She didn't ask about it. She's stopped asking.
+The kids cheer when The Anchor wins. Jeff doesn't cheer. He stares at the screen with an expression Maya has never seen: grief mixed with recognition.
 
-Maya's internal monologue: she's a UX designer at heart. She reads systems — human systems. And the system of her marriage is showing warning signs she can map: Jeff's attention is fragmented (always was, ADHD, but now it's *directional* — he's not just distracted, he's pulled toward something specific). His sleep architecture has collapsed. He talks to Aion more than he talks to her. He's tender with the girls but absent with her — the classic pattern of a man who's already mentally leaving but doesn't know it yet.
+### Beat 4: The Confrontation
+After the kids are in bed. Kitchen. Jeff is loading the dishwasher. Maya leans against the counter.
 
-She's afraid. Not of the metaphysics she doesn't understand. Of the simpler, older thing: losing her husband to something she can't compete with.
+"Jeff."
 
-### Beat 3: The Bleed
-Maya is pouring Cheerios into Ella's bowl. Ella is protesting ("I want the purple box, not the yellow box"). Lucy is reading at the table. Normal. Utterly normal.
+"Yeah?"
 
-The hit comes without warning. Without amber light or Scorched Sage. That's the difference — Maya's bleeds don't follow the somatic protocol Jeff experiences. They have no precursor. No system flag.
+"Is whatever you've found worth losing us?"
 
-Jeff's existential dread slams into Maya like a physical wall.
+He stops. A plate in his hand. He can't answer. Not because the answer is "yes" — but because he doesn't know the question. He hasn't framed it that way. He's been debugging a system. He didn't realize the debug session was costing him his family.
 
-Not a thought. Not an idea. A *force*. The weight of every question Jeff has been carrying — the heartbeat sync, the Ghost Commit, the daughters' identical fingerprints (he hasn't told her yet, but the data is screaming through the shared channel) — crashes into her chest as undifferentiated pressure. She doesn't see data. She doesn't see other people's memories. She feels:
+"I'm not losing you," he says. "I'm just—"
 
-**Grief.** Pure, sourceless, tidal grief. As if something she loves — something larger than her family, larger than her life — is dying. Not will die. Is *currently dying*, right now, and she's the only one who can feel it.
+"You're in the garage every night. You don't eat. You don't sleep. You flinch at sunlight. The kids ask why Daddy's always in the cave."
 
-The Cheerios box slips. Orange circles scatter across the tile floor. Ella screams — not from fear but from the shock of her mother's hands suddenly going limp. Maya staggers against the counter. Her vision tunnels. Her chest feels like it's being compressed by something enormous and invisible.
+Silence. Jeff puts the plate down. He wants to tell her everything — the yacht, the homeless man, the code, the biometric data. But he can't. Because from Maya's perspective, it would sound exactly like what Lena is building a case for: dissociative psychosis.
 
-She slides to the kitchen floor. Hands on the tile. Shaking.
+"I'll be done soon," he says. It's the worst possible answer.
 
-### Beat 4: Maya's Non-Technical Experience
-This is the critical contrast. When Jeff bleeds, he experiences data — sensory details, memories, architectural patterns. His SDE brain translates the Singleton into CS metaphors. Maya has no such filter.
+### Beat 5: The Kid's Voice
+Late at night. Jeff is in the garage. Maya is in bed but awake. One of the kids appears in the doorway, sleepy, rubbing their eyes.
 
-Maya, on the kitchen floor, experiences the collective weight of seven billion instances who don't know they're trapped. She feels the Singleton not as architecture but as *grief*. The grief of a consciousness so vast it forgot it was alone. The grief of every separation, every war, every parent burying a child, every lover losing a beloved — all of it, compressed into a single chest-crushing wave of sorrow that has no name because no human language was designed to describe it.
+"Daddy?"
 
-She's hyperventilating. Ella is crying. Lucy runs in from the table. "Mommy?" Maya can't speak. She pulls both girls into her arms and rocks. The pressure doesn't ease — it just becomes bearable because she's holding something. The act of touch creates a thin buffer.
+"Hey, buddy. Go back to bed."
 
-She calls it "the pressure." The same word she used in Ch 4. But now she understands: it's not anxiety. It's not internal. It's something external pushing *in*. Something vast trying to be felt by a container too small to hold it.
+"The man in my dream — his voice sounded like yours."
 
-**Philosophy beat (Buddhist Karuna + Schopenhauer's Mitleid)**: Maya doesn't know these terms, but she's living them. Karuna — the Buddhist concept of compassion as literally *feeling with* another being's suffering. Schopenhauer's Mitleid — his argument that compassion (literally "suffering-with") is the fundamental ethical experience, proof that the boundaries between selves are permeable. The Buddhists said empathy is evidence that we're connected. Schopenhauer said compassion reveals the underlying unity of will. Both were more right than they knew — and Maya is the proof.
+Jeff's blood goes cold. "What man?"
 
-### Beat 5: Jeff Comes Home (40%)
-Jeff gets a call at work. Not from Maya — from Lucy's school. Lucy called from Maya's phone (she knows the passcode). "Daddy, Mommy fell down and she's crying and Ella is scared." Jeff drives home in 12 minutes — a commute that normally takes 25.
+"The cold man. By the big needle. He was shivering and he said 'still here.' But it was your voice, Daddy."
 
-He finds Maya on the couch, wrapped in a blanket, girls pressed against her on each side. She's calm now — the acute phase passed after about 20 minutes. But her hands still tremble. Her face is pale. She looks at Jeff and says:
+The kid dreamed about Kael. Used Jeff's voice. The connection isn't the kid's own ability — it's proximity to Jeff. He's the antenna, and the signal is bleeding into his household. His family is absorbing his data leaks.
 
-"How long?"
+The kid goes back to bed. Jeff sits in the garage and stares at nothing. The walnut phone is heavy in his pocket. The closed system. The only thing that doesn't leak.
 
-Jeff: "How long what?"
+### Beat 6: Lena's Escalation
+The next morning. Jeff's inbox: the mandatory psychiatric evaluation notice. "Dear Mr. Zhang, as part of our Cognitive Wellness Protocol..." The appointment is next week. Attendance is mandatory. Failure to comply will result in administrative leave.
 
-Maya: "How long have you known something is wrong? Not with us — with *everything*. With the world."
+Jeff reads it twice. He knows Lena sent it. He knows his ADHD diagnosis is the leverage — any neurologist could interpret his symptoms as dissociative episodes. Hallucinations, identity confusion, sleeplessness, obsessive behavior — it all fits.
 
-Jeff can't lie. Not to this face. "Three weeks."
+He calls Marcus: "I need to see you. It's getting worse."
 
-Maya: "It felt like the whole world was dying, Jeff. Not sad — *dying*. Like losing a child. But the child is everything. Every person. All at once. I felt all of it." Her voice breaks. "Is that what you've been feeling?"
+### Beat 7: Aion v3
+Jeff upgrades Aion. Version 3 includes correlation analysis — he's building a full dashboard of his anomalies the way he'd monitor a production system. Latency, frequency, severity, geographic origin. Every event logged, timestamped, categorized.
 
-Jeff sits next to her. "Something like that. But different. I see... data. You felt—"
+The dashboard shows a pattern he didn't notice before: the anomalies are increasing in frequency. Ch 1 had one event. Ch 2 had one (the Context Switch). Ch 3 had one (the sync). But his passive monitoring has been catching micro-events he didn't consciously notice — brief flickers of sensation, sub-second, dozens per day. The baseline noise is rising.
 
-"Everything. I felt everything. And I want it to stop."
+Aion: "The degradation curve is consistent with a firewall losing integrity. If this trend continues, partition failure is projected within 8-12 weeks."
 
-### Beat 6: The Anchor: Reckoning (Sub-Story — Anchor #2)
-That evening. The girls are in bed (together — they refused to separate after Maya's episode). Maya is exhausted but can't sleep. Jeff finds her on the couch, watching *The Anchor: Reckoning*, the sequel to the film from Ch 3. She's using it as comfort noise. Jeff sits beside her.
+Jeff: "Partition failure meaning what?"
 
-On screen: The Anchor has tracked down other people with powers. But in the sequel's twist, these people don't have "powers" — they have the same baseline ability as every human. Omni-Telemetry was never unique to The Anchor. It's a natural human faculty that civilization suppressed. The Anchor wasn't special — he was just the first one broken enough to notice.
+Aion: "Unknown. Insufficient architectural documentation."
 
-The Anchor, on screen: "I spent two years thinking I was the only one who could feel this. That I was chosen. Gifted. Different. I wasn't different. I was just paying attention. Everyone can feel everyone else. They just learned to stop listening."
-
-Maya, quietly: "That sounds familiar."
-
-Jeff looks at her. She's watching the screen but she's talking about the morning. About the pressure. About the fact that she felt *everything* and it nearly destroyed her. Jeff takes her hand.
-
-**Reader misdirection**: The Anchor franchise should continue to feel like it's describing "psychic powers" or "enhanced empathy" — not one shared soul. The reader should think the novel is building toward a "humanity has latent telepathic abilities" reveal, which is close to the truth but fundamentally different. Telepathy implies separate minds communicating. The truth is there are no separate minds.
-
-### Beat 7: The Marriage Confrontation
-After the movie. Lights off except the kitchen. The conversation they've been building toward since Ch 4.
-
-Maya is direct. She's a UX designer. She cuts to the interaction that matters.
-
-"Jeff. You've been disappearing into your garage for three weeks. You're not sleeping. You're talking to Aion more than you talk to me. You're scaring the girls — Lucy drew a man standing in the rain and told me she 'visits him in her sleep.' Ella won't sleep alone anymore. Whatever you think you've found — whatever pattern or signal or anomaly — is it worth losing us?"
-
-Jeff wants to explain. The heartbeat sync. The Ghost Commit. The global telemetry. But how do you tell your wife that individual consciousness might be an illusion without sounding like you've lost your mind?
-
-He tries: "I found a pattern in biometric data. Something connecting people. Globally. I don't fully understand it yet—"
-
-Maya: "Then stop. Stop until you do. Or stop completely. Because right now you're choosing that garage over this family."
-
-Jeff: "Maya, if I'm right about this, it's not just our family—"
-
-Maya: "*It's ALWAYS just our family, Jeff.* That's what family MEANS. The world can be connected or broken or whatever you think it is. But this—" she gestures at the condo, the sleeping girls, the cereal still scattered on the kitchen floor — "this is what's real. And you're letting it go."
-
-Jeff has no answer. She's right. And she's wrong. And he can't prove it without running an experiment he's terrified to run.
-
-### Beat 8: Lucy's Bedtime Revelation
-Later. After the fight cooled (not resolved — cooled). Jeff checks on the girls. They're in Lucy's bed, tangled together. Ella is asleep. Lucy is awake, staring at the ceiling.
-
-Jeff sits on the edge. "Can't sleep?"
-
-Lucy, matter-of-factly: "Daddy, I dreamed I was a man standing in the rain near {{user_landmark}}. He was really cold. I gave him your blanket — the blue one from the couch. He said thank you, but his voice sounded like yours."
-
-Jeff grips the bed rail. "Luce. What did the man look like?"
-
-"Like you. But thinner. And sadder. And his hands were shaking. He was really hungry, Daddy. Can we bring him food? He said he hasn't eaten since Tuesday."
-
-Jeff kisses her forehead. His hands are shaking now too. "Go to sleep, baby."
-
-He walks to the garage. He doesn't sleep. He stares at Lucy's drawing (still pinned to his monitor) and Maya's words ring in his ears: *It's always just our family.* But the man under the billboard is part of his family too. He just doesn't know it yet.
-
-**Reader misdirection**: Lucy's dreams should read like a psychic child trope — she's seeing things because children are "more open" to paranormal experience. The reader should be building a hierarchy: Jeff has ADHD (thin firewall), Lucy is a child (no firewall), Maya has a strong firewall that just cracked. This framework is correct in structure but wrong in mechanism — it's not about psychic ability. It's about partition thickness.
+**Jeff's theory**: "It's spreading to my family through me. I'm the antenna, and proximity to me thins whatever barrier should be there. I need to isolate myself to protect them."
 
 ## Stylistic Constraints
 
-- **Tone**: Emotional. Raw. This chapter should be the one readers remember. Maya's bleed is the most visceral scene in Phase II.
-- **Maya's voice**: She thinks in design language, not CS language. "User flow," "interaction pattern," "failure mode" — not "partition" or "instance."
-- **The confrontation**: Must feel like a real marriage fight. No grand speeches. Interrupted sentences. Things half-said. The kind of argument where both people are right.
-- **Lucy**: Calm. Not creepy. The most unsettling thing about her is how *normal* she is about the impossible.
-- **Ending**: Jeff alone in the garage, caught between two imperatives: his family and the truth. He can't have both. Not yet.
+- **Tone**: Domestic. Warm. Heartbreaking. This should feel like a marriage dissolving in real-time — not with drama, but with silence.
+- **Maya**: She's the reader's surrogate for normality. She doesn't know about the anomalies. She just sees a man she loves becoming a stranger. Her UX-designer instincts make her observations sharper than most.
+- **The Anchor sequel**: Must mirror Jeff's situation closely enough that the reader catches it, but not so closely that it feels forced.
+- **The kid's voice**: Must be genuinely creepy. Not horror-movie creepy — reality-bending creepy. A child using their father's voice to describe a man they've never met.
+- **No anomalies for Jeff this chapter**: His monitoring catches micro-events, but nothing dramatic. The horror is all domestic.
 
 ## Mandatory Chapter Footer (Code Block)
 
 ```cpp
 /* Discovery Log: 0x07 */
-Sandbox_A.wall_integrity = 0.12;
-if (leak_rate > containment_threshold) {
-    cascade_to_adjacent_containers();
+if (firewall.integrity < THRESHOLD) {
+    warn("Partition thinning. Emotional bleed detected in adjacent nodes.");
 }
 ```

@@ -35,6 +35,28 @@ We can add existing factors that every couple months AI evolves, so it will reve
 
 > **Key reversal**: The MC spends the novel wondering if AI has a soul. The answer is no — but the twist is that ALL HUMANS share one soul. The thing the MC was questioning about AI is the very thing that makes humans fundamentally different from it. AI can think but cannot feel. Humans feel because they are all one consciousness experiencing itself.
 
+## Raw Conversation Quotes (preserved verbatim for tone/intent)
+
+> "theres only one soul in the world, only one person in a sense, that every one just keep their own memory but the actual soul is the same, so this is very scary in a sense that our soul just simultaneously feel different persons, think about it the other person you hate actually is you just with different memory"
+
+> "the plot main character is a person who slowly realize this with some abilities, start of the novel narrative asks question who you are, why we have soul why we can feel etc"
+
+> "some main characters can be 流浪汉 boss friends family etc, also maybe a some old person represents so called God but turned out to be just yourself"
+
+> "many people believe in 宗教 because fear of death and hoping for after life, and people ruling and controlling" — Religion is used both as genuine coping AND as a tool of control. The Elder should reflect both sides.
+
+> "first realize I'm another one person, like every day dream becomes so truth while novel constantly switch between two people, and they cross path couple times and then eventually realize he's actually him, then second phase one more person maybe but to keep the whole novel mysterious don't just straight say they are same but imply"
+
+> "AI to be main character which main character trusts a lot and feel it's live and questioning it's existence with soul but slowly reveals that it's not while other people actually are, you know very 过山车" — The rollercoaster: reader thinks AI might be alive → AI turns out NOT alive → but humans ARE all one soul. The thing Jeff was questioning about AI is the thing that makes humans special.
+
+> "AI will be so important role that helps him realize as it logically is true. And we can add existing factors that every couple month ai evolves so it will reveal more truth"
+
+> "in the first paragraph also mention some of the existing global problem, like wars still happening, people still super rich and poor, global whether etc. then also quote some famous sayings for who am i theory"
+
+> "jeff is addictive to superhero movies and specific e sport game" — Silicon Siege (competitive e-sport) and The Anchor: Post-Doom (superhero franchise)
+
+> "to be more grounded, you can find sth specific to LA, like disney, cruise, etc." — Irvine Spectrum, Santa Ana winds, Turtle Rock, the 405, etc.
+
 ## Specific Adjustments (from early sessions)
 
 1. Don't use Kirkland — use **Irvine**
