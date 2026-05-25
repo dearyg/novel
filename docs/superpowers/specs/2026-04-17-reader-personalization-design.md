@@ -2,7 +2,7 @@
 
 ## Overview
 
-Three-layer personalization system for The Senior Observer novel site. Each layer is independent and stacks with the others.
+Three-layer personalization system for Life of an SDE novel site. Each layer is independent and stacks with the others.
 
 ## Layer 1 — Instant (No API, Free)
 

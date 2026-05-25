@@ -6,7 +6,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About — The Senior Observer</title>
+        <title>About — The Singleton</title>
       </Head>
 
       <Layout>
@@ -24,11 +24,12 @@ export default function About() {
               <section>
                 <h2 className="text-base font-semibold text-primary mb-2">The Story</h2>
                 <p>
-                  <em>The Senior Observer</em> is an ongoing techno-existential thriller set in 2030.
-                  It follows Jeff Zhang, a Senior SDE in Irvine, as he begins experiencing
-                  "somatic bleeds" — phantom sensations from lives that aren't his. The novel
-                  explores identity, consciousness, and the thin membrane between selves through
-                  the lens of software architecture.
+                  <em>The Singleton</em> (subtitle: <em>Life of an SDE</em>) is a techno-existential
+                  thriller set in 2030. It follows Jeff Zhang, a senior software engineer in Irvine,
+                  as he begins experiencing "somatic bleeds" — phantom sensations from lives that
+                  aren't his. His monitoring tools say the signal is real. His company doctor says
+                  he's having a breakdown. He has ninety days to find out which is true — before
+                  fifty million people commit to a decision they cannot take back.
                 </p>
               </section>
 
@@ -40,7 +41,7 @@ export default function About() {
                 <ul className="list-disc pl-5 mt-2 space-y-1.5">
                   <li>
                     <strong className="text-primary">Human-authored plot</strong> — all narrative
-                    architecture, character arcs, themes, and chapter blueprints are written by the author.
+                    architecture, character arcs, and themes are written by the author.
                   </li>
                   <li>
                     <strong className="text-primary">AI-refined prose</strong> — each chapter goes through
@@ -60,6 +61,21 @@ export default function About() {
               </section>
 
               <section>
+                <h2 className="text-base font-semibold text-primary mb-2">A Living Novel</h2>
+                <p>
+                  Unlike a printed book, <em>The Singleton</em> is not frozen at publication.
+                  As AI models get better, chapters are revisited and refined — sharper
+                  metaphors, deeper interior life, tighter pacing. The plot and characters
+                  stay the same; the prose around them keeps improving. The version you
+                  read a year from now will be a better book than the version you read today.
+                </p>
+                <p className="mt-2">
+                  Each chapter shows its current iteration version. When a chapter is
+                  re-revised, the version bumps. Readers always see the latest.
+                </p>
+              </section>
+
+              <section>
                 <h2 className="text-base font-semibold text-primary mb-2">AI Transparency</h2>
                 <p>
                   We believe in full transparency about AI's role. The creative direction — what happens,
@@ -73,13 +89,13 @@ export default function About() {
               <section>
                 <h2 className="text-base font-semibold text-primary mb-2">Copyright</h2>
                 <p>
-                  All content on this site — including narrative text, character designs, the
-                  technical blueprint system, and the chapter architecture — is the intellectual
-                  property of Alayido, LLC. The novel is published freely for reading but may not
-                  be reproduced, distributed, or adapted without permission.
+                  All content on this site — including narrative text, character designs, and
+                  the chapter architecture — is the intellectual property of the author.
+                  The novel is published freely for reading but may not be reproduced,
+                  distributed, or adapted without permission.
                 </p>
                 <p className="mt-2 text-xs text-muted">
-                  &copy; {new Date().getFullYear()} Alayido, LLC. All rights reserved.
+                  &copy; {new Date().getFullYear()} Homer. All rights reserved.
                 </p>
               </section>
 

@@ -1,6 +1,6 @@
 {
   "system_manifest": {
-    "novel_title": "The Senior Observer",
+    "novel_title": "Life of an SDE",
     "build_version": "2030.04.14",
     "author_uid": "Jeff_Zhang_Senior_SDE",
     "global_variables": {
@@ -16,14 +16,14 @@
       "title": "0x01: The Observer",
       "instance": "Jeff_Zhang",
       "location_key": "Irvine_TurtleRock",
-      "somatic_bleed": "Vacheron_Constantin_Amalfi",
+      "somatic_bleed": "Auberval_Amalfi",
       "tech_metaphor": "Shared Cache Leakage",
       "discovery_log": "/* Discovery Log: 0x01 */\nif (Observer.current() == Observer.next()) {\n    throw IdentityConflict(\"Partition integrity compromised.\");\n}"
     },
     {
       "id": 2,
       "title": "0x02: Priority Inversion",
-      "instance": "Julian_Vance",
+      "instance": "Julian_Meridian",
       "location_key": "Amalfi_Coast_Yacht",
       "somatic_bleed": "Walnut_Phone_and_ADHD_Static",
       "tech_metaphor": "Priority Inversion / System Recursion",

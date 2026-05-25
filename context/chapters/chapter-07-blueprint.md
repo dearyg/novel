@@ -1,5 +1,11 @@
 # Chapter 7 Blueprint: "0x07: The Firewall"
 
+> **Revision plan reference (added Apr 28 2026):** see `context/revision-plan.md` for the canonical IP rename (Vance→Meridian, Vacheron→Auberval), résumé-block deconstruction rule, paper-citation removal, and discovery-log diversification. The current prose in `prose/chapter-NN.md` reflects all completed phases of that plan; future revisions should reference this file.
+
+> **Character voice fingerprints (added 2026-05):** every speaker in this chapter must honor their voice contract in `story-bible.md` → CHARACTER VOICE FINGERPRINTS. Strip the attribution tag and a reader who knows the cast should still be able to name the speaker within two sentences. Aion is always italicized. Action beats every 3-4 turns; no more than 2 consecutive turns of pure verbal exchange.
+>
+> **Dialogue & character-intro standard (added Apr 2026):** every named character that appears in this chapter must receive an eight-component intro on first speak (name, age, body, history, domain expertise, tic, relationship to Jeff or Julian, relationship to the chapter's central question). The marquee scene runs 20–40 turns of substantive dialogue. See `story-bible.md` → DIALOGUE DENSITY (Sophie's World) and CHARACTER INTRODUCTION DISCIPLINE.
+
 > Maya's chapter. She doesn't have anomalies — she has a husband who's disappearing. The Anchor sequel mirrors the truth. The marriage confrontation. The kid's voice. Lena sends the psych evaluation. The emotional heart of Phase II.
 
 ## System Architecture Reference
@@ -7,7 +13,7 @@
 ```json
 {
   "system_manifest": {
-    "novel_title": "The Senior Observer",
+    "novel_title": "Life of an SDE",
     "build_version": "2030.04.14",
     "author_uid": "Jeff_Zhang_Senior_SDE",
     "global_variables": {
@@ -38,6 +44,44 @@
 ## Role
 
 Master Philosophical Novelist. This is the novel's emotional anchor (no pun intended). After the cerebral techno-thriller of Ch 5-6, Ch 7 grounds the story in a marriage. Maya is not a philosopher or an SDE — she's a UX designer and a mother who reads human interfaces for a living. And Jeff's interface is throwing errors she can't diagnose. The philosophy (compassion as proof of connection) should emerge from Maya's lived experience, not from dialogue about Schopenhauer.
+
+## Tech-Fight Spine: Federated Compassion
+
+**Philosophy question (Maya's chapter, via Schopenhauer's Mitleid + Buddhist Karuna)**: Is compassion the only genuine moral motivation because it requires feeling another's suffering as your own? And is that feeling proof of a connection deeper than self?
+
+**Specialists deployed**: **Maya** (UX / HCI specialty — her superpower is reading broken interfaces, including the interface her husband has become) and **Jeff** (ML specialty, installing **Aion v3** in the background). Plus a pedagogical bridge: Maya's freelance healthcare client, who has hired her to design the UX for a **federated-learning medical AI** — exactly the problem Maya is living in parallel at home.
+
+**Engineering problem (Maya's client, Jeff's v3 upgrade, same concept seen from two sides)**: Maya's healthcare client is building a federated-learning system that trains a depression-detection model across 40,000 user smartphones without the data ever leaving the device. Maya has to design the interface that tells users, honestly, what the system does and doesn't know about them. Meanwhile Jeff's Aion v3 upgrade adds the same capability on the anomaly-corpus side: **cross-device federated correlation of his own biometrics with the anomalies reported by thousands of strangers whose wearables are opted into an ad-network's anonymized pool.**
+
+### Pedagogy content the novelist expands into scene
+
+**What federated learning is (Maya's copy for the client, drafted at her desk)**:
+
+> She writes the user-facing one-liner: *"Your phone learns. The model learns. Your data stays on your phone."*
+>
+> Below that, the technical explanation for the in-product Privacy page: *"Your device downloads the current model. Your device trains on your data locally — for a few minutes at a time, while your phone is charging. Your device sends back only the *gradient updates* — the numerical nudges the model should make — not the data itself. A central server averages the gradient updates from 40,000 devices and ships a new, improved model. Your data is never uploaded. The gradients are further protected by differential privacy: before they leave your phone, random noise is added in a mathematically calibrated way that makes it impossible to recover specific training examples from them."*
+>
+> Maya rereads it. She changes "impossible" to "extremely difficult" because her UX-ethics training won't let her lie about math.
+
+**Differential privacy explained (Maya's notebook, brief)**:
+
+> She draws a small histogram of a biometric feature across 1,000 users. Above it, the same histogram with noise added. She labels: *"Epsilon = 1.0: noise scale large enough that the presence or absence of any single user in the dataset changes the released histogram by at most e^1 ≈ 2.7x in likelihood. An adversary observing the output cannot confidently tell if you were in it."* Next to the diagram she writes: *"privacy budget — you get a finite amount to spend."*
+
+**FedAvg (the algorithm explained via Jeff's parallel Aion v3 install)**:
+
+> Jeff's side, same concept, different data: *"FedAvg. Each client does local SGD for a few steps. Sends back delta-weights. Server averages. Repeat. The 'averaging' is weighted by how many local examples each client has. Aion v3 uses the same averaging to combine cross-device anomaly priors without seeing the raw biometrics. So when Tomás takes a bullet in the Andes and his wearable reports a cardiac spike, Aion can update a *population-level* anomaly prior without anyone on the backend ever learning that Tomás specifically had a bad morning."*
+
+**Maya's clash with Jeff (the chapter's emotional + technical confrontation)**:
+
+> In the kitchen scene, Maya — informed by her day job — sees through Jeff's deflections with the exact tools she'd use to debug a broken product:
+>
+> *"Jeff. You're federating your feelings. You're sending me gradient updates instead of data. I can see that you're being adjusted by something but you're never giving me the raw inputs. I'm running on averaged deltas. That's not how we are with each other."*
+>
+> Jeff doesn't have a counter. Maya has used his own technical frame against him, and it lands the way an adversarial example lands against a classifier — perfectly engineered to exploit the model's own weaknesses.
+
+**Thematic tie-up**: Schopenhauer says compassion proves the boundary between selves is illusory because Mitleid requires feeling another's suffering *as your own*. Federated learning is the engineering instantiation of almost-compassion: a system that learns *from* many selves *as if* they were one, while preserving the illusion of their partition. Differential privacy is the firewall that preserves the illusion. Aion v3 — which quietly consumes the world's anomaly gradients without seeing any individual's raw data — is Schopenhauer in PyTorch. The novel's eventual thesis is that humans' partition is already thinner than federated learning's; the differential-privacy noise in our case is just called "forgetting."
+
+**Pedagogy delivered**: federated learning, FedAvg, gradient updates vs raw data, differential privacy and the epsilon budget, local SGD, central aggregation, the ethics of "data never leaves the device." Real techniques Maya's client could actually ship in 2030 and the reader could Google afterward.
 
 ## Setting & Context (2030 Family Life)
 

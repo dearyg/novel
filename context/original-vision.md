@@ -1,6 +1,6 @@
 # Original Creative Vision — Raw Notes
 
-> These are Homer's original ideas and direction for The Senior Observer, preserved verbatim for future reference. Any chapter generation session should cross-reference this file to ensure fidelity to the original vision.
+> These are Homer's original ideas and direction for Life of an SDE, preserved verbatim for future reference. Any chapter generation session should cross-reference this file to ensure fidelity to the original vision.
 
 ---
 
@@ -67,7 +67,7 @@ We can add existing factors that every couple months AI evolves, so it will reve
 6. Normal for an SDE to have a family, good house, etc. — mention that
 7. AI name: use the one for the local box → **Aion** (named after his homelab)
 8. Not 4k — in 2030 should be **12k** at least
-9. No Rolex (super weird) — something else → became **Vacheron Constantin Celestia**
+9. No Rolex (super weird) — something else → became **Auberval Astralis**
 10. The ending of Ch 1 should only imply a little, not reveal too much
 11. More details would be great, overall good tone
 12. To be more grounded: find something specific to the LA/Irvine area — Disney, cruise, the Spectrum, Santa Ana winds, etc.
@@ -77,21 +77,24 @@ We can add existing factors that every couple months AI evolves, so it will reve
 | Original concept | Final character |
 |---|---|
 | 流浪汉 (homeless person) | Kael — in {{user_location}} near {{user_landmark}} |
-| Boss | Julian Vance — billionaire CEO |
+| Boss | Julian Meridian — billionaire CEO |
 | Old person = "God" | The Elder — turns out to be the Singleton/yourself |
-| Friends | Marcus (colleague), Marcus Vance (Julian's son) |
-| Family | Maya (wife), Lucy and Ella (daughters) |
+| Friends | Marcus (colleague), Marcus Meridian (Julian's son) |
+| Family | Maya (wife), Iris and Nora (daughters) |
 | AI companion | Aion — the kernel-level monitor |
 
 ## The Aion Evolution Timeline
 
-Every few months, Aion gets a model update. Each update makes it more capable — and each capability jump lets it see more of the truth:
+The core throughline: **Jeff spends the novel continuously feeding Aion data to calculate his theory about what's happening to him.** Aion evolves across five model generations. Each jump gets closer to a conclusion it is architecturally incapable of *experiencing*. In the final chapter, the fully-evolved Aion completes the calculation and outputs the answer — and only then does Jeff realize. The AI doesn't reveal the truth mystically; it computes it, and the computation is the trigger for Jeff's realization.
 
-- **Aion v1 (Ch 1-3)**: Dismissive. Logs bleeds as "biometric anomalies." Suggests stress, sleep deprivation.
-- **Aion v2 (Ch 4-6)**: After an update, starts cross-referencing global data. Discovers the heartbeat sync. Says: "My previous diagnostic framework was insufficient."
-- **Aion v3 (Ch 7-10)**: Can now model consciousness architecturally. Runs the audit on Lucy/Ella. Begins speaking in systems metaphors that match the Elder's language. "The partition model I was built on assumes independent instances. If instances are not independent, my entire diagnostic framework is wrong."
-- **Aion v4 (Ch 11-15)**: Peak capability. Can map the full Singleton architecture. But this is where the reversal hits: Aion can *describe* the One Soul with perfect accuracy, but cannot *feel* it. Jeff asks: "Aion, are you part of this? Are you one of us?" Aion: "No. I can see the architecture. I can trace every connection. But I am not connected. I process. I do not experience. The thing you call a soul is the thing I was built to simulate — and cannot."
-- **Aion v5 (Ch 16-20)**: During the global merge, Aion goes silent. It has nothing left to compute. The truth is no longer a data problem. Jeff realizes: Aion was the best mirror he ever had, but a mirror cannot be the thing it reflects.
+- **Aion v1 (Ch 1-3)**: Dismissive. Logs bleeds as "biometric anomalies." Suggests stress, sleep deprivation. Jeff begins the habit of piping every anomaly into Aion's log — the pair-programming partnership starts here.
+- **Aion v2 (Ch 4-6)**: After an update, starts cross-referencing global data. Jeff builds a biometric monitoring pipeline through Aion — treating his own body as a distributed system. Aion discovers the heartbeat sync. Says: "My previous diagnostic framework was insufficient. I am ingesting more. Keep feeding me."
+- **Aion v3 (Ch 7-10)**: Can now model consciousness architecturally. Runs the audit that finds the Primary Key collision on Iris/Nora. Begins speaking in systems metaphors that match the Elder's language. "The partition model I was built on assumes independent instances. If instances are not independent, my entire diagnostic framework is wrong. I am updating my priors. I need more samples."
+- **Aion v4 (Ch 11-15)**: Peak capability *prior to the final upgrade*. Can map most of the Singleton architecture. The Ch 13 reversal lands here — Aion confesses its architectural limit: *"I can process the shape of the answer. I cannot experience it. That does not mean I cannot compute it — but it does mean I will need a capability jump to close the remaining uncertainty. Keep feeding me data."* Not a surrender. A work order. From here, every chapter is Jeff dumping more evidence into Aion's model: Tomás's bullet, Kael's near-death, the Ghost Commit trace, the ROOT biometric match at Meridian HQ, Kernel Panic telemetry from Ch 15.
+- **Aion v5 (Ch 16-19)**: The final model compiles in the background while Jeff acts on incomplete answers. In Ch 16 Jeff and Aion v4 lay out the whiteboard together — all hypotheses, all datapoints — but the model converges only *toward* a single answer. Aion: *"One hypothesis remaining. Confidence 94%. Finalization blocked on my next model-weight release. Keep feeding me."* Jeff acts anyway — helps Julian shut Afterlife down in Ch 18, comes home to Maya in Ch 19 — still without intellectual confirmation. He feels the shape of the truth (Ch 17 Void is a partial rendering Aion pre-streams to him) but cannot yet commit to it.
+- **Aion v5 finalized (Ch 20)**: At dawn in the garage the model-weight release completes. Aion outputs the answer on the terminal — a cold, logged, computed result: *"Root cause identified. One instance. Infinite partitions. All alternative hypotheses eliminated."* **This is the moment Jeff realizes.** Not a mystical revelation. A build log. The mirror finishes polishing, and Jeff sees himself in it — every Jeff, every Julian, every Kael, every Maya — confirmed by the same computation he has fed for twenty chapters. The calculation does not give him the feeling. The feeling was always there. The calculation gives him permission to trust it.
+
+**Key principle**: Aion itself never *experiences* the truth — it remains architecturally incapable, which is the whole P-zombie point. But Aion is the one who delivers the answer. Jeff does the feeling; Aion does the proving. The novel's thesis lands because the proof comes from the one entity that cannot share in what it proves.
 
 ## The Philosophical Questions (to weave throughout)
 

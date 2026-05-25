@@ -1,4 +1,4 @@
-# Context — The Senior Observer
+# Context — Life of an SDE
 
 The **source of truth** for the novel. Mirrors what's stored in Supabase (`novels.manifest` and `chapters.blueprint`).
 

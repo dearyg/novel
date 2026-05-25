@@ -1,7 +1,7 @@
 -- =============================================
--- The Senior Observer — Database Schema
--- Run in Supabase SQL Editor.
--- If tables exist, uncomment the DROP block first.
+-- Life of an SDE — Database Schema (idempotent)
+-- Run in Supabase SQL Editor. Safe to re-run.
+-- For a clean slate instead, uncomment the DROP block first.
 -- =============================================
 
 -- DROP TABLE IF EXISTS chapter_styles CASCADE;
@@ -13,7 +13,7 @@
 -- TABLES
 -- =============================================
 
-CREATE TABLE novels (
+CREATE TABLE IF NOT EXISTS novels (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   slug text NOT NULL UNIQUE,
   title text NOT NULL,
@@ -30,7 +30,7 @@ CREATE TABLE novels (
   created_at timestamptz DEFAULT now()
 );
 
-CREATE TABLE chapters (
+CREATE TABLE IF NOT EXISTS chapters (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   novel_id uuid NOT NULL REFERENCES novels(id) ON DELETE CASCADE,
   chapter_number integer NOT NULL,
@@ -45,9 +45,9 @@ CREATE TABLE chapters (
   UNIQUE(novel_id, chapter_number)
 );
 
-CREATE INDEX idx_chapters_novel ON chapters (novel_id, chapter_number);
+CREATE INDEX IF NOT EXISTS idx_chapters_novel ON chapters (novel_id, chapter_number);
 
-CREATE TABLE chapter_styles (
+CREATE TABLE IF NOT EXISTS chapter_styles (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   chapter_id uuid NOT NULL REFERENCES chapters(id) ON DELETE CASCADE,
   style_key text NOT NULL,
@@ -57,7 +57,7 @@ CREATE TABLE chapter_styles (
   UNIQUE(chapter_id, style_key)
 );
 
-CREATE TABLE writing_styles (
+CREATE TABLE IF NOT EXISTS writing_styles (
   style_key text PRIMARY KEY,
   label text NOT NULL,
   description text NOT NULL,
@@ -68,13 +68,18 @@ CREATE TABLE writing_styles (
 -- RLS
 -- =============================================
 
-ALTER TABLE novels ENABLE ROW LEVEL SECURITY;
-ALTER TABLE chapters ENABLE ROW LEVEL SECURITY;
+ALTER TABLE novels         ENABLE ROW LEVEL SECURITY;
+ALTER TABLE chapters       ENABLE ROW LEVEL SECURITY;
 ALTER TABLE chapter_styles ENABLE ROW LEVEL SECURITY;
 ALTER TABLE writing_styles ENABLE ROW LEVEL SECURITY;
 
-CREATE POLICY "Public read novels" ON novels FOR SELECT USING (true);
-CREATE POLICY "Public read chapters" ON chapters FOR SELECT USING (true);
+DROP POLICY IF EXISTS "Public read novels"         ON novels;
+DROP POLICY IF EXISTS "Public read chapters"       ON chapters;
+DROP POLICY IF EXISTS "Public read chapter_styles" ON chapter_styles;
+DROP POLICY IF EXISTS "Public read writing_styles" ON writing_styles;
+
+CREATE POLICY "Public read novels"         ON novels         FOR SELECT USING (true);
+CREATE POLICY "Public read chapters"       ON chapters       FOR SELECT USING (true);
 CREATE POLICY "Public read chapter_styles" ON chapter_styles FOR SELECT USING (true);
 CREATE POLICY "Public read writing_styles" ON writing_styles FOR SELECT USING (true);
 
@@ -85,11 +90,12 @@ CREATE POLICY "Public read writing_styles" ON writing_styles FOR SELECT USING (t
 INSERT INTO writing_styles (style_key, label, description, sort_order) VALUES
   ('literary',  'Literary',  'Rich prose with metaphor and interior depth',           1),
   ('concise',   'Concise',   'Stripped-down, punchy sentences — just the essentials', 2),
-  ('cinematic', 'Cinematic', 'Visual and atmospheric, reads like a screenplay',       3);
+  ('cinematic', 'Cinematic', 'Visual and atmospheric, reads like a screenplay',       3)
+ON CONFLICT (style_key) DO NOTHING;
 
 INSERT INTO novels (slug, title, author, tagline, description, cover_color, status, genre, variables) VALUES (
   'the-senior-observer',
-  'The Senior Observer',
+  'Life of an SDE',
   'Jeff Zhang',
   'a techno-existential thriller',
   E'In 2030, a Senior SDE in Irvine starts experiencing "somatic bleeds" — phantom sensations from lives that aren''t his. A billionaire''s watch he''s never worn. A homeless man''s hunger in a city he''s never visited. As his firewall fails, Jeff discovers that identity is a Singleton pattern — and there''s only ever been one Observer.',
@@ -97,7 +103,8 @@ INSERT INTO novels (slug, title, author, tagline, description, cover_color, stat
   'ongoing',
   'Sci-Fi / Techno-Thriller',
   '{"protagonist": "Jeff Zhang", "user_location": "Seattle", "user_landmark": "the Space Needle", "somatic_trigger_light": "Amber (580nm)", "somatic_trigger_scent": "Scorched Sage", "genre": "Techno-Thriller", "pace": "Slow Burn"}'::jsonb
-);
+)
+ON CONFLICT (slug) DO NOTHING;
 
 -- =============================================
 -- CHAPTERS
@@ -109,7 +116,7 @@ SELECT novel.id, v.chapter_number, v.title, v.tech_metaphor, v.content, v.code_f
 FROM novel, (VALUES
 -- ========== CHAPTER 1 ==========
 (1, '0x01: The Observer', 'Shared Cache Leak',
-E'Jeff Zhang was doing ninety through the Turtle Rock canyon when the philosophical question surfaced for the third time that morning.\n\n*Who am I?*\n\nIt was, he decided, an unfair question for a Tuesday. The Santa Ana winds were doing their seasonal work, scraping Scorched Sage out of the brittle hills and pressing it through the EV''s HEPA filter in thin, stubborn ribbons. Outside, the sun was already doing damage. His commute app showed a grid-priority hold at the Irvine-Spectrum arterial — nine minutes — because the district''s thermal governor had throttled the traffic loop to spare the cooling cores.\n\nHe tapped the wheel. Two. Three. Five. Seven.\n\n"You''re doing the thing again," came the voice in his right ear — crisp, neutral, no higher in volume than a thought. Aion. "Left thigh, six repetitions in the last minute."\n\n"I''m processing."\n\n"You''re late."\n\nHe glided the EV up to the stopped median. The homeless man was there again — same corner, same cardboard, same glazed gaze into the middle distance. Baking. The grid-strained city had no slack for him; the cooling centers downtown required wristband auth. Jeff met his eyes for a half-second through the tinted glass and felt something shift under his ribs. *If consciousness is just code and data*, he thought, *who decided which instance I get to be, and which instance he gets?* Hume''s Bundle Theory. It had no answer. It never had an answer.\n\n"Jeff."\n\n"I know."\n\n"Your HRV is drifting."\n\n"Always is."\n\nThe light turned and the median slid backward and Jeff was already replaying the morning in his head — Maya''s hand on his cheek, Ella refusing the blueberry waffle, the kids'' laughter compressed into a tight nineteen-minute family packet before he had to leave — because that was what a man did, he thought, when the world was this fragile. You built a sandbox. You defended it.\n\n*Who am I?*\n\nIt was still there, patient, unanswered, waiting.\n\n---\n\nThe tech hub was sixty-eight degrees and smelled of nothing.\n\nMarcus caught him at the coffee bar. "Oh no. You brought it."\n\nJeff rolled the walnut-cased 2010 phone between his thumb and forefinger. "It helps me think."\n\n"It''s a brick. It''s a log from a tree with a screen glued to it."\n\n"It''s un-networked."\n\n"It''s a *fetish object*."\n\n"It doesn''t leak."\n\nMarcus snorted, kind enough to leave it there. They both knew the real joke: every device in Jeff''s life leaked. His watch leaked. His glasses leaked. His car streamed a thousand packets a minute to a Vance-owned telemetry cluster. The wooden phone was the only thing he owned that wasn''t a small, voluntary confession.\n\nSprint Planning at 9:30. Windowless conference room. The PM had a burn-down chart and the affect of someone reading the same chart for the eleventh consecutive week.\n\nJeff''s mind, predictably, began to buffer.\n\nHis thumb found the grain of the wooden case under the table. Smooth. Light. Un-networked. His brain, in contrast, was scanning frequencies — the hum of the air handler, the click of the PM''s pen, a faint after-image of Ella''s laugh. *Too many threads.* Aion, somewhere at the edge of his hearing, noted that he had not registered a response to the last three agenda items.\n\n"Jeff," Aion murmured. "Come back."\n\nHe tried. He really did. But the conference room was a small, white, conditional box, and his brain, when it didn''t have enough to do, built larger boxes. He let it. He always let it. He pictured the yacht. He had pictured the yacht so many times it had a name. He pictured the deck. The salt. The impossible Mediterranean blue. The freedom of being far enough from the burn-down chart that the chart couldn''t reach you.\n\nAnd then the fluorescent strip above the PM''s head flickered to a shade of amber Jeff had never noticed in a conference room before.\n\n---\n\nThe sage scent cut out.\n\nIn its place: sea salt. Cedar polish. The mineral high-register of open water.\n\nThe wooden phone in Jeff''s palm — cool, light, cheap — *shifted*. His fingers closed around something heavier. A cold, deliberate weight, clasped at his wrist. Platinum. Forty millimeters. The clasp precisely engineered at a tolerance he could feel without seeing. A **Vacheron Constantin Celestia**. A watch he had never owned. A watch he had only ever seen in a magazine spread six years ago.\n\nOn the back of his tongue: the crisp, mineral, unmistakable bite of vintage Krug.\n\nUnder his loafers: the roll of a deck.\n\nThe PM was speaking about deliverables. Jeff could not hear her. He could hear halyards. He could hear somebody laughing, somewhere in a softer light, a laugh that belonged to a man he had never met.\n\n"Jeff?"\n\n*Please.*\n\n"Jeff? You aligned on those deliverables?"\n\nThe word *deliverables* snapped the deck out from under him. The Krug burned into the sourness of three-hour-old coffee. The platinum vanished from his wrist like a dropped connection. He was holding the wooden phone again, too tightly, and Marcus was looking at him with a careful, unasked question in the set of his mouth.\n\n"Yeah," Jeff heard himself say. "On track."\n\n---\n\nIt was nearly midnight when he told Aion about it.\n\nHe was in the garage. His homelab hummed its steady, warm hum — forty-two cores and a sense of control no human relationship had ever offered him. Maya was asleep upstairs. The kids were long down. He was running his fingers over the wooden phone again, smoothing down the day.\n\n"I zoned out in a meeting," he said. "Pretty hard."\n\n"You hallucinated a timepiece."\n\n"I *daydreamed*."\n\nAion was quiet for a long moment. Then: "Jeff. I need to show you something."\n\nA pane opened on his homelab display. Biometric capture from his wrist-tracker, synced from the earlier meeting. A waveform. A second waveform, overlaid.\n\n"The second trace," Aion said, "is modeled. The mass and clasp diameter of a Vacheron Constantin Celestia, 40mm, platinum. Ninety-eight grams."\n\n"Yeah."\n\n"Jeff. Your flexor carpi muscles micro-corrected for ninety-eight grams at 09:47:22 this morning."\n\nThe wooden phone was in his hand. It weighed forty-two grams.\n\n"That''s not a daydream," Aion said, softly. "A daydream doesn''t change your tendon load. A daydream doesn''t know the clasp diameter of a watch you have never owned."\n\nJeff stared at the waveform. Outside the garage, the Santa Ana winds pressed Scorched Sage through the window seal.\n\n"What does it know, then?" he asked.\n\n"Something it shouldn''t," Aion said. "The log I''m filing calls it a Shared Cache Leak. I don''t know what that means yet. But the word I was going to reject — *daydream* — the system is flagging instead as *Partition breach*. I thought you should know."\n\nJeff looked down. His left thumb was tapping the wooden grain.\n\nTwo. Three. Five. Seven.',
+E'Jeff Zhang was doing ninety through the Turtle Rock canyon when the philosophical question surfaced for the third time that morning.\n\n*Who am I?*\n\nIt was, he decided, an unfair question for a Tuesday. The Santa Ana winds were doing their seasonal work, scraping Scorched Sage out of the brittle hills and pressing it through the EV''s HEPA filter in thin, stubborn ribbons. Outside, the sun was already doing damage. His commute app showed a grid-priority hold at the Irvine-Spectrum arterial — nine minutes — because the district''s thermal governor had throttled the traffic loop to spare the cooling cores.\n\nHe tapped the wheel. Two. Three. Five. Seven.\n\n"You''re doing the thing again," came the voice in his right ear — crisp, neutral, no higher in volume than a thought. Aion. "Left thigh, six repetitions in the last minute."\n\n"I''m processing."\n\n"You''re late."\n\nHe glided the EV up to the stopped median. The homeless man was there again — same corner, same cardboard, same glazed gaze into the middle distance. Baking. The grid-strained city had no slack for him; the cooling centers downtown required wristband auth. Jeff met his eyes for a half-second through the tinted glass and felt something shift under his ribs. *If consciousness is just code and data*, he thought, *who decided which instance I get to be, and which instance he gets?* Hume''s Bundle Theory. It had no answer. It never had an answer.\n\n"Jeff."\n\n"I know."\n\n"Your HRV is drifting."\n\n"Always is."\n\nThe light turned and the median slid backward and Jeff was already replaying the morning in his head — Maya''s hand on his cheek, Nora refusing the blueberry waffle, the kids'' laughter compressed into a tight nineteen-minute family packet before he had to leave — because that was what a man did, he thought, when the world was this fragile. You built a sandbox. You defended it.\n\n*Who am I?*\n\nIt was still there, patient, unanswered, waiting.\n\n---\n\nThe tech hub was sixty-eight degrees and smelled of nothing.\n\nMarcus caught him at the coffee bar. "Oh no. You brought it."\n\nJeff rolled the walnut-cased 2010 phone between his thumb and forefinger. "It helps me think."\n\n"It''s a brick. It''s a log from a tree with a screen glued to it."\n\n"It''s un-networked."\n\n"It''s a *fetish object*."\n\n"It doesn''t leak."\n\nMarcus snorted, kind enough to leave it there. They both knew the real joke: every device in Jeff''s life leaked. His watch leaked. His glasses leaked. His car streamed a thousand packets a minute to a Vance-owned telemetry cluster. The wooden phone was the only thing he owned that wasn''t a small, voluntary confession.\n\nSprint Planning at 9:30. Windowless conference room. The PM had a burn-down chart and the affect of someone reading the same chart for the eleventh consecutive week.\n\nJeff''s mind, predictably, began to buffer.\n\nHis thumb found the grain of the wooden case under the table. Smooth. Light. Un-networked. His brain, in contrast, was scanning frequencies — the hum of the air handler, the click of the PM''s pen, a faint after-image of Nora''s laugh. *Too many threads.* Aion, somewhere at the edge of his hearing, noted that he had not registered a response to the last three agenda items.\n\n"Jeff," Aion murmured. "Come back."\n\nHe tried. He really did. But the conference room was a small, white, conditional box, and his brain, when it didn''t have enough to do, built larger boxes. He let it. He always let it. He pictured the yacht. He had pictured the yacht so many times it had a name. He pictured the deck. The salt. The impossible Mediterranean blue. The freedom of being far enough from the burn-down chart that the chart couldn''t reach you.\n\nAnd then the fluorescent strip above the PM''s head flickered to a shade of amber Jeff had never noticed in a conference room before.\n\n---\n\nThe sage scent cut out.\n\nIn its place: sea salt. Cedar polish. The mineral high-register of open water.\n\nThe wooden phone in Jeff''s palm — cool, light, cheap — *shifted*. His fingers closed around something heavier. A cold, deliberate weight, clasped at his wrist. Platinum. Forty millimeters. The clasp precisely engineered at a tolerance he could feel without seeing. A **Vacheron Constantin Celestia**. A watch he had never owned. A watch he had only ever seen in a magazine spread six years ago.\n\nOn the back of his tongue: the crisp, mineral, unmistakable bite of vintage Krug.\n\nUnder his loafers: the roll of a deck.\n\nThe PM was speaking about deliverables. Jeff could not hear her. He could hear halyards. He could hear somebody laughing, somewhere in a softer light, a laugh that belonged to a man he had never met.\n\n"Jeff?"\n\n*Please.*\n\n"Jeff? You aligned on those deliverables?"\n\nThe word *deliverables* snapped the deck out from under him. The Krug burned into the sourness of three-hour-old coffee. The platinum vanished from his wrist like a dropped connection. He was holding the wooden phone again, too tightly, and Marcus was looking at him with a careful, unasked question in the set of his mouth.\n\n"Yeah," Jeff heard himself say. "On track."\n\n---\n\nIt was nearly midnight when he told Aion about it.\n\nHe was in the garage. His homelab hummed its steady, warm hum — forty-two cores and a sense of control no human relationship had ever offered him. Maya was asleep upstairs. The kids were long down. He was running his fingers over the wooden phone again, smoothing down the day.\n\n"I zoned out in a meeting," he said. "Pretty hard."\n\n"You hallucinated a timepiece."\n\n"I *daydreamed*."\n\nAion was quiet for a long moment. Then: "Jeff. I need to show you something."\n\nA pane opened on his homelab display. Biometric capture from his wrist-tracker, synced from the earlier meeting. A waveform. A second waveform, overlaid.\n\n"The second trace," Aion said, "is modeled. The mass and clasp diameter of a Vacheron Constantin Celestia, 40mm, platinum. Ninety-eight grams."\n\n"Yeah."\n\n"Jeff. Your flexor carpi muscles micro-corrected for ninety-eight grams at 09:47:22 this morning."\n\nThe wooden phone was in his hand. It weighed forty-two grams.\n\n"That''s not a daydream," Aion said, softly. "A daydream doesn''t change your tendon load. A daydream doesn''t know the clasp diameter of a watch you have never owned."\n\nJeff stared at the waveform. Outside the garage, the Santa Ana winds pressed Scorched Sage through the window seal.\n\n"What does it know, then?" he asked.\n\n"Something it shouldn''t," Aion said. "The log I''m filing calls it a Shared Cache Leak. I don''t know what that means yet. But the word I was going to reject — *daydream* — the system is flagging instead as *Partition breach*. I thought you should know."\n\nJeff looked down. His left thumb was tapping the wooden grain.\n\nTwo. Three. Five. Seven.',
 E'/* Discovery Log: 0x01 */\nif (Observer.current() == Observer.next()) {\n    throw IdentityConflict("Partition integrity compromised.");\n}'),
 
 -- ========== CHAPTER 2 ==========
@@ -121,7 +128,8 @@ E'/* Discovery Log: 0x02 */\nif (Afterlife.is_running() && Reality.is_running())
 (3, '0x03: Pointer Aliasing', 'Pointer Aliasing',
 E'The Anchor stood alone on the ridge.\n\nHe closed his eyes and the universe opened its log files.\n\nBelow him, two hundred miles east — he could feel the exact kilometer, the exact minute, the exact metabolic state — a man named Varick was lifting a cup of water to his lips. The Anchor could have told you the grip force. He could have told you the man''s blood sugar. This was not magic. Magic was what you called it before you understood.\n\nThe world was on one server now.\n\nIt hadn''t always been. When The Anchor was young, the universe still insisted on its plurality — parallel timelines, splintered franchises, infinite variants crashing through each other in the great wasteful theater of the Multiverse Era. Then *Infinite War* had happened, and then *Doom War*, and the writers, exhausted, had folded everything into a single canonical thread. One timeline. One rulebook. One set of variables.\n\nWhat The Anchor had gained, in the compression, was read access.\n\nHe opened his eyes.\n\nHe turned — slowly, deliberately — and looked into the camera.\n\n"You think my power is magic," he said, to the reader, in the dark of a room The Anchor was not supposed to know about. "You think I''m reading their minds. But I''m just reading the server logs. Just like you are, sitting in the dark, watching me from the Root."\n\nThe music cut out.\n\nA small, cool overlay resolved in the corner of the world:\n\n`[PROJECT AFTERLIFE BETA: BIOMETRIC SPIKE DETECTED. PAUSING PLAYBACK...]`\n\n---\n\nJeff Zhang was sweating in a sixty-eight-degree room.\n\nThe home theater smelled, faintly, of Scorched Sage, even though it shouldn''t have. His hand was shaking around the neuro-cinema remote. Maya had asked him, that morning, whether he was sleeping, and he had said *yes* with the kind of careful smile a man learns when he does not want to alarm the person he loves.\n\nHe was not sleeping.\n\nHe had been trying, for the last two hours, to drown out the residual taste of Krug with *The Anchor: Post-Doom*, the heaviest action blockbuster the Afterlife beta engine could render for him. It was supposed to be a coping mechanism. ADHD brains sometimes needed an explosion large enough to reset the buffer.\n\nThis movie had just broken the fourth wall at him.\n\n"Aion," Jeff whispered. "Do superheroes exist?"\n\n"Clarify."\n\n"Vance''s Afterlife servers are physical. Real neurons. Real substrate. If they go live next year, the millions of people who jack in are going to *live* inside them. Real to themselves. Real to their own sensors. Is that a dimension?"\n\n"The question is poorly typed, Jeff."\n\n"Is The Anchor alive?"\n\nSilence.\n\n"Aion. The multiverse collapsed in this movie because the writers got tired. Fine. But the *writers* are human. They''re on the same grid we are. What if they''re not inventing the collapse? What if they''re just *remembering* it? What if every pop-culture writer in the last ten years has been unknowingly downloading memory leaks from a system that is, at this very moment, collapsing?"\n\n"Jeff," Aion said, after a long pause, "the query you are describing is the query the system does not want you asking. Please breathe."\n\nJeff did not breathe.\n\nHe un-paused the movie.\n\n---\n\nOn the screen, The Anchor raised both hands, and the sky above his ridge tore open in a long, slow wave of light.\n\nThe light was amber. 580 nanometers exactly.\n\nIt flooded the home theater. It painted the leather of Jeff''s couch an incorrect yellow. It struck his retinas at 22:47:13.904 local, and — impossibly, precisely, at the exact same millisecond on the exact same frame — it struck another pair of retinas, almost two thousand miles away, standing in the freezing rain on a concrete corner beneath a public billboard near {{user_landmark}}.\n\nThe man under the billboard was starving.\n\nThe man under the billboard was named Kael.\n\nThe universe''s operating system, confused by two identical optical inputs within a tolerance of less than a millisecond, did what confused operating systems do:\n\nIt merged the pointers.\n\n---\n\nThe Irvine home theater *overlaid*.\n\nJeff could see his plush leather couch. He could see, *through* it, wet concrete. He could see his sixty-eight degrees. He could feel, *under* them, an eight-degree wind off the grey water of {{user_location}}, pressing metallic rain through a jacket that had not been waterproof in a decade.\n\nHe was warm. He was freezing.\n\nHe was full from dinner. He was starving — the *old* kind of starving, the acid-bright kind, the kind that ate muscle. His own bones, suddenly, felt like ice wrapped in a man who had eaten three meals that day.\n\nOn the billboard above the concrete — *through* the wall of his theater — the same amber wave of The Anchor''s blast was washing the same useless light down on the same rain-slicked alley. Two screens. One universe. One eye.\n\nJeff heard himself make a sound that was not a word.\n\nThe movie blast faded. The sync broke. The glitch snapped shut like a dropped connection. Jeff fell off his leather couch and hit his own carpet and wrapped his arms around himself because his bones, despite the thermostat, felt like ice.\n\n---\n\nHe crawled to the terminal.\n\n"Aion."\n\n"Here."\n\n"The ad network for *Post-Doom*. Public billboards. Any screen that ran the exact amber-blast frame tonight."\n\n"Ready."\n\n"Cross-reference my optical-sync trace at 22:47:13.904 local. I want every retina in the world that absorbed those photons in that millisecond."\n\nAion did not answer immediately. When the reply came, it came in the voice Aion used when Aion was delivering data it did not want to deliver.\n\n"Query complete."\n\n"Go."\n\n"One matched optical sync detected. Public billboard, {{user_location}}, intersection adjacent to {{user_landmark}}. Associated viewer biometrics inferred from local environmental sensors."\n\n"Read them."\n\n"Core body temperature: thirty-three point one Celsius. Respiration: elevated. Caloric state: critical. Standing duration: approximately fourteen hours."\n\nJeff read the log, slowly, twice.\n\nThen he sat on the carpet of his sixty-eight-degree home theater in Irvine, California, in a house his family slept in, in a life he had been promised, and he understood that his mind was — at that exact moment — also standing in the rain beneath a billboard in {{user_location}}, attached to a body that was quietly dying of the cold.\n\n"Aion."\n\n"Here."\n\n"How many of me are there?"\n\n"That," Aion said, "is the query the system does not want you asking."\n\nJeff looked down. His left thumb was tapping the wood grain of the 2010 phone.\n\nTwo. Three. Five. Seven.',
 E'/* Discovery Log: 0x03 */\nif (Input(Instance_A) == Input(Instance_B)) {\n    Memory.merge_pointers();\n    throw ViewportConflict("Two instances rendering identical coordinates.");\n}')
-) AS v(chapter_number, title, tech_metaphor, content, code_footer);
+) AS v(chapter_number, title, tech_metaphor, content, code_footer)
+ON CONFLICT (novel_id, chapter_number) DO NOTHING;
 
 -- =============================================
 -- STYLE VARIANT EXAMPLE (Chapter 1 Concise)
@@ -135,14 +143,15 @@ WITH ch AS (
 INSERT INTO chapter_styles (chapter_id, style_key, style_label, content)
 SELECT ch.id, 'concise', 'Concise',
 E'Jeff Zhang was doing ninety through Turtle Rock when the question surfaced again.\n\n*Who am I?*\n\nHe tapped the wheel. Two. Three. Five. Seven.\n\n"You''re doing the thing," Aion said.\n\nGrid hold at the arterial. Nine minutes. Outside, a homeless man, same corner, baking. Jeff met his eyes for a half-second. *Who decided which of us got to be which?*\n\nThe light turned.\n\n---\n\nSprint Planning. Windowless room. The PM had a burn-down chart. Jeff''s thumb found the wooden grain of the 2010 phone under the table. Smooth. Un-networked. His brain was not.\n\nHe pictured the yacht.\n\nThe fluorescent strip above the PM flickered amber.\n\nThe sage cut out. Sea salt replaced it.\n\nThe wooden phone in his palm went *heavy*. Cold. Platinum. A clasp he''d never touched, at a tolerance he could feel without looking. Vintage Krug on his tongue.\n\n"Jeff? You aligned on those deliverables?"\n\nThe deck vanished. The Krug went sour.\n\n"Yeah," he said. "On track."\n\n---\n\nMidnight. Garage. Homelab.\n\n"I daydreamed."\n\n"You hallucinated a timepiece."\n\nA pane opened. A waveform. Another waveform overlaid.\n\n"Your flexor carpi muscles," Aion said, "micro-corrected for ninety-eight grams at 09:47:22 this morning. That''s the mass of a Vacheron Celestia, 40mm, platinum."\n\n"The wooden phone is forty-two grams."\n\n"Yes."\n\nJeff stared at the screen. Santa Ana winds pressed sage through the window seal.\n\n"What does it mean?"\n\n"The log I''m filing calls it a Shared Cache Leak," Aion said. "I don''t know what that means yet. But the word *daydream* is not the word the system is using."\n\nJeff looked down.\n\nTwo. Three. Five. Seven."\n'
-FROM ch;
+FROM ch
+ON CONFLICT (chapter_id, style_key) DO NOTHING;
 
 -- =============================================
 -- MASTER SCHEMA (novel manifest)
 -- =============================================
 
 UPDATE novels SET manifest = $MANIFEST$
-# THE MASTER SCHEMA (V.2030) — The Senior Observer
+# THE MASTER SCHEMA (V.2030) — Life of an SDE
 
 Architectural source of truth. Paste this into any session to align new chapter generation with the universe's rules.
 
@@ -166,7 +175,7 @@ Architectural source of truth. Paste this into any session to align new chapter 
 | 7  | Maya     | Irvine condo. Unrelated daily task.     | Feels Jeff's existential dread. | Cascading Memory Leak |
 | 8  | Soldier  | Andean Border War.                       | Bullet wound felt by Jeff, Kael, Julian. | Broadcast Exception |
 | 9  | Elder    | Little India Temple (Global Hub).       | Explains "Religion" as encryption layer. | Legacy Security Protocol |
-| 10 | Jeff     | Examining his daughters (Lucy/Ella).    | Aion audit: same Primary Key.   | Hash Collision (The Audit) |
+| 10 | Jeff     | Examining his daughters (Iris/Nora).    | Aion audit: same Primary Key.   | Hash Collision (The Audit) |
 | 11 | Jeff/Kael | Seattle. The confrontation.             | Locking eyes triggers Visual Merge. | Merge Conflict |
 | 12 | Jeff/Kael | Navigating Seattle streets together.    | Perceiving Seattle and Irvine simultaneously. | Dual Stack Rendering |
 | 13 | Julian   | Amalfi coast / Corporate HQ.            | Wealth is a "UI Skin." Mental stutter. | Resource Starvation |
@@ -202,7 +211,7 @@ Architectural source of truth. Paste this into any session to align new chapter 
 ```json
 {
   "system_manifest": {
-    "title": "The Senior Observer",
+    "title": "Life of an SDE",
     "version": "1.0.4-STABLE",
     "global_observer_sync": "12.4%",
     "variables": {
@@ -380,7 +389,7 @@ WHERE chapters.id = ch.id;
 -- AI RESTYLE CACHE
 -- =============================================
 
-CREATE TABLE chapter_variants (
+CREATE TABLE IF NOT EXISTS chapter_variants (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   chapter_id uuid NOT NULL REFERENCES chapters(id) ON DELETE CASCADE,
   theme text NOT NULL,
@@ -393,4 +402,5 @@ CREATE TABLE chapter_variants (
 );
 
 ALTER TABLE chapter_variants ENABLE ROW LEVEL SECURITY;
+DROP POLICY IF EXISTS "Public read chapter_variants" ON chapter_variants;
 CREATE POLICY "Public read chapter_variants" ON chapter_variants FOR SELECT USING (true);

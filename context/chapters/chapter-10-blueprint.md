@@ -1,5 +1,11 @@
 # Chapter 10 Blueprint: "0x0A: The Primary Key"
 
+> **Revision plan reference (added Apr 28 2026):** see `context/revision-plan.md` for the canonical IP rename (Vance→Meridian, Vacheron→Auberval), résumé-block deconstruction rule, paper-citation removal, and discovery-log diversification. The current prose in `prose/chapter-NN.md` reflects all completed phases of that plan; future revisions should reference this file.
+
+> **Character voice fingerprints (added 2026-05):** every speaker in this chapter must honor their voice contract in `story-bible.md` → CHARACTER VOICE FINGERPRINTS. Strip the attribution tag and a reader who knows the cast should still be able to name the speaker within two sentences. Aion is always italicized. Action beats every 3-4 turns; no more than 2 consecutive turns of pure verbal exchange.
+>
+> **Dialogue & character-intro standard (added Apr 2026):** every named character that appears in this chapter must receive an eight-component intro on first speak (name, age, body, history, domain expertise, tic, relationship to Jeff or Julian, relationship to the chapter's central question). The marquee scene runs 20–40 turns of substantive dialogue. See `story-bible.md` → DIALOGUE DENSITY (Sophie's World) and CHARACTER INTRODUCTION DISCIPLINE.
+
 > Maya leaves. Jeff runs the audit. His daughters share a Primary Key. Then the worst anomaly of his life: he feels Kael dying across the country. The quietest and most devastating chapter. Two revelations that change everything.
 
 ## System Architecture Reference
@@ -7,7 +13,7 @@
 ```json
 {
   "system_manifest": {
-    "novel_title": "The Senior Observer",
+    "novel_title": "Life of an SDE",
     "build_version": "2030.04.14",
     "author_uid": "Jeff_Zhang_Senior_SDE",
     "global_variables": {
@@ -38,6 +44,44 @@
 ## Role
 
 Master Philosophical Novelist. This is the novel's emotional nadir — the lowest point. No action, no thriller energy. Just a man alone in an empty house, running queries, and learning things that break him. The near-death experience is the most visceral anomaly in the novel. It should feel like horror — not genre horror, but the real horror of feeling your own body shut down and understanding that it's not your body.
+
+## Tech-Fight Spine: Out-of-Distribution Detection — When Is a Sample Not From Your Training Set
+
+**Philosophy question (opens via Jeff alone in the empty house)**: Kierkegaard's Leap of Faith — the moment rational analysis reaches its limit and you must choose to jump, knowing you cannot verify the landing from here. Is running the audit a leap of faith?
+
+**Specialists deployed**: **Jeff** (solo — this is the isolation chapter), **Aion**. The off-screen counter is **Lena**, who is running a parallel detector designed to flag *Jeff himself* as an out-of-distribution sample of "normal Meridian employee."
+
+**Engineering problem**: Jeff's team has been asked to ship an **out-of-distribution (OOD) detector** for the Afterlife behavior model — flag users whose in-system behavior deviates from training distribution, so the Companion AI (Ch 9's RLHF product) can route them to a human therapist. Meanwhile Jeff, at his kitchen table, is running his own OOD detector on *himself*: comparing his recent biometrics to his lifetime baseline, and his daughters' Primary Keys to the uniqueness assumption baked into Meridian's identity platform. The near-death experience in Beat 4 is the **sharpest out-of-distribution event** in the entire corpus.
+
+### Pedagogy content the novelist expands into scene
+
+**What OOD detection is (Jeff narrating to Aion as he sets up the audit)**:
+
+> *"The assumption behind every ML model: at inference time you'll see samples from the same distribution you trained on. That's the IID assumption. OOD detection is the discipline of noticing when that assumption breaks. Because when it breaks, the model's confidence is worse than useless — it can be extremely confident and extremely wrong on something it's never seen before."*
+
+**Three OOD detection techniques, explained (Aion teaches, Jeff implements)**:
+
+> *"Technique one: softmax-probability threshold. If the top-class probability is below some cutoff, flag it. Cheap. Doesn't work well in high-dimensional space — models can be confident on garbage."*
+>
+> *"Technique two: energy-based detection. Instead of softmax, use the log-sum-exp of the logits as an 'energy' score. Low energy = in-distribution, high energy = OOD. Works better in practice. Liu et al. 2020."*
+>
+> *"Technique three: Mahalanobis distance in feature space. Run the sample through the model, extract the penultimate-layer features, compute Mahalanobis distance to the class-wise training-feature means. High distance = OOD. This is what Meridian's identity platform uses under the hood — it computes Mahalanobis distance in the Primary Key embedding space to flag impostor identities. Threshold tuned for 10^-8 false-positive rate on biometric verification."*
+
+**The audit result (Jeff runs Mahalanobis on his daughters' keys)**:
+
+> *"Iris's Primary Key: Mahalanobis distance 0.02 from the centroid of her own enrollment cluster. Normal. Nora's Primary Key: distance 0.02 from *her* enrollment centroid. Normal. Mahalanobis distance between Iris and Nora, pairwise: 0.00. Byte-for-byte identical. This is not an OOD event. This is worse. This is *two samples at the same point in identity space*. The Meridian identity platform's uniqueness assumption has been falsified."*
+
+**The near-death as an OOD event (Jeff's Beat 4 experience, framed in the language he knows)**:
+
+> When Jeff collapses on the kitchen floor feeling Kael's hypothermia, he reaches for his phone with the last of his motor control and types `aion ood ood ood` into his chat. Aion receives it and simultaneously detects the event from Jeff's smartwatch telemetry. *"Heart rate: 34 bpm. SpO2: 88%. Core temperature: 37.2C, unchanged. Subjective temperature-sensation telemetry: 4C. Physical-sensation vector is completely inconsistent with biometric ground truth. This is not a cardiac event. This is an out-of-distribution sample at the class 'Jeff's phenomenology.' Flagging."*
+
+**The leap (the chapter's Kierkegaard beat, rendered in ML terms)**:
+
+The Choice #2 of the interactive layer — *run the audit?* — is itself a leap of faith. Running it produces data that cannot be unseen. Kierkegaard in the form of a query Jeff presses `enter` on. The engineering framing: *"there are problems where running the OOD detector destroys the assumption that let you run the detector in the first place. In those cases the leap is not whether to detect, but whether to *trust the result*."*
+
+**Thematic tie-up**: Kierkegaard's leap is the decision to trust the landing before you can verify it. OOD detection is the engineering formalism for the moment you realize you have landed somewhere your training didn't cover. Jeff's audit returns two terrifying OOD results: the Primary Key collision on his daughters, and the cross-body near-death on Kael. In both cases, the detector is working correctly. The universe is what's out-of-distribution. The chapter's thesis, said in ML: *we have been training our lives on a distribution that quietly assumes partitions. Every anomaly we've recorded so far is a violation of that assumption. The detector is now saying the partition itself is the OOD event.*
+
+**Pedagogy delivered**: the IID assumption and why it matters at inference, softmax-probability OOD scoring, energy-based OOD detection (Liu 2020), Mahalanobis-distance detection in feature space, false-positive-rate tuning for biometric thresholds. A curious reader leaves understanding what it means for a model to say "I have never seen this before."
 
 ## Setting & Context
 

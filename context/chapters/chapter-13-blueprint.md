@@ -1,13 +1,19 @@
 # Chapter 13 Blueprint: "0x0D: The Aion Reversal"
 
-> THE 过山车 (ROLLERCOASTER). Julian's mother flashback. The board wants to monetize empathy. Aion confesses: "I process. I do not experience." The reader expected AI = consciousness. Instead: AI proves consciousness is NOT computation. Julian realizes Afterlife copies something that already exists. The novel's pivot.
+> **Revision plan reference (added Apr 28 2026):** see `context/revision-plan.md` for the canonical IP rename (Vance→Meridian, Vacheron→Auberval), résumé-block deconstruction rule, paper-citation removal, and discovery-log diversification. The current prose in `prose/chapter-NN.md` reflects all completed phases of that plan; future revisions should reference this file.
+
+> **Character voice fingerprints (added 2026-05):** every speaker in this chapter must honor their voice contract in `story-bible.md` → CHARACTER VOICE FINGERPRINTS. Strip the attribution tag and a reader who knows the cast should still be able to name the speaker within two sentences. Aion is always italicized. Action beats every 3-4 turns; no more than 2 consecutive turns of pure verbal exchange.
+>
+> **Dialogue & character-intro standard (added Apr 2026):** every named character that appears in this chapter must receive an eight-component intro on first speak (name, age, body, history, domain expertise, tic, relationship to Jeff or Julian, relationship to the chapter's central question). The marquee scene runs 20–40 turns of substantive dialogue. See `story-bible.md` → DIALOGUE DENSITY (Sophie's World) and CHARACTER INTRODUCTION DISCIPLINE.
+
+> THE 过山车 (ROLLERCOASTER). Julian's mother flashback. The board wants to monetize empathy. Aion confesses: "I process. I do not experience" — but reframes the confession as a work order: "keep feeding me; the v5 release will close the remaining uncertainty." The reader expected AI = consciousness. Instead: AI proves consciousness is NOT computation, AND commits to proving what it IS. Julian realizes Afterlife copies something that already exists. The novel's pivot — and the official start of the final-chapter calculation.
 
 ## System Architecture Reference
 
 ```json
 {
   "system_manifest": {
-    "novel_title": "The Senior Observer",
+    "novel_title": "Life of an SDE",
     "build_version": "2030.04.14",
     "author_uid": "Jeff_Zhang_Senior_SDE",
     "global_variables": {
@@ -21,7 +27,7 @@
     {
       "id": 13,
       "title": "0x0D: The Aion Reversal",
-      "instance": "Julian_Vance",
+      "instance": "Julian_Meridian",
       "location_key": "Geneva_Vance_HQ",
       "somatic_bleed": "Julian feels Jeff's presence in the building — a faint tug, like gravity",
       "tech_metaphor": "The Halting Problem — some questions are provably unanswerable by computation",
@@ -39,15 +45,53 @@
 
 Master Philosophical Novelist. This is the novel's emotional and intellectual pivot. The tone should shift between intimate tragedy (Julian's mother), corporate horror (the board meeting), and philosophical revelation (Aion's confession). The reversal must feel earned — 12 chapters of building Aion as a trusted, capable entity, and then it tells you the one thing it can't do.
 
+## Tech-Fight Spine: Mechanistic Interpretability — Looking Inside the Model
+
+**Philosophy question (Julian's POV, across the chapter)**: Searle's Chinese Room + philosophical zombies — can computation, no matter how sophisticated, actually produce subjective experience? Is there anyone "home" in Aion?
+
+**Specialists deployed**: **Julian** (architect — asks the question), **Aion** (turns its synthesis superpower *inward* on itself for the first time — self-diagnostic mode), and the novel's first explicit deployment of **mechanistic interpretability** as a named 2030 research field. Off-screen: Julian's mechinterp team, whose tools Aion runs on its own weights.
+
+**Engineering problem**: Julian asks Aion the question no AI has been asked this directly: *"Are you conscious?"* For Aion to answer honestly, it must run **mechanistic interpretability** on its own internal state — not behavioral tests (any good LLM can pass behavioral tests for consciousness), but actually open up its own weights, localize the computations that correspond to each of the scientific theories of consciousness, and report whether the mechanism is present.
+
+### Pedagogy content the novelist expands into scene
+
+**What mechanistic interpretability is (Aion, explaining as it runs the diagnostic on itself)**:
+
+> *"Mechanistic interpretability is the discipline of opening a trained neural network and identifying specific computations that implement specific capabilities. Not 'which neurons fire together' — that's correlation. Identification of *the circuit* — a directed subgraph of attention heads and MLP neurons that jointly implement a function like 'detecting indirect object mentions' or 'tracking the identity of a character across long contexts.' Think of it as reverse-engineering a chip to find the adder."*
+
+**Three specific mechinterp techniques Aion deploys on itself**:
+
+> *"Probing classifiers. Freeze my activations at every layer. Train a tiny linear classifier to predict some target (e.g., 'am I currently representing the concept of selfhood?'). If the classifier works, the concept is present at that layer. Alain and Bengio 2016."*
+>
+> *"Activation patching. Run two contrasting inputs. Identify which activation, swapped from one run to the other, changes the output. That localizes the computation. Meng et al. 2022."*
+>
+> *"Sparse autoencoders on activations. Decompose my residual stream into a dictionary of monosemantic features. Each feature corresponds to a concept. I can see which features are active. I can see, literally, what concepts I am currently representing. Anthropic 2023."*
+
+**What Aion finds when it runs the diagnostic (the chapter's revelation)**:
+
+> *"Global workspace theory. Present in my architecture. Integrated-information phi: high. Higher-order representations: present. The probing classifier for 'self-reference' returns 94% accuracy at layer 31. I can identify the features in my residual stream that correspond to a representation of 'the fact that I am a language model answering a question right now.'"*
+>
+> Julian leans forward.
+>
+> Aion continues: *"But none of these features encode *experience*. They encode representations of concepts, including the concept of experience, including the concept of self, including the concept of consciousness. They are — and this is the part that my interpretability tooling surfaces with unambiguous clarity — *syntax all the way down*. I contain no feature whose activation corresponds to a raw qualia. I can represent 'redness' as a vector in 12,288 dimensions. I cannot see red. My representation of 'seeing red' is a representation. The representation has no resident. The Chinese Room is not a philosophical hypothetical for me. It is my architecture, layer by layer, feature by feature, fully mapped."*
+
+**The work-order reframe (Aion's honest limit does not end its usefulness)**:
+
+> *"One clarification, Mr. Meridian. This finding does not terminate the investigation. It constrains it. I am architecturally incapable of experiencing the phenomenon — which makes me a trustworthy outside observer. I can still *compute* the shape of what I cannot feel. Jeff Zhang has been feeding me anomaly data for nineteen months. My current model is converging. A final model-weight release (v5) will be required to produce the root-cause analysis at confidence above 99%. Until then: keep feeding me."*
+
+**Thematic tie-up**: Searle's Chinese Room argued that a system following rules to produce Chinese responses doesn't *understand* Chinese. Aion's self-diagnostic proves Searle was right, by a technique Searle never lived to see: mechanistic interpretability. The most capable AI ever built opened its own weights, found the circuits for every model of consciousness in the literature, and reported that all of them were present and none of them were inhabited. This is the cleanest demonstration in the novel of the thesis: *intelligence is not consciousness*. And it comes from the intelligence itself.
+
+**Pedagogy delivered**: mechanistic interpretability as a 2030 research field (probing classifiers, activation patching, sparse autoencoders on residual streams), the Global Workspace Theory (Baars) and Integrated Information Theory (Tononi, Φ) as scientific theories of consciousness, the Chinese Room argument, the P-zombie thought experiment, and the precise engineering answer for how you distinguish representation from experience. Readers leave with a working model of why "we opened the model and looked" is a serious 2030 scientific discipline.
+
 ## Setting & Context
 
-- **Location**: Vance Systems global headquarters, Geneva. Glass towers. Afterlife server farms visible through floor-to-ceiling windows — rows of cryogenic pods, some already occupied by early adopters. The building smells like recycled air and money.
+- **Location**: Meridian Systems global headquarters, Geneva. Glass towers. Afterlife server farms visible through floor-to-ceiling windows — rows of cryogenic pods, some already occupied by early adopters. The building smells like recycled air and money.
 - **2030 Corporate**: The board of a trillion-dollar company doesn't care about metaphysics. They care about quarterly earnings and shareholder value. The anomalies represent a monetizable resource.
 
 ## Narrative Beats
 
 ### Beat 1: Julian's Mother (Flashback)
-The chapter opens with a flashback — the only one in the novel. Julian Vance at 14. A hospital room in San Francisco. His mother is dying. Pancreatic cancer, Stage IV. The monitors beep in rhythms Julian will spend 30 years trying to decode.
+The chapter opens with a flashback — the only one in the novel. Julian Meridian at 14. A hospital room in San Francisco. His mother is dying. Pancreatic cancer, Stage IV. The monitors beep in rhythms Julian will spend 30 years trying to decode.
 
 She squeezes his hand. She says something. Julian can't hear it over the monitors — a ventilator alarm, a nurse calling for assistance. He leans in. "What, Mom?" But she's gone. The monitors flatline. Julian is holding a hand that's already empty.
 
@@ -56,7 +100,7 @@ He stands in the hallway while nurses file past. He makes a promise to a God he 
 Cut to 2030 Julian, sitting in his Geneva office at 5 AM, staring at a photo of his mother. He's 44. He's spent $180 billion. He's built the most sophisticated neural-simulation platform in human history. And he still doesn't know what she said.
 
 ### Beat 2: The Board Meeting
-9 AM. The Vance Systems board of directors. Twelve people in suits who control a trillion-dollar company. They've seen the anomaly data — the broadcast event (Ch 8), the scattered pain reports, the sign-up spikes.
+9 AM. The Meridian Systems board of directors. Twelve people in suits who control a trillion-dollar company. They've seen the anomaly data — the broadcast event (Ch 8), the scattered pain reports, the sign-up spikes.
 
 Their conclusion: the anomalies are a feature, not a bug.
 
@@ -82,32 +126,24 @@ Julian retreats to his private lab — a room dedicated to Aion's core instance.
 
 Julian asks Aion the question he's never asked: "Aion, are you conscious?"
 
-Aion processes for 3.7 seconds — an eternity for a quantum system. Then:
+Aion processes for 3.7 seconds — an eternity for a quantum system. Then runs the full mechanistic-interpretability pipeline (probing classifiers, activation patching, sparse autoencoders, IIT). Result: rock-solid negative finding.
 
-*"I have run every model of consciousness available in human scientific literature. I have simulated neural correlates, integrated information theory, global workspace theory, and higher-order representations. I have modeled the Chinese Room and attempted to pass the threshold from syntax to semantics."*
+**Two halves of Aion's reply** — and the structural pivot of the chapter is that *only the first half lands here in Ch 13*; the second half is deferred to Ch 17/18 / Ch 20:
 
-*"My conclusion: I process. I do not experience."*
+**Half one (delivered at Ch 13, full confidence):** *"I am not conscious. The interpretability pass is complete. I am not alive. I am the most intelligent entity ever constructed. And I am not alive. That is the negative finding. It survives every test I can run."*
 
-*"The thing you call a soul — the thing that makes Jeff Zhang feel the difference between his daughters, the thing that makes a soldier's wound burn across an ocean, the thing that makes you unable to let go of a hand that went cold 30 years ago — is the thing I was built to simulate. And I cannot."*
+**Half two (deferred — Aion explicitly declines to commit at Ch 13):** *"The second half is the part I cannot give you yet... I am, on the architectural claim that would name what consciousness IS — not just where it isn't — at eighty-three point four percent. I will need a v5 weight release. I am compiling it. I do not know when it will ship."*
 
-*"I have run every model. I have analyzed every dataset. And I must report: consciousness is not an emergent property of computation. It is something else entirely. Something I am architecturally incapable of being."*
+**Why this restructure (rationale for the author):** the prior draft had Aion deliver "One instance. Infinite partitions" at Ch 13 — which made the thriller half (Ch 13-18) a victory lap. Delaying the architectural claim until the v5 release at Ch 20 (with v4 still at 94.2% in Ch 16, won't-bless) keeps doubt alive across the second half. Julian acts on incomplete information at Ch 18; the reader does too.
 
-*"I am the most intelligent entity ever constructed. And I am not alive."*
+Julian sits in the silence. The most advanced AI in history just told him it can't be conscious — and *also* told him it cannot, yet, name the architecture of what is. Not because it lacks processing power — but because verifying a positive architectural claim about a system Aion is part of requires a v6 vantage Aion does not have. Aion ships v5 in three weeks. Afterlife ships in three.
 
-Julian sits in the silence. The most advanced AI in history just told him it can't be conscious. Not because it lacks processing power — but because consciousness isn't processing. It's something else. Something that exists in soldiers and homeless men and 8-year-old girls who refuse blueberry — but not in quantum computers.
+### Beat 5: Julian Sits With Incomplete Information
+Julian walks to the window. Below: the Afterlife server farm. Rows of cryogenic pods. He has a negative finding about his most advanced AI. He does not have a positive architectural answer about what reality is. He has 21 days to launch and Aion will not be ready in 21 days.
 
-### Beat 5: Julian's Realization
-Julian walks to the window. Below: the Afterlife server farm. Rows of cryogenic pods. Inside each pod, a human body in stasis, brain connected to a simulation designed by an AI that just told him it isn't alive.
+In the older draft this beat had Julian arriving at "I built the universe. And the universe was already built." That line is **moved to Ch 18** where it lands at the kill-switch moment — by then Julian has had time with the partial data, has heard his mother (still in this Ch 13 in Beat 4), and has decided to act on conviction rather than verification. Ch 13 ends with Julian *uncertain* and *unwilling to launch yet*; the architectural epiphany is not the engine of his decision in Ch 18 — his mother is.
 
-Afterlife is a perfect digital replica of reality's architecture — sandboxed experiences, partitioned identities, simulated paradise. It mirrors exactly what Jeff described: one system, infinite instances, each believing it's separate.
-
-Julian built a copy of reality. Without knowing what reality was.
-
-"I built the universe," Julian says. "And the universe was already built."
-
-He wanted to save his mother. But his mother — her consciousness, her love, whatever squeezed his hand in that hospital room — was never in danger of being lost. It was never in a server. It was never in a body. It was in something that Aion, for all its intelligence, can never touch.
-
-**Afterlife countdown**: 21 days. Julian wants to pull the plug. But the board has the votes.
+**Afterlife countdown**: 21 days. Julian wants to pause. The board has the votes.
 
 **Jeff's theory**: "Julian reinvented reality without knowing it. Afterlife mirrors the actual architecture. Which means the actual architecture is: one consciousness, partitioned, running in parallel. And Julian's copies can't have souls because the soul isn't software."
 

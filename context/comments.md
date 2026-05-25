@@ -1,0 +1,18 @@
+Title change to sth like Life of an SDE
+4. Jeff starts happy — good life, loving family. Happiness creates higher stakes and more hunger for answers. -> In some chapter, let's discuss this point, he would wonder is happiness the best thing ? isn't life of trying different things, like sad, anger. life is about to do whatever you want, follow human's instinct, but people's "happiness" often times depend on other people's sadness (e.g. rich vs poor). but no one is wrong, we are just restrict human doing bad things to each other to gain happiness. problem is not us, it's technology, in afterlife everyone can finally do everything, and feel eveything, but no consequences.
+5. Every chapter includes authentic SDE/tech culture moments + a named tech metaphor. -> addtionallly , let's add some tech algorithms or system design or technologies to many chapters.
+**Setting & 2030 Context**: -> need to elaborate what AI delivered to human
+### Ch 4 — "0x04: Dual-Stack Rendering" | *Locke's Memory Theory of Identity* | Tech: Dual-Stack Rendering -> this should focus 70% on the player, not Jeff
+All the remaining chapters except first 4 (which i came up with) don't have innovations, the first 4 have different themes and characters like basketball, rich guy, superhero. they should have continued stories in later chapters, and there should be others to come later chapters.
+the overall line should be jeff continously using AI to calculate his theory on the ability he has, last chapter when ai finally evolved and calculated the truth, then he realize it. 
+
+New:
+Post-crash world following the '26 tech culling — mass layoffs erased entire engineering divisions. - >not just tech, like robots eeverything slowly replacing human work, every where. but at 2030 huamn found a balace, should discuss this more, that AI is trying to achieve equally assigning assets, but becoming rich (corresponding to the other discussion on happiness is on top of other's pain) is becoming impossible, is this what huamn wants? this can be in a later chapter or sth.
+
+Climate: the Thermal Divide. Sterile, climate-controlled tech hubs exist behind security checkpoints; outside, grid-strained streets struggle in the heat. Late-season Santa Ana winds carry Scorched Sage from the hills. -> this can also be discussedin detail in some chapter. earth evetually will not be suitable for living, and it is escelerrating. some want to move to mars , but we are short of time, the first step should be afterlife, then we can take as much as time to go to galaxy.
+
+He drives his EV past a homeless man baking on the median. -> for things like this, should quickly exapnd/mention some still prefer gas cars , but what's the point? ev can solve all traffic problems, but people's stubbornness prevents this. or is it human's nature (corresponding to happiness)?
+
+In some near end chapters, should discuss detail again in self concisouness. like why would i feel, why me, is me the only one? even AI can't figure out pysics. 
+
+about the tech part, i want it to be like novels where super humans use abilities to fight each other, like playing video games. but instead, here we are using software techniques to mimic the same, you know what i mean? like in a novel you elaborate how characters fight each other, create exitement, but here we elaborate how coding to fight/solve problem, create excitement. this can be in most of the chapters as i feel the book currently lack of exceiment. you start with a tech problem to solve, then the chapter connects it and solve it in the end.

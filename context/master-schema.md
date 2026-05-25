@@ -1,6 +1,11 @@
-# THE MASTER SCHEMA (V.2030.v4) — The Senior Observer
+# THE MASTER SCHEMA (V.2030.v4) — The Singleton
+*(working subtitle: Life of an SDE)*
 
 > Architectural source of truth. Paste this into any session to align new chapter generation with the universe's rules. For character details, see `story-bible.md`. For plot details, see `plot-review.md`. For per-chapter beats, see `chapters/chapter-XX-blueprint.md`.
+>
+> **v5 cinematic overlay** at `context/cinematic-overlay.md` adds: neutral philosophy (Afterlife is genuinely perfect; Julian's Kill Switch is selfish/tragic), three audio-visual motifs (580nm amber, 2-3-5-7 tic, scent triad), Smart-City-as-antagonist for Ch 14, and frontend gimmicks (DevTools log drip, vibration on prime tics, viral diagnostic receipt). Where the overlay disagrees with this schema, the overlay wins.
+>
+> **Dialogue & character-intro standard (added Apr 2026):** see `story-bible.md` → "DIALOGUE DENSITY (Sophie's World)" and "CHARACTER INTRODUCTION DISCIPLINE". Every chapter blueprint and every prose generation pass must satisfy these. Marquee dialogues run 20–40 turns; every named character gets an eight-component intro on first appearance.
 
 To maintain the absolute consistency of the "One Soul" theory across all outputs, we treat the universe as a distributed multi-tenant system where human identity is a software-defined partition, not a biological reality. You are not just writing a narrative; you are documenting a catastrophic, system-wide failure.
 
@@ -9,7 +14,7 @@ To maintain the absolute consistency of the "One Soul" theory across all outputs
 - **The Observer (The Singleton)**: The only true "Primary Key." There is only one actual execution thread in the universe (The Soul).
 - **The Instance (The Person)**: A localized "Sandbox Container" (Jeff, Kael, Julian, Maya) provisioned with its own environment variables (`wealth_tier`, `location_string`, `history_hash`).
 - **The Leak (Somatic Bleed)**: A pointer error where 12k-resolution sensory data from one instance is accidentally written into the active memory space of another. **Only Jeff experiences these directly.**
-- **Aion**: The kernel-level local high-memory AI hardware monitor (the standard post-2026 crash). It attempts to "patch" these metaphysical leaks by generating logical, local excuses (logging them as biometric errors, stress, or hallucinations) until the system hits critical mass — then it becomes Jeff's pair-programming partner in the deduction.
+- **Aion**: The kernel-level local high-memory AI hardware monitor (the standard post-2026 crash). It attempts to "patch" these metaphysical leaks by generating logical, local excuses (logging them as biometric errors, stress, or hallucinations) until the system hits critical mass — then it becomes Jeff's pair-programming partner in the calculation. **Aion is the one who ultimately computes the One-Soul answer.** Jeff spends 20 chapters feeding every anomaly into Aion's model; Aion evolves across five generations; in Ch 20 the final model (v5) outputs the result — *"One instance. Infinite partitions. All alternative hypotheses eliminated."* — and that output is what triggers Jeff's realization. Aion itself remains architecturally incapable of *experiencing* what it computes (the P-zombie reversal) — which is the whole point: the proof comes from the one entity that cannot share in what it proves.
 - **The Partition**: The firewall between instances that creates the illusion of individual identity. Partitions are degrading throughout the novel. Temples, monasteries, meditation halls are "firewall nodes" — the Elder is a "maintenance thread."
 - **Garbage Collection**: Death. The instance terminates, the data (memories, experiences, learning) is written to the shared log, a new instance initializes with clean local memory.
 - **The Primary Key**: The deepest identifier. Jeff's daughters share one. Jeff and Julian return the same hash on biometric scanners. Genetically unrelated people with identical primary keys = the system recognizing them as one entity.
@@ -18,7 +23,7 @@ To maintain the absolute consistency of the "One Soul" theory across all outputs
 
 | Ch | Instance | The "Primary" Reality | The "Somatic Bleed" (Shared Object) | Technical Metaphor |
 |----|----------|----------------------|--------------------------------------|-------------------|
-| 1 | Jeff | Irvine SDE office. Santa Ana winds. | Amalfi Yacht / Vacheron Watch. (Taste of Krug, weight of platinum). | **Shared Cache Leak**: High-priority packet read by isolated low-priority runtime. |
+| 1 | Jeff | Irvine SDE office. Santa Ana winds. | Amalfi Yacht / Auberval Watch. (Taste of Krug, weight of platinum). | **Shared Cache Leak**: High-priority packet read by isolated low-priority runtime. |
 | 2 | Julian | The Amalfi Yacht. The 1% existence. | Walnut phone + ADHD static. (Reverse bleed). | **Priority Inversion**: Low-priority runtime data interrupting premium-tier process. |
 | 3 | Jeff | Home theater. The Anchor: Post-Doom. | Optical sync with Kael — matched pupil dilation 1,200 miles apart. | **Pointer Aliasing**: Two distinct pointers resolving to the same memory address. |
 | 4 | Monroe/Jeff | Basketball arena. Darius Monroe's last season. | None — the novel breathes. No anomalies this chapter. | **Legacy Code**: Accessing deprecated knowledge (body wisdom) in an AI-optimized world. |
@@ -31,7 +36,7 @@ To maintain the absolute consistency of the "One Soul" theory across all outputs
 | 11 | Jeff/Kael | {{user_location}} streets. The billboard. | Visual Merge — Jeff sees his own face overlaid on Kael's. (Jeff's experience only.) | **Mirror Instance / Load Balancing**: Two instances running identical code on different hardware. |
 | 12 | Jeff/Kael/Marcus | Basketball court → Marcus's clinic. | One moment of preternatural basketball sync. Three datasets converge. | **Three-Body Problem / Distributed Consensus**: Three nodes attempting to agree on shared state. |
 | 13 | Julian | Geneva HQ. Board meeting → Aion's lab. | Aion's confession: "I process. I do not experience." Consciousness ≠ computation. | **The Halting Problem**: Some questions are provably unanswerable by computation. |
-| 14 | Jeff | Vance HQ Irvine. Infiltration → trap. | Biometric scan reads Jeff as Julian. `CLEARANCE: ROOT.` Lena was waiting. | **Privilege Escalation / Root Access**: SDE's biometric signature matches Root/Admin. |
+| 14 | Jeff | Meridian HQ Irvine. Infiltration → trap. | Biometric scan reads Jeff as Julian. `CLEARANCE: ROOT.` Lena was waiting. | **Privilege Escalation / Root Access**: SDE's biometric signature matches Root/Admin. |
 | 15 | Global | Worldwide — narrative itself fragments. | Orchestras sync. Esports collapse. CNN anchor speaks Tagalog. 200M Afterlife sign-ups. | **Kernel Panic**: Central OS fails to recover from fatal partition errors. |
 | 16 | Jeff | Garage homelab, 2 AM. The whiteboard. | Jeff deduces truth: 15 data points, 6 hypotheses eliminated. "One instance. Infinite partitions." | **Root Cause Analysis / Post-Mortem**: Methodically eliminating hypotheses until one remains. |
 | 17 | The Soul | Julian's plane → the Simulation Map. | Soul sees full loop. Choice: restart or end? Jeff returns with mission. | **System.exit() / Return Code**: The base case of recursion — the exit condition. |
@@ -68,8 +73,8 @@ UI switch in the corner. When ON, font shifts to monospace IDE theme and specifi
 
 **Examples**:
 
-- Prose: "Jeff felt the heavy platinum weight of the Vacheron watch."
-  - Tooltip: `[POINTER_ERROR]: Object 'VC_Celestia' belongs to UID: Julian_Vance. Access Denied.`
+- Prose: "Jeff felt the heavy platinum weight of the Auberval watch."
+  - Tooltip: `[POINTER_ERROR]: Object 'AUB_Astralis' belongs to UID: Julian_Meridian. Access Denied.`
 - Prose: "Kael woke up shivering under the billboard near {{user_landmark}}."
   - Tooltip: `[ENVIRONMENT_VAR]: Injection successful. Rendering local cache: {{user_location}} to increase User immersion.`
 - Prose: "His fingers tapped out a 2-3-5-7 rhythm on his leg."
@@ -77,7 +82,7 @@ UI switch in the corner. When ON, font shifts to monospace IDE theme and specifi
 - Prose: "The fluorescent lights shifted to a warm amber."
   - Tooltip: `[SYSTEM_FLAG]: Amber_580nm triggered. Somatic bleed imminent. Partition integrity: DEGRADING.`
 - Prose: "Jeff's daughters share an identical Primary Key."
-  - Tooltip: `[HASH_COLLISION]: UID_Lucy.primary_key == UID_Ella.primary_key. Probability: 0. Conclusion: Same instance.`
+  - Tooltip: `[HASH_COLLISION]: UID_Iris.primary_key == UID_Nora.primary_key. Probability: 0. Conclusion: Same instance.`
 
 ### 3. Interactive Choice Points
 

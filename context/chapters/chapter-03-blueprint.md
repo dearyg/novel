@@ -1,5 +1,11 @@
 # Chapter 3 Blueprint: "0x03: Pointer Aliasing"
 
+> **Revision plan reference (added Apr 28 2026):** see `context/revision-plan.md` for the canonical IP rename (Vance→Meridian, Vacheron→Auberval), résumé-block deconstruction rule, paper-citation removal, and discovery-log diversification. The current prose in `prose/chapter-NN.md` reflects all completed phases of that plan; future revisions should reference this file.
+
+> **Character voice fingerprints (added 2026-05):** every speaker in this chapter must honor their voice contract in `story-bible.md` → CHARACTER VOICE FINGERPRINTS. Strip the attribution tag and a reader who knows the cast should still be able to name the speaker within two sentences. Aion is always italicized. Action beats every 3-4 turns; no more than 2 consecutive turns of pure verbal exchange.
+>
+> **Dialogue & character-intro standard (added Apr 2026):** every named character that appears in this chapter must receive an eight-component intro on first speak (name, age, body, history, domain expertise, tic, relationship to Jeff or Julian, relationship to the chapter's central question). The marquee scene runs 20–40 turns of substantive dialogue. See `story-bible.md` → DIALOGUE DENSITY (Sophie's World) and CHARACTER INTRODUCTION DISCIPLINE.
+
 > Return to Jeff Zhang. Kael introduced implicitly via a synchronized rendering bug. Kael's location dynamically resolves to `{{user_location}}` / `{{user_landmark}}` based on reader geolocation.
 
 ## System Architecture Reference
@@ -7,7 +13,7 @@
 ```json
 {
   "system_manifest": {
-    "novel_title": "The Senior Observer",
+    "novel_title": "Life of an SDE",
     "build_version": "2030.04.14",
     "author_uid": "Jeff_Zhang_Senior_SDE",
     "global_variables": {
@@ -35,9 +41,39 @@
 
 Master Philosophical Novelist specializing in "Techno-Existentialism." Style requires a massive genre-jump: the first part must read exactly like a thrilling, high-budget superhero comic that suddenly shatters the fourth wall. The second part violently shifts into cold, terrifying system architecture, philosophy, and psychological dread.
 
+## Tech-Fight Spine: How The Anchor Is Actually Rendered
+
+**Philosophy question (opens the chapter)**: Are fictional characters alive? Do pop-culture writers unknowingly download memory leaks from other partitions? Jeff's philosophical query to Aion after the 4th-wall break.
+
+**Engineering problem (arises from Jeff's curiosity about the movie he's watching)**: *The Anchor: Post-Doom* is rendered live by Afterlife's **real-time conditional diffusion model**. Jeff has internal Meridian access to the model's architecture — he is, after all, staff. In his home theater, rattled, he pulls the model card out of Meridian's internal wiki and reads the design doc. Jeff's team at work has been asked to contribute kernel-level optimizations to this very model for next quarter. The question Jeff wrestles with all chapter: **how does a diffusion model generate a full cinematic frame in 40ms, conditioned on your biometrics, without a visible seam?** And the follow-up: *if the model is generating the frame in real time from noise plus a condition vector, in what sense is what I'm watching "written" at all?*
+
+### Pedagogy content the novelist expands into scene
+
+**What diffusion models do (Jeff reading the design doc out loud to Aion in the theater)**:
+
+> *"Start with pure Gaussian noise. A random field. Then a neural network — the denoiser — runs a bunch of steps, each one removing a little bit of noise conditioned on a target. After maybe 20 or 50 steps, what you have is a coherent image or video frame that matches the condition. The condition is a text prompt in old-generation models. For the Anchor it's a fused embedding of the scene's script, the viewer's biometric state, the viewer's last five minutes of watch history, and a shared-world consistency vector."*
+>
+> *"Aion. Forty milliseconds per frame. Twenty steps of denoising. That's two milliseconds a step. How."*
+>
+> *"Distilled consistency models. The full diffusion model is trained first, then a student model is trained to match its trajectory in one or two steps instead of fifty. Quality holds. Latency collapses. Industry standard by 2028."*
+
+**Classifier-free guidance (the technique that lets the model steer toward the condition without a separate classifier)**:
+
+> *"Guidance is how hard the model pulls toward the condition at each step. At guidance scale 1, you get the unconditional model — pretty pictures, ignores the prompt. At scale 8, it slavishly follows the prompt, sometimes at the cost of coherence. The Anchor runs adaptive guidance — scale goes up when your pupil dilates on a plot point, goes down when you're visually adapting to the dark. That's why when I noticed the explosion I felt it harder than the person next to me would have. My attention made the model pull harder toward the condition. The movie literally rendered a louder explosion because I was paying attention."*
+
+**The conditioning vector and why the 4th-wall break works (Jeff's dread moment, explained mechanically)**:
+
+> *"The hero stared into the camera because the model's condition vector includes the viewer's biometric trace. The script beat said 'break 4th wall' and the model grounded it in me. So the Anchor 'knew' which camera to look at because the camera is effectively my pupil, backward-propagated through the render. The model isn't conscious. The model is a conditional distribution. But the conditioning is so tight it produces text that appears addressed to me. The addressed-ness is a rendering artifact. Or — and this is the part I can't stop thinking about — the addressed-ness is real, and the reason the script beat said 'break 4th wall' at exactly this moment is that the writer had their own biometric-tuned copilot when they were drafting, and the copilot was reading a biometric trace that was already sympathetic to mine. Leaks across partitions don't have to be metaphysical. They can be just a really long RAG context over the world's training data."*
+
+**Thematic tie-up (the chapter's philosophical and engineering questions land in the same beat)**:
+
+The pointer-aliasing sync with Kael in Beat 4 is, architecturally, Jeff and Kael being fed as **jointly-conditioned points into the same diffusion trajectory**. Same noise. Same condition. Same denoiser. The Afterlife model produced a nearly-identical sample for both of them because it was denoising the same latent code under two physically distinct but biometrically-entangled conditions. The pop-culture-as-memory-leak framing becomes a technical possibility: the Anchor's script-writer, working with the same foundation model Jeff watches, was sampling from a latent space that had already integrated a soft version of the world's shared experience. *"Fiction isn't inventing anything. Fiction is sampling from the latent posterior over what could be true. The model is trained on the world; the world contains Jeff and Kael; the samples contain both."*
+
+**Pedagogy delivered**: diffusion models, denoising, classifier-free guidance, consistency-model distillation for low-latency inference, conditional generation, latent space, the concept of a "trajectory" through noise. Enough for a curious reader to Google "conditional diffusion" and find real papers.
+
 ## Setting & Context (2030 — The Evolution of Media)
 
-- **The In-Universe Fiction**: The blockbuster 2030 movie ***The Anchor: Post-Doom***. Rendered on a licensed, early-beta version of Julian Vance's **Project Afterlife** neural-engine. The movie dynamically alters dialogue, lighting, and pacing in real-time based on the viewer's smartwatch biometrics.
+- **The In-Universe Fiction**: The blockbuster 2030 movie ***The Anchor: Post-Doom***. Rendered on a licensed, early-beta version of Julian Meridian's **Project Afterlife** neural-engine. The movie dynamically alters dialogue, lighting, and pacing in real-time based on the viewer's smartwatch biometrics.
 - **The Cinematic Lore**: By 2030, the chaotic "Multiverse Era" of superhero movies is officially dead. Over the last decade, audiences watched *Infinite War*, *Doom War*, and infinite timelines bleed together until the studios literally collapsed the multiverse. Infinite universes violently collided and compressed into one single, inescapable reality.
 - **The True Setting**: Revealed later — Jeff's ultra-minimalist, soundproofed home theater in Irvine.
 
@@ -55,9 +91,9 @@ Do not mention Jeff. Start the chapter directly in the fiction, writing it as a 
 ### Beat 2: The Reveal & The Philosophical Query
 The narrative breaks violently. A cool, ambient UI overlay text appears in the prose: `[PROJECT AFTERLIFE BETA: BIOMETRIC SPIKE DETECTED. PAUSING PLAYBACK...]`.
 
-Reveal Jeff Zhang sitting alone in the dark of his 68-degree Irvine home theater, sweating. He is using this "Neuro-Cinema" to soothe his ADHD and escape the trauma of waking up as Julian Vance in Chapter 2.
+Reveal Jeff Zhang sitting alone in the dark of his 68-degree Irvine home theater, sweating. He is using this "Neuro-Cinema" to soothe his ADHD and escape the trauma of waking up as Julian Meridian in Chapter 2.
 
-Jeff is deeply unsettled. He poses a philosophical question to Aion (his ambiguous voice assistant/internal logic): *Do superheroes really exist?* If Julian Vance's "Project Afterlife" is a real, physical server network where simulated human minds will live and die, isn't that just another physical dimension? Are the "fictional" characters inside this movie's AI engine actually "alive" inside their server rack? Are pop-culture writers inventing these stories, or are they just unknowingly downloading memory leaks from other universal partitions?
+Jeff is deeply unsettled. He poses a philosophical question to Aion (his ambiguous voice assistant/internal logic): *Do superheroes really exist?* If Julian Meridian's "Project Afterlife" is a real, physical server network where simulated human minds will live and die, isn't that just another physical dimension? Are the "fictional" characters inside this movie's AI engine actually "alive" inside their server rack? Are pop-culture writers inventing these stories, or are they just unknowingly downloading memory leaks from other universal partitions?
 
 ### Beat 3: The Existential Dread
 The hero's power feels too real. It perfectly mirrors what Jeff is experiencing. The cinematic universe collapsing from "infinite timelines" into "One Server" isn't just a movie plot — the failing global OS is subconsciously leaking the "One Soul" truth into pop-culture writers' brains. The Anchor's ability to "feel what someone else is doing miles away" isn't just a superpower; it's a literal description of the somatic bleeds Jeff is suffering.

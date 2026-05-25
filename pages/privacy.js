@@ -6,7 +6,7 @@ export default function Privacy() {
   return (
     <>
       <Head>
-        <title>Privacy Policy — The Senior Observer</title>
+        <title>Privacy Policy — The Singleton</title>
       </Head>
 
       <Layout>

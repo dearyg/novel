@@ -36,7 +36,10 @@ export default function Layout({ children }) {
                 <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
               </svg>
             </div>
-            <span className="text-sm font-bold text-primary">The Senior Observer</span>
+            <span className="flex items-baseline gap-1.5">
+              <span className="text-sm font-bold text-primary">The Singleton</span>
+              <span className="text-[10px] text-muted hidden sm:inline">Life of an SDE</span>
+            </span>
           </Link>
 
           <nav className="hidden sm:flex items-center gap-6 text-sm text-secondary">
@@ -45,6 +48,19 @@ export default function Layout({ children }) {
           </nav>
 
           <div className="flex items-center gap-2">
+            <a
+              href="https://buymeacoffee.com/dearyg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-400/15 hover:bg-amber-400/25 border border-amber-400/40 text-[12px] font-semibold text-amber-300 hover:text-amber-200 transition-colors shadow-sm"
+              aria-label="Buy me a coffee"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M5 8h14a1 1 0 0 1 1 1v1a4 4 0 0 1-4 4h-.18A4 4 0 0 1 12 17a4 4 0 0 1-3.82-3H8a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1zm14 1v1a3 3 0 0 1-2.13 2.87A4 4 0 0 0 17 12V9zM7 19h10a1 1 0 0 1 0 2H7a1 1 0 0 1 0-2z" />
+              </svg>
+              <span className="hidden sm:inline">Buy me a coffee</span>
+              <span className="sm:hidden">☕</span>
+            </a>
             <button
               onClick={toggle}
               className="p-2 rounded-lg text-secondary hover:text-primary hover:bg-surface-alt transition-colors"
@@ -68,11 +84,23 @@ export default function Layout({ children }) {
                   <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
                 </svg>
               </div>
-              &copy; {new Date().getFullYear()} Alayido, LLC
+              &copy; {new Date().getFullYear()} Homer
             </div>
             <span className="hidden sm:inline text-border">|</span>
             <Link href="/about" className="hover:text-primary transition-colors">About</Link>
             <Link href="/privacy" className="hover:text-primary transition-colors">Privacy</Link>
+            <span className="hidden sm:inline text-border">|</span>
+            <a
+              href="https://buymeacoffee.com/dearyg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-accent/10 hover:bg-accent/20 text-accent transition-colors"
+            >
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M5 8h14a1 1 0 0 1 1 1v1a4 4 0 0 1-4 4h-.18A4 4 0 0 1 12 17a4 4 0 0 1-3.82-3H8a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1zm14 1v1a3 3 0 0 1-2.13 2.87A4 4 0 0 0 17 12V9zM7 19h10a1 1 0 0 1 0 2H7a1 1 0 0 1 0-2z" />
+              </svg>
+              Buy me a coffee
+            </a>
           </div>
           <p className="hidden sm:block">A techno-existential thriller. AI-enhanced reading experience.</p>
         </div>

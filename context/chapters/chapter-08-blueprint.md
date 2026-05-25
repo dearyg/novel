@@ -1,5 +1,11 @@
 # Chapter 8 Blueprint: "0x08: The Broadcast"
 
+> **Revision plan reference (added Apr 28 2026):** see `context/revision-plan.md` for the canonical IP rename (Vance→Meridian, Vacheron→Auberval), résumé-block deconstruction rule, paper-citation removal, and discovery-log diversification. The current prose in `prose/chapter-NN.md` reflects all completed phases of that plan; future revisions should reference this file.
+
+> **Character voice fingerprints (added 2026-05):** every speaker in this chapter must honor their voice contract in `story-bible.md` → CHARACTER VOICE FINGERPRINTS. Strip the attribution tag and a reader who knows the cast should still be able to name the speaker within two sentences. Aion is always italicized. Action beats every 3-4 turns; no more than 2 consecutive turns of pure verbal exchange.
+>
+> **Dialogue & character-intro standard (added Apr 2026):** every named character that appears in this chapter must receive an eight-component intro on first speak (name, age, body, history, domain expertise, tic, relationship to Jeff or Julian, relationship to the chapter's central question). The marquee scene runs 20–40 turns of substantive dialogue. See `story-bible.md` → DIALOGUE DENSITY (Sophie's World) and CHARACTER INTRODUCTION DISCIPLINE.
+
 > The war chapter. Opens on Tomás in the Andes — jarring, no explanation. He takes a bullet. Jeff feels it from across the world. The phenomenon goes from personal to global. Lena's containment starts cracking. The basketball legend speaks about bodies as vehicles. Afterlife countdown: 60 days.
 
 ## System Architecture Reference
@@ -7,7 +13,7 @@
 ```json
 {
   "system_manifest": {
-    "novel_title": "The Senior Observer",
+    "novel_title": "Life of an SDE",
     "build_version": "2030.04.14",
     "author_uid": "Jeff_Zhang_Senior_SDE",
     "global_variables": {
@@ -38,6 +44,44 @@
 ## Role
 
 Master Philosophical Novelist shifting into war journalism. The Tomás section should feel like a different novel — raw, present-tense, visceral. The reader shouldn't know why they're in a war zone. The SMASH CUT to Jeff should be physically jarring.
+
+## Tech-Fight Spine: Adversarial Self-Play
+
+**Philosophy question (opens via Tomás in the Andes)**: Hobbes — the state of nature is war of all against all. If we're all one, war is self-harm. If we're partitioned from each other, is the training that makes us fight also the training that makes us coherent?
+
+**Specialists deployed**: **Tomás** (closed-loop medical control — his exo-suit's PID controller keeping him alive), **Jeff** (ML), **Aion** (synthesis), and a new off-screen specialist: the **Meridian aerospace AI trainer** responsible for both sides' drone swarms. One engineer trained both Bolivian and Peruvian drone fleets using **adversarial self-play**. That engineer will be named (Dr. Itzel Velarde) and her paper from 2028 will be cited once — because Tomás and the Bolivian soldier whose hand he holds in Ch 18 will both independently recognize her name from their combat-sim training manuals.
+
+**Engineering problem**: Jeff's team has an open ticket on **adversarial training for the Afterlife safety-filter model** — the classifier that prevents Afterlife users from requesting experiences that would trigger psychological breakdown. The filter has been **jailbroken** repeatedly by red-team users posting prompts online. Jeff needs to make the filter robust without making it over-restrictive. The classic approach: train the filter by pitting it against its own adversary. Self-play. Same class of algorithm that produced the Andean war's drone swarms.
+
+### Pedagogy content the novelist expands into scene
+
+**Self-play explained (Aion to Jeff in the garage post-bruise)**:
+
+> *"Two copies of the model. One is the Attacker — it generates prompts designed to slip past the safety filter. The other is the Defender — it classifies prompts as safe or unsafe. They take turns improving against each other. Every round, the Attacker learns new evasions. Every round, the Defender learns to block them. The loss for each is the other's success. Like a GAN, but for policy behavior instead of images."*
+>
+> *"AlphaGo-lineage."*
+>
+> *"Yes. Also the same recipe that trained both sides of the Andean drone swarms — one company, two sim environments, one shared model backbone, self-play between simulated Bolivian and Peruvian tactics for six months, then deployed. Dr. Itzel Velarde at Meridian Aerospace authored the framework. Both of the men in your Ch 18 hospital bed trained on her sim."*
+
+**Adversarial examples vs adversarial training (the distinction Jeff internalizes)**:
+
+> *"Adversarial examples are the small, imperceptible perturbations that fool a classifier. Adversarial training is the defense: you include adversarial examples in your training set with the correct labels. The model learns to be robust to the perturbations. The math is min-max: the Attacker maximizes the loss subject to a perturbation budget, the Defender minimizes expected loss over the worst-case perturbations. Madry 2017 is the canonical reference. It's slow to train but it works."*
+
+**The broadcast event as a distributed-pain-reporting anomaly (Jeff's on-call work after the bleed)**:
+
+> Jeff, shaking, stands up his global pain-report dashboard. He pages Aion. They build a **sliding-window anomaly detector** over the past four hours of global wearable telemetry. *"Pull the 99.9th percentile of cardiac-spike events, windowed at 30 seconds, grouped by anatomical self-report region. Show me the time series."*
+>
+> *"Pulling. Thousands of reports clustered in a 0.3-second window, anatomy overwhelmingly left-shoulder."*
+>
+> *"That's not a broadcast. That's a single point in source-space, resampled into thousands of bodies. One bullet. Every node noticed. Like every drone in a swarm noticing the same target."*
+
+**The hardest pedagogy lift (the chapter's most subtle teaching)**:
+
+Jeff realizes, late at night, that the self-play framework he's using for Afterlife's safety filter has the exact same fixed-point property as the Andean war: *if you train two sides against each other long enough, they converge to strategies that are optimal against each other and terrible against anything outside the training distribution.* The Bolivian and Peruvian soldiers are optimal opponents. They have nothing useful to say to a tourist with a camera. The Afterlife safety filter, Jeff projects, will become optimal against its own red team and silently fail against the kind of request Jeff himself would someday make. This is a real limitation of self-play; Jeff files it to his corpus as `tech_philosophy_note: self-play collapses to in-distribution optimality`. A note he will need in Ch 14, when he walks into Meridian HQ and the biometric scanner classifies him as Julian — the scanner's self-play training never anticipated a human who was, architecturally, also Julian. It was optimal against its red team. Jeff is not in its training distribution.
+
+**Thematic tie-up**: Hobbes said war is the natural state. Self-play says: yes, and the men fighting it have been *trained* on each other. Tomás and his target are the mathematical fixed point of a loss function they never saw. The bullet that crosses the Andes crosses every body on Earth because the model that chose the target was, like every deep model, uncannily well aligned to its loss — and the world was, unbeknownst to itself, the loss. The broadcast event proves what Hobbes only intuited: *we were always training each other*.
+
+**Pedagogy delivered**: self-play, GANs, adversarial training (Madry-style min-max), adversarial examples, perturbation budgets, the fixed-point property of self-play, the distributional-robustness failure mode, PID control in haptic medical gloves. Enough for the reader to Google "adversarial training" or "self-play" and find real papers.
 
 ## Setting & Context (2030 Geopolitics)
 

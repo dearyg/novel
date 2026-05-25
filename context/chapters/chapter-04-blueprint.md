@@ -1,5 +1,11 @@
 # Chapter 4 Blueprint: "0x04: Dual-Stack Rendering"
 
+> **Revision plan reference (added Apr 28 2026):** see `context/revision-plan.md` for the canonical IP rename (Vance→Meridian, Vacheron→Auberval), résumé-block deconstruction rule, paper-citation removal, and discovery-log diversification. The current prose in `prose/chapter-NN.md` reflects all completed phases of that plan; future revisions should reference this file.
+
+> **Character voice fingerprints (added 2026-05):** every speaker in this chapter must honor their voice contract in `story-bible.md` → CHARACTER VOICE FINGERPRINTS. Strip the attribution tag and a reader who knows the cast should still be able to name the speaker within two sentences. Aion is always italicized. Action beats every 3-4 turns; no more than 2 consecutive turns of pure verbal exchange.
+>
+> **Dialogue & character-intro standard (added Apr 2026):** every named character that appears in this chapter must receive an eight-component intro on first speak (name, age, body, history, domain expertise, tic, relationship to Jeff or Julian, relationship to the chapter's central question). The marquee scene runs 20–40 turns of substantive dialogue. See `story-bible.md` → DIALOGUE DENSITY (Sophie's World) and CHARACTER INTRODUCTION DISCIPLINE.
+
 > The basketball chapter. 70% follows an aging NBA legend through his final season in 2030's AI/AR-enhanced league. Jeff watches from a sports bar, and the player's story becomes a mirror for the novel's deepest question: if the hardware degrades but the software persists, where does the person live?
 
 ## System Architecture Reference
@@ -7,7 +13,7 @@
 ```json
 {
   "system_manifest": {
-    "novel_title": "The Senior Observer",
+    "novel_title": "Life of an SDE",
     "build_version": "2030.04.14",
     "author_uid": "Jeff_Zhang_Senior_SDE",
     "global_variables": {
@@ -38,6 +44,40 @@
 ## Role
 
 Master Philosophical Novelist. Radical tempo shift — after three chapters of escalating anomalies, Ch 4 breathes. Reads like a sports documentary crossed with existential philosophy. The basketball player's story IS the philosophy: Locke's memory theory made visceral through a body failing while the mind remembers perfection.
+
+## Tech-Fight Spine: Distilling Monroe
+
+**Philosophy question (opens via Monroe's internal monologue in the tunnel)**: Locke's Memory Theory of Identity — if my hardware (body) degrades but my software (memory, style, will) persists, where does the person live? Is the "Monroe" that Coach-7 can perfectly simulate in software actually still Monroe?
+
+**Engineering problem (arises when Jeff installs Aion v2 at the sports bar and Aion surfaces a Meridian team ticket in his queue)**: Jeff's team has been tasked with **distilling** the flagship Meridian coaching model — Coach-7, the same one Monroe is ignoring in his earpiece tonight — down by 30× so it can run locally on consumer-grade AR glasses for high-school players. Quality must hold. Latency must drop from 200ms to 20ms. This is **knowledge distillation**: training a small "student" network to mimic a large "teacher" network's outputs. The sports-bar scene becomes a live audit of the distillation process — Jeff watches Monroe play against the full teacher (Coach-7) while a distilled student is running experiments in a tab on Jeff's phone.
+
+### Pedagogy content the novelist expands into scene
+
+**What distillation is (Jeff explaining to his culled colleague at the bar, partly to avoid the harder conversation)**:
+
+> *"You have a big model. Too big to ship. So you use it to train a small one. The small one — the student — is trained not on the original labels but on the big model's outputs. The soft probabilities. You minimize KL divergence between teacher and student. The student ends up mimicking the teacher's decision surface, including the informative 'how sure am I' signal. You get 90 percent of the teacher's quality at maybe 3 percent of the compute. Hinton's paper. 2015."*
+>
+> The colleague, half-listening: *"So you're making a tiny Monroe."*
+>
+> *"Yeah. Technically."*
+
+**Why KL divergence and not just copying the argmax (Aion walks Jeff through it)**:
+
+> *"When the teacher sees a borderline case — a contested three, 28 percent probability of going in — the label says 'missed shot.' But the teacher's internal distribution says 'borderline.' Training on the label throws that away. Training on the distribution keeps it. The student learns not just what the teacher would do, but how the teacher is uncertain. That's why distilled models often generalize better than models trained from scratch at the student's size."*
+
+**Quantization as the other knob (sketch on the whiteboard that isn't Jeff's — Marcus has sent Jeff a diagram over Slack)**:
+
+> A small image: a float32 number line squished into 8-bit buckets. Marcus's note: *"quality takes a hit but the model drops to 25% memory. combined with distillation: 12x params drop + 4x bit-width drop = 48x smaller. we're at 30x and plateauing. need to prune the MLP layers too."* Jeff reads this one-handed while watching Monroe miss a three-pointer.
+
+**Monroe's postgame quote as the chapter's thesis**:
+
+> *"The metrics don't know why I play. The AI can simulate my shooting form. It doesn't know what it's like to miss and still believe."*
+
+Jeff pauses the replay. The distilled Coach-7 student — running in the tab on his phone — can simulate Monroe's shooting form with 94% fidelity. But the fidelity is in the output, not in the substrate. The student has no memory of training. It has no belief. Monroe just named what Aion will confess in Ch 13: *processing is not experiencing*. The distilled model is the clearest technical example of this gap in the whole novel. A student network that can output "Monroe" but cannot be Monroe.
+
+**Thematic tie-up**: Locke asks where the person lives when the body fails. The engineering answer: in a 30× smaller distilled copy, the person's decisions persist, the distributions persist, the style persists — and every genuine player who has ever watched the distilled Monroe play against their own child on a public court has felt the absence of the thing no KL divergence can capture. Locke is right about memory; he is wrong that memory is sufficient. The distilled Monroe proves both halves at once.
+
+**Pedagogy delivered**: knowledge distillation (teacher-student, Hinton 2015); KL divergence as a training loss (explained in terms of preserving uncertainty signal); quantization (float32 → int8); structured pruning; the practical trade-offs of shipping models to edge devices. The reader leaves understanding why a shrunk model can work and why it still doesn't capture "the player."
 
 ## Setting & Context (2030 Sports)
 

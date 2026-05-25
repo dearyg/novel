@@ -1,23 +1,24 @@
 import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/Layout";
+import NewsletterSignup from "../components/NewsletterSignup";
 import CodeRain from "../components/animations/CodeRain";
 import WordReveal from "../components/animations/WordReveal";
 import ScrollReveal from "../components/animations/ScrollReveal";
-import ScanBeam from "../components/animations/ScanBeam";
 import Typewriter from "../components/animations/Typewriter";
 import AmbientParticles from "../components/animations/AmbientParticles";
-import { getNovelBySlug, getChaptersByNovel, getWritingStyles } from "../lib/supabase";
+import { getNovelBySlug, getChapterIndex, getWritingStyles } from "../lib/supabase";
 import { useReadingProgress } from "../lib/useReadingProgress";
 
 const SLUG = "the-senior-observer";
+const AUTHOR = "Homer";
 
 export async function getStaticProps() {
   try {
     const novel = await getNovelBySlug(SLUG);
     if (!novel) return { props: { novel: null, chapters: [], styles: [] }, revalidate: 60 };
     const [chapters, styles] = await Promise.all([
-      getChaptersByNovel(novel.id),
+      getChapterIndex(novel.id),
       getWritingStyles(),
     ]);
     return { props: { novel, chapters, styles }, revalidate: 60 };
@@ -42,11 +43,12 @@ export default function Home({ novel, chapters, styles }) {
   const lastRead = getLastRead(novel.slug);
   const continueChapter = lastRead || (chapters.length > 0 ? chapters[0].chapter_number : null);
   const readCount = chapters.filter((ch) => isRead(novel.slug, ch.chapter_number)).length;
+  const zhCount = chapters.filter((ch) => ch.has_zh).length;
 
   return (
     <>
       <Head>
-        <title>{`${novel.title} — by ${novel.author}`}</title>
+        <title>{`${novel.title} — by ${AUTHOR}`}</title>
         <meta name="description" content={novel.description || novel.title} />
       </Head>
 
@@ -63,25 +65,16 @@ export default function Home({ novel, chapters, styles }) {
 
           <div className="relative max-w-6xl mx-auto px-4 py-14 md:py-24">
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-16">
-              {/* Book cover with scan beam */}
+              {/* Book cover */}
               <ScrollReveal>
                 <div className="shrink-0 relative group">
-                  <ScanBeam>
-                    <div
-                      className="w-56 md:w-64 aspect-[3/4] rounded-xl shadow-2xl flex flex-col items-center justify-between p-6 transition-transform group-hover:scale-[1.02]"
-                      style={{ background: `linear-gradient(160deg, ${novel.cover_color}ee, ${novel.cover_color}cc 50%, ${novel.cover_color}aa)` }}
-                    >
-                      <span className="text-white/70 text-[10px] uppercase tracking-[0.3em]">
-                        {novel.tagline || "a novel"}
-                      </span>
-                      <span className="text-white text-lg md:text-xl font-bold text-center leading-tight text-glitch">
-                        {novel.title}
-                      </span>
-                      {novel.author && (
-                        <span className="text-white/70 text-xs">{novel.author}</span>
-                      )}
-                    </div>
-                  </ScanBeam>
+                  <img
+                    src="/cover-hero.jpg"
+                    alt={`${novel.title} — cover`}
+                    width={1200}
+                    height={1766}
+                    className="block w-44 sm:w-52 md:w-64 h-auto rounded-xl shadow-2xl ring-1 ring-white/5 transition-transform group-hover:scale-[1.02]"
+                  />
                   <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-4/5 h-8 bg-black/40 blur-xl rounded-full" />
                 </div>
               </ScrollReveal>
@@ -92,15 +85,16 @@ export default function Home({ novel, chapters, styles }) {
                   <h1 className="text-3xl md:text-5xl font-bold leading-[1.1] text-gradient-animate">
                     {novel.title}
                   </h1>
+                  <p className="text-secondary text-sm md:text-base mt-2 italic">
+                    Life of an SDE
+                  </p>
                 </ScrollReveal>
 
-                {novel.author && (
-                  <ScrollReveal delay={200}>
-                    <p className="text-secondary text-base mt-3">
-                      by <span className="text-primary font-medium">{novel.author}</span>
-                    </p>
-                  </ScrollReveal>
-                )}
+                <ScrollReveal delay={200}>
+                  <p className="text-secondary text-base mt-3">
+                    by <span className="text-primary font-medium">{AUTHOR}</span>
+                  </p>
+                </ScrollReveal>
 
                 {/* Tags */}
                 <ScrollReveal delay={300}>
@@ -163,7 +157,7 @@ export default function Home({ novel, chapters, styles }) {
 
                 {/* Stats */}
                 <ScrollReveal delay={1000}>
-                  <div className="flex items-center justify-center lg:justify-start gap-6 mt-8 text-sm">
+                  <div className="flex items-center justify-center lg:justify-start gap-x-5 gap-y-3 mt-8 text-sm flex-wrap">
                     <div>
                       <span className="block text-xl font-bold text-primary">{chapters.length}</span>
                       <span className="text-[11px] text-muted uppercase tracking-wider">Chapters</span>
@@ -179,6 +173,15 @@ export default function Home({ novel, chapters, styles }) {
                         <div>
                           <span className="block text-xl font-bold text-accent">{readCount}/{chapters.length}</span>
                           <span className="text-[11px] text-muted uppercase tracking-wider">Read</span>
+                        </div>
+                      </>
+                    )}
+                    {zhCount > 0 && (
+                      <>
+                        <div className="w-px h-10 bg-border" />
+                        <div>
+                          <span className="block text-xl font-bold text-blue">{zhCount}</span>
+                          <span className="text-[11px] text-muted uppercase tracking-wider">中文</span>
                         </div>
                       </>
                     )}
@@ -217,25 +220,19 @@ export default function Home({ novel, chapters, styles }) {
                   <div className="relative">
                     <div className="w-11 h-11 rounded-xl bg-accent/10 text-accent flex items-center justify-center mb-4">
                       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                        <rect x="3" y="3" width="7" height="7" /><rect x="14" y="3" width="7" height="7" />
-                        <rect x="14" y="14" width="7" height="7" /><rect x="3" y="14" width="7" height="7" />
+                        <path d="M5 8l6 6" /><path d="M4 14l6-6 2-3" /><path d="M2 5h12" /><path d="M7 2h1" /><path d="M22 22l-5-10-5 10" /><path d="M14 18h6" />
                       </svg>
                     </div>
-                    <h3 className="text-base font-semibold text-primary mb-2 text-glitch">Choose Your Style</h3>
+                    <h3 className="text-base font-semibold text-primary mb-2 text-glitch">Bilingual</h3>
                     <p className="text-sm text-secondary leading-relaxed">
-                      Read every chapter in Literary, Concise, or Cinematic voice.
-                      The story adapts to how <em>you</em> prefer to read.
+                      Every chapter and every reference doc — written in both
+                      English and 中文. Toggle on the page; the language sticks.
                     </p>
-                    {styles.length > 0 && (
-                      <div className="flex items-center gap-1.5 mt-4 flex-wrap">
-                        <span className="text-[10px] px-2 py-0.5 rounded-full bg-accent/10 text-accent">Original</span>
-                        {styles.map((s) => (
-                          <span key={s.style_key} className="text-[10px] px-2 py-0.5 rounded-full bg-surface-alt text-secondary">
-                            {s.label}
-                          </span>
-                        ))}
-                      </div>
-                    )}
+                    <div className="flex items-center gap-1.5 mt-4 flex-wrap">
+                      <span className="text-[10px] px-2 py-0.5 rounded-full bg-accent/10 text-accent">English</span>
+                      <span className="text-[10px] px-2 py-0.5 rounded-full bg-accent/10 text-accent">中文</span>
+                      <span className="text-[10px] px-2 py-0.5 rounded-full bg-surface-alt text-muted">~330k + ~125k chars</span>
+                    </div>
                   </div>
                 </div>
 
@@ -247,10 +244,12 @@ export default function Home({ novel, chapters, styles }) {
                         <path d="M12 2L2 7l10 5 10-5-10-5z" /><path d="M2 17l10 5 10-5" /><path d="M2 12l10 5 10-5" />
                       </svg>
                     </div>
-                    <h3 className="text-base font-semibold text-primary mb-2 text-glitch">AI-Evolved Prose</h3>
+                    <h3 className="text-base font-semibold text-primary mb-2 text-glitch">A Living Novel</h3>
                     <p className="text-sm text-secondary leading-relaxed">
-                      Written with human plot, refined by AI across multiple passes.
-                      Each iteration sharper, richer, more alive — quality compounds.
+                      Human plot, AI-refined prose across multiple passes — and it
+                      doesn't stop. As AI models get better, the chapters get
+                      revisited. The book you read next year won't be the book you
+                      read today.
                     </p>
                     <div className="mt-4 flex items-center gap-2 text-[11px]">
                       <span className="text-muted">Iterations:</span>
@@ -259,7 +258,7 @@ export default function Home({ novel, chapters, styles }) {
                           <div key={i} className={`w-1.5 h-5 rounded-sm ${i <= 4 ? "bg-accent" : "bg-border"}`} />
                         ))}
                       </div>
-                      <span className="text-accent font-semibold">v4</span>
+                      <span className="text-accent font-semibold">v4 · ongoing</span>
                     </div>
                   </div>
                 </div>
@@ -305,9 +304,10 @@ export default function Home({ novel, chapters, styles }) {
                     {chapters.map((ch) => {
                       const read = isRead(novel.slug, ch.chapter_number);
                       const isContinue = ch.chapter_number === lastRead;
+                      const title = ch.title_en || ch.title_zh || `Chapter ${ch.chapter_number}`;
                       return (
                         <Link
-                          key={ch.id}
+                          key={ch.chapter_number}
                           href={`/${ch.chapter_number}`}
                           className="group flex items-center gap-4 px-5 py-3.5 hover:bg-surface-alt transition-colors"
                         >
@@ -315,9 +315,15 @@ export default function Home({ novel, chapters, styles }) {
                             {String(ch.chapter_number).padStart(2, "0")}
                           </span>
                           <span className="flex-1 text-sm text-primary group-hover:text-accent transition-colors text-glitch">
-                            {ch.title}
+                            {title}
                           </span>
                           <div className="flex items-center gap-2 shrink-0">
+                            {ch.has_en && (
+                              <span className="text-[9px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-accent/10 text-accent font-semibold">EN</span>
+                            )}
+                            {ch.has_zh && (
+                              <span className="text-[9px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-blue/10 text-blue font-semibold">中</span>
+                            )}
                             {isContinue && (
                               <span className="text-[10px] uppercase tracking-wider text-accent font-semibold px-2 py-0.5 rounded bg-accent/10">
                                 Continue
@@ -340,9 +346,54 @@ export default function Home({ novel, chapters, styles }) {
                   </div>
                 ) : (
                   <div className="py-12 text-center text-sm text-muted">
-                    First chapters coming soon.
+                    First chapters coming soon. Run <code className="text-accent">node scripts/seed-prose.mjs</code> to upload prose.
                   </div>
                 )}
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* Newsletter */}
+        <section className="py-10 md:py-14 px-4 border-b border-border">
+          <div className="max-w-2xl mx-auto">
+            <ScrollReveal>
+              <NewsletterSignup source="homepage" />
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* Support */}
+        <section className="py-10 md:py-14 px-4 border-b border-border">
+          <div className="max-w-2xl mx-auto">
+            <ScrollReveal>
+              <div className="rounded-2xl border border-amber-400/40 bg-amber-400/[0.06] p-6 md:p-7 flex flex-col sm:flex-row items-center gap-5 text-center sm:text-left">
+                <div className="w-14 h-14 rounded-2xl bg-amber-400/20 flex items-center justify-center text-amber-300 shrink-0">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M5 8h14a1 1 0 0 1 1 1v1a4 4 0 0 1-4 4h-.18A4 4 0 0 1 12 17a4 4 0 0 1-3.82-3H8a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1zm14 1v1a3 3 0 0 1-2.13 2.87A4 4 0 0 0 17 12V9zM7 19h10a1 1 0 0 1 0 2H7a1 1 0 0 1 0-2z" />
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-base md:text-lg font-semibold text-primary">
+                    Free, always. Built on weekends.
+                  </h3>
+                  <p className="text-sm text-secondary mt-1 leading-relaxed">
+                    No paywall, no ads, no email gate. The novel is finished — but it keeps
+                    getting sharper as AI improves. If it earned an hour of your time, you can
+                    buy me a coffee.
+                  </p>
+                </div>
+                <a
+                  href="https://buymeacoffee.com/dearyg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-amber-400 hover:bg-amber-300 text-black text-sm font-semibold transition-colors shadow-lg shadow-amber-400/20 shrink-0"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M5 8h14a1 1 0 0 1 1 1v1a4 4 0 0 1-4 4h-.18A4 4 0 0 1 12 17a4 4 0 0 1-3.82-3H8a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1zm14 1v1a3 3 0 0 1-2.13 2.87A4 4 0 0 0 17 12V9zM7 19h10a1 1 0 0 1 0 2H7a1 1 0 0 1 0-2z" />
+                  </svg>
+                  Buy me a coffee
+                </a>
               </div>
             </ScrollReveal>
           </div>

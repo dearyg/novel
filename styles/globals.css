@@ -369,9 +369,7 @@ html.light {
   .scan-beam,
   .word-reveal > span,
   .reveal-on-scroll,
-  .code-particle,
   .btn-pulse,
-  .ambient-dot,
   .stagger-children > *,
   .card-glow::before,
   .prose-reveal,
@@ -381,4 +379,52 @@ html.light {
     transform: none !important;
     filter: none !important;
   }
+  /* Decorative particles: hide entirely under reduced motion. Showing them
+     frozen at the start of their animation looks like a bug. */
+  .code-particle,
+  .ambient-dot {
+    display: none !important;
+  }
+}
+
+/* ========== MARKDOWN DOCS ========== */
+.md-content {
+  font-family: var(--font-sans);
+  color: var(--color-body);
+  font-size: 15.5px;
+  line-height: 1.75;
+}
+.md-content > * + * { margin-top: 0; }
+.md-content h1 { color: var(--color-primary); }
+.md-content h2 { color: var(--color-primary); border-bottom: 1px solid var(--color-border); padding-bottom: .35rem; }
+.md-content code { font-family: var(--font-mono); }
+.md-content pre code { font-size: 12.5px; line-height: 1.55; }
+.md-content table { display: table; }
+.md-content th { color: var(--color-muted); }
+.md-content td { color: var(--color-body); vertical-align: top; }
+.md-content blockquote { color: var(--color-secondary); }
+.md-content ul, .md-content ol { color: var(--color-body); }
+.md-content li { margin-bottom: 0.25rem; }
+
+/* Chinese prose tweaks */
+.prose-zh {
+  font-family: var(--font-serif), "Songti SC", "Noto Serif SC", "Source Han Serif SC", serif;
+  letter-spacing: 0.01em;
+}
+.prose-zh p { text-indent: 0; }
+
+/* ========== COPY PROTECTION ==========
+   Discourage casual copying of prose. Form fields stay copyable so that
+   the comment composer / owner key entry / receipt sharing still work. */
+html, body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+input, textarea, [contenteditable="true"] {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
 }
