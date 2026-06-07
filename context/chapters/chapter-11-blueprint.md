@@ -41,11 +41,15 @@
 }
 ```
 
+> **FLAG — Julian-age conflict (do not resolve here):** Prose locks Julian Meridian at **52** (global-revision-plan §0 ledger canon). His bible backstory (mother died 2005 when he was 14) implies ~**39**. The bible voice-card says "~50." Three documents disagree. Prose is locked to 52; the bible's internal conflict must be escalated to the showrunner / integration reviewer, not silently resolved in per-chapter edits.
+
 ## Role
 
 Master Philosophical Novelist. This chapter should feel like a confrontation — not a fight but an uncomfortable reckoning. Jeff is a comfortable SDE from Irvine. Kael is a homeless man who was "culled" by the same tech industry Jeff survived. They share something at the deepest level, and Kael has every right to be furious about that.
 
 ## Tech-Fight Spine: Transfer Learning — What Survives a Deployment to a New Environment
+
+> **v5 STATUS (reconciled):** Transfer learning / LoRA is now **fully dramatized in the v5 prose** as Sophie's-World dialogue between Jeff and Kael (crouched in the rain). The global-revision-plan §3.1 listed this spine as "absent" — that was a pre-v5 tracking note. The concept is present, Socratic, and complete. The balanced-pretraining insight (Kael's OR analogy from Pacific Routing), the LoRA cost economics (Aion's GPU-hour log), and the out-of-scope vs. out-of-distribution distinction are all in prose. No net-new CS scene needed.
 
 **Philosophy question (Kael's chapter)**: Marx — material conditions shape consciousness. If the same soul gets two different resource allocations, is it the same soul? What transfers between them?
 
@@ -93,7 +97,7 @@ Master Philosophical Novelist. This chapter should feel like a confrontation —
 
 ## Character Profile: Kael
 
-- **Age**: 30s. Gaunt, weathered. Intelligent eyes that are always calculating — not the desperation of addiction but the precision of someone who used to solve complex problems.
+- **Age**: 34 (canonical per global-revision-plan §0 ledger; "30s" was the bible's non-committal range — locked to 34 novel-wide). Gaunt, weathered. Intelligent eyes that are always calculating — not the desperation of addiction but the precision of someone who used to solve complex problems.
 - **Background**: Senior logistics engineer at a supply-chain company. 12 years. Laid off when AI optimization made his role redundant. Couldn't find work — every job he applied for had been automated. Eviction. Shelter system overwhelmed. The street.
 - **Personality**: Bitter, sharp, darkly funny. Not broken — angry. He sees the irony in everything: the tech that took his job now offers digital paradise. The SDE class that created AI now comes to his neighborhood to "find themselves."
 - **The truth about Kael**: He doesn't have anomalies. He doesn't feel bleeds. He's just a man with nothing between him and reality. No comfortable partition, no suburban buffer, no garage homelab to retreat to. His suffering made him the thinnest partition in the novel — closest to the raw truth without any of the tools to process it.
@@ -200,15 +204,13 @@ The most uncomfortable question in the novel: if they're the same instance, why 
 - **The Visual Merge**: Jeff's experience only. Kael doesn't see it. The asymmetry matters — Jeff gets the mystical revelation; Kael gets the rain.
 - **Lena's surveillance**: Should feel like the walls closing in. The reader sees Jeff's situation from both inside (profound discovery) and outside (psychotic episode). Both readings are plausible.
 
-## Mandatory Chapter Footer (Code Block)
+## Chapter Footer (v5 — diversified per P1.7)
 
-```cpp
-/* Discovery Log: 0x0B */
-if (instance_A.biometrics == instance_B.biometrics
-    && instance_A.genetics != instance_B.genetics) {
-    throw MirrorException("Same pattern. Different substrate. Impossible.");
-}
-```
+> **NOTE (reconciled to v5 prose):** The C++ `/* Discovery Log: 0x0B */` block above is STALE. Per revision-plan P1.7, footers were intentionally diversified into in-world artifacts; the C++ block was NOT restored. Do NOT revert to the code block.
+
+The actual v5 prose footer is Ruth Chen's **typewritten KCRC 1480 AM radio segment** — a third-person artifact typed on her Smith-Corona, single carbon copy, taped inside the shipping container. It reads her Thursday Roundup (segment 3) noting two listeners who independently wrote in about dreaming of a cold stranger in a distant city, and closes with her editorial stance: *"I am not going to interpret this on the air. I am going to read the letters, and you can decide. That is the whole job, and it is the only one I have left. — R."*
+
+This footer is canonical and intentional: it anchors Ruth as the off-allocator witness/archivist, closes the chapter in her voice rather than a system log, and is the in-world artifact that replaces the Discovery Log for this chapter.
 
 
 ---
@@ -229,7 +231,7 @@ if (instance_A.biometrics == instance_B.biometrics
 - **Her rule**: Ruth has lived entirely in a **2015-era analog life** since 2022. No smartphone. No allocator account. No Afterlife subscription. No neural-link anything. No AI copilot. No predictive AI. No smart home. She has a landline telephone — copper-wire POTS service that the telco is legally required to maintain and has been steadily trying to sunset for years. She cooks on a propane camp stove. She grinds her coffee with a hand-crank grinder she has owned since the nineties. She listens to the news on a shortwave radio. She reads paper newspapers she subscribes to via postal mail, which arrive three days late.
 - **Superpower (cast-of-specialists framing)**: Ruth is the deliberate **out-of-distribution control sample**. The team's data is contaminated by the substrate they're investigating — everyone in the corpus is running allocator-connected hardware, everyone's biometrics flow through Meridian's telemetry pipe, everyone's decisions are legibly shaped by AI exposure. Ruth is the one person Jeff can point to whose behavioral signature is *architecturally clean*. When Aion asks "what would a human untouched by any 2030 AI product look like as a data point?" the answer is Ruth. She is the team's silent baseline.
 - **Why she's here**: She covered tech for 34 years. She watched everyone she respected get funded, scale, go public, and ship products that broke things she loved. In 2022 she decided to conduct a personal experiment: could a modern adult live a 2015 life, intentionally, on purpose, for the rest of her life? She is now eight years into the experiment and plans to die in it. She does not think she is better than anyone. She thinks she is the control group.
-- **Pirate radio**: She broadcasts a three-hour show every Tuesday, Thursday, and Saturday, 7–10 PM local, on **1480 AM** — a real, FCC-assignable frequency. Her signal reaches about 30 miles with a good atmospheric window. She calls it *"The Back Page."* The content is: whatever she is thinking about that week, paper newspaper clippings she reads aloud, a small segment at the end where she reads letters (paper mail) from listeners. She has maybe 400 regular listeners. One of them is Kael, who runs a battery-powered handheld AM radio she gave him. He records each show on a cassette recorder — yes, cassettes, he found a working deck in a pawn shop — and listens back during the day.
+- **Pirate radio**: She broadcasts a three-hour show every Tuesday, Thursday, and Saturday, 7–10 PM local, on **1480 AM (KCRC)** — a real, FCC-assignable frequency. Her signal reaches about 30 miles with a good atmospheric window. In prose she refers to it only by its frequency ("Fourteen-eighty AM"); the planning-stage title *"The Back Page"* does not appear in v5 prose — the show is identified in the chapter footer as **"KCRC 1480 AM — Thursday Roundup."** The content is: whatever she is thinking about that week, paper newspaper clippings she reads aloud, a small segment at the end where she reads letters (paper mail) from listeners. She has maybe 400 regular listeners. One of them is Kael, who runs a battery-powered handheld AM radio she gave him. He records each show on a cassette recorder — yes, cassettes, he found a working deck in a pawn shop — and listens back during the day.
 - **The allocator does not know she exists**: She has a birth certificate, a Social Security number, and an address. That is it. She has not generated a biometric-platform identity in eight years. She pays her taxes by mail. The allocator's recommendation engine has no model of her. When Jeff eventually feeds her to Aion for analysis, Aion reports: *"I have insufficient training data to render a prediction on this subject's likely behavior. She is a distribution I have never sampled. Recommend treating her as a manual-annotation case."*
 
 ---

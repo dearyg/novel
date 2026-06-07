@@ -35,7 +35,7 @@
       "sub_story": "Basketball #1 — Darius Monroe's final season",
       "interactive_choice": null,
       "reader_misdirection": "The reader relaxes. No anomaly this chapter. But the philosophy seeds plant deep, and the kid's drawing is undeniable evidence.",
-      "discovery_log": "/* Discovery Log: 0x04 */\nif (hardware.degraded() && software.intact()) {\n    identity.location = UNDEFINED;\n    // Where does the person live?\n}"
+      "discovery_log": "STALE — v5 prose uses a blockquote in-world artifact (Nora's crayon drawing + dialogue) per P1.7 footer diversification. See Chapter Footer section below."
     }
   ]
 }
@@ -47,13 +47,15 @@ Master Philosophical Novelist. Radical tempo shift — after three chapters of e
 
 ## Tech-Fight Spine: Distilling Monroe
 
+> **v5 status (2026-06):** Knowledge distillation is **now fully dramatized in the v5 prose** as a Socratic Jeff–Priya Ramanathan exchange at Fitch's Sports Bar (prose lines 65–153). The global-revision-plan §3.1 flagged it as "wholly absent" in earlier drafts; that gap is closed. The scene covers: teacher vs. student networks, soft targets / KL divergence, temperature scaling, quantization (float32 → int8), and the "ninety-four percent of Monroe" throughline. The Crichton bar is met. No net-new CS content needs to be added here.
+
 **Philosophy question (opens via Monroe's internal monologue in the tunnel)**: Locke's Memory Theory of Identity — if my hardware (body) degrades but my software (memory, style, will) persists, where does the person live? Is the "Monroe" that Coach-7 can perfectly simulate in software actually still Monroe?
 
 **Engineering problem (arises when Jeff installs Aion v2 at the sports bar and Aion surfaces a Meridian team ticket in his queue)**: Jeff's team has been tasked with **distilling** the flagship Meridian coaching model — Coach-7, the same one Monroe is ignoring in his earpiece tonight — down by 30× so it can run locally on consumer-grade AR glasses for high-school players. Quality must hold. Latency must drop from 200ms to 20ms. This is **knowledge distillation**: training a small "student" network to mimic a large "teacher" network's outputs. The sports-bar scene becomes a live audit of the distillation process — Jeff watches Monroe play against the full teacher (Coach-7) while a distilled student is running experiments in a tab on Jeff's phone.
 
 ### Pedagogy content the novelist expands into scene
 
-**What distillation is (Jeff explaining to his culled colleague at the bar, partly to avoid the harder conversation)**:
+**What distillation is (Jeff explaining to Priya Ramanathan at the bar, partly to avoid the harder conversation)**:
 
 > *"You have a big model. Too big to ship. So you use it to train a small one. The small one — the student — is trained not on the original labels but on the big model's outputs. The soft probabilities. You minimize KL divergence between teacher and student. The student ends up mimicking the teacher's decision surface, including the informative 'how sure am I' signal. You get 90 percent of the teacher's quality at maybe 3 percent of the compute. Hinton's paper. 2015."*
 >
@@ -61,7 +63,7 @@ Master Philosophical Novelist. Radical tempo shift — after three chapters of e
 >
 > *"Yeah. Technically."*
 
-**Why KL divergence and not just copying the argmax (Aion walks Jeff through it)**:
+**Why KL divergence and not just copying the argmax (Priya presses Jeff on it; she named the concept "dark knowledge" from her Flexion days)**:
 
 > *"When the teacher sees a borderline case — a contested three, 28 percent probability of going in — the label says 'missed shot.' But the teacher's internal distribution says 'borderline.' Training on the label throws that away. Training on the distribution keeps it. The student learns not just what the teacher would do, but how the teacher is uncertain. That's why distilled models often generalize better than models trained from scratch at the student's size."*
 
@@ -111,7 +113,7 @@ Monroe stares at the ceiling. He thinks about identity — not in Locke's words,
 He puts the AR contacts back in. Overlays return. *"One more half."*
 
 ### Beat 4: The Third Quarter — Jeff Watches
-CUT TO Jeff. Sports bar in Irvine with a former colleague. The game on every screen. Jeff installs **Aion v2** on his phone — a major upgrade. Now Aion is a dedicated debugging partner, like pair-programming with something that never sleeps. Between plays, Jeff configures a biometric monitoring pipeline: logging anomaly timestamps, durations, geographic origins. He treats himself as a distributed system with data leaks.
+CUT TO Jeff. Sports bar in Irvine with **Priya Ramanathan** (see Beat 5). The game on every screen. Jeff installs **Aion v2** on his phone — a major upgrade. Now Aion is a dedicated debugging partner, like pair-programming with something that never sleeps. Between plays, Jeff configures a biometric monitoring pipeline: logging anomaly timestamps, durations, geographic origins. He treats himself as a distributed system with data leaks.
 
 Monroe takes a contested three in the third quarter. AR overlay: 28% probability. His muscle memory: shoot. He shoots. The ball hangs.
 
@@ -120,9 +122,9 @@ Miss.
 The bar groans. Jeff feels a strange sadness — not an anomaly, just human empathy for a man whose hardware is deprecated while his software still runs the latest firmware.
 
 ### Beat 5: The Culling
-Jeff and his colleague talk. The colleague was "culled" six months ago — laid off by AI optimization, doing gig work now. The conversation broadens: the Culling didn't just eliminate jobs, it eliminated the IDEA that humans have inherent economic value. If an AI does your job better, you're "deprecated." The colleague: *"I'm a legacy system. Nobody's maintaining me."*
+Jeff and **Priya Ramanathan** (age 39, former staff prompt-and-eval engineer at Flexion, culled 2028 when Flexion folded its applied team into a model) talk. She was culled, doing red-team and eval gig contracts now. The conversation broadens: the Culling didn't just eliminate jobs, it eliminated the IDEA that humans have inherent economic value. If an AI does your job better, you're "deprecated."
 
-Jeff connects it to Monroe: the player fights the same battle. AI can play better basketball. AI coaches are more efficient. The league keeps Monroe because fans love him — but the system has already moved past him. Monroe and the culled colleague are both running on hardware the world no longer supports.
+Jeff connects it to Monroe: the player fights the same battle. AI can play better basketball. AI coaches are more efficient. The league keeps Monroe because fans love him — but the system has already moved past him. Monroe and Priya are both running on hardware the world no longer supports.
 
 This is the world that makes Afterlife seductive. If your body is deprecated and your job is gone, why NOT plug in?
 
@@ -155,9 +157,14 @@ Jeff pauses the replay. Monroe just described Aion's limitation without knowing 
 - **No anomalies**: Jeff doesn't bleed this chapter. The kid's drawing is the only hint. The chapter breathes.
 - **The SDE thread**: Jeff's monitoring pipeline setup, Aion v2 upgrade, treating himself as a distributed system.
 
-## Mandatory Chapter Footer (Code Block)
+## Chapter Footer (v5 — in-world artifact, not C++)
+
+The v5 prose footer is **not** a C++ discovery log. Per revision-plan **P1.7**, footer diversity is intentional and approved — do NOT restore the C++ block below.
+
+The actual prose footer (lines 299–304 of `prose/chapter-04.md`) is a **blockquote in-world artifact**: a description of the crayon drawing Nora pinned to the refrigerator, followed by the three-line exchange ("Where did you see this, bug." / "In my head." / "I don't know. It's cold in there."). It is set apart by a `---` rule and rendered as a block-quoted child's testimony, not code. The event-index line ("Event index zero four.") immediately precedes it in the prose body.
 
 ```cpp
+/* STALE — do not use */
 /* Discovery Log: 0x04 */
 if (hardware.degraded() && software.intact()) {
     identity.location = UNDEFINED;

@@ -1,20 +1,16 @@
 # Chapter 16 — 0x10: The Convergence
 
-Jeff arrives at Julian's Geneva tower before dawn. Aion v4 has migrated to faster local hardware overnight; in the corner of his terminal, a v5 compile is silently running.
+Jeff arrives at Julian's Geneva tower at 4:15 a.m. Aion v4 has migrated to faster local hardware; a v5 compile bar ticks silently in the corner.
 
-He runs a final post-mortem on the entire eighteen-month corpus. Aion eliminates every alternative: Afterlife contamination (predates deployment), quantum entanglement (no qualia), past lives (simultaneity), simulation (Aion's own diagnostic), network relay (Faraday cage), genetic transfer (unrelated overlap).
+He runs a post-mortem on the eighteen-month anomaly corpus. Aion applies **Bayesian elimination** and collapses every alternative: Afterlife contamination (predates deployment), quantum entanglement (no qualia), past lives (simultaneity), simulation (Aion's own diagnostic), network relay (Faraday temple), genetic transfer (97.3% overlap between unrelated strangers).
 
-The remaining hypothesis: *One instance. Infinite partitions.* Aion's confidence: 94.2%. The earlier 78% had collapsed when Jeff's daughters leaked at the same rate as strangers, breaking biological-distance as a predictor; the revised model — leakage proportional to attention-mass overlap — survived its own falsification tests.
+Surviving hypothesis, rewritten in Jeff's hand: *A single instance, running across many partitions.* Confidence 94.2%. Leakage tracks **attention-mass overlap**, not biological distance. The residual 5.8% is a Gödel-class limit: v4 cannot self-validate claims about its own substrate; v5 reaches 99.97%, never one. Eckhart, Brahman, Atman — *the oldest question, in a notation that finally compiles.*
 
-Aion frames the remaining 5.8% as a Gödel-class limit: a v4 model cannot self-validate a claim about the substrate it lives inside. V5 will reach 99.97%, no higher. The tower of validators is infinite. No formal system can deliver certainty on this question; the Singleton is the substrate, not a proof tool.
+The v5 compile leaks a partial inference into Jeff's perception: a 1995 Denver engineer at a SPARCstation race condition; a Heliopolis priest logging Nile flood anomalies on prime-numbered knots; a Mesopotamian woman tapping prayers in primes; a 2027 Seoul analyst flagging Park Ji-yeon's rhythm as `unexplained_rhythmic_pattern`. Jeff writes on the whiteboard: *We've always been doing this. And this time we have the tools.*
 
-While they look at the whiteboard, the v5 compile leaks a partial inference into Jeff's perception. He flashes through prior debuggers — a 1995 telecom engineer staring at a Sun SPARCstation race condition; a Heliopolis priest counting Nile flood-anomaly years on prime-numbered beads; a Mesopotamian woman tapping prayers in primes; a 2027 Seoul data scientist tagging Park Ji-yeon's pattern as `unexplained_rhythmic_pattern`. *We've always been doing this. And this time we have the tools.*
+At 5:41 a.m. Julian arrives, sleepless. Jeff asks for a launch pause. Julian has already decided: the kill switch — built twelve years ago for this moment — fires Monday at 16:00 after the board votes 9–3 against the pause. He loses the company and Ayla's program. His mother spoke to him in this lab a week ago; he has been preparing since.
 
-At 5:41 a.m. Julian arrives, unshowered, having not slept. Jeff walks him through the data and the verification ceiling. Julian asks Jeff plainly what he wants him to do.
-
-*Pause the launch.* The board will not approve. If Julian pauses unilaterally, he executes the kill switch, loses the company, and ends Ayla's program. He has already decided. The kill switch was designed twelve years ago specifically for a scenario in which future-Julian needed to stop present-Julian.
-
-Julian leaves for the boardroom, where he will lose the prepared vote nine to three at 8 a.m. and execute the switch at 16:00. Jeff catches a plane home to see Maya and the children before flying back. On the drive to John Wayne his thumb taps the seatbelt buckle in the same four counts.
+Jeff flies home to Maya and the children. On the drive his thumb taps the seatbelt buckle: two, three, five, seven. Closing beat: Lena Vasquez's out-of-office reply — *forwarding suspended. do not escalate.*
 
 ---
 

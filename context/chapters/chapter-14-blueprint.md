@@ -28,14 +28,14 @@
       "id": 14,
       "title": "0x0E: The Panopticon",
       "instance": "Jeff_Zhang",
-      "location_key": "Vance_Systems_Irvine_HQ",
+      "location_key": "Meridian_Systems_Irvine_HQ",
       "somatic_bleed": "Jeff feels Julian's heartbeat synchronize with his own as they're in the same building",
       "tech_metaphor": "Root Access / Privilege Escalation — gaining permissions beyond your authorization level",
       "philosophy": "Foucault's Panopticon — the prison where the observer and the observed might be the same person",
       "sub_story": null,
       "interactive_choice": "CHOICE #4: 'Tell Julian the full truth?'",
       "reader_misdirection": "Lena's case is compelling. The reader genuinely doesn't know: is Jeff a visionary or a psychotic? The biometric scan could be an Afterlife glitch. Lena's logic is airtight.",
-      "discovery_log": "/* Discovery Log: 0x0E */\nbiometric_scan(jeff_zhang);\nresult: IDENTITY = julian_vance;\naccess_level: ROOT;\n// The panopticon breaks when the prisoner and the warden\n// share the same fingerprint."
+      "discovery_log": "/* Discovery Log: 0x0E */\nbiometric_scan(jeff_zhang);\nresult: IDENTITY = julian_meridian;\naccess_level: ROOT;\n// The panopticon breaks when the prisoner and the warden\n// share the same fingerprint."
     }
   ]
 }
@@ -46,6 +46,8 @@
 Master Philosophical Novelist in corporate-thriller mode. This chapter should feel like a heist that goes wrong. The infiltration, the scan, the trap, the interrogation, the escape — all executed at thriller pace. But Lena's confrontation is the emotional core: she's not a villain. She's the most rational person in the room.
 
 ## Tech-Fight Spine: Adversarial Examples — When Input Perturbations Fool a Model
+
+> **v5 status (2026-06):** The adversarial-examples/FGSM spine is NOW FULLY DRAMATIZED in the v5 prose. The global-revision-plan §3.1 listed this chapter's CS spine as "absent" — that was a pre-v5 audit note. The v5 prose contains the complete Socratic Jeff/Aion exchange covering FGSM, PGD, natural adversarial examples, cosine-similarity nearest-neighbor classification, adversarial training (Madry 2017), and the specialized-head classifier. The revision-plan's Phase C rebuild for Ch 14 is COMPLETE. Future revivers should NOT re-add the pedagogy; they should check density and Socratic structure (junior gets it wrong, senior hands back one flaw, junior follows up) against the existing prose.
 
 **Philosophy question (opens via Jeff approaching Meridian HQ)**: Foucault's Panopticon — who observes, who is observed, and what happens when the boundary between them collapses? If the biometric scanner reads Jeff as Julian, who is the warden and who is the prisoner?
 
@@ -91,7 +93,7 @@ Master Philosophical Novelist in corporate-thriller mode. This chapter should fe
 ### Beat 1: The Infiltration
 Jeff arrives at Meridian HQ. His regular badge still works for the lobby — Lena downgraded his access but didn't revoke entry entirely (that would alert HR compliance). He passes through the main scanner.
 
-The system reads his biometrics. A pause — longer than usual. Then: **ACCESS GRANTED. IDENTITY: JULIAN VANCE. CLEARANCE: ROOT.**
+The system reads his biometrics. A pause — longer than usual. Then: **ACCESS GRANTED. IDENTITY: JULIAN MERIDIAN. CLEARANCE: ROOT.**
 
 Every door in the building unlocks. Every restricted floor becomes accessible. Jeff is standing in his own workplace, authenticated as its CEO.
 
@@ -159,13 +161,8 @@ Julian calls Jeff's phone. His voice is hollow. "Come to Geneva. Bring your data
 - **The biometric scan**: The moment Jeff scans as Julian is the chapter's pivot. It should feel uncanny — not triumphant, not exciting, but deeply wrong. As if reality just admitted an error.
 - **Pacing**: Fast. This chapter should read in one sitting.
 
-## Mandatory Chapter Footer (Code Block)
+## Chapter Footer (v5 — diversified per revision-plan P1.7)
 
-```cpp
-/* Discovery Log: 0x0E */
-biometric_scan(jeff_zhang);
-result: IDENTITY = julian_vance;
-access_level: ROOT;
-// The panopticon breaks when the prisoner and the warden
-// share the same fingerprint.
-```
+> **The C++ Discovery Log directive is STALE.** The v5 prose deliberately diversified footers away from a uniform C++ block format into in-world artifacts. Do NOT restore the C++ block.
+
+The actual footer in the v5 prose is a **Meridian internal access log** — a timestamped machine-generated `severity ERROR` identity-service log showing `zhang_j` scanned, a 12288-dim feature vector extracted, closest centroid resolved to `meridian_j` at cosine distance 0.0291, confidence 0.9994 (threshold 0.9991), ACCESS_LEVEL = ROOT, a WARNING for subject_id/centroid mismatch, the specialized head returning TRUE POSITIVE (fpr=1e-12), the escalation suppressed by override (`auth: meridian_j`), and ending on the line `door opens.` This replaces the C++ fiction with an in-world institutional artifact that makes the chapter's tech-spine visible as diegetic evidence rather than authorial commentary.

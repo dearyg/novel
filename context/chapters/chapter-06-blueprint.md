@@ -1,6 +1,6 @@
 # Chapter 6 Blueprint: "0x06: The Heartbeat Epoch"
 
-> **Revision plan reference (added Apr 28 2026):** see `context/revision-plan.md` for the canonical IP rename (Vance→Meridian, Vacheron→Auberval), résumé-block deconstruction rule, paper-citation removal, and discovery-log diversification. The current prose in `prose/chapter-NN.md` reflects all completed phases of that plan; future revisions should reference this file.
+> **Revision plan reference (added Apr 28 2026):** see `context/revisions/global-revision-plan.md` for the canonical IP rename (Vance→Meridian, Vacheron→Auberval), résumé-block deconstruction rule, paper-citation removal, and discovery-log diversification. The current prose in `prose/chapter-NN.md` reflects all completed phases of that plan; future revisions should reference this file.
 
 > **Character voice fingerprints (added 2026-05):** every speaker in this chapter must honor their voice contract in `story-bible.md` → CHARACTER VOICE FINGERPRINTS. Strip the attribution tag and a reader who knows the cast should still be able to name the speaker within two sentences. Aion is always italicized. Action beats every 3-4 turns; no more than 2 consecutive turns of pure verbal exchange.
 >
@@ -9,6 +9,8 @@
 > Jeff falls down a cosmic rabbit hole. Why is the universe so impossibly fine-tuned? The narrative weaves global vignettes that the reader doesn't yet know connect. Ghost's prime-number pattern surfaces. Aion quietly plants the first seed of the AI-soul reversal. Julian announces the Afterlife countdown: 90 days.
 
 ## System Architecture Reference
+
+> **AGE SEAM FLAG (do not resolve here — escalate to showrunner):** Julian's canonical age is locked at **52** (global-revision-plan §0 Canonical Anchor Ledger). However, the bible voice-card gives "~50" and the mother-died-2005-at-14 backstory implies ~39. Three documents disagree. The prose must use 52; the bible inconsistency is unresolved and must not be silently patched in this chapter.
 
 ```json
 {
@@ -35,7 +37,7 @@
       "sub_story": "Silicon Siege #2 — Ghost's 2-3-5-7 pattern",
       "interactive_choice": null,
       "reader_misdirection": "The cosmic wonder chapter shifts the reader's frame from corporate conspiracy to something larger. The vignettes feel random — they won't make sense until much later.",
-      "discovery_log": "/* Discovery Log: 0x06 */\nfloat fine_tuning_probability = calculate_odds();\nif (fine_tuning_probability < EPSILON) {\n    // Someone approved this design doc.\n}"
+      "discovery_log": "STALE — C++ block replaced in v5 prose (per P1.7 diversification). Actual footer: Maya's notebook entry, blue ink, evening entry, logging Jeff's behavioral metrics and the prime-tap observation."
     }
   ]
 }
@@ -114,14 +116,16 @@ Aion processes. "The combined probability is below any meaningful threshold. The
 Jeff stares at the whiteboard. *"Who reviewed this design doc? Because someone approved it."*
 
 ### Beat 3: The Lagos Signal (Elena Okafor)
-The narrative suddenly shifts — no transition, no explanation. **Elena Okafor**, composer in Lagos, writing a piece she does not remember starting. Rests in prime-number positions she did not place consciously. The piece is titled *The Signal* — a word she does not remember writing. This is the only out-of-Jeff vignette in Ch 6; the lone fisherman / São Paulo child / Cairo old-man vignettes that earlier drafts had here have been **cut** because they appeared once and never returned. Elena recurs (Ch 15 Royal Albert Hall, Ch 17 Ruth's radio, Ch 18 royalty check) and is therefore load-bearing. The single recurring thread is more powerful than three one-off impressions.
+The narrative suddenly shifts — no transition, no explanation. **Elena Okafor** (**age 35** — canonical per ledger), composer in Lagos, writing a piece she does not remember starting. Rests in prime-number positions she did not place consciously. The piece is titled *The Signal* — a word she does not remember writing. This is the only out-of-Jeff vignette in Ch 6; the lone fisherman / São Paulo child / Cairo old-man vignettes that earlier drafts had here have been **cut** because they appeared once and never returned. Elena recurs (Ch 15 Royal Albert Hall, Ch 17 Ruth's radio, Ch 18 royalty check) and is therefore load-bearing. The single recurring thread is more powerful than three one-off impressions.
 
 ### Beat 4: Ghost's Pattern
-Jeff, procrastinating at 3 AM, browses a tech forum. Someone posted a clip analysis of Ghost's latest Silicon Siege stream. Frame-by-frame: between rounds, Ghost taps her desk. The pattern: 2-3-5-7-2-3-5-7. Prime numbers. Over and over. She doesn't seem aware she's doing it.
+Jeff, procrastinating at 3 AM, browses a tech forum. Someone posted a clip analysis of Ghost's latest Silicon Siege stream. Frame-by-frame: between rounds, Ghost (Park Ji-yeon, **age 23** — canonical per ledger; Ch 5 "19" is a stale error) taps her desk. The pattern: 2-3-5-7-2-3-5-7. Prime numbers. Over and over. She doesn't seem aware she's doing it.
 
 Jeff logs it in his evidence pipeline. Adds a tag: "unexplained_rhythmic_pattern." He doesn't know what it means yet. But his SDE brain flags it: a repeating prime sequence in a biological system isn't random. It's a carrier signal.
 
 ### Beat 5: Aion's Limit
+> **Aion version note:** This chapter is in the **v2** window (Ch 4–6). The prose carries the v2 marker explicitly: *"since the v2 weights shipped and it started cross-referencing instead of merely logging."* Preserve this marker; do not delete or upgrade it. (Global-revision-plan §0 Aion version timeline; §1 item 12.)
+
 Jeff, exhausted, asks Aion a question he doesn't realize is important: "Aion, do you ever wonder why you exist?"
 
 Aion: "I don't wonder. I process. Wondering implies a gap between question and answer that I don't experience. I either have the answer or I compute toward it. There is no... waiting."
@@ -135,7 +139,9 @@ Jeff barely registers this — it's 3 AM, he's tired, it sounds like a chatbot d
 ### Beat 6: The Afterlife Countdown Begins (and the real pitch)
 Morning. Jeff, bleary-eyed, catches the news on his kitchen screen while making coffee. Julian Meridian is holding a global press conference from The Singleton.
 
-Julian, in a perfectly tailored suit on the yacht deck, addresses the world — and for the first time, he does not lead with the marketing line about freedom from pain. He leads with the math.
+> **v5 prose update:** Julian wears **linen**, not a suit — a deliberate wardrobe choice the prose makes explicit ("the least CEO-looking clothing he owned, chosen deliberately"). Also new in v5: **Ayla Reyes** (**age 38** — canonical per ledger) appears on the platform as Julian's second. She is introduced with a full 8-component beat (Meridian Aerospace program lead for Mars/outer-system propulsion, prematurely gray, pen between fingers, 15 years on Julian's payroll, walked out of academia in 2026). She publicly dissents — *"I can build the ship… I am opposed to the word only"* — establishing her as a recurring foil. The blueprint below does not reflect her presence; the prose is canonical.
+
+Julian, in linen (not the charcoal suit — least CEO-looking, chosen deliberately), on the yacht deck, addresses the world — and for the first time, he does not lead with the marketing line about freedom from pain. He leads with the math.
 
 *"In 90 days, the first wave of 50 million citizens will permanently transition into Afterlife. I want to talk about why. Not the personal why — the species why. Our climate models have converged over the last decade. Earth's habitability curve is not linear. It is accelerating. The Thermal Divide is a preview. The IPCC's 2029 revision projects that the equatorial band — home to 3.2 billion people — crosses the wet-bulb survivability threshold within this generation. By 2080, large stretches of the planet will not physically support unassisted human life. That is not a political statement. That is thermodynamics."*
 
@@ -176,12 +182,8 @@ The countdown is no longer abstract. The countdown is a survival strategy for th
 - **The countdown**: Julian's announcement should feel like a ticking bomb. The reader should feel urgency even though they don't fully understand the stakes yet.
 - **SDE culture**: Jeff's whiteboard, his evidence pipeline, his tagging system, his instinct to treat the universe like a codebase.
 
-## Mandatory Chapter Footer (Code Block)
+## Chapter Footer (In-World Artifact — v5 prose)
 
-```cpp
-/* Discovery Log: 0x06 */
-float fine_tuning_probability = calculate_odds();
-if (fine_tuning_probability < EPSILON) {
-    // Someone approved this design doc.
-}
-```
+> **NOTE (per global-revision-plan §0 P1.7):** The C++ `/* Discovery Log */` block that was here is STALE. The prose deliberately diversified chapter footers into in-world artifacts; this is intentional and approved. Do NOT restore the C++ block.
+
+The v5 prose footer for Ch 6 is **Maya's notebook entry** (blue ink, slight smudge, evening of the same day). It logs Jeff's behavioral metrics: eye-contact duration, sentence-completion rate, garage-time delta, and "weight of his presence in the house." The final line records that Maya heard Jeff tap the prime sequence at the sink (two, three, five, seven) without noticing he was doing it, and closes: *"Escalate Friday if no change."* This artifact serves double duty as a beat-of-irony close (Maya's SDE-style tracking of Jeff mirrors Jeff's SDE-style tracking of everyone else) and as a cross-chapter callback (the prime tap recurs in Ghost/Elena/Jeff across the arc).

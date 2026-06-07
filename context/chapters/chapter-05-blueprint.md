@@ -28,7 +28,7 @@
       "id": 5,
       "title": "0x05: The Ghost Commit",
       "instance": "Jeff_Zhang",
-      "location_key": "Vance_Systems_Irvine_and_Garage",
+      "location_key": "Meridian_Systems_Irvine_and_Garage",
       "somatic_bleed": "Residual — Jeff feels phantom typing rhythms in his fingers",
       "tech_metaphor": "Ghost Commit / Shadow Authentication — code pushed by an entity with your exact credentials that isn't you",
       "philosophy": "Ship of Theseus — if every component is replaced, is it the same thing?",
@@ -40,6 +40,8 @@
   ]
 }
 ```
+
+> **FLAG — Julian age conflict (do not edit; escalate to showrunner):** Canonical Anchor Ledger locks Julian Meridian at **52** (revision-plan / prose canon). However, the story-bible voice-card says "~50" and the backstory (mother died 2005 when Julian was ~14) implies he is ~34–39. Three documents disagree. Prose is locked to 52; this inconsistency is an in-bible conflict that must be resolved at the showrunner level, not silently patched by a chapter reviser.
 
 ## Role
 
@@ -146,7 +148,7 @@ Marcus explains: he runs a small clinic. For months he's been seeing patients wi
 They circle each other cautiously. Neither trusts the other. They agree to talk again.
 
 ### Beat 5: Ghost's Seed
-Brief interlude — no connection to Jeff. A gaming stream: **Ghost**, 19, Seoul-based, the world's top Silicon Siege player. She's mid-tournament, and the commentators are baffled: her reaction time is 47 milliseconds — below the theoretical human minimum. She processes game input before it appears on screen, as if she's reading the server state directly.
+Brief interlude — no connection to Jeff. A gaming stream: **Ghost**, 23, Seoul-based, the world's top Silicon Siege player. She's mid-tournament, and the commentators are baffled: her reaction time is 47 milliseconds — below the theoretical human minimum. She processes game input before it appears on screen, as if she's reading the server state directly.
 
 Jeff doesn't see this stream. A colleague mentions it in passing: "Did you see that Korean gamer? She's gotta be cheating." Jeff files it vaguely. Doesn't connect it. The reader files it too.
 
@@ -170,7 +172,9 @@ Aion: "Statistically negligible. But I lack sufficient data to determine causati
 - **Ship of Theseus**: The philosophy emerges from the ghost commit itself. Jeff doesn't lecture — he stares at code that is his but isn't his, and the question arises naturally.
 - **Pacing**: This chapter should feel like the investigation is accelerating. Multiple threads opening simultaneously (ghost commit, Lena, Marcus, Ghost). The reader should feel the net tightening.
 
-## Mandatory Chapter Footer (Code Block)
+## Chapter Footer
+
+> **Status (reconciled to v5 prose):** The C++ Discovery Log block below is RETAINED in the finalized prose (`prose/chapter-05.md`). This is intentional — per revision-plan §0 / P1.7, eight C++ blocks are kept as high-resonance closers; Ch 5 is one of them. Do NOT treat this section as a directive to restore C++ footers in other chapters where the prose has deliberately diversified to an in-world artifact (Concierge log, Maya's notebook, group text, etc.). The diversification is approved; this retention is the exception.
 
 ```cpp
 /* Discovery Log: 0x05 */

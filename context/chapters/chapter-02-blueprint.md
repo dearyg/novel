@@ -93,6 +93,7 @@ He approves the infrastructure patch. He does not yet understand that he is abou
 
 ## Character Profile: Julian Meridian (90% Focus)
 
+- **Age**: **52** (canonical per ledger and v5 prose). ⚠️ **SEAM — DO NOT RESOLVE:** the ledger notes an in-bible inconsistency: the voice-card says "~50" and the mother-died-2005-at-14 backstory implies ~39. Prose is locked to 52; the bible discrepancy is flagged for the showrunner, not for chapter-level revision.
 - **Profession**: Tech Billionaire / CEO of the overarching conglomerate that owns Jeff's Irvine tech hub.
 - **Mindset (The Savior Complex)**: *Why do humans obsessively chase wealth?* Julian realizes wealth isn't about greed — it's about buying *distance from friction and pain*. Behind his public "Bruce Wayne" playboy facade, Julian feels immense, crushing sympathy for the poor. He looks at the broken, exhausted world and believes biological reality is a fundamentally failed architecture.
 - **The Masterpiece ("Project Afterlife")**: Because of his profound sympathy, Julian's conglomerate is *publicly* building and heavily marketing the ultimate salvation for humanity — **Project Afterlife**. Billed as the next evolution of human rights, it is a massive, full-dive neural matrix. The public pitch: the Earth is ruined, so citizens can legally relinquish their physical bodies to cryo-stasis, plug their brains into Afterlife servers, permanently block their painful real-world memories, and live infinite, happy lives in perfectly sandboxed digital utopias where everyone gets to rule as a god.
@@ -110,6 +111,8 @@ Detail Julian's hyper-optimized morning. Contrast it sharply with Jeff's chaotic
 
 ### Beat 2: Project Afterlife (The Public Pitch)
 Julian reviews holographic PR metrics for "Project Afterlife." He listens to pundits on the news debating the ethics of his company encouraging the exhausted working class to "digitally euthanize" themselves into paradise. Millions are on the waitlist. Julian feels genuine pity for his critics. He looks at the struggling world and truly believes he is giving them a software patch for the pain of biological existence. *(Massive dramatic irony: the characters are ALREADY inside this exact kind of system.)*
+
+> **v5 addition — Hollowness Index + Hari Patel takeover:** The prose expands Beat 2 significantly. Julian sees two curves: the Afterlife sign-up momentum vector and a secret "Hollowness Index" (Allocator-population boredom/meaning data) that leads sign-up by six weeks. His board wants to monetize this as "Premium Empathy Packages" — curated access to authentic human sensation sourced from the population. Julian's cortisol spikes when he frames it as "selling the soul as a subscription." A second morning item is a hostile takeover: a fund through 14 shell layers has accumulated 11% of Meridian Industries. Julian's Concierge runs a graph neural network across the ownership network and identifies the beneficiary as **Hari Patel** — former Meridian board member, separated 2027 over Afterlife ethics, now terminal (prostate cancer, 18-month prognosis). Julian responds by de-escalating: he orders an op-ed acknowledging Hari's ethical position, proposes a 90-day public consultation Hari can chair, withdraws all legal countermeasures. Cortisol returns to baseline. This beat is fully dramatized in the v5 prose between the scheduler decision and Beat 3.
 
 ### Beat 3: The Crossed Path (The Handshake)
 Julian dials into the live productivity video feeds of the engineering teams currently coding the backend for Afterlife. He enters "God Mode," silently observing the Sprint Planning meeting at the Irvine division *(this is the exact meeting from Chapter 1)*. Julian zeroes in on Jeff Zhang. Jeff is exhausted, his ADHD brain struggling as he secretly rubs a useless **2010 wooden cell phone** under the table. Julian, appreciating the completely offline, analog nature of the artifact, decides to intervene. Bypassing all corporate protocols, Julian sends a direct, untraceable audio micro-ping straight into Jeff's local earpiece: *"Nice phone."* On the video feed, Julian watches Jeff flinch. Julian smiles sadly, thinking: *Just hold on a little longer, Jeff. Soon I will let you plug in.*
@@ -129,9 +132,10 @@ Julian's pristine brain cannot handle the empathic weight of raw, unfiltered hum
 **SMASH CUT.** Perspective violently snaps across the globe with zero paragraph break.
 
 - **Jeff Zhang gasps awake.**
-- Jeff jolts upright in his bed in his dark suburban house in Irvine. It is 3:14 AM. He is drenched in a cold sweat, his heart hammering against his ribs. Maya stirs beside him in the dark.
-- Jeff is hyperventilating. He looks at his left hand in the pitch black. His knuckles are white. He can still taste the vintage Krug champagne on the back of his tongue. He can still hear the glass shattering on the teak deck. He remembers whispering the words *"nice phone"* into a microphone he doesn't own.
-- **The Implication**: Aion's voice quietly breaks the silence in his room. Aion notes that Jeff's sleep architecture didn't register REM. He wasn't dreaming. He was executing a "Context Switch." Jeff stares into the dark, realizing the terrifying truth: he didn't just hallucinate a yacht during a meeting earlier today. When his ADHD brain finally went to sleep tonight, it bypassed the firewall entirely, and he just *woke up* as the CEO who sent him that anonymous message — the very man publicly trying to build the system they are currently trapped inside.
+- Jeff jolts upright in his bed in his dark suburban house in Irvine. It is 3:14 AM. He is drenched in a cold sweat, his heart slamming against his ribs. Maya stirs beside him. His left wrist holds a phantom weight — the Auberval, heavy, platinum, gone. He tastes champagne he has never drunk. He heard the crystal break.
+- He gets up without turning on the hall light and goes to the garage. Maya goes back under.
+- **The Implication (v5 — garage/Aion two-trace reveal)**: Aion's console is awake in the dark. A log entry timestamped 03:11:42 UTC has appeared; the underlying event was captured at 09:47:22 UTC by a correlation daemon against the ad-network biometric archive. Aion asks consent to correlate across individuals. Jeff consents. Aion places two traces side by side: Jeff's flexor carpi signature from Sprint Planning (the 98-gram Auberval load written into tendons that never wore the watch) and, at the identical UTC second, a breath-rate anomaly from a Meridian internal telemetry feed — a man two thousand kilometers east aboard a vessel flagged to the Meridian fleet, whose heart rate spiked from 48 to 112 and whose palate briefly registered a Scorched Sage flavor the onboard medical AI cannot explain. The vessel designation is not redacted: *THE SINGLETON*. Aion files the event class as **Context Switch**, index zero two. Jeff does not sleep.
+- **Note:** the original blueprint described Aion speaking in Jeff's room immediately after waking. The prose version delays Aion's reveal to the garage scene and introduces the two-trace correlation structure — this is the canonical Beat 6.
 
 ## Stylistic Constraints
 
@@ -139,10 +143,14 @@ Julian's pristine brain cannot handle the empathic weight of raw, unfiltered hum
 - **Sensory Details**: Emphasize the jarring contrast between Julian's perfectly curated sensory inputs and the violent physical assault of actually feeling Jeff's raw, messy, ADHD anxiety.
 - **Ending Impact**: The transition from Julian passing out on the yacht to Jeff waking up in bed must be instantaneous. It physically cements the "One Soul" mechanic and introduces the mind-bending "simulation within a simulation" philosophy.
 
-## Mandatory Chapter Footer (Code Block)
+## Chapter Footer (Actual — v5 prose)
+
+> **NOTE (per revision-plan P1.7 — footer diversification):** The C++ `Discovery Log` block that was originally specified here was intentionally replaced in the v5 prose. Do NOT restore it. The actual footer in `prose/chapter-02.md` is an in-world **Concierge log entry** (`The Singleton`, 04:14 local), recording the owner's cortisol spike, the unexplained "Scorched Sage" palate event, cause listed as undetermined, action declined by owner, and the filed phrase *"someone was just me."* This is one of the approved in-world artifact replacements under the P1.7 diversification plan.
+
+The stale C++ block is preserved below for historical reference only — it no longer represents the chapter's canonical footer:
 
 ```cpp
-/* Discovery Log: 0x02 */
+/* Discovery Log: 0x02 — STALE / NOT IN PROSE */
 if (Afterlife.is_running() && Reality.is_running()) {
     throw StackOverflow("Simulation nested within Simulation.");
 }

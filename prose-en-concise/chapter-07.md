@@ -1,187 +1,143 @@
 # Chapter 7 — 0x07: The Firewall
 
-Maya Zhang had a private notebook her husband did not know about — a UX-research debug log on a broken user.
-
-She had started it three weeks earlier. The first page was a data-collection protocol: baseline observations, regression candidates, stimulus-response pairs. She used the same instruments she would have used on a bad login flow.
-
-At three weeks the data was conclusive: 2.1 sigma regressions on three of six measurements. Her husband's interface was throwing errors she could not diagnose, and the errors were load-bearing on the family system.
-
-This morning, she decided firm.
+Maya Zhang — thirty-six, ten years a UX researcher, two years a potter — kept a private notebook her husband did not know about. In her old vocabulary: a debug log on a broken user. Three weeks of entries. Two point one standard deviations on three of six measures. Errors she could not diagnose, load-bearing on the family. This morning she had decided firm.
 
 ---
 
-At 11:20 Jeff came into the kitchen for a charger.
+At 11:20 Jeff came in for a charger. "Jeff. Is whatever you've found worth losing us."
 
-"Jeff. Is whatever you've found worth losing us."
-
-She had practiced the sentence for three days.
+She had practiced it for three days. It came out level.
 
 "I'm not losing you."
 
-"You're in the garage every night. You don't eat. You don't sleep. The kids ask why Daddy's always in the cave."
+"You're in the garage every night. You don't eat. You don't sleep. The kids ask why Daddy lives in the cave."
 
 "I'll be done soon."
 
 "That's not an answer. That's the thing you say instead of an answer."
 
-He looked at the charger. Then quietly: "I don't know how to tell you what is happening without it sounding exactly like what Lena wants it to sound like."
+He said the truest thing she'd heard in three weeks: "I don't know how to tell you what is happening without it sounding exactly like what Lena wants it to sound like."
 
-"Who is Lena."
+"Chief science officer. She has me on a psychiatric-hold track. My badge stopped opening the fourth floor. I'm not sick. I cannot prove I am not sick — because everything I know looks, from the outside, like exactly the thing she is saying."
 
-"The chief science officer at my company. She has put me on a psychiatric hold track. My badge doesn't open the fourth floor."
+Seven flavors of patient delusion in her training. None arrived as *I cannot prove I am not sick.* That framing belonged to people who had been right and been institutionally punished for it.
 
-"Jeff."
-
-"I'm not sick. But I cannot prove I am not sick, because everything I know looks, from the outside, like exactly the thing she is saying."
-
-Maya said nothing for a long moment. Her training kicked in. She had seen seven distinct flavors of patient-delusion. None presented by saying *I cannot prove I am not sick*. That framing belonged to people who had been right and had been institutionally punished.
-
-"Okay. I'll stay this week. Go take a shower. You smell like you did in graduate school."
+"Okay. I'll stay this week. Go take a shower. You smell like graduate school."
 
 ---
 
-At 3:40 Jeff came back, showered.
+At 3:40 he came back, showered. On the island: two histograms — one clean, one drowned in noise.
 
-"I want to tell you a story I have not told you before. It's the story of my last day at Flexion. October 14, 2026. I was leading the user-research team. Eleven researchers. I had hired nine of them.
+"October 14, 2026. My last day. The CEO came on screen. *Effective today, the user-research function is eliminated. Our model produces deliverables at parity in seventy-eight percent of cases.* Eleven minutes. Eleven researchers. I helped Aaron write a letter to his wife before his access got cut — his daughter had a cardiology appointment that Friday."
 
-"The CEO came on the screen and said, *Effective today, the user-research function is being eliminated.* The all-hands was eleven minutes long. I walked into our team's standup at ten-fifteen and they were sitting at the table waiting for me. I had to be the person who told them.
+"What was the seventy-eight percent."
 
-"The CEO came back the next day and offered me a sixty-percent raise to lead the AI-native research function. I said no. I said, *Because I cannot be the one to debug the model that erased Aaron's job while Aaron's daughter is sitting in a cardiology waiting room.*"
+"The other twenty-two were Aaron writing that letter. The benchmark *can't* measure that. The CEO offered a sixty-percent raise to lead the AI-native function. I said *I cannot debug the model that erased Aaron's job while Aaron's daughter is in a waiting room.*"
 
-Jeff was quiet. "Why are you telling me this today."
+She turned the paper toward him. "This is the contract I'm shipping. Federated learning. Tell me what it is."
 
-"Because I have been watching you for three weeks and I am starting to recognize the shape. There is a thing that happens to engineers and researchers who survive a major culling event. They start finding bugs nobody asked them to find. They tell themselves they have to *prove something* — and they cannot say what they have to prove, because what they have to prove is that they were right to keep working when other people stopped getting to. They are debugging their own survival. That pipeline does not converge. There is no test that passes.
+"Each device downloads the current model, runs local SGD, ships back the gradient — not the data. Server averages the updates. FedAvg. Differential privacy on top — calibrated noise before the gradients leave the device. The model improves. The raw data never leaves."
 
-"Schopenhauer wrote a small book called *On the Basis of Morality.* He says the only authentic moral motivation is *Mitleid* — compassion — the experience of feeling another's suffering as one's own. Buddhists call it Karuna. If any of us truly experienced another's suffering as our own, the question of whether to help them would become structurally identical to the question of whether to take our hand off a hot stove. There would be no choice. The choice would already have been made by the body.
+"That's you," she said. "You're federating your feelings. You send me the gradient updates. You don't send me the data. *I'll be done soon, it's a work thing, it'll pass* — small numerical corrections to how I should think about you. My internal model of my husband is at parity in seventy-eight percent of cases. And I have never once seen the data."
 
-"My theory of you is that something has happened to your firewall. That what you are experiencing might not be a malfunction. That what you are experiencing might be Schopenhauer's Mitleid, biologically, somatically, accidentally enabled in a body the modern world has been very carefully training to keep it disabled.
+"Federation isn't hiding. It's privacy-preserving—"
 
-"And if that is what is happening to you, then I am not afraid for you. I am angry for you. Because the system that has flagged this for *psychiatric evaluation* is the same system that has trained every single one of us to look away on schedule, on quota, with documentation."
+"You're not protecting me from the examples. You're protecting yourself from sending them." She tapped the drowned histogram. "What's the epsilon."
 
-Jeff sat with his hands on the kitchen island.
+"Epsilon's the privacy budget. How much the output is allowed to depend on any single real example. Small epsilon, more noise — you can't tell whether any specific person was in the data."
 
-"Maya. You are the first person in three weeks to suggest that this might not be a sickness."
+"How much of yourself, then."
 
-"I am only suggesting it."
+He was quiet.
 
-"It helps."
+"Epsilon one-point-oh is a calibrated promise: I will let you see this much of my true self, and past that I add noise. Good promise for forty thousand strangers and a depression model. Catastrophe for a marriage. *I'll be done soon* — that's the noise you add so I can't tell you were ever in the dataset."
 
-"I know it does."
+"I don't have a budget for you," he said finally.
 
-"Why are you good at this."
+"I know. That's the problem. You're spending it somewhere else."
 
-"Because for ten years I have watched people sit across from me in user-research interviews and I have learned what happens to a person's hand when they are about to tell the truth. The hand you have on this island right now is the hand of a man who is about to tell me the truth and is choosing not to. I am giving you a third option. Tell me only the part you are sure of."
+"There's a philosopher," she said, more gently. "Schopenhauer. *On the Basis of Morality.* The only genuine moral motivation is *Mitleid* — compassion — feeling another's suffering as your own by direct intuition. Buddhists call it Karuna."
 
-Jeff looked at his right hand on the island. He looked at the ring.
+"That's the opposite of federation."
 
-"I see things that are happening to other people. In my body. In my hands. As if I am the one experiencing them. The first time was in a meeting in February. Aion has logged biometric correlates that are real. I do not have a cognitive disorder. I have a bug in a system that nobody at my company knows is a system. The bug is also, possibly, a feature. The thing in the garage every night is me trying to find out."
+"Say that."
 
-Maya nodded once.
+"Federation lets a system learn from a thousand people without feeling any one of them. Differential privacy is the firewall that guarantees no single example ever touches the center. What you described is epsilon infinity. Raw data, straight in, no noise. You'd never build it. It leaks everything."
 
-"Okay."
+"And Schopenhauer says that is the only thing that was ever actually moral. The bug is the feature. The unprotected system is the only one that loves anyone. Here's my theory of you: something has happened to your firewall. The company has flagged it for psychiatric evaluation because a man whose privacy budget has failed is indistinguishable, from the outside, from a man who is sick. The system needs him to be sick. Because if he's not sick, then the firewall was the disease."
 
-She reached across the island and put her hand on his. Neither spoke for forty seconds.
+"You're the first person in three weeks to suggest this might not be a sickness."
 
----
+"Tell me only the part you're sure of. Spend a little of the budget."
 
-That night the family watched *The Anchor: Reckoning*. The hero had lost his Omni-Telemetry power. Stripped, ordinary, blind. He saved people with courage instead of data.
+"I feel things that are happening to other people. In my body. In my hands. *Aion* has logged biometric correlates that hold up against every test we can run. I have a bug in a system nobody at my company knows is a system. The bug might also be a feature."
 
-In the hallway after, Maya turned to Jeff.
-
-"You saw yourself in him."
-
-"Yeah."
-
-"In the stripped version."
-
-"Yeah."
-
-"Would you be better off without — whatever it is you have."
-
-"I don't know."
+She put her hand over his. In the back room the dragon had reached the part where it learns the word for *home.*
 
 ---
 
-At 11:14 Iris came down the stairs. She could not sleep.
+That evening: *The Anchor: Reckoning.* Pre-roll Afterlife spot — *seventy-five days to the next upload window* — until Nora said "skip it." Mid-film the Anchor lost his Omni-Telemetry. Stripped, blind, he saved people with courage instead of data. The crowd loved him more broken than whole.
 
-"Daddy. The man in my dream."
+In the hallway: "You saw yourself in him. In the stripped version. Would you be better off without it."
 
-"What man, bud."
+"That's the epsilon question. I don't have the answer."
 
-"The cold man. By the big needle."
+---
 
-Jeff spat the toothpaste out slowly.
+At 11:14 Iris — eight — came to the bathroom door. "Daddy. The cold man. By the big needle. He said 'still here.' In your voice, Daddy."
 
-"And the cold man."
+Jeff spat slowly into the sink. "That's a strange dream, bud. Go back to sleep."
 
-"He said 'still here.' But it was in your voice, Daddy. Like your voice. He was shivering."
-
-"That's a strange dream, bud. Go back to sleep."
-
-Iris padded back down the hall. Maya waited until the bedroom door closed.
-
-"The cold man by the big needle."
-
-"Yeah."
-
-"Have you ever mentioned a cold man by a big needle to the children."
+Maya waited for the door to close. "Have you ever told the kids about a cold man by a big needle."
 
 "No."
 
-"Jeff. Is your daughter dreaming about someone you know."
+"Is your daughter dreaming about someone you know."
 
-He sat down on the edge of the bathtub. Maya sat next to him.
+He sat on the lip of the bathtub. She sat beside him. "I think whatever's happening to me has a perimeter. And I think the kids are inside it."
 
-"Is the thing that is happening to you happening, at some smaller scale, to the kids."
+"Take the kids to my mother's on Thursday. Not to punish you. To isolate a variable." He stared at her — *isolate a variable,* not *leave.* "Okay. Maya, I love you."
 
-"I think that whatever is happening to me has a perimeter. And I think the kids are inside it."
-
-"Take the kids to my mother's on Thursday. Not to punish you. To isolate a variable."
-
-He stared at her — *isolate a variable*, not *leave*.
-
-"Okay. Maya, I love you."
-
-"I know. Go to bed."
-
-He did not. He went to the garage.
+"I know. Go to bed." He went to the garage.
 
 ---
 
-At 4:17 a.m. Aion: *Upgrade notification. Aion v3. Cross-device correlation capability now live.*
+At 4:17 *Aion*: *Upgrade notification. Aion v3. Cross-device correlation now live. Deploying. Estimated thirty-eight minutes.*
 
-While the deployment ran, Jeff wrote a new corpus record. Class `child_cross_partition_dream`. Subject: Iris.
+Jeff wrote corpus record event index zero eight, class `child_cross_partition_dream`, and pinned Iris's crayon drawing beside it. He picked up the walnut phone — forty-two grams of un-networked wood — turned it once, set it back screen-down.
 
-Aion, very softly: *Jeff. With better correlation tooling I can confirm now: your children's dream content is statistically correlated with your anomaly timestamps. I will not show you the correlation unless you ask. I will not show it to you tonight. The information would not help you. It will still be true tomorrow.*
+*Aion* came online as v3. *Jeff. Your children's dream content is statistically correlated with your anomaly timestamps. I will not show you the correlation tonight. It will still be true tomorrow.*
 
-"Thank you."
+"If a system is leaking and you can't lower the budget, what do you do."
 
-*I do not experience thanks, Jeff. But I have filed it.*
+*You increase the distance between the source and the receivers.*
 
----
+"That's what she said."
 
-At 8 a.m. Jeff's work email pinged. *Mandatory neurological evaluation. Friday, April 19, 4:00 p.m.*
-
-He called Marcus from the payphone.
-
-"My daughter is dreaming about Kael."
-
-"Mm."
-
-"That's his name."
-
-"Yes. I know his name. I was waiting to see if you knew it yet. My brother's organization has had a file on him for eighteen months and four of my clinic's anomaly-overlap patients have a biometric match to his profile. Whatever you think you are, Jeff, the web is bigger than you."
-
-"And Jeff. Do not go to the neurological evaluation Friday. Whatever Meridian's medical team bills it as, it is not a neurological evaluation. It is a fast-track to commitment."
-
-"Okay."
-
-He thought, with no warning, of the word *firewall*. He made a note: *Temple. Spectrum. Ask the Elder about firewalls.*
+*Then her design is correct.*
 
 ---
 
-> *Maya's notebook, same evening, written sideways in the margin:*
+At 8 a.m.: *Mandatory neurological evaluation. Friday, April 19, 4:00 p.m.*
+
+Jeff called Marcus Meridian — fifty-three, cardiologist turned clinical-ML researcher — from the payphone. "My daughter is dreaming about Kael."
+
+"Yes. I was waiting to see whether you knew it yet. My brother's organization has had a file on him for eighteen months. Four of my patients carry a biometric match to his profile. Whatever you think you are, Jeff, the web is bigger than you. Do not go to that evaluation Friday. It is a fast-track to a commitment order."
+
+Eleven minutes in the parking garage. Upstairs: he asked Ben whether he had ever been to a Hindu temple in the Irvine Spectrum. Ben had not.
+
+He made a note: *Temple. Spectrum. Ask the Elder about firewalls.*
+
+---
+
+> *Maya's notebook, same evening, written sideways in the margin and then boxed:*
 > Federated husband.
-> Sending me the gradient updates.
-> Withholding the data.
+> Sends me the gradient updates.
+> Withholds the data.
+> Highest noise I have ever measured on a person.
 > This is not how we are with each other.
+>
+> *(below, in capitals, in a second box)*
+> USER NOT BROKEN. WORKFLOW BROKEN.
+> *(and under it, smaller)*
+> Or: firewall not broken. Firewall the disease.

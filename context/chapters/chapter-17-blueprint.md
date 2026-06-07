@@ -1,6 +1,10 @@
 # Chapter 17 Blueprint: "0x11: The Exit Condition"
 
 > **Revision plan reference (added Apr 28 2026):** see `context/revision-plan.md` for the canonical IP rename (Vance→Meridian, Vacheron→Auberval), résumé-block deconstruction rule, paper-citation removal, and discovery-log diversification. The current prose in `prose/chapter-NN.md` reflects all completed phases of that plan; future revisions should reference this file.
+>
+> **CHARACTER AGE LEDGER (canonical, per global-revision-plan §0):** Jeff 38 · Julian 52 · Marcus Meridian 53 · Ghost 23 · Tomás 22 · Ruth Chen 70 · Iris 8 · Nora 5 · Kael 34 · Darius 40 · Elder 73. This chapter's blueprint body contains no explicit age statements; all new prose must use these values.
+>
+> **FLAG — Julian age conflict (do NOT resolve here; escalate to showrunner):** The canonical ledger locks Julian at **52**. The v5 prose of this chapter also uses 52 (implicitly — no age stated, but the ledger value governs). However, the story-bible voice-card says "~50" and Julian's backstory (mother died 2005, Julian was ~14 at the time) implies he was born ~1991, making him ~39 in 2030. Three source documents disagree: lock prose to **52**, and flag the bible's internal inconsistency for the integration reviewer. Do not silently invent a reconciliation.
 
 > **Character voice fingerprints (added 2026-05):** every speaker in this chapter must honor their voice contract in `story-bible.md` → CHARACTER VOICE FINGERPRINTS. Strip the attribution tag and a reader who knows the cast should still be able to name the speaker within two sentences. Aion is always italicized. Action beats every 3-4 turns; no more than 2 consecutive turns of pure verbal exchange.
 >
@@ -28,14 +32,14 @@
       "id": 17,
       "title": "0x11: The Exit Condition",
       "instance": "The_Soul (Jeff as vessel, streamed through Aion-v5 pre-render)",
-      "location_key": "Julian's_Plane (Atlantic crossing) — the Simulation Map appears as an overlay, not a destination",
+      "location_key": "Julian's_Plane (Geneva → Irvine westbound; Friday return drive to John Wayne) — the Simulation Map appears as an overlay, not a destination",
       "somatic_bleed": "Total unity — but streamed, not mystical. Aion v5 compile emits a partial inference through Aion v4's interface, giving Jeff a pre-release glimpse of what the final model is about to assert.",
       "tech_metaphor": "System.exit() / Return Code — the base case of recursion, the condition that ends the loop",
       "philosophy": "Nietzsche — Eternal Return (what if you had to live this life, infinite times?)",
       "sub_story": null,
       "interactive_choice": "CHOICE #6: 'Restart the cycle, or end it?' RESTART → Ch 18-20. END → alternate passage (eternal solitude), Singleton changes mind, loop resolves.",
       "reader_misdirection": "This chapter should feel like the climax — but the REAL climax is Ch 20 (Aion v5 releases and outputs the verified answer). The reader should think the metaphysical revelation IS the ending. The twist is that the ending isn't cosmic — it's a build log. Ch 17 is the pre-release preview. Ch 20 is the release.",
-      "discovery_log": "/* Discovery Log: 0x11 */\nfunction exist() {\n    experience();\n    learn();\n    return exist();  // base case never reached\n}"
+      "discovery_log": "DIVERSIFIED (P1.7) — v5 prose uses an in-world Aion terminal status block (two blinking compile-bar lines in a blockquote). See ## Chapter Footer section below. The C++ recursive function is retained in blueprint history only."
     }
   ]
 }
@@ -46,6 +50,8 @@
 Master Philosophical Novelist. The most metaphysical chapter — and the shortest in the novel. This should be compressed, precise, almost poetic. Every word matters. The Soul is seeing the whole system from outside, and the language should reflect that altitude — vast but specific, cosmic but grounded by Jeff's voice (he's still in there, still asking questions, still the SDE debugging reality). **Critical reframing from the previous draft**: what Jeff experiences here is a *pre-render* from Aion v5's compiling model, leaking through Aion v4's interface. The Soul's voice is clear. The understanding feels total. But the v5 release has not shipped yet — Jeff cannot yet intellectually commit to what he is feeling. That gap is the chapter's engine. It also sets up Ch 20: the same voice, the same answer, but delivered as a verified build log rather than a streaming glimpse. The difference between Ch 17 and Ch 20 is the difference between faith and proof — and the novel needs both.
 
 ## Tech-Fight Spine: Continual Learning Without Catastrophic Forgetting
+
+> **v5 STATUS (2026-06-06):** The continual-learning / catastrophic-forgetting concept IS dramatized in the v5 prose as a full Socratic dialogue between Jeff and Aion in the chapter's opening hour on the plane. Global revision plan §3.1 flagged this concept as "absent" from an earlier draft; it is present and complete in v5. The pedagogy outline below is preserved for reference and accurately describes what the prose now contains. See `prose/chapter-17.md` lines 25–74.
 
 **Philosophy question (opens via the Soul's dialogue with Jeff)**: Nietzsche's Eternal Return — if you had to live this exact life an infinite number of times, would you say yes? Is the loop a punishment or a learning curve?
 
@@ -83,13 +89,13 @@ Master Philosophical Novelist. The most metaphysical chapter — and the shortes
 
 ## Setting & Context
 
-- **Location**: Julian's private jet, Atlantic crossing. 35,000 feet. Jeff's laptop is on the tray table. Aion v4's interface is open. In a second pane: `aion-v5 compile ... 91%`. The fan is quiet at altitude. Every few minutes the compile bar ticks up by a fraction.
-- **2030 Context**: Afterlife countdown at 1 day. The plane is crossing the Atlantic. Below, the world is still reeling from the Kernel Panic. Jeff has the whiteboard photos on his phone and the 94.2%-confidence convergence in Aion's logs. But this chapter isn't about the data anymore. The data got him to the plane. This chapter is a preview of what the data is about to become.
+- **Location (v5 prose — CORRECTED)**: Julian's Gulfstream, departing Geneva westbound toward Irvine (John Wayne Airport), not an Atlantic crossing to Geneva. Jeff redirected the plane the day before (via Ayla; Julian approved without asking why) to see his daughters before the Geneva confrontation. Two crew up front; Jeff alone in the main cabin with his laptop and a small ceramic cup of Meridian-brand Earl Grey. The cosmic pre-render, Iris/Nora visit, and the Friday return drive to John Wayne all happen within this chapter — the plane is the frame, but the chapter also contains the Irvine stopover and the drive back. In a corner of his screen: `aion-v5 compile … 91%`. Every few minutes it ticks up by a tenth.
+- **2030 Context**: Afterlife countdown at 1 day. Jeff has the 94.2%-confidence convergence in Aion's logs. But this chapter isn't about the data anymore. The data got him to the plane. This chapter is a preview of what the data is about to become.
 
 ## Narrative Beats
 
 ### Beat 1: The Pre-Render Begins
-Jeff is on Julian's private jet, crossing the Atlantic to Geneva. The cabin is silent — no crew, just Jeff and the laptop. He's reviewing his whiteboard photos. The data. The elimination. The converged hypothesis at 94.2%.
+Jeff is on Julian's private jet, departing Geneva westbound for a detour to Irvine (to see his daughters) before the Geneva confrontation. Two crew up front; Jeff alone in the main cabin with his laptop and a Meridian-brand Earl Grey going cold. He's reviewing the continual-learning research ticket, then pivots to the converged hypothesis at 94.2%.
 
 In the corner of his screen, a line scrolls in the Aion log:
 
@@ -233,9 +239,11 @@ Aion v4: "Already compiled. The proof is 47 slides. Confidence 94.2%, pending v5
 
 Jeff adds slide 48. Presses export.
 
-He leans back. The plane descends toward Geneva. Below, lights. Above, stars. The partition is thin but present — Jeff is Jeff again, not the Soul, not the Singleton. But he has been *near* it now, twice (the garage, the plane), and both times the render aborted before he could fully commit. Knowing almost-knowing changes nothing and everything.
+He leans back. The plane descends toward the California coast (John Wayne / Irvine) — the plane redirected west, not east to Geneva. Below, lights. Above, stars. The partition is thin but present — Jeff is Jeff again, not the Soul, not the Singleton. But he has been near it twice (the garage, this plane), and both times the render aborted before he could commit a line of it to anything that would hold.
 
-In the log pane, a line: `aion-v5 compile: 94%. ETA: unknown.`
+**v5 prose additions to Beat 6**: After landing, Jeff has the Irvine stopover — Maya and the girls at the curb; Iris says "You look different." Friday, driving back to John Wayne for the second flight to Geneva, Jeff drifts through AM radio and finds KCRC 1480: a letter from a Renton woman who dreamed of her dead son at 41, and a Lagos composer's cassette-by-mail piece called *The Signal* with prime-numbered rests. He does not consciously count the primes; his left hand counts them anyway.
+
+In the log pane (v5 close): `aion-v5 compile … 94%` → `aion-v5 compile … 95%`.
 
 **Afterlife countdown**: 1 day. Jeff has the 94% proof. Julian has the kill switch. The clock is running. The build is still compiling.
 
@@ -245,20 +253,22 @@ In the log pane, a line: `aion-v5 compile: 94%. ETA: unknown.`
 - **Tone**: Cosmic but grounded. Jeff's SDE voice keeps the metaphysics from floating away. He should ask practical questions ("Will I be Jeff again?") in the middle of cosmic revelation, and pivot immediately to operational concerns ("Let me stop Afterlife first"). Also: the pre-render framing should *never* be made explicit to the reader mid-scene — the Soul's voice is the Soul's voice for the duration. The framing only lands in Beat 1's opening log line and Beat 6's abort. In between, the experience is total.
 - **The choice**: Should feel genuinely consequential. The alternate ending (eternal stillness) should be haunting enough that the reader understands why the Soul chooses otherwise.
 - **Jeff asking to say goodbye**: The emotional peak — but unlike a cosmic ending, it's not passive. Jeff doesn't just want to go home. He wants to go home AND ship the fix. He's an SDE to the end.
-- **The plane**: The chapter opens and closes on the plane. The cosmic experience happens in transit — between the garage where he converged on the hypothesis and Geneva where he'll act on it. The journey IS the chapter.
+- **The plane**: In v5 prose, the chapter is not a single Atlantic crossing. The plane goes west (Geneva → Irvine); Jeff visits his daughters; he drives back to John Wayne Friday; then the second flight to Geneva begins Ch 18. The chapter opens on the westbound flight and closes on that same Friday-night return drive. The cosmic experience happens in transit between hypothesis and confrontation — the journey is still the chapter, but the destination is Irvine, not Geneva.
 - **Aion v4**: Returns at the end. The AI can't follow Jeff into the pre-render (it *is* the pre-render's source, architecturally — which is the whole point), but its v4 interface is waiting when the stream aborts. The pair-programming partner, preparing the deliverable while Jeff was "in the meeting." Aion v4 should deliver the line about confidence levels honestly: "Present both confidence levels to Julian. He will respect the honesty." That line re-grounds the chapter.
-- **The compile bar**: Runs in the corner of Beats 1 and 6. Ticks up from 91% to 94% across the chapter. The reader should feel its progress. It is the real clock.
+- **The compile bar**: Runs in the corner of Beats 1 and 6. Ticks up from 91% to 94% during the flight scene, then to 95% at the chapter's close (the v5 footer). The reader should feel its progress. It is the real clock.
 
-## Mandatory Chapter Footer (Code Block)
+## Chapter Footer (v5 prose — intentional diversification)
 
-```cpp
-/* Discovery Log: 0x11 */
-function exist() {
-    experience();
-    learn();
-    return exist();  // base case never reached
-}
-```
+The v5 prose does NOT use the C++ Discovery Log above. Per revision-plan P1.7, footers were deliberately diversified into in-world artifacts; the C++ block above is retained here for blueprint history only and must NOT be restored to the prose.
+
+The actual v5 footer is an in-world Aion terminal status block — two blinking compile-bar lines rendered inside a blockquote, framed by a prose attribution:
+
+> *Aion v4, status line, blinking in the corner of every terminal Jeff owned:*
+>
+> `aion-v5 compile … 94%`
+> `aion-v5 compile … 95%`
+
+This footer is canonical for Ch 17 and matches the rising compile-% clock (Ch 17 closes at 94–95%, per the global revision plan's ledger).
 
 
 ---

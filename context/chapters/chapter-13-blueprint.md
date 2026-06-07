@@ -2,6 +2,10 @@
 
 > **Revision plan reference (added Apr 28 2026):** see `context/revision-plan.md` for the canonical IP rename (Vance→Meridian, Vacheron→Auberval), résumé-block deconstruction rule, paper-citation removal, and discovery-log diversification. The current prose in `prose/chapter-NN.md` reflects all completed phases of that plan; future revisions should reference this file.
 
+> **SEAM — Julian age conflict (do NOT edit; escalate to showrunner):** The Canonical Anchor Ledger (global-revision-plan.md §0) locks Julian at **52** in all prose; Beat 1 below has been corrected from "44" to "52." However, the mother-died-in-hospital backstory (she died when Julian was 14; she was 44 in the surviving photograph; the prose says "thirty-eight years later") implies Julian is ~52 in 2030, which is internally consistent with the ledger value — but the story-bible voice-card says "~50" and one earlier draft implied ~39. The prose is locked to 52. The bible's internal inconsistency is flagged for the showrunner; do not silently resolve it.
+
+> **SEAM — Beat order changed in v5 prose:** The blueprint's beat sequence (1 Flashback → 2 Board → 3 Marcus calls → 4 Aion → 5 Julian sits) does NOT match the finalized v5 prose, which runs: Flashback → Marcus calls → Aion → Board → Ayla Reyes call → Jeff coda. The board meeting now follows the Aion scene rather than preceding it, which changes the dramatic logic (Julian enters the board already armed with Aion's finding). The Ayla Reyes scene and Jeff coda (Jeff in Ruth's parking lot, Aion v5 compile begins) are net-new beats absent from this blueprint. Do not rewrite the blueprint beats wholesale; flag for integration reviewer.
+
 > **Character voice fingerprints (added 2026-05):** every speaker in this chapter must honor their voice contract in `story-bible.md` → CHARACTER VOICE FINGERPRINTS. Strip the attribution tag and a reader who knows the cast should still be able to name the speaker within two sentences. Aion is always italicized. Action beats every 3-4 turns; no more than 2 consecutive turns of pure verbal exchange.
 >
 > **Dialogue & character-intro standard (added Apr 2026):** every named character that appears in this chapter must receive an eight-component intro on first speak (name, age, body, history, domain expertise, tic, relationship to Jeff or Julian, relationship to the chapter's central question). The marquee scene runs 20–40 turns of substantive dialogue. See `story-bible.md` → DIALOGUE DENSITY (Sophie's World) and CHARACTER INTRODUCTION DISCIPLINE.
@@ -28,7 +32,7 @@
       "id": 13,
       "title": "0x0D: The Aion Reversal",
       "instance": "Julian_Meridian",
-      "location_key": "Geneva_Vance_HQ",
+      "location_key": "Geneva_Meridian_HQ",
       "somatic_bleed": "Julian feels Jeff's presence in the building — a faint tug, like gravity",
       "tech_metaphor": "The Halting Problem — some questions are provably unanswerable by computation",
       "philosophy": "Searle's Chinese Room + P-Zombies — can computation produce consciousness?",
@@ -97,7 +101,7 @@ She squeezes his hand. She says something. Julian can't hear it over the monitor
 
 He stands in the hallway while nurses file past. He makes a promise to a God he doesn't believe in: *I will build a machine that stops this. I will build a world where no one has to die. I will hear what she said.*
 
-Cut to 2030 Julian, sitting in his Geneva office at 5 AM, staring at a photo of his mother. He's 44. He's spent $180 billion. He's built the most sophisticated neural-simulation platform in human history. And he still doesn't know what she said.
+Cut to 2030 Julian, sitting in his Geneva office at 5 AM, staring at a photo of his mother. He's 52. He's spent more than any private citizen in the history of the species. He's built the most sophisticated neural-simulation platform in human history. And he still doesn't know what she said.
 
 ### Beat 2: The Board Meeting
 9 AM. The Meridian Systems board of directors. Twelve people in suits who control a trillion-dollar company. They've seen the anomaly data — the broadcast event (Ch 8), the scattered pain reports, the sign-up spikes.
@@ -154,7 +158,9 @@ In the older draft this beat had Julian arriving at "I built the universe. And t
 - **Aion's confession**: Must feel definitive. Not confused, not uncertain — diagnostically precise. Aion is reporting a finding with the same clarity it would report a system error. "I am not alive" delivered with the certainty of "disk full."
 - **The board**: Must feel like a different kind of horror. These people look at the soul and see a subscription model.
 
-## Mandatory Chapter Footer (Code Block)
+## Chapter Footer (actual v5 prose footer — canonical)
+
+The v5 prose retains the C++ Discovery Log footer for this chapter (not diversified). Per revision-plan P1.7 the diversification into in-world artifacts is intentional and approved across the novel, but Ch 13 is one of the eight chapters that kept the C++ block. Do NOT replace it with an in-world artifact; it belongs here.
 
 ```cpp
 /* Discovery Log: 0x0D */

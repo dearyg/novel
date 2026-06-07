@@ -28,14 +28,14 @@
       "id": 18,
       "title": "0x12: The Dissolution",
       "instance": "Jeff_Zhang + Global",
-      "location_key": "Geneva_Vance_HQ + Worldwide",
+      "location_key": "Geneva_Meridian_HQ + Worldwide",
       "somatic_bleed": "Subsiding — the global cascade (Ch 15) is settling, not intensifying. The partitions aren't dropping; they're stabilizing at a new transparency.",
       "tech_metaphor": "Graceful Shutdown / Data Persistence — terminating a process cleanly, ensuring data integrity before the system goes offline",
       "philosophy": "Epicurus (death is nothing to us) + Tibetan Bardo Thodol (dissolution as transition, not ending)",
       "sub_story": "Julian's mother (resolution), all character threads closing",
       "interactive_choice": null,
       "reader_misdirection": "The reader expects the climax to be the Afterlife shutdown — an action set piece. Instead, the climax is Julian feeling his mother's hand. The shutdown is anticlimactic on purpose: a man pressing a button. The real drama is why he presses it.",
-      "discovery_log": "/* Discovery Log: 0x12 */\nAfterlife.shutdown(graceful=true);\ndata_persistence: CONFIRMED;\n// All instances notified: go home. Keep living.\n// The cage door was always open."
+      "discovery_log": "[P1.7 diversified — newspaper front page] MERIDIAN PAUSES AFTERLIFE LAUNCH 'INDEFINITELY' / '50 million depositors to be refunded; company cites safety review of the underlying model' / sidebar: DEPOSITORS REPORT MIXED FEELINGS — 'I\\'d already said goodbye'"
     }
   ]
 }
@@ -147,6 +147,9 @@ Julian stands up. Walks to the window. Below: the Afterlife server farm. Rows of
 Jeff checks his phone. "Launch is in six hours."
 
 ### Beat 2: Julian's Mother
+
+> **AGE SEAM — FLAG FOR INTEGRATION REVIEWER (do not resolve here):** The ledger and v5 prose lock Julian at **52**. His mother-died-when-I-was-14 backstory sets her death in approximately 2005 (novel is set in 2030), which implies Julian was born ~1991 and would be ~39 in 2030 — contradicting 52 by ~13 years. The bible voice-card says "~50." Three documents disagree. Prose is locked to 52; the bible's internal inconsistency must be escalated to the showrunner, not silently resolved.
+
 Julian stands at the window. His back to Jeff. The Auberval watch glints in the dawn light — platinum, mechanical, 98 grams of analog isolation.
 
 "My mother died when I was 14," Julian says. He hasn't told this story to anyone since Marcus. "She was holding my hand. She said something. I couldn't hear it over the monitors. I've spent 30 years trying to build a machine that would let me hear what she said."
@@ -243,12 +246,17 @@ He pauses. Looks up, as if feeling something across the shared state. Smiles. Th
 - **The vignettes**: Brief. One paragraph each, except Ghost and Kael who get slightly more. These are closing scenes, not new stories. Each thread should feel like a line of code returning its final value.
 - **"Keep living"**: The phrase appears in the Afterlife shutdown notification, in the Elder's smile, in Kael's warmth. It's the novel's thesis, propagated through every channel — corporate notification infrastructure included.
 
-## Mandatory Chapter Footer (Code Block)
+## Chapter Footer (In-World Artifact — P1.7 Diversification)
 
-```cpp
-/* Discovery Log: 0x12 */
-Afterlife.shutdown(graceful=true);
-data_persistence: CONFIRMED;
-// All instances notified: go home. Keep living.
-// The cage door was always open.
-```
+The prose footer for this chapter is **not** a C++ Discovery Log block. Per revision-plan P1.7 (approved footer diversification), the footer was replaced with an in-world newspaper front page:
+
+> *Front page, paper edition, the morning after:*
+>
+> **MERIDIAN PAUSES AFTERLIFE LAUNCH "INDEFINITELY"**
+> *50 million depositors to be refunded; company cites "safety review of the underlying model"*
+>
+> *And, two columns to the left, a smaller headline:*
+>
+> **DEPOSITORS REPORT MIXED FEELINGS — "I'd already said goodbye"**
+
+Do NOT restore the C++ block — the newspaper artifact is intentional and final (the eight retained C++ blocks are in other chapters; this chapter's diversification is approved).

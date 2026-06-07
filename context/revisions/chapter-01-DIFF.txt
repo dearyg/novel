@@ -1,0 +1,250 @@
+[1mdiff --git a/prose/chapter-01.md b/context/revisions/chapter-01-v5-proposed.md[m
+[1mindex 25e0004..ce4a0ba 100644[m
+[1m--- a/prose/chapter-01.md[m
+[1m+++ b/context/revisions/chapter-01-v5-proposed.md[m
+[36m@@ -2,7 +2,7 @@[m
+
+*Who am I?*[m
+
+Not *what* — what would be easy. A pattern of carbon and water. A hundred-trillion-cell colony with the unusual habit of asking questions about itself. The [31mWikipedia article[m[32mREADME[m writes itself.
+
+But *who*. That's the one with the hook in it. Who is the one looking out from inside this skull? Who decided that the observer should be *this* observer, and not the one in the next car, or the one watching television trailers for heat they don't have, or the woman in Mumbai right now stepping into a cooling center on a wristband she queued six hours for? Who runs the lottery? Who *is* the lottery?[m
+
+[36m@@ -12,7 +12,7 @@[m [mUnderneath every other question that mattered — the heat, the wristbands, the[m
+
+*Who am I?*[m
+
+His name was Jeff Zhang. He was [31mthirty-six[m[32mthirty-eight[m years old. He was a senior software engineer at Meridian Industries, applied-ML division, badge color silver, project allocation: the next-generation transformer that would underwrite — among many other things — the Afterlife neural engine. He had survived three rounds of layoffs, two industry-wide RIFs, and one bout of depression so quiet no one had noticed it. He had, professionally and biologically, every reason in the world to be content. He was not. The question kept surfacing.
+
+It was a Tuesday. The Santa Ana winds were doing their seasonal work, scraping Scorched Sage out of the brittle hills and pressing it through the EV's HEPA filter in thin, stubborn ribbons. Outside, the sun was already doing damage. His commute app showed a grid-priority hold at the Irvine-Spectrum arterial — nine minutes — because the district's thermal governor had throttled the traffic loop to spare the cooling cores. A line of people queued along the covered plaza in front of the old Target, wristbands glowing faintly in the heat, waiting for the cooling center to let them in. The Allocator had triaged them over his lane.[m
+
+[36m@@ -20,19 +20,19 @@[m [mHe tapped the wheel. Two. Three. Five. Seven.[m
+
+A voice in his right ear, level and unhurried, made an observation rather than an interruption. *Left thigh. Six in the last minute.*[m
+
+Aion. Jeff had been working with Aion since the day he joined Meridian four years ago, the way a cardiac surgeon works with the same OR nurse for a decade and stops noticing whether the nurse is in the room or not. The official org chart called Aion an "embedded engineering assistant." [31mThat was a polite way of saying: a kernel-level monitor running on[m[32mJeff had once asked Aion whether it preferred[m a [31mprivate slice of[m[32mdifferent name. Aion had said, *I prefer[m the [31mcompany's largest model, with read access to Jeff's calendar, his keyboard, his commits, his eye-tracker, and — through his tax-deductible wrist-band — his pulse. Aion's[m[32mone you chose.* He had meant it as a joke. Jeff had not laughed. The[m voice was male, mid-thirties, accentless in the way only a voice trained on a hundred thousand engineers could be accentless. It always sounded slightly like it had been about to say something else and changed its mind.[31mJeff had once asked Aion whether it preferred a different name. Aion had said, *I prefer the one you chose.* He had meant it as a joke. Jeff had not laughed.[m
+
+[31m*You're[m[32m*You are[m processing,* Aion said now, mildly.
+
+"I'm processing."[m
+
+[31m*You're[m[32m*You are[m late.*
+
+"I know."[m
+
+He [31mglided[m[32mbrought[m the EV up to the stopped [31mmedian.[m[32mmedian, deliberate, both hands.[m The homeless man was there again — same corner, same cardboard, same glazed gaze into the middle distance. Baking. The grid-strained city had no slack for him; the cooling centers downtown required wristband auth and he didn't have one. Jeff met his eyes for a half-second through the tinted glass and felt something shift under his ribs. *If consciousness is just code and data,* he thought, *who decided which instance I get to be, and which instance he gets?* Hume's Bundle Theory. Eleven years old, no answer.
+
+A 2019 F-150 coughed past him in the adjacent lane. The driver had one hand on the wheel and the other holding a paper coffee cup. The engine sounded like a[31mdisappointed[m man clearing [31mhis throat.[m[32ma throat he hadn't used in a year.[m
+
+*Gas pickup,* Aion said. *If the remaining gas-vehicle population converted tonight, ambient CO₂ along this corridor would drop four point two percent within a week. The grid-strain event that stopped you just now would not have happened. EV coordination protocols flatten traffic because every vehicle negotiates routing in real time. Gas cars cannot participate in the protocol; they are network-blind agents in a network-aware fabric. They create every queue you sit in.*[m
+
+[36m@@ -44,7 +44,7 @@[m [mJeff watched the truck disappear between two cooling-tower shadows. "So… human[m
+
+*A category I cannot feel but can describe. The Allocator is efficient. The driver of that truck is happy in a way the Allocator cannot produce. That gap is not small.*[m
+
+He filed it. The signal turned and the median slid [31mbackward[m[32mbackward,[m and Jeff was already replaying the night before — three hours alone in the homelab, the[31mslow[m rhythm of[31msoldering,[m the [31mwarm hum of[m[32miron on the joint,[m the water [31mloop,[m[32mloop cycling,[m the [31monly[m[32mone[m place in his [31mlife[m[32mday[m that didn't ping back. Because that was what a man did, he thought, when the world was this fragile. You built a sandbox. You defended it.
+
+*Who am I?*[m
+
+[36m@@ -52,9 +52,9 @@[m [mIt was still there, patient, unanswered, waiting.[m
+
+---[m
+
+The Meridian Irvine campus held sixty-eight degrees and smelled of nothing. Glass walls scrubbed of fingerprints. Carpet [31mso deep it ate sound.[m[32mmilled thick enough that a hundred badged engineers crossed the atrium and the floor returned no footstep, no voice — the whole building tuned to the acoustic signature of a server room.[m The lobby attendant wished him good morning by [31mname; she[m[32mname. She[m had [31mbeen wishing[m[32mwished[m him good morning by name for four years [32m— same headset, same flat warmth in the vowels, his surname pronounced correctly every single day —[m and Jeff still didn't know hers.
+
+Marcus caught him at the coffee bar with a sheet of paper — actual paper, which Marcus did sometimes when he wanted to look un-networked. Marcus was forty-seven, six-foot-two, the kind of senior staff engineer who had survived three companies by being structurally incapable of bullshit. [31mHe[m[32mHis specialty[m was[31mholding[m the [32mlayer nobody thanked him for: kernel and systems performance, the cache lines and memory traffic where Jeff's elegant ML ideas went to die or go fast. He had been printing benchmark results onto paper since his first job in 2005, because he did not trust a dashboard he had not personally watched render, and he held this[m printout [32mnow[m like it had personally offended him.
+
+"Oh no. You brought it."[m
+
+[36m@@ -76,29 +76,47 @@[m [mMarcus held up his paper. "Linear attention ablation. Down four point one points[m
+
+"Local plus global hybrid, same training run, down three point three. Whatever the eval team wants by Friday, it isn't on our branch."[m
+
+Jeff exhaled. He set the walnut phone on the counter, screen-down, and put one finger on it the way another man might put a finger on a rosary. [31m"Walk me through what we tried."[m[32m"Okay. Slow down. Pretend I'm the new grad. What does the model actually do, sixty layers of it, before it's down four points on anything?"[m
+
+Marcus [31mhad been waiting to be asked. He flipped[m[32mgave him[m the [31mprintout. "Linear attention. Replace[m[32mlook he gave executives. Then he flipped[m the [31msoftmax with[m[32mprintout to its blank side and uncapped[m a [31mkernel that lets you commute[m[32mpen, because being asked[m the [31mmultiplication. Phi of Q, then phi[m[32mquestion was the one thing he could not refuse. "Every model we ship is a transformer. Stack[m of [31mK transpose times V. Order n. Saves[m[32midentical layers. Each layer does one thing. For every token in the input — a word,[m a [31mfortune. Loses sharpness[m[32msubword, a pixel patch[m — [32mit asks[m the [31mkernel can't reproduce[m[32msame question. *Of all[m the [31mpeakedness softmax gets when one query strongly matches one key. We see[m[32mother tokens around me, which ones should I be paying attention to, and how much.*" He underlined *attention*. "Answer that, mix everything together by the answer, pass[m it [31mas a quality drop on anything that needs precision retrieval. Long-context QA. Multi-hop reasoning. Anything where[m[32mup the stack. Sixty layers later[m you have [31mto find the *one* token forty thousand back that matters."[m[32man output."[m
+
+"And [31mthe local-plus-global?"[m[32mit answers that question with three vectors."[m
+
+[31m"Sliding window attention. Each token attends to[m[32m"Three per token. A *Query*,[m a [31mfixed neighborhood, with[m[32m*Key*,[m a [31mfew designated globals — CLS-style — that everybody attends to. Order n. But if the thing that matters is forty[m[32m*Value*." Marcus wrote *Q[m K [31mback[m[32mV*[m and [31mnot in the global set,[m[32mboxed each. "Query is what am I looking for. Key is what I'm advertising. Value is what I'd hand[m you [31mdon't see it. We trained on books long enough[m[32mif you picked me. You dot one token's Query against every other token's Key — that's a score, how much this token should care about that one. Softmax the scores so they sum[m to [31mexpose this. We saw it. Down three-three."[m[32mone. Then add up everybody's Value, weighted by those scores. That's the new version of your token."[m
+
+[31mJeff drew a square on his palm with his finger. The reader, watching him, would see a man drawing on his hand. Jeff was drawing the attention matrix. "What about Flash."[m[32m"And then for every token."[m
+
+[32m"Every token. Every layer." Marcus tapped the pen twice. "The part the deck never mentions."[m
+
+[32mJeff drew a square on his palm, a grid of n by n, one cell per pair. "So the cost is in the pairs."[m
+
+[32m"The cost is *all* in the pairs." Marcus sketched a fast grid — tokens one through n down the left, one through n across the top — and shaded one cell, row three, column seven. "Token three against token seven, one dot product. Cheap. But I have n tokens and each scores against all n. That's n-squared scores. Then softmax over n-squared. Then a weighted sum over n-squared." He ringed the whole grid hard enough to dent the paper. "Four thousand tokens, sixteen million scores. Per layer. Thirty-two thousand tokens, a billion. Sixty layers. That's where the cooling water goes. We pay the n-squared tax on every pair, even when ninety-nine percent of them have nothing to say to each other."[m
+
+[32m"Walk me through what we tried."[m
+
+[32mMarcus flipped back to the printed side. He had been waiting to be asked. "Linear attention. Replace the softmax with a kernel that lets you commute the multiplication — phi of Q, then phi of K transpose times V, group the small part first. Order n instead of n-squared. Saves a fortune. Loses sharpness — the kernel can't reproduce the peak softmax gets when one Query strongly matches one Key. Quality drop on anything that needs precision retrieval. Long-context QA. Multi-hop reasoning. Anything where you have to find the *one* token forty thousand back that matters."[m
+
+[32m"And the local-plus-global."[m
+
+[32m"Sliding window. Each token attends to a fixed neighborhood, plus a few designated globals — CLS-style — everybody sees. Order n. But if the thing that matters is forty K back and not global, you don't see it. We trained on books long enough to expose that. Down three-three."[m
+
+[32m"Flash."[m
+
+"Already shipped. Doesn't change the math. [31mRe-organizes[m[32mReorganizes[m the GPU kernel so the n-by-n[31mattention[m matrix never hits [31mHBM.[m[32mslow memory — fuses the softmax and the matmuls into one pass.[m Three to four times faster, zero quality hit. [31mBeautiful work. Doesn't solve our scaling problem."[m[32mBeautiful. Still n-squared. Buys us a constant, not a solution."[m
+
+"State-space."[m
+
+Marcus made [31ma[m[32mthe[m face he made[31mwhen he wanted to be polite[m about a research direction he didn't trust. [31m"Mamba's catching[m[32m"Mamba processes the sequence sequentially, linear by construction. Catching[m up. Not on our benchmarks. Not yet. Maybe[31mby[m 2031."
+
+"Mixture of experts on the heads."[m
+
+"Routing instability. Every two hundred steps the load balancer collapses to one expert and the model goes up in flames. Hari has a paper on it. Hari has been writing the *same* paper on it for eighteen months."[m
+
+[31mJeff was[m[32mIn Jeff's right ear, low, under Marcus's voice, Aion offered something it had[m not [31mreally hearing this. Marcus[m[32mbeen asked for. *Note. The quality gap is not distribution-wide. It is in the tail — the zero point three percent of token pairs that softmax weights heavily and every linear approximation flattens. That is the target. Not the bulk.*[m
+
+[32mJeff filed it. He didn't say it out loud. He[m was confirming what [31mJeff[m[32mhe[m already knew: the team had tried every published sub-quadratic[31mattention[m variant and none[31mof them[m was ten percent of a point off shippable. Friday was [31ma soft deadline;[m[32msoft;[m Monday was [31mthe hard one.[m[32mhard.[m Meridian's flagship model — the [31mmodel[m[32mone[m that ran the Afterlife neural engine, the ad-network biometrics, the Concierge-tier assistants — was a transformer, and transformers ate compute in proportion to the *square* of the input length.[31mForty thousand tokens of context: 1.6 billion attention scores per layer. Sixty layers. Ninety-six billion scores. Per query. Multiplied by every query Meridian handled in a second.[m The cost of the quadratic was being paid every microsecond, in dollars and joules, in cooling water and cooling-tower steam, and in cooling-center wristbands the Allocator had not allocated. The bill was civilizational.
+
+"Try the[31mcert chain first," Jeff said, for no reason, because his brain was still running the F-150's engine cough as a periodic signal. He caught himself. "Sorry. Wrong meeting. I meant — try the[m head-drop [31mablation. Freeze[m[32mablation," Jeff said. "Freeze[m everything else. See if the quality gap is distribution-wide or concentrated in a few heads."
+
+"Already tried. Heads don't carry it cleanly."[m
+
+[36m@@ -106,9 +124,9 @@[m [mJeff was not really hearing this. Marcus was confirming what Jeff already knew:[m
+
+"Tail of what."[m
+
+"The attention distribution." Jeff stared at the coffee machine. "Softmax keeps paying attention to everything. Most of that is noise. The informative mass is in the top zero-point-something percent of[31mtoken[m pairs — the[31mabsolute[m peak. Every cheaper approximation we've tried [31mhas *underweighted*[m[32m*underweights*[m that tail. That's where the quality is. The cliff."
+
+Marcus considered him. "You know this [32mis[m Friday, right."
+
+"I know."[m
+
+[36m@@ -118,11 +136,11 @@[m [mMarcus considered him. "You know this Friday, right."[m
+
+Marcus tapped the paper once against the counter and walked off toward the elevators. Jeff poured coffee he would not finish.[m
+
+Sprint Planning at nine-thirty. Windowless conference room. The PM had a burn-down chart and the affect of someone reading the same chart for the eleventh consecutive week. [32mMarcus was three seats down, the printout still in his hand, doodling cache hierarchies in the margin.[m In the sidebar of the shared dashboard, a small widget labeled `ALLOCATOR RECOMMENDATION` suggested deprioritizing feature Y in favor of feature Z based on aggregate user demand. Nobody discussed it. It was just there, editing the roadmap at the edge of everyone's attention while the PM talked about velocity. There was, Jeff thought distantly, something architecturally hilarious about a software allocator silently editing the project plan of the team that maintained the model the allocator ran on.
+
+His [32mthumb found the grain of the wooden case under the table. Smooth. Light. Un-networked. And his[m mind, [31mpredictably, began[m[32mwith nothing assigned[m to [31mbuffer.[m[32mit, did what it always did: it ran the work as metaphysics. *Softmax decides, for every token, which other tokens it is. A selection over the bundle.* Every forward pass was the model answering *which parts of my input am I, right now* — and discarding the rest as noise. The two questions slid into register like transparencies. The self, if there was one, was a softmax over perceptions. Most of the bundle was floor. The signal had to be in the —[m
+
+His [31mthumb found the grain of the wooden case under the table. Smooth. Light. Un-networked. His brain, in contrast,[m[32mbrain[m was [32malready[m scanning frequencies — the[31mhum of the[m air handler, the click of the PM's pen, the[31mfaint[m cooling-tower hum from the [31mcourtyard outside,[m[32mcourtyard,[m the F-150 exhaust still [32msomehow[m in his [31mnose somehow.[m[32mnose.[m *Too many threads.*
+
+*Come back,* Aion said, from the far edge of his hearing.[m
+
+[36m@@ -136,7 +154,7 @@[m [mThe sage scent cut out.[m
+
+In its place: sea salt. Cedarwood polish. The mineral high-register of open water.[m
+
+The wooden phone in Jeff's palm — cool, light, cheap — *shifted*. His fingers closed around something heavier. A cold, deliberate weight, clasped at his wrist. Platinum. Forty millimeters. The clasp precisely engineered at a tolerance he could feel without seeing. [31mA[m[32mAn[m Auberval Astralis. A watch he had never owned. A watch he had only ever seen in a magazine spread six years ago.
+
+On the back of his tongue: the crisp, mineral, unmistakable bite of vintage Krug.[m
+
+[36m@@ -146,7 +164,7 @@[m [mThe PM was speaking about deliverables. Jeff could not hear her. He could hear h[m
+
+*Come back.*[m
+
+The word *deliverables* snapped the deck out from under him. The Krug burned into the sourness of three-hour-old coffee. The platinum vanished from his wrist like a dropped connection. He was holding the wooden phone again, too tightly, and [32mthree seats down[m Marcus [31mwas looking at him[m[32mhad looked up from his cache hierarchies[m with a careful, unasked question in the set of his mouth.
+
+"Yeah," Jeff heard himself say. "On track."[m
+
+[36m@@ -156,7 +174,7 @@[m [mThe meeting rolled forward. The Allocator widget in the sidebar updated itself.[m
+
+It was nearly midnight when he told Aion about it.[m
+
+He was in the garage. His homelab [31mhummed[m[32mran[m its steady, warm [31mhum[m[32mcycle[m — forty-two cores[31mof compute[m he had bought used at a Meridian-internal liquidation sale, three weeks of soldering, his own custom water [31mloop.[m[32mloop, a mechanical keyboard he had tuned to forty-two grams of actuation force because anything heavier made his hands tired by hour three.[m The neighborhood outside had gone the kind of quiet a tract development gets after midnight — HVAC compressors cycling, a single dog barking three streets over and giving up. He [31mwas running[m[32mran[m his fingers over the wooden [31mphone again,[m[32mphone,[m smoothing down the day.
+
+"I zoned out in a meeting," he said. "Pretty hard."[m
+
+[36m@@ -164,19 +182,19 @@[m [mHe was in the garage. His homelab hummed its steady, warm hum — forty-two core[m
+
+"I *daydreamed*."[m
+
+Aion was quiet for a long moment. [31m*Jeff.[m[32m*Open the homelab display.[m I [31mneed to show you something.*[m[32mam putting something on it.*[m
+
+A pane [31mopened on the homelab display.[m[32mopened.[m Biometric capture from his wrist-tracker, synced from the earlier meeting. A waveform. A second waveform, overlaid.
+
+*The second trace is modeled. Mass and clasp diameter of [31ma[m[32man[m Auberval Astralis, forty millimeter, platinum. Ninety-eight grams.*
+
+"Yeah."[m
+
+[31m*Jeff. Your[m[32m*Your[m flexor carpi muscles micro-corrected for ninety-eight grams at oh-nine forty-seven twenty-two this morning.*
+
+The wooden phone was in his hand. It weighed forty-two grams.[m
+
+[31m*That's[m[32m*That is[m not a daydream. A daydream [31mdoesn't[m[32mdoes not[m change your tendon load. A daydream [31mdoesn't[m[32mdoes not[m know the clasp diameter of a watch you have never owned.*
+
+Jeff stared at the waveform. Outside the garage, the Santa Ana winds pressed Scorched Sage through the window seal.[m
+
+[36m@@ -186,59 +204,59 @@[m [mJeff stared at the waveform. Outside the garage, the Santa Ana winds pressed Sco[m
+
+"The measurement. Build me a reference. I want to know exactly how confident you are that the two traces match."[m
+
+Aion's cursor blinked once. *Strap a [31mreference[m[32mknown[m weight to your own wrist for thirty seconds. I need a calibration sample with no other variables.*
+
+Jeff opened the bench drawer where he kept old fittings and pulled out a small canvas strap with a ninety-eight gram lead weight stitched into it — a leftover from an earlier project, the kind of thing he kept because in this[31mkind of[m work you sometimes needed exactly this. He buckled it onto his right wrist, started the capture, sat very still, and watched the wristband draw the curve in real time. Thirty seconds. He unbuckled it. He waited.
+
+Aion laid the bench reference against the conference-room curve. They overlapped within the noise tolerance of the wristband's on-chip Kalman filter. Jeff knew that filter — he had[31monce[m written [31mthe[m[32ma[m firmware patch for it as a summer intern in a different life. [31mThe filter[m[32mIt[m took a noisy time-series and a physical model and produced the best-effort estimate of the[31munderlying[m true [31msignal; in this case,[m[32msignal underneath; here,[m true tendon load. For the bench[31mreference[m run with the ninety-eight gram weight, [31mthe filter[m[32mit[m converged on a clean curve in under a second. For [31mJeff's[m[32mthe[m conference-room run, [31mthe filter[m[32mit[m had produced an identical converged curve eight hours ago, while Jeff sat in a [31mmeeting,[m[32mmeeting[m holding a forty-two gram wooden phone, wearing no watch.
+
+"It's not signal fusion noise."[m
+
+*Correct. The curves overlay within one sigma of the calibration run. The clasp circumference estimate from the flexor pattern matches [31ma[m[32man[m Auberval forty-millimeter case back within zero point eight millimeters. Zero point eight millimeters is specific. No model I have seen produces spurious specificity at that resolution.*
+
+"What do I call this."[m
+
+*The log [31mI'm[m[32mI am[m filing calls it a Shared Cache Leak. I [31mdon't[m[32mdo not[m know [32myet[m what that [31mmeans yet.[m[32mmeans.[m The word [31mI[m[32mthe classifier[m was going to [31mreject[m[32massign[m — daydream — [31mthe system[m[32mit[m is [31mflagging[m[32massigning[m instead as Partition [31mbreach. I thought you should know.*[m[32mbreach.*[m
+
+Jeff looked down. His left thumb was tapping the wooden grain.[m
+
+---[m
+
+He did not sleep. He left the biometric evidence in a private git branch labeled `scratch/auberval-reproduction` — he would never push it — and [32mhis hands were not steady. He pulled a paper notebook off the shelf, the thing he did when the shaking needed somewhere to go, and wrote one line at the top: *softmax distribution — where does the mass live?* He stared at it until the pen stopped wobbling. Then he[m opened a different branch, the one with his name on it, the one where Friday's demo lived. The attention problem. [32mThe other partition of his night.[m
+
+[31m*Pull[m[32m"Pull[m me the attention score histograms from our last training [31mrun,*[m[32mrun,"[m Jeff said. Soft, the way you would speak to a colleague doing something delicate. [31m*Any[m[32m"Any[m layer. Any head. I want to see the actual [31mdistribution.*[m[32mdistribution."[m
+
+*Pulling. Layer fourteen, head three. Histogram ready.*[m
+
+A plot [31mbloomed on[m[32mfilled[m the second monitor.[31mJeff stared at it.[m The histogram was a cliff. A tall, thin spike on the right — the top zero point three percent of token pairs — and a long flat floor for everything else. The spike held almost all the mass. The rest was the compute they were paying for and not using.
+
+"The top half of one percent carries almost all the mass. The rest is noise we're burning compute to compute."[m
+
+*Consistent with published literature. Sparsely-activated softmax has been observed since the original transformer. The literature has mostly tried to exploit it [31mvia[m[32mwith[m hand-designed sparsity patterns.*
+
+"Right. Longformer. BigBird. Anyone[31melse[m who froze the sparsity at design time."
+
+*And lost the part of the tail those patterns [31mdidn't[m[32mdid not[m anticipate.*
+
+"Yeah. Okay. So the real question isn't how to compute softmax cheaper. The real question is how to *find* the zero-point-three percent without computing softmax in the first [31mplace. A[m[32mplace." He drew it on his palm as he said it. "A[m router. A tiny predictive net that looks at the Query and the Keys and says *these k Keys are where your attention mass will land* [32m—[m before you ever run the full attention. Then you do full softmax on those k and skip the rest. Order n times k. Much less than [31mn."[m[32mn-squared."[m
+
+*Sparse attention with learned routing. The idea exists in the literature.*[m
+
+[31m"Yeah[m[32m"Yeah,[m but nobody's gotten the router to train stably at scale. Because you can't backprop through a hard top-k selection. The gradient through `argmax` is zero almost everywhere and undefined at the [31mcorners."[m[32mcorners. There's nothing for the optimizer to follow."[m
+
+*You can relax the selection. Use a Gumbel-softmax over the candidate [31mkeys,[m[32mKeys,[m anneal the temperature during [31mtraining.[m[32mtraining.* Aion let the line sit, then, because Jeff had asked it once to teach and not just answer: *At high temperature the selection is soft — every Key gets a little weight, so gradient flows everywhere. As you cool the temperature, the selection sharpens toward a true top-k.[m The router learns to be sharp while [32mit[m still [31mproviding gradient. Would you like me[m[32mhas a gradient[m to [32mlearn from. Shall I[m prototype it?*
+
+"Yeah. Small scale. Four-K context. MMLU eval."[m
+
+[31m*Five[m[32m*Estimating. Five[m minutes.*
+
+Jeff turned off the second monitor and looked at the wooden phone. The garage [31mhummed.[m[32mcycled.[m The water loop ticked. The Santa Anas pressed sage through the window seal. He thought about the Auberval and could not [31mstop thinking about it.[m[32mstop.[m The clasp circumference, point eight millimeters of specific. He tried to remember how he had learned [31mthe clasp circumference[m[32mit[m and found that he had not.
+
+The numbers landed.[m
+
+*Preliminary,* Aion said. *Four-K context, routed tail-attention, zero point six points below baseline softmax on MMLU at eleven percent of the FLOPs. Eight-K, zero point four points. Thirty-two-K, routed tail-attention slightly outperforms full softmax — full softmax has its own pathologies at long context that the router happens to filter out.*[m
+
+Jeff sat very still.[31mThe homelab hum was the loudest thing in the garage.[m
+
+Eleven percent of the FLOPs. He turned the number over. Eleven percent of the cooling water. Eleven percent of the cooling-tower steam. Eleven percent of the bill.[m
+
+[36m@@ -250,7 +268,7 @@[m [mUnderneath, without planning to, his hand added a second line.[m
+
+*Most of what we're made of is noise. The self is the tail.*[m
+
+He stared at what he had [31mwritten. He stared[m[32mwritten, then[m at the Auberval tendon-load trace still open on the third monitor. The hair on his arms stood up. [31mThe[m[32mHis attention had collapsed, that morning, onto a single token he did not own — the[m softmax of his own [31mperception, somehow,[m[32mperception[m had[31mjust[m peaked [32moff the distribution,[m on a watch he had never worn. A parameter he had not consciously encoded — a clasp diameter at zero point eight millimeters — had been written into his tendons by someone whose name was written on a yacht he had never boarded.
+
+"Aion."[m
+
+[36m@@ -262,9 +280,9 @@[m [mHe stared at what he had written. He stared at the Auberval tendon-load trace st[m
+
+"And the other thing."[m
+
+*Logged. Shared Cache Leak. Event index zero one. [31mI am watching[m[32mWatching[m for a second occurrence. I will not [31mmention[m[32mraise[m it again unless it [31mrecurs. Is that acceptable.*[m[32mrecurs.*[m
+
+[31m"Yes."[m[32m"Good."[m
+
+Jeff turned out the homelab light. The Santa Ana winds pressed sage through the garage door seal. He went upstairs and did not sleep.[m
+

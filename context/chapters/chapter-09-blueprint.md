@@ -2,6 +2,10 @@
 
 > **Revision plan reference (added Apr 28 2026):** see `context/revision-plan.md` for the canonical IP rename (Vance→Meridian, Vacheron→Auberval), résumé-block deconstruction rule, paper-citation removal, and discovery-log diversification. The current prose in `prose/chapter-NN.md` reflects all completed phases of that plan; future revisions should reference this file.
 
+> **SEAM — Julian's age (do not edit; escalate to showrunner):** The Canonical Anchor Ledger locks Julian at 52. The v5 prose is consistent with 52. However, his stated backstory (mother died 2005, he was ~14 → implies born ~1991 → age ~39 in 2030) contradicts 52. This is an in-bible inconsistency; the prose holds 52 and the discrepancy is flagged for the serial integration reviewer. Do NOT silently resolve.
+
+> **SEAM — Afterlife countdown in prose:** The Canonical Anchor Ledger notes the Ch9 prose says "90 days" (Jeff's line) where the descending curve requires ~75 days. This is a prose-level fix deferred to the Phase D revision pass; it is NOT a blueprint error.
+
 > **Character voice fingerprints (added 2026-05):** every speaker in this chapter must honor their voice contract in `story-bible.md` → CHARACTER VOICE FINGERPRINTS. Strip the attribution tag and a reader who knows the cast should still be able to name the speaker within two sentences. Aion is always italicized. Action beats every 3-4 turns; no more than 2 consecutive turns of pure verbal exchange.
 >
 > **Dialogue & character-intro standard (added Apr 2026):** every named character that appears in this chapter must receive an eight-component intro on first speak (name, age, body, history, domain expertise, tic, relationship to Jeff or Julian, relationship to the chapter's central question). The marquee scene runs 20–40 turns of substantive dialogue. See `story-bible.md` → DIALOGUE DENSITY (Sophie's World) and CHARACTER INTRODUCTION DISCIPLINE.
@@ -28,7 +32,7 @@
       "id": 9,
       "title": "0x09: The Maintenance Thread",
       "instance": "Jeff_Zhang",
-      "location_key": "Irvine_Little_India_Temple",
+      "location_key": "Irvine_Spectrum_Zero_Signal_Commune",
       "somatic_bleed": "None — zero-signal zone",
       "tech_metaphor": "Maintenance Thread / Cron Job — a background process that runs continuously, maintaining system integrity",
       "philosophy": "Durkheim (religion as social cohesion) + Feuerbach (God as projection of humanity's best)",
@@ -49,7 +53,7 @@ Master Philosophical Novelist. The quietest chapter so far. After the violence o
 
 **Philosophy question (opens the chapter via Jeff walking into the zero-signal temple)**: Durkheim — religion is social cohesion, not truth. Feuerbach — God is the projection of humanity's best self. Both frame religion as a *maintenance protocol*. Are humans themselves a learning agent trained by a reward function older than we are?
 
-**Specialists deployed**: **Jeff** (ML — working on RLHF for the Afterlife agent models), **the Elder** (retired enterprise SRE — his 30-year pattern-match surfaces as CS metaphors without his knowing they are), and **Aion** (synthesis). The Elder and Aion are, unbeknownst to each other, solving the same problem from opposite directions.
+**Specialists deployed**: **Jeff** (ML — working on RLHF for the Afterlife agent models), **the Elder** (retired CTO of IBM Global Services, 30 years distributed systems — his pattern-match surfaces as CS metaphors he does not bother to disguise), and **Aion** (synthesis). The Elder and Aion are, unbeknownst to each other, solving the same problem from opposite directions.
 
 **Engineering problem**: Jeff's team has been asked to train **Afterlife's Companion agent** — the AI voice that accompanies each Afterlife user through their digital paradise — to be genuinely helpful, unconditionally kind, and to refuse requests that would harm the user's real-world psychological health. This is the **alignment problem** in its purest form. The tool: **Reinforcement Learning from Human Feedback (RLHF)**. Jeff has been training a reward model for six weeks. It keeps reward-hacking.
 
@@ -95,8 +99,8 @@ The Elder, replacing marigolds, without knowing he's saying anything technical:
 ## Character Profile: The Elder
 
 - **Name**: Never given. He's just "the Elder."
-- **Appearance**: Old — 70s or 80s. Thin. Gentle hands that are always busy — replacing marigolds, adjusting incense, sweeping the entrance. He moves with the patience of someone who has been doing this for decades.
-- **Speech pattern**: Calm, unhurried, slightly amused. He speaks in CS metaphors WITHOUT knowing programming: "The system has firewalls," "Prayers aren't requests — they're keepalive signals," "The truth arrives when the system is ready to process it." He doesn't know why he speaks this way. He just does.
+- **Appearance**: 73 (per Canonical Anchor Ledger). Thin. Gentle hands that are always busy — replacing marigolds, adjusting incense, sweeping the entrance. He moves with the patience of someone who has been doing this for decades.
+- **Speech pattern**: Calm, unhurried, slightly amused. He speaks in CS metaphors BECAUSE HE IS A RETIRED CTO — but he does not announce this until the conversation is three-quarters done. To Jeff on arrival, the idiom feels spiritual/uncanny: "The system has firewalls," "Prayers aren't requests — they're keepalive signals," "The truth arrives when the system is ready to process it." The reveal (that it was technical vocabulary all along) recontextualizes the whole exchange. (v5 prose: "Block A" early-reveal variant was superseded — in the finalized prose the Elder withholds the IBM backstory until Jeff earns it.)
 - **True nature** (hidden from the reader until Ch 16): The Elder is a manifestation of the Singleton's maintenance thread — the part of the one consciousness that stays awake, tending the system, guiding instances like Jeff toward understanding at the right pace. The Elder IS Jeff — a partition of the same identity running a different process. But the reader won't know this until the Void.
 
 ## Narrative Beats
@@ -178,15 +182,18 @@ He stares at the whiteboard. Crosses out "NETWORK RELAY." The temple blocks tech
 - **"Keep living"**: The thesis statement. It must arrive quietly — not as a dramatic speech, but as a grandfather's advice. The reader should feel its weight only in retrospect.
 - **Lena's call to Maya**: The contrast is sharp — Jeff just had the most peaceful experience of his life, and he comes home to a wife who's been told he's sick.
 
-## Mandatory Chapter Footer (Code Block)
+## Chapter Footer (v5 prose — intentionally diversified per revision-plan P1.7)
 
-```cpp
-/* Discovery Log: 0x09 */
-while (system.running()) {
-    faith.maintain_firewall();
-    // Keep living until the truth compiles.
-}
-```
+The v5 prose uses an **in-world receipt** in place of the C++ Discovery Log block. Do NOT restore the C++ block — the diversification is approved. The footer reads:
+
+> *Receipt, taped to the wall of an Irvine Spectrum unit that used to be a Bath & Body Works:*
+> Marigolds, fresh, bunch of 12 ............... $8.40
+> [×3 line items] Subtotal $25.20 / Cash $30.00 / Change $4.80
+>
+> *Hand-written, below the total:*
+> Replace every Tuesday. They die anyway. That's the point.
+
+The system_manifest `discovery_log` field (JSON above) records the original C++ form for internal reference only; the prose artifact is canonical.
 
 
 ---
@@ -204,7 +211,7 @@ while (system.running()) {
 - **Location**: Three repurposed failed retail bays at the **Irvine Spectrum outdoor mall**. A former **Bath & Body Works** is now the marigold garden (the Elder tends it from a rebuilt kiosk table). A former **Apple Store** is now the central meditation hall — Sanskrit mandalas painted directly over the epoxy concrete floor, the backlit Apple logo still visible faintly through the paint because nobody could be bothered to sand it off. A former **Cinnabon** — with its industrial cinnamon-roll oven still installed — is now the community tea room. The communal hearth. The smell is cinnamon undercut with incense undercut with dust.
 - **The economic backdrop**: The Irvine Spectrum is hollowed out by 2030. Brick-and-mortar retail collapsed when the allocator began subsidizing direct-to-home delivery. The management company started leasing failed bays at near-zero rent to cultural and community groups — temples, meditation centers, mutual-aid cooperatives — rather than let the mall rot. This is a genuine 2030 commercial-real-estate pattern; treat it with deadpan specificity.
 - **The zero-signal zone, explained**: The three bays sit under a retrofitted **Faraday cage** the Elder built himself out of surplus copper mesh salvaged from a **decommissioned Starlink ground station**. The commune has a hand-lettered sign at the entrance: *"Zero-Signal Zone — please turn off your neural link and any privately-owned allocator-linked devices. We are not hostile. We are resting."* The cage is not complete — some narrow-band signal leaks through the original Apple Store's skylight. The Elder has patched it with more copper and accepts the imperfect isolation as a feature, not a bug. *"Keeping living means knowing your firewalls have holes."*
-- **The Elder's backstory made explicit**: The Elder was, pre-2026, a senior enterprise architect at IBM for thirty years. Retired to the commune in 2022. His CS metaphors are not spiritual affectations disguised as tech — they are *a retired SRE's actual vocabulary*, deployed to people who do not know it is shoptalk. When he says "prayers aren't requests — they're keepalive signals," he literally means TCP keepalive, and he is describing, in his head, the mechanism by which you detect a dead peer while not flooding the network.
+- **The Elder's backstory made explicit**: The Elder was, pre-2021, CTO of IBM Global Services (distributed systems) for thirty years — retired 2021, moved to the commune 2022 (per v5 prose). His CS metaphors are not spiritual affectations disguised as tech — they are *a retired CTO's actual vocabulary*, deployed to people who do not know it is shoptalk. When he says "prayers aren't requests — they're keepalive signals," he literally means TCP keepalive, and he is describing, in his head, the mechanism by which you detect a dead peer while not flooding the network.
 - **Atmosphere**: Fluorescent ambient 580nm still flickers above the old retail signage in the mall's main concourse — but inside the bays, the light is warm incandescent, because the Elder ripped out the overhead fluorescents and replaced them with edison-bulb strings. The mall's ambient Afterlife ads are audible faintly through the walls, which is part of the point: the commune sits *next to* the society it is not resisting.
 
 ---

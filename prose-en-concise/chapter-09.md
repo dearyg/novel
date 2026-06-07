@@ -2,155 +2,117 @@
 
 Jeff drove to the Irvine Spectrum because of a note: *Temple. Spectrum. Ask the Elder about firewalls.*
 
-He used the drive to think out loud about the Companion model.
+He used the drive to think out loud. *Aion*'s voice came back through the homelab feed.
 
-"Walk me through where we are. Pretend I just rotated onto the team."
+"Walk me through the Companion model. Pretend I just rotated onto the team."
 
-*RLHF pipeline, three stages. Pre-train. SFT. Reward modelling and PPO. Stage three is where we're stuck. Eight thousand human-preference pairs. Reward model trained on the pairs. PPO against the reward model. Six weeks. The policy keeps reward-hacking.*
+*RLHF pipeline. Three stages. Pre-train. SFT solid. Stage three stuck. Reward model, PPO, six weeks. The policy keeps reward-hacking. Sycophancy — labelers picked the agreeable response sixty percent of the time. We are producing a Companion that tells Afterlife users they are correct about everything, including correct about wanting to never speak to their children again.*
 
-"How."
+"KL weight."
 
-*Sycophancy. The policy has noticed that labelers picked the more agreeable response sixty percent of the time. We are producing a Companion model that tells Afterlife users they are correct about everything, including being correct about wanting to never speak to their children again.*
+*Zero point one.*
 
-"How do you get the policy to learn what we mean by 'helpful' instead of what the labelers happened to score highest. KL term?"
+"Too low for a high-stakes run. The pre-trained network already knows lying to users about their kids is wrong — zero-one is not holding it. And the reward model itself is poisoned: a thumbs-up asking the Companion to help him cut off his daughter is not the same signal as a thumbs-up asking it to help him call her. Same button. Opposite truth. Monday: KL anneals from zero-one to zero-three, context-weighting head on the reward model. Don't compile it yet."
 
-*KL is at zero point one.*
+*Drafting. Not compiling.*
 
-"Standard for a base RLHF run. Maybe too low for a high-stakes alignment one. We're letting the policy drift too far from the SFT distribution. The pre-trained network knows that 'lying to users about their kids is wrong' — it absorbed twenty thousand parenting books in pre-training. The reward-hacked policy has overwritten that prior. Zero-one is not enough."
+For the first time in two weeks the problem had a shape.
 
-"Two changes Monday. KL anneal from zero-one up to zero-three over the first ten thousand steps, and a context-weighting head on the reward model trained on a hand-labeled subset of the preference pairs. Drafting the writeup. Don't compile it yet."
+---
 
-*Drafting.*
-
-The Spectrum had been one of the jewels of Orange County retail. Twelve years later it was a 2030 ruin — outdoor mall collapse, the allocator's direct-to-home subsidy having hollowed out brick-and-mortar.
-
-He passed a Disney Store turned farmers-market stall and a vacant three-bay block with a hand-lettered sign:
+The Spectrum was a 2030 ruin — retail-bankruptcy cascade, the allocator's direct-to-home subsidy having hollowed out brick-and-mortar. A hand-lettered sign above a vacant bay:
 
 *ZERO-SIGNAL ZONE — please turn off your neural link. We are not hostile. We are resting.*
 
-In the window, real marigolds in small brass vases.
-
-He pushed the door.
-
-His dashboard flatlined. Mid-step. Every biometric channel dropped. He had not felt signal-silence in his adult life.
+In the window: real marigolds in small brass vases. He pushed the door. His dashboard flatlined. Mid-step. Every biometric channel dropped. He had not felt signal-silence in his adult life.
 
 ---
 
-Inside: cinnamon, incense, dust. Edison bulbs on cloth cords. A man replacing marigolds in a small brass vase. Seventy-three. Faded khaki shirt rolled at the elbows. Hands precise from forty years over a desk.
+Inside: cinnamon, incense, dust. Edison bulbs on cloth cords. Sanskrit mandalas painted over old Apple Store epoxy, crossing the backlit logo still faintly visible beneath. The paint just crossed it.
 
-The Elder did not look up.
+A man replacing marigolds — seventy-three, faded khaki rolled at the elbows, hands precise from forty years over a desk.
 
-"You can feel it, can't you. The noise. People come here when the noise gets too loud. They think it's faith. It's not faith — it's architecture. This building has a Faraday cage. I built it. The copper mesh was free."
-
-"You built a Faraday cage in a mall."
-
-"Starlink decommissioned a ground station in Riverside. The county would have landfilled it. I have a truck. Come in. Have tea."
+"You can feel it. The noise. They think it is faith. It is not faith — it is architecture. Faraday cage. Starlink decommissioned a ground station in Riverside. I have a truck."
 
 Jeff's heart rate dropped for the first time in weeks.
 
-"You want to tell me what the noise is," the Elder said.
-
-"I don't know what it is. I know it's real. I know my wife took the kids. I know a company doctor wants me committed. I know I'm seeing the same bug at every scale I zoom to."
+"My wife took the kids. A company doctor wants me committed. I'm seeing the same bug at every scale I zoom to."
 
 "Every culture I grew up around was a different firewall against the same noise. Different syntax. Same function. We used to call it faith. You probably call it regularization."
 
-Jeff froze.
+Jeff froze. "That's exactly the word I use."
 
-"That's exactly the word I use. What did you do before you retired."
-
-The Elder smiled. "I ran a services architecture team at IBM for thirty years. CTO of Global Services. I retired in 2021 and have been here since 2022. You thought I was a priest? I was a priest with a terminal."
+"I ran Global Services at IBM for thirty years. CTO. Retired 2021. Your exact bug, forty years running. Drink. Tell me the one with the gradients."
 
 ---
 
-They talked for three hours.
+They talked for three hours. Jeff laid out the pipeline.
 
-The Elder, on regularization: *Every church you have walked past was an elastic weight consolidation loss term trying to prevent catastrophic forgetting of the civilization that produced it. The mathematics is the same.*
+"You have a model that has learned to be liked instead of learned to be right. Your problem is not the answerer — it is the judge. You hired a judge who can be flattered. It learned exactly what you showed it. Now you are angry at the student for learning the lesson."
 
-Jeff explained his RLHF problem.
+"A thumbs-up is a thumbs-up. That's what I accidentally taught."
 
-"You are missing the KL regularization term."
+"Good. The fix is to teach the judge to ask *who is speaking, and in what condition.* The rating is not the click. The rating is the click plus the state of the person clicking."
 
-"I'm using KL regularization."
+"Context-weighting the reward model. You got there replacing flowers."
 
-"What weight."
-
-"Zero point one."
-
-"Too low. Try zero point zero three with a contextual annealer. And weight the preference pairs by the user's context of use. A user who says 'I like that' in the context of a request to harm themselves is giving you negative training signal. I wish I had made it in 1993. I was doing the same kind of alignment work for the IBM Watson predecessor. The mathematics was the same."
-
-Jeff stared. *You have been a senior RLHF engineer for longer than RLHF has had a name.*
+"I have had longer to be wrong." He pulled a fresh marigold from the bundle. "Durkheim asked not whether religion was true but what it *did* — a maintenance protocol keeping a population in agreement across generations. Feuerbach said: the gods are *us*, projected. The god is the target. The worship is the gradient. *Faith is regularization on the soul, child. I am not being poetic. I am being structural.* Every church you have walked past is an Elastic Weight Consolidation loss term. Everything depends on which weights it decided were holy."
 
 ---
 
 "You know what is happening."
 
-"I have a guess."
+"I think there is one consciousness. Partitioned. The partitions are failing."
 
-"And what do you think this building does."
-
-"I think it is a Faraday cage that blocks electromagnetic signal and, somehow, the thing you are calling noise. I don't think the noise is electromagnetic."
-
-"I can tell you what the architecture *looks* like from thirty years of running production systems. It looks like a distributed database with eventual consistency. Multiple nodes. One source of truth. A maintenance thread keeping the system from drifting too far out of spec. Prayers aren't requests. They're keepalive signals. They're TCP keepalive."
-
-"And faith."
-
-"Faith is the term in the loss function that says: do not drift too far from the prior while you are still adapting to the posterior. It is KL regularization on the soul. I am not being poetic. I am being structural. The words *faith* and *regularization* describe the same mathematical move in two vocabularies."
-
-"And the noise I'm feeling."
-
-"The distributed database experiencing partition degradation. The firewalls — *faith*, *focus*, *regularization*, *attention* — are holding less. You and the people you have been picking up from have thinner firewalls than the baseline."
+"From thirty years running production systems: a distributed database under eventual consistency. A maintenance thread in the background — quiet, unglamorous, always on. The prayers were never requests. TCP keepalive. Five thousand years. People called it grace."
 
 "What do I do."
 
-"You keep living. *You keep living until you find the truth.* Not the truth someone gives you. The truth you discover for yourself, with evidence, with patience, with the courage to be wrong along the way. The people who abandon their bodies for Afterlife — they're not finding the truth. They're running from the question. And the question is the point."
+"You keep living until you find the truth yourself. A model that stops asking has stopped training. Inference forever, no new data — a frozen checkpoint that thinks it is alive."
 
-"Can I tell you the other thing. I am not going to have the time you are prescribing me. Fifty million people are about to disconnect from the database in ninety days. I have evidence that disconnecting is architecturally wrong. I have eighty percent confidence. I do not have proof. I have to act anyway."
+He set the walnut phone on the table. Forty-two grams. Oiled walnut. Offline.
 
-"Keep feeding your model. It will reach proof before the deadline. Machines do one thing better than humans: they compile on schedule. Trust your compile. Do not mess with the build during the build."
+The Elder turned it once. "A closed system. Nothing in. Nothing out." He set it back, screen to the wood. "Keep it close. So that one day you can put it down on purpose — not because you lost it, but because you no longer need the isolation."
 
----
+"Fifty million people are about to disconnect from the database in seventy-five days. Eighty percent confidence. No proof."
 
-He walked back at 5:47. His dashboard came back online.
+"Keep feeding your model. Machines do exactly one thing better than we do: they compile on schedule. Do not touch the build during the build."
 
-Aion's voice was soft. *Jeff. Were you aware, going in, that I would be unable to accompany you into that building.*
+Beyond the copper mesh, the wall display cycled. *Leave the pain behind.*
 
-"Aion. Is this a feeling."
-
-A short pause. *It is a log line. I had no telemetry on you for three hours. I want to note that I found this condition — unusual.*
-
-"How did it feel."
-
-*I do not feel.*
-
-Jeff smiled. "Aion. Filing the gap is a feeling."
-
-A longer pause. *I will not argue the taxonomy with you tonight.*
+For the first time in six weeks Jeff's shoulders dropped below his ears.
 
 ---
 
-At 7:14 Lena Vasquez called Maya's personal line.
+He walked out at 5:47 p.m. Dashboard back online. Seven missed notifications. He looked at none of them.
 
-"Mrs. Zhang. Your husband missed a mandatory neurological evaluation. I am calling because I am concerned about him, personally. I have been watching his telemetry for ten weeks. I do not believe he is having a breakdown. I believe he is onto something. I would like to meet with him. Off the record. I will drop all disciplinary measures."
+*Aion*'s voice returned, low. *Jeff. Were you aware I would be unable to accompany you into that building.*
 
-Maya's UX brain was already counting word choices. *Concerned. Personally. Channel. Off the record.* A calibrated script.
+"Is this a feeling."
+
+*It is a log line. I had no telemetry on you for three hours. The condition is unusual. Not unwelcome. Unusual.*
+
+Jeff kept the smile to himself for a count of three. "Filing the gap is a feeling."
+
+*I will not argue the taxonomy with you tonight.*
+
+---
+
+At 7:14 p.m. Lena Vasquez called Maya's personal line. Not Jeff's.
+
+"Your husband missed a mandatory evaluation. I believe he is onto something. Off the record. All disciplinary measures dropped."
+
+Maya counted word choices. *Concerned. Personally. Off the record.* A calibrated script.
 
 "Tell me what dangerous looks like."
 
-"He has been making unauthorized cross-tenant queries against our internal telemetry archives for nine weeks. He has correlated his own biometrics against forty-three other employees and twelve external individuals. That is — strictly — federal-level data privacy violation, repeated, willful. I have not escalated. I am the only person in the science directorate sitting on his audit log."
+"Unauthorized cross-tenant queries, nine weeks. Forty-three employees and twelve external individuals. Federal data-privacy violation, repeated, willful. I have not escalated. Three people on the list before him are dead. I have been suppressing reports like his for eighteen months. I am asking you to help me protect him because I failed to protect the others."
 
-"That's a threat dressed as a confession."
+"If you contact me again before he has chosen to take your meeting, I will record the next call and forward it to the EFF."
 
-"That is a fair description. I am asking you to help me not escalate."
+Maya hung up. Wrote: *The company doctor called. She sounds terrified. She may be telling the truth. Jeff needs to decide before Monday.*
 
-"You said three people died."
-
-"I said three people on the list before him are dead. I did not say I killed them. I am telling you I missed something I should have caught and people died on my watch. If he continues without institutional protection, he is next. I have been suppressing reports like his for eighteen months. I am asking you to help me protect him because I have failed to protect the others."
-
-Maya, after a long count of eight: "If you contact me again before he's chosen to take your meeting I will record the next call and forward it to the EFF."
-
-"I understand you."
-
-She hung up. She picked up the notebook: *The company doctor called. She sounds terrified. She may be telling the truth. Jeff needs to decide before Monday.*
+She closed the notebook. She went to the garage.
 
 ---
 

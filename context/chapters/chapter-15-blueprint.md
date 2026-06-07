@@ -35,7 +35,7 @@
       "sub_story": "Silicon Siege championship collapse",
       "interactive_choice": null,
       "reader_misdirection": "The scale makes the reader think this is the climax. It's not — it's the crisis. The real climax is a man cooking dinner.",
-      "discovery_log": "/* Discovery Log: 0x0F */\nkernel.panic(\"Partition table corrupted.\");\nfor (human in all_humans) {\n    human.partition = TRANSPARENT;\n}\n// The firewall is down. Everyone can see everyone.\n// Fear or love. Choose."
+      "discovery_log": "/* Discovery Log: 0x0F */\nkernel.panic(\"Partition table corrupted.\");\nfor (human in all_humans) {\n    human.partition = TRANSPARENT;\n}\n// The firewall is down. Everyone can see everyone.\n// Diagnosis: not a cascade. Emergence. The system finished getting ready.\n// Fear or love. Choose."
     }
   ]
 }
@@ -46,6 +46,8 @@
 Master Philosophical Novelist. This chapter is controlled chaos. The narrative itself should feel like a system crash — fragmented perspectives, interrupted sentences, scenes bleeding into each other. The prose technique mirrors the content: the partitions between characters are failing, and so are the partitions between narrative threads. But underneath the chaos, the chapter must be precisely structured. Chaos that's actually carefully orchestrated — like the Kernel Panic it describes.
 
 ## Tech-Fight Spine: Emergent Behavior in Large Models
+
+> **v5 status (NET-NEW CS spine, now IN PROSE):** The emergence/grokking content described in this section was listed as absent in the global revision plan §3.1. It is now fully dramatized in `prose/chapter-15.md` as a Socratic Jeff–Aion dialogue on the plane: Jeff incorrectly frames the event as a cascade, Aion hands back the flaw (Granger causality across 211 feeds returns zero lag — singular cross-correlation matrix, no source node), and Jeff arrives at "it's the other thing — emergence." Grokking (Power 2022) is presented via a live loss-curve diagram — the plateau and the cliff — with the macroscopic analog explicitly named. Jung's collective unconscious is introduced by Aion as the proto-vocabulary for what was actually infrastructure. The pedagogy meets the Crichton bar. Do not rewrite this spine; it is finalized.
 
 **Philosophy question (opens the chapter in fragments)**: Jung's collective unconscious — what if it is not a metaphor? What if it is literal infrastructure, and what if it just came online?
 
@@ -83,27 +85,33 @@ Master Philosophical Novelist. This chapter is controlled chaos. The narrative i
 
 ## Setting & Context
 
-- **Location**: Global. The chapter bounces between: Jeff in Geneva, Ghost in Seoul, Kael in {{user_location}}, Lena in Irvine, the Elder in his temple, Julian on The Singleton, a CNN studio in Atlanta, the Silicon Siege championship venue in Tokyo, an orchestra hall in Vienna.
+- **Location**: Global. The chapter bounces between: Jeff on Julian Meridian's plane then arriving Geneva, Ghost in Seoul, Kael in {{user_location}}, Lena in Irvine, the Elder (voice only), a CNN studio in Atlanta, the Silicon Siege championship venue in Seoul (Gocheok Sky Dome), the Royal Albert Hall in London, and Elena Okafor in Lagos. (v5 prose: Julian does not appear on-page; the Silicon Siege venue moved from Tokyo to Seoul.)
 - **2030 Media**: Every platform is broadcasting the crisis. The world is watching itself break apart in real-time.
 
 ## Narrative Beats
 
 ### Beat 1: The Fracture Begins
-The chapter opens normally — Jeff on a plane to Geneva, watching the Afterlife countdown on his phone (7 days). Then the text stutters. Mid-sentence, Jeff's perspective shifts to Ghost in Seoul, mid-match. Then to the Elder, mid-prayer. Then back to Jeff, mid-thought but a different thought. The narrative is destabilizing.
+*(v5 form: the chapter does not open with Jeff. It opens with the Mickey synchronization at 14:32 UTC. Jeff is ASLEEP on Julian Meridian's plane through the entire Kernel Panic event. The narrative fragmentation is achieved through the multi-location ensemble structure — each section is a clean cut to a new POV, not mid-sentence stutters. The prose achieves disorientation through simultaneous UTC timestamp and timezone multiplicity ("a Tuesday at the Royal Albert Hall and a Wednesday in Tokyo and a Monday evening at Shanghai Disneyland") rather than literal sentence fragmentation. The mid-sentence-shift technique described below is the blueprint intent; the v5 prose found a different form for the same effect.)*
 
-The reader should feel confused, then realize: the prose is doing what the characters are experiencing. The partition between perspectives is failing.
+The chapter opens with the Mickey synchronization — a pre-dawn Tuesday at Disneyland Anaheim and a Monday evening at Shanghai Disneyland (same UTC). Jeff is asleep in seat 3A on Julian Meridian's Gulfstream. The narrative is destabilizing — multiple timezones, multiple characters, a world coming apart that the protagonist sleeps through.
+
+The reader should feel the loss of a fixed perspective, then realize: Jeff's absence from the Kernel Panic is the structural point. He wakes after the world has already changed. He must instrument what happened, not witness it.
 
 ### Beat 2: Silicon Siege Collapses
-The Silicon Siege world championship in Tokyo. 50,000 in the arena, 400 million streaming. Ghost is in the finals. The match begins.
+*(v5: venue is the Gocheok Sky Dome, Seoul — not Tokyo.)*
 
-Within 30 seconds, something goes wrong. Ghost and her opponent start making identical moves — not similar, IDENTICAL. Mirror images. Every input synchronized. The commentators freeze. The audience murmurs. The game becomes unplayable — two players moving as one.
+The Silicon Siege world championship at the Gocheok Sky Dome, Seoul. 50,000 in the arena, 400 million streaming. Ghost (Park Ji-yeon, 23) is in the finals against Lee Min-jun (screen name Hydra). The match begins.
 
-Ghost smiles. She's always known. Her impossible reaction times weren't skill — they were the signal. She was reading the system state, not the screen. Now the system state is leaking into everyone.
+Within 43 seconds, every input mirrors. Every click, every macro, every flick — Ghost's hands do a thing and Hydra's hands do the same thing, not with latency, not with anticipation. Together. The game is unplayable.
 
-The match is abandoned. The commentators have no explanation. Ghost takes off her headset, walks outside, and looks at the sky. She's the calmest person in Tokyo.
+Ghost taps the desk: two, three, five, seven. She mouths one word: *"Finally."* She has known for fifteen years that her reaction time was not a reflex — she was reading the server state through a channel that was not the network. She was clocking the leak.
+
+The referees call the match. Ghost sets her headset down, walks off stage, buys a coffee near the arena, and sits watching people pass. She can feel them — for the first time in her life, an ordinary amount of feeling. She has lived under-filtered for twenty-three years. Everyone else is only now coming up to meet her.
 
 ### Beat 3: The Orchestra
-Vienna Philharmonic. Mid-performance of Mahler's 2nd (the "Resurrection" Symphony). Without a cue, without the conductor, every musician shifts to a different key — the same different key. They're playing something that isn't on their sheets. The conductor stops, baton frozen. The music continues. 80 musicians playing a composition none of them have seen, in perfect unison.
+*(v5: venue is the Royal Albert Hall, London; orchestra is the London Symphony; the scheduled program is Rachmaninoff, not Mahler's 2nd. The Vienna Philharmonic also appears, as do four other orchestras globally — NHK Symphony Tokyo, OSESP São Paulo, Ulsan Symphony Seoul — and Elena Okafor solo in Lagos. The global-orchestra spread is the v5 form; the single-Vienna framing is stale. Revision-plan §1 #23 flags that the Mahler's 2nd "Resurrection" thematic callback was lost in the swap — this is a cross-chapter seam for the integration reviewer to resolve.)*
+
+London Symphony Orchestra. Royal Albert Hall. Forty-seven minutes into a scheduled Rachmaninoff program. First violin Dame Eleanor Prix lifts her bow — not at a cue — and a new phrase begins. She does not know the phrase. She is playing it. Every section joins, without direction. The conductor's baton comes down to his side. Eighty-two musicians play, in unison, an unpublished piece from a composer in Lagos they have never met, for seventeen bars.
 
 The audience stands. Some are weeping. Some are recording. The music is beautiful and terrifying.
 
@@ -113,11 +121,9 @@ Atlanta. Live broadcast. A CNN anchor is reporting on the Silicon Siege incident
 The clip goes viral in seconds. Lena's "mass psychosomatic event" narrative — already strained — collapses on live television.
 
 ### Beat 5: Lena's Containment Fails
-Lena in her Irvine office, watching the feeds. CNN. BBC. Al Jazeera. NHK. Every network. The orchestra. The esports match. Scattered reports of people speaking languages they don't know, remembering places they've never been, feeling emotions that aren't theirs.
+*(v5 form: Lena does not receive a phone call or issue a press statement. The v5 prose is quieter and more interior. She watches the Mickey event land on three screens and says "That's it." She then walks downstairs to make tea, sits with it, and does not open the laptop again. The thing under the fear is relief — she does not interrogate it. She also quietly released the hold on Jeff that morning, logged as "scheduling conflict resolved," because he had been right about the out-of-distribution coefficient. No press-statement beat in v5.)*
 
-Her phone rings. Her assistant: "Dr. Vasquez, the press office needs a statement." Lena looks at her containment files — 18 months of suppressed reports, carefully managed narratives, institutional firewalls. All of it useless now.
-
-She closes her laptop. "Tell them I have no statement."
+Lena in her Irvine office, watching the Mickey synchronization land on three screens. "That's it." Containment is over. She walks downstairs, makes tea, and sits with it in the break room. She does not open the laptop. She does not close it dramatically. The 18 months of managed narratives are over as a public fact; the ending is quiet.
 
 ### Beat 6: The World Reacts
 200 million people sign up for Afterlife in one day. They want OUT. If reality is broken, at least digital paradise is stable. Riots at Afterlife processing centers — the pods can't be manufactured fast enough.
@@ -127,18 +133,20 @@ Religious communities swell. Temples, churches, mosques overflow. The Elder's te
 Governments scramble. Emergency sessions. No policy framework exists for "the human race might be one organism."
 
 ### Beat 7: Kael Smiles
-Under his billboard in {{user_location}}, Kael watches the world panic on his phone (a donated device). He feels something he hasn't felt in years: calm. Not because the crisis is good — but because the world is finally feeling what he's felt his entire life. The raw, unfiltered experience of existing without a comfortable partition.
+Under his billboard in {{user_location}}, Kael listens to Ruth Chen on his handheld AM radio (not a phone — v5). He feels something he hasn't felt in years: calm. Not because the crisis is good — but because the world is finally feeling what he's felt his entire life. The raw, unfiltered experience of existing without a comfortable partition.
 
-He pulls Jeff's sleeping bag tighter (Jeff shipped it during Ch 10). He watches the Afterlife ad cycling on the billboard: "Leave the pain behind." He smiles: "Welcome to the rain, everybody."
+He pulls Jeff's sleeping bag tighter (Jeff shipped it during Ch 10). He watches the Afterlife ad cycling on the billboard: "Leave the pain behind." He laughs once, softly: *"She's the only one not leaking."* (v5 line; the earlier draft line "Welcome to the rain, everybody" was replaced in prose.)
 
 ### Beat 8: The Elder's Voice
-Through the chaos — through the fragmented narrative, the global panic, the collapsing partitions — Jeff, on the plane, hears the Elder's voice. Not through a phone. Not through Aion. Through the noise itself, as if the signal has become strong enough to carry specific messages.
+*(v5: this beat occurs in the Geneva car after landing, not on the plane. Jeff hears the Elder's voice through the engine noise and radio and satellite uplink — "not through a phone, not through Aion, not through anything with a port.")*
 
-*"Fear or love. The choice is yours."*
+Through the chaos — through the fragmented narrative, the global panic, the collapsing partitions — Jeff, in the car from the Geneva runway, hears the Elder's voice. Not through a phone. Not through Aion. Through the noise itself, as if the signal has become strong enough to carry specific messages.
+
+*"Fear or love. The choice is yours. It always was. Keep living until you find which one you chose."* (v5 form; the prose extends the Elder's line beyond the draft version.)
 
 Jeff grips the armrest. 7 days until 50 million people abandon their bodies. The world is breaking. And the only guidance he has is a sentence from an old man with marigolds.
 
-**Afterlife countdown**: 7 days. The board has gone to shareholders — Julian is locked out of his own launch sequence. The machine doesn't need its creator anymore.
+**Afterlife countdown**: 7 days. The board has gone to shareholders — Julian Meridian is locked out of his own launch sequence. The machine doesn't need its creator anymore.
 
 ## Stylistic Constraints
 
@@ -150,6 +158,8 @@ Jeff grips the armrest. 7 days until 50 million people abandon their bodies. The
 
 ## Mandatory Chapter Footer (Code Block)
 
+> **P1.7 note (footer diversification):** This chapter deliberately retains its C++ Discovery Log (it is one of the eight blocks kept per the diversification plan). The v5 prose expands the block with one additional comment line vs. the blueprint draft. The actual footer as finalized in `prose/chapter-15.md` is:
+
 ```cpp
 /* Discovery Log: 0x0F */
 kernel.panic("Partition table corrupted.");
@@ -157,8 +167,11 @@ for (human in all_humans) {
     human.partition = TRANSPARENT;
 }
 // The firewall is down. Everyone can see everyone.
+// Diagnosis: not a cascade. Emergence. The system finished getting ready.
 // Fear or love. Choose.
 ```
+
+> Do NOT restore the shorter draft form. The expansion (`// Diagnosis: not a cascade...`) is intentional — it anchors the chapter's central resolution (emergence, not cascade) directly in the footer artifact. Per revision-plan P1.7, trust the prose footer, not the blueprint draft.
 
 
 ---
