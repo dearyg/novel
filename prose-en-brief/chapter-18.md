@@ -1,29 +1,25 @@
 # Chapter 18 — 0x12: The Dissolution
 
-Saturday dawn in Geneva. Six hours to launch. Jeff walks Julian through forty-seven slides at converged confidence 94.2% — the v5 compile is still running.
+Saturday dawn in Geneva. Six hours to launch. Jeff walks Julian through forty-seven slides at converged confidence 94.2% — the v5 compile ticking at 95% in the corner.
 
-Julian probes the case as an engineer. Aion has been clear that Afterlife users keep their partitions, the brains stay preserved, the qualia continue — Afterlife survives the test by the metaphysics most buyers actually care about. Jeff narrows his case to the architectural objections: the Companion model is the unsupervised author of fifty million permanent inner lives, and Meridian Industries is a single point of failure for the population of South Korea.
+Julian probes the case as an engineer, crossing out every alternative in the order Jeff crossed them out, and arrives at the same blank space. Aion's interpretability pass has confirmed Afterlife users keep their partitions and qualia. Jeff narrows his argument to two architectural objections: the Companion model authors fifty million permanent inner lives with no qualia of its own; Meridian is a single point of failure for the population of South Korea. The CS concept is the **kill switch** — three-layer HSM-backed, biometric-verified, thirty-second-hold authorization, designed so a future Julian could override the present one. *Not fake eternal life — wrong eternal life.*
 
-Julian admits the choice is not clean — partly architecture, partly grief, partly the man who has just heard his dead mother and cannot bear to be the one who replaced her substrate with a curated stream. Jeff agrees. *The Singleton does not award medals for moral clarity.*
+Julian admits the decision is not clean: partly infrastructure, partly grief, partly the man who has just felt his dead mother and cannot bear to replace her substrate with a curated stream. Jeff agrees. *The system does not hand out medals for moral clarity.*
 
-Julian asks for a single live telemetry sample before he commits. The Concierge serves a random pod — a twenty-six-year-old woman, quadriplegic since sixteen, two prior suicide attempts. Subjective report at her last checkpoint: *I forgot what wind felt like. Nobody told me I had forgotten.* The graceful shutdown will return her to her body and to her pain.
+Julian asks for one live sample before confirming. The Concierge serves pod #4,127,891 — a twenty-six-year-old quadriplegic, two prior suicide attempts, walking on a beach in Cabo for three hours. Last checkpoint: *I forgot what wind felt like. Nobody told me I had forgotten.* Graceful shutdown will return her to her body and her pain. The legal model estimates forty-seven users will not survive the first week. Julian takes off the Auberval and presses `CONFIRM`.
 
-Julian takes off the Auberval. He confirms the kill switch.
+Fourteen regional clusters drain. Eleven thousand two hundred and forty-seven early-access users are safe-revived in thirty-seven minutes. The broadcast reads *GO HOME. KEEP LIVING.* Ayla Reyes walks in, tells Julian to get her the budget, and leaves to build the real bridge.
 
-The shutdown drains fourteen regional clusters and safe-revives eleven thousand two hundred and forty-seven early-access users in thirty-seven minutes. The user-notification broadcast reads *GO HOME. KEEP LIVING.* The legal team's pre-modeled estimate is forty-seven users will not survive the first week, two will not survive the first night. Julian has read the numbers. He has pressed CONFIRM anyway.
+The dissolution propagates worldwide. Park Ji-yeon laughs in a Seoul café. Elena Okafor gets a first royalty check from the London Symphony. Darius Monroe retires. Lena Vasquez holds Schrödinger and walks out. Kael accepts Ruth's studio offer — months later. The Elder replaces marigolds. Ruth signs off: *Goodnight. Keep living.* Maya puts the kettle on and waits.
 
-Ayla walks in, sees the Auberval on the workbench, and tells Julian to get her the budget; she will build the real bridge. Markets swing wildly, then stabilize as analysts realize Julian destroyed one product, not the company.
-
-Around the world the dissolution propagates. Park Ji-yeon laughs out loud in a Gangnam café. Elena Okafor receives a first royalty check from the London Symphony for a piece she never released. Tomás and Sebastián are discharged into outpatient care into a shared apartment. Darius Monroe announces his retirement, declining a promotional Afterlife entry package — *I've already got a body that taught me everything.* Lena buys a jasmine vine and waters it that afternoon. Sandra Lin writes herself a sticky: *the bet was real; the room was wrong.* Esther Cho is recalled by Hari Patel as interim COO. Priya Ramanathan is recruited by Ayla. Kael declines Ruth's offered studio that day and accepts it months later. The Elder replaces marigolds. Ruth signs off her show: *Goodnight. Keep living.* Maya puts the kettle on and waits.
-
-In the dark warehouse below the lab, the cryo systems hum down row by row. Julian and Jeff shake hands, neither letting go. Jeff flies home.
+Julian closes with the chapter's paired philosophy — Epicurus (where the shutdown is, the process is not) and the Bardo (dissolution in phases, nothing lost) — the cleanest model of death ever built, completed by his mother in 2005. Julian and Jeff shake hands, neither letting go. Jeff flies home.
 
 ---
 
 > *Front page, paper edition, the morning after:*
 >
 > **MERIDIAN PAUSES AFTERLIFE LAUNCH "INDEFINITELY"**
-> *50 million depositors to be refunded; Meridian press conference cites "safety review of the underlying model"*
+> *50 million depositors to be refunded; company cites "safety review of the underlying model"*
 >
 > *And, two columns to the left, a smaller headline:*
 >

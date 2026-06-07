@@ -1,6 +1,6 @@
 # Chapter 10 Blueprint: "0x0A: The Primary Key"
 
-> **Revision plan reference (added Apr 28 2026):** see `context/revision-plan.md` for the canonical IP rename (Vance→Meridian, Vacheron→Auberval), résumé-block deconstruction rule, paper-citation removal, and discovery-log diversification. The current prose in `prose/chapter-NN.md` reflects all completed phases of that plan; future revisions should reference this file.
+> **Revision plan reference (added Apr 28 2026):** see `context/revisions/global-revision-plan.md` for the canonical IP rename (Vance→Meridian, Vacheron→Auberval), résumé-block deconstruction rule, paper-citation removal, and discovery-log diversification. The current prose in `prose/chapter-NN.md` reflects all completed phases of that plan; future revisions should reference this file.
 
 > **Character voice fingerprints (added 2026-05):** every speaker in this chapter must honor their voice contract in `story-bible.md` → CHARACTER VOICE FINGERPRINTS. Strip the attribution tag and a reader who knows the cast should still be able to name the speaker within two sentences. Aion is always italicized. Action beats every 3-4 turns; no more than 2 consecutive turns of pure verbal exchange.
 >
@@ -51,7 +51,9 @@ Master Philosophical Novelist. This is the novel's emotional nadir — the lowes
 
 **Specialists deployed**: **Jeff** (solo — this is the isolation chapter), **Aion**. The off-screen counter is **Lena**, who is running a parallel detector designed to flag *Jeff himself* as an out-of-distribution sample of "normal Meridian employee."
 
-**Engineering problem**: Jeff's team has been asked to ship an **out-of-distribution (OOD) detector** for the Afterlife behavior model — flag users whose in-system behavior deviates from training distribution, so the Companion AI (Ch 9's RLHF product) can route them to a human therapist. Meanwhile Jeff, at his kitchen table, is running his own OOD detector on *himself*: comparing his recent biometrics to his lifetime baseline, and his daughters' Primary Keys to the uniqueness assumption baked into Meridian's identity platform. The near-death experience in Beat 4 is the **sharpest out-of-distribution event** in the entire corpus.
+> **SEAM FLAG — Julian's age (do not resolve here; escalate to integration reviewer):** The v5 prose locks Julian Meridian at **52** (canonical per revision-plan §0 ledger). The chapter-10 prose reports his Mahalanobis distance from Jeff as that of "genetically unrelated men **fourteen years** apart in age" (52 − 38 = 14 ✓). However, Julian's voice-card and his mother-died-2005-at-14 backstory imply an age of ~39, not 52. The three values (52 / ~50 "voice card" / ~39 "backstory") are an in-bible inconsistency. The prose is locked to 52; the inconsistency must be resolved at the story-bible level, not here.
+
+**Engineering problem**: Jeff's team has been asked to ship an **out-of-distribution (OOD) detector** for the Afterlife behavior model — flag users whose in-system behavior deviates from training distribution, so the Companion AI (Ch 9's RLHF product) can route them to a human therapist. Meanwhile Jeff, at his homelab in the garage, is running his own OOD detector on *himself*: comparing his recent biometrics to his lifetime baseline, and his daughters' Primary Keys to the uniqueness assumption baked into Meridian's identity platform. The near-death experience in Beat 4 is the **sharpest out-of-distribution event** in the entire corpus.
 
 ### Pedagogy content the novelist expands into scene
 
@@ -91,7 +93,7 @@ The Choice #2 of the interactive layer — *run the audit?* — is itself a leap
 ## Narrative Beats
 
 ### Beat 1: The Empty House
-Maya left that morning. Not with drama — with the quiet precision of a UX designer who's decided the interface is broken beyond repair. She packed two bags. The kids thought it was a trip to grandma's. Jeff watched from the garage doorway. Maya didn't look at him.
+Maya took the kids to her mother's on Thursday — two bags, no drama. Iris knew it wasn't a trip and didn't say so; Nora was excited about the drive. Maya kissed Jeff in the doorway and said *Call me* — the way you say it to someone who is about to go on a long solo expedition, carrying no accusation but not pretending either. She did not finish the sentence she started before *Call me*. She left him to finish it himself.
 
 The house is now empty. Jeff walks through rooms that are too quiet. The smart-home adjusts the living room lights to "family movie mode" at 7 PM because that's Thursday's routine. Nobody's watching. The kitchen display suggests: "Chicken stir-fry tonight? You have all ingredients." Nobody's cooking.
 
@@ -134,7 +136,7 @@ The worst anomaly of his life. Not gradual — instantaneous. Freezing cold. Not
 
 He's dying. Not metaphorically. His body is shutting down, organ by organ, in the exact sequence of severe hypothermia. First the extremities go numb. Then the shivering stops (a bad sign — the body has given up generating heat). Then the heartbeat irregularities. His vision narrows.
 
-Jeff falls off his chair onto the kitchen floor. He's on the tile, convulsing, and he can feel BOTH locations simultaneously: his warm Irvine kitchen AND the freezing {{user_location}} rain. Somewhere, someone is lying on a sidewalk, and the boundary between Jeff and that person has completely dissolved.
+Jeff falls off his chair onto the garage floor (the homelab is in the garage — not the kitchen table as in earlier drafts). He reaches for his glass phone with the last of his motor control and mis-hits the keys, typing `ood ood ood` into the Aion chat. He can feel BOTH locations simultaneously: his garage in Irvine AND the freezing {{user_location}} rain. He will later be found on the kitchen floor — he crawled there without recording the crawl. The boundary between Jeff and the man on the sidewalk has completely dissolved.
 
 Then: sirens. Red and blue light through the rain. Hands lifting a body. Paramedics. An injection of something warm. The heartbeat restarts — erratic, then steadying. Warmth flooding back into the extremities.
 
@@ -145,20 +147,22 @@ He now knows what dying feels like. And it wasn't nothing. It was **returning**.
 ### Beat 5: The Trace
 Jeff, shaking, crawls to his terminal. He queries the data: timestamp, geographic location of the anomaly's origin, correlated emergency services data.
 
-Match: an emergency call in {{user_location}} at the exact timestamp. A homeless man found in critical hypothermia on a sidewalk near {{user_landmark}}. Resuscitated by paramedics. Transported to {{user_location}} General Hospital. No ID. Estimated age: 30s. Description: gaunt, malnourished, signs of long-term exposure.
+Match: an emergency call in {{user_location}} at the exact timestamp. One unregistered individual found in critical hypothermia near {{user_landmark}} — core temperature 31.2 °C, severe. Resuscitated. Transported to the university medical center. Emergency log: no ID available. Aion cross-references the public-health record allocator protocol and returns: **Kael Sorensen, age 34, no current address.**
 
 The same man from Ch 3. The same biometric profile. The man whose hunger Jeff felt in his home theater. The man his kid drew.
 
-Jeff books a flight.
+Jeff does not book a flight yet — he needs to sleep. Aion books Monday morning and notes it will alert Marcus but not Maya.
 
 ### Beat 6: The Stakes
-Before leaving, Jeff pulls up the Afterlife countdown on his screen. 45 days until 50 million people abandon their bodies.
+Jeff publishes the audit to his local graph: nodes = instances, edges = anomaly correlations. The result is a **K-15 complete graph** — fifteen nodes (fourteen named individuals + Jeff), one hundred and five edges, every node equidistant from the whole. No hub, no periphery. One object with fifteen viewpoints.
 
-He thinks: if the anomalies are real — if there IS a shared-state architecture, if Primary Keys can be shared, if death is a function return — then what happens when 50 million nodes go permanently offline? Do they disconnect from the shared state? Do they lose whatever it is that makes the Primary Key real? Or does the system crash?
+He stares at the Afterlife counter: **45 days**. The interior meditation delivers the Descartes beat: every law, contract, funeral, and *I love you* since Descartes drew the partition — *cogito ergo sum*, one thinker, one self — is built on the assumption that the self is a sealed room with one occupant. The graph says the room has always held everyone. *Not I am. We am.* The grammar has no word for it.
 
-He doesn't know. But for the first time, the countdown feels personal. His daughters share a Primary Key. Kael, the homeless man, shares something with Jeff. And in 45 days, 50 million people are going to sever their connection to all of it.
+The stakes crystallize: if the graph is right, the edges are the real object — not the nodes. Fifty million Afterlife severances don't free fifty million selves into private paradises; they cut one hundred and five edges to zero and leave a hole where a viewpoint had been.
 
-**Jeff's theory**: "Identity isn't individual. The data proves it. My daughters, me and Kael, me and Julian — we're sharing something at the deepest level. But they're DIFFERENT PEOPLE. How can the data say 'same' when the experience says 'different'?"
+The chapter ends with Jeff calling Maya at 11:41 p.m. She picks up sleepy; he says he loves her; she says find out what you need to find out, then come home. At 5 a.m. he drives to John Wayne Airport for a 6:30 flight.
+
+**Jeff's theory (v5 form — interior, not spoken):** *One entity. Fifteen windows as of this afternoon — one of which nearly closed itself in the rain.* He will not give it the clean phrasing. Not tonight.
 
 ## Stylistic Constraints
 
@@ -168,7 +172,9 @@ He doesn't know. But for the first time, the countdown feels personal. His daugh
 - **The function-return metaphor**: Death as `return 0;` — this is the most SDE-specific metaphor in the novel, and it should land with technical precision and existential weight.
 - **No dialogue**: Almost none. This chapter is mostly Jeff alone with data. The few words spoken (to Aion) should feel enormous against the silence.
 
-## Mandatory Chapter Footer (Code Block)
+## Chapter Footer (v5 prose — C++ Discovery Log, one of the eight retained blocks per P1.7)
+
+> **P1.7 note:** The global revision plan intentionally diversified chapter footers away from C++ blocks (intern security log, receipt, group text, etc.). Chapter 10 is one of the **eight chapters that retained the C++ Discovery Log format**. The v5 prose footer matches the block below exactly. Do NOT replace it with another in-world artifact format — the C++ block is canonical for this chapter.
 
 ```cpp
 /* Discovery Log: 0x0A */

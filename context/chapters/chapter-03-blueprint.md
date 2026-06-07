@@ -121,12 +121,15 @@ Jeff's SDE training kicks in. *A bug that happens once is an anomaly; a bug that
 - **Sensory Details**: Contrast the god-like, fictional omniscience of the superhero with the jarring, grounded, freezing pain of Kael's starvation invading Jeff's safe sandbox.
 - **Ending Impact**: Discovering the bug via *optical sync server logs* moves the story from "psychological mystery" into "hard sci-fi." Jeff has undeniable, reproducible proof.
 
-## Mandatory Chapter Footer (Code Block)
+## Mandatory Chapter Footer
 
-```cpp
-/* Discovery Log: 0x03 */
-if (Input(Instance_A) == Input(Instance_B)) {
-    Memory.merge_pointers();
-    throw ViewportConflict("Two instances rendering identical coordinates.");
-}
-```
+**NOTE (P1.7 — intentional diversification):** The C++ `Discovery Log` directive in this blueprint is STALE. Per revision-plan P1.7, footers were diversified across the novel into in-world artifacts rather than uniform C++ blocks. The v5 prose for this chapter uses an italicized Aion internal-log blockquote as its footer — NOT a C++ code block. Do not restore the C++ block.
+
+The actual footer in `prose/chapter-03.md`:
+
+> *Aion — discovery log, internal, build v1*
+> Event class: Pointer Aliasing. Event index 0x03.
+> Two distinct biometric subjects converged on one pupillometric trajectory across a 2.4-second window. Sample resolution 1.2 ms.
+> Probability of coincidence at this resolution: less than one over the planet's population.
+> Recommended escalation path: none defined at current capability.
+> Status: filed. Private. User authority required to share.

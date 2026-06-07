@@ -1,18 +1,16 @@
 # Chapter 8 — 0x08: The Broadcast
 
-Tomás Arroyo, a twenty-four-year-old Bolivian conscript on his eighteen-month rotation, walks a dawn ridgeline above the Andean border corridor. A Peruvian rifle round enters his left shoulder.
+Tomás Arroyo, twenty-two, a Bolivian conscript two months from the end of his rotation, walks a dawn ridgeline above the Andean border corridor. A Chilean sniper's round enters his left shoulder; his hemostatic exo-glove holds the wound.
 
-In his Irvine garage at 11:47 p.m. Pacific, Jeff doubles over with identical pain and visible bruising in the same location, then a chemical wave of analgesia ninety-two seconds later — compatible with a field-deployed morphine analog.
+In his Irvine garage at 11:47 p.m. Pacific, Jeff doubles over: identical left-shoulder pain and visible bruising, then a chemical wave of analgesia ninety-two seconds later — compatible with a field-deployed morphine analog.
 
-Aion cross-references global wearable telemetry. Eleven thousand four hundred and sixteen wearables fired matched left-shoulder pain reports in the same ninety-second window, decaying together. Three hundred and forty-two received pharmacological relief because they were near a field medic. The rest did not.
+Aion cross-references global wearable telemetry: eleven thousand four hundred and sixteen matched left-shoulder pain reports in the same ninety-second window, decaying together. Three hundred and forty-two received relief from a nearby field medic; the rest did not. Aion files the class as Cross-Partition Broadcast — the first event whose origin is not Jeff. *One source. Eleven thousand bodies.*
 
-Aion files the class as Cross-Partition Broadcast and notes this is the first event whose origin is not Jeff. *One source. Eleven thousand bodies.*
+That night Jeff is tasked with a robust safety filter for the Afterlife Companion (Afterlife countdown: 60 days). Aion flags **adversarial-training** self-play as a Nash-equilibrium trap — optimal against its trainers, blind to anyone outside the distribution, the same pathology that produced the Andean drone-swarm incidents. Jeff labels the failure mode *distributional robustness failure* and notes the Meridian HQ biometric scanner will soon meet a data point it was never trained on.
 
-That night Jeff is asked to ship a robust safety filter for the Afterlife Companion product. Aion flags the standard adversarial-training recipe as the same Nash-equilibrium pathology that produced the Andean drone-swarm friendly-fire incidents — optimal against trainers, blind to civilians.
+On *The Singleton*, Julian's dashboards show Afterlife did not generate the broadcast — only sensed it. He whispers to nobody: *What have I built.*
 
-On *The Singleton*, Julian's dashboards record the broadcast event passively. He realizes Afterlife did not generate it. His system is behaving as a sensor for something bigger. He whispers, to nobody: *What have I built.*
-
-At 4:00 a.m. Jeff's badge is downgraded to read-only. Marcus calls — three of the eleven thousand died, three were already in fragile cardiac states, the war killed them through a mechanism nobody understands yet. He warns Jeff to skip Friday's evaluation deliberately, not accidentally.
+Marcus Meridian calls: three of the eleven thousand died — cardiac patients whose hearts failed the somatic load. He tells Jeff to miss Friday's neurological evaluation deliberately, not accidentally: one reads as a scheduling conflict, the other as defiance.
 
 At 4:01 p.m. Friday Jeff does not appear. At 4:02 p.m. his HR record updates to administrative leave, effective Monday. Maya passes him the bread at dinner: *Now we have time.*
 
@@ -22,6 +20,8 @@ At 4:01 p.m. Friday Jeff does not appear. At 4:02 p.m. his HR record updates to 
 /* Discovery Log: 0x08 */
 broadcast(pain, ALL_NODES);
 // One soldier's wound.
-// Seven billion recipients.
-// Hobbes was right — but not the way he meant.
+// Eleven thousand recipients in ninety seconds.
+// Seven billion on the same fabric, not yet listening.
+// Hobbes was right — the war of all against all —
+// but not the way he meant: every blow lands on the one who throws it.
 ```

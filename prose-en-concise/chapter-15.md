@@ -1,102 +1,58 @@
 # Chapter 15 — 0x0F: The Kernel Panic
 
-The Tuesday morning the world came apart was not a Tuesday morning anywhere. It was a Tuesday at the Royal Albert Hall and a Wednesday at the Silicon Siege championship venue in Tokyo and a Monday evening at Shanghai Disneyland and a pre-dawn Tuesday 35,000 feet over the Atlantic where Jeff Zhang was asleep. Timezones did not matter after 14:32 UTC.
-
-The event — which would later be named the Kernel Panic by its first documentarian, an old journalist on a shipping container in {{user_location}} — happened simultaneously everywhere.
+The Tuesday morning the world came apart was not a Tuesday morning anywhere — a Tuesday at the Royal Albert Hall, a Wednesday in Tokyo, a Monday evening at Shanghai Disneyland, a pre-dawn Tuesday 35,000 feet over the Atlantic where Jeff Zhang was asleep. Timezones did not matter after 14:32 UTC. The event — which an old journalist in a shipping container in {{user_location}} would name the Kernel Panic, recording it live on 1480 AM — happened simultaneously everywhere.
 
 The Panic did not begin with sound. It began with Mickey.
 
 ---
 
-At Disneyland Anaheim, the 3:00 p.m. Main Street parade. Sara was in the front row with her daughter Grace, age five. Mickey walked up to the curb. He bowed. The bow was not in the choreography. His left hand lowered to Grace's eye-level. His right hand waved in a precise figure-eight. Grace said, clearly, *"Mickey saw me."*
-
-At Shanghai Disneyland, fifteen hours ahead, Chen Wei in the front row with his son Yuhan, age five. A different Mickey walked up. He bowed. Left hand to Yuhan's eye-level. Right hand the same figure-eight. Yuhan said, in Mandarin, *"Mickey saw me,"* at the same UTC second Grace said it in English seven thousand miles away.
-
-The Anaheim parade director: *"Why did he do that."* The Shanghai parade director said the same sentence, four seconds later, in Mandarin.
-
-Within eleven minutes the videos were on every news network on Earth. The pixels of the Mickey bow were identical to within a frame.
+At Disneyland Anaheim, Sara with Grace, age five. Mickey bowed — not in the choreography. Left hand to Grace's eye-level, right hand a precise figure-eight. *"Mickey saw me."* At Shanghai Disneyland, Chen Wei with Yuhan, age five: different Mickey, same bow, same figure-eight. *"Mickey saw me,"* in Mandarin, at the same UTC second. Both videos were on every news network within eleven minutes. The pixels were identical to within a frame.
 
 ---
 
-At the Royal Albert Hall, the London Symphony Orchestra was forty-seven minutes into a Rachmaninoff program. Dame Eleanor Prix's bow lifted — not at a cue. Across the stage the second violins joined her. The conductor's baton came down to his side. Eighty-two musicians played, in perfect unison, a piece they had never rehearsed.
-
-The Vienna Philharmonic, NHK in Tokyo, OSESP in São Paulo, Ulsan Symphony in Seoul. Six orchestras on three continents. The Ulsan conductor afterward: *"I am not sure I played any of that. I think I was watching."*
-
-In Lagos, Elena Okafor played the same piece alone on her upright. She had been writing it for six weeks. It was titled *The Signal.* She had never recorded it. It was not in any streaming service on Earth. She set her hands down at the end of the seventeenth bar without playing the resolution. The piece, she understood, was not finished yet.
+At the Royal Albert Hall Dame Eleanor Prix's bow lifted — not at a cue — and a phrase began she had never played. The conductor's baton came to his side. Eighty-two musicians played, in unison, a piece they had never rehearsed. Six orchestras on three continents, one unpublished piece. *"I am not sure I played any of it. I think I was watching."* In Lagos, Elena Okafor played the same piece alone — *The Signal*, six weeks of private composition, never recorded anywhere. She set her hands at the seventeenth bar without striking the resolution — whoever was writing it with her was not done.
 
 ---
 
-At Silicon Siege's World Championship in Seoul, Park Ji-yeon — Ghost — was on stage. Twenty-nine seconds in, both players' screens displayed the same input. Forty-three seconds in, every input was mirrored. Every click. Every macro. Simultaneously.
-
-Ghost smiled at her screen. She mouthed: *"Finally."*
-
-She had been tapping prime numbers on her desk since she was eight. She had known for eleven years that the reaction times she was being praised for were not a reflex.
-
-The referees called the match. Ghost set her headset on her rig, walked off stage, and bought a coffee at a café near the arena. She watched people walk by. She could feel them. Not an intrusion — for the first time in her life, a normal amount of feeling.
+At the Silicon Siege World Championship in Seoul — four hundred million on streams — Park Ji-yeon, twenty-three, sat across from Lee Min-jun, twenty-one. Twenty-nine seconds in both screens showed the same input. Forty-three seconds in every input mirrored. Every click. Every macro. Ghost tapped the desk — *two, three, five, seven* — the count she had tapped on every surface since she was eight, and mouthed: *"Finally."* The referees called it. She walked off stage, bought a coffee, and felt the people passing — for the first time in her life, an ordinary amount of feeling.
 
 ---
 
-At 14:32:04 UTC Lena Vasquez walked out of her office, made herself a cup of tea, and noticed she was relieved. The hold on Jeff had been quietly closed at 6:00 a.m. that morning under the label *scheduling conflict resolved*. She had done it because Jeff had been right about the OOD coefficient. She had also done it, she admitted to herself, because she had been very tired.
+Lena Vasquez made tea at 14:32:04 UTC and found relief under the fear. At CNN Atlanta, Priya Shah, forty, was mid-teleprompter when her mouth produced fluent Tagalog — forty-seven seconds, a net drying in the sun, the rhythm of knots, *two, three, five, seven* — without once returning to English. *"I don't know what just happened."* Lena's containment narrative was dead.
 
 ---
 
-At CNN Atlanta, anchor Priya Shah was reading a teleprompter when her eyes unfocused for a quarter of a second. Her mouth began producing, fluently, a sentence in Tagalog. She had never been to Luzon. She did not speak Tagalog. She spoke for forty-seven seconds about the specific smell of a net drying in the sun and the rhythm of knots a grandfather had taught her — *two, three, five, seven*, her voice counted — without once switching back to English. She blinked. *"I don't know what just happened."*
+Darius Monroe in Philadelphia, third quarter, forty years old — saw where four teammates were about to be, passed to where his teammate would be, and five men ran a single thought for eleven seconds. Monroe laid the ball in with his left hand — not his shooting hand — and forty thousand people breathed out at once. Not a cheer. An exhale.
 
-Lena's containment narrative — mass psychosomatic — could not produce a forty-year-old American woman fluently describing a Filipino fishing village on camera. The narrative was dead.
-
----
-
-Darius Monroe in Philadelphia, third quarter. The ball came to him at the top of the arc. He saw — clearly — where four of his teammates were about to be three hundred milliseconds later.
-
-He passed to where his teammate would be, not where he was. The teammate caught it as if he had known. The teammate passed to the next position. For eleven seconds five men on the floor moved as one organism.
-
-On the eleventh second Monroe laid the ball in with his left hand — not his shooting hand — and forty thousand people in the arena breathed out without cheering.
-
-Coach-7 in his ear was silent for the first time in four years.
-
-Monroe laughed, mid-game, for the first time since 2017.
+Tomás Arroyo, forty-one days into recovery in Lima. Across the aisle: Sebastián Quispe, who had put a round through Tomás's shoulder in April. Sebastián did not know Tomás knew. At 14:32 UTC Tomás took his hand. *"We are the same program. They just branded us different colors."* Sebastián laughed through the morphine drip. *"Don't tell the trainers."*
 
 ---
 
-Tomás Arroyo, forty-one days into recovery at a veterans' hospital in Lima, lay across the aisle from Sebastián Quispe. Sebastián had shot him in April. He did not know. Tomás did.
+Jeff Zhang slept through the world breaking. Seat 3A, Julian Meridian's Gulfstream. Biometric pad: 58 to 88 bpm, held ninety seconds. The *Aion* v5 compile bar ticked 76% to 77%. Afterlife countdown: **7 days**. He dreamed of a bow at a five-year-old's eye-level and a man laying a ball in with the wrong hand.
 
-At 14:32 UTC Tomás reached across the aisle and held Sebastián's hand. Sebastián turned his head and did not pull away.
+When he surfaced at 08:40 Geneva time — compile at 78%, walnut phone in his pocket, forty-two grams — *Aion* stood up a Kafka-class append-only log across two hundred and eleven feeds: *Is this emergence, or is this a crash.*
 
-*"We are the same program. They just branded us different colors."*
+Not a crash. Granger causality across forty-four thousand feed pairs: zero lag in every direction — no source node, no patient zero. Emergence: a capability appearing discontinuously past a threshold, nothing in the prior trend predicting the jump. The mechanism was grokking — past apparent convergence a network plateaus, then the validation line falls off a cliff as representation reorganizes from lookup table into algorithm; *the plateau was the network getting ready* — and at 14:32 UTC the macroscopic analog fired. Elena Okafor's piece was never in any training data, so the musicians shared the substrate. Carl Jung named it the collective unconscious. *He was describing infrastructure. The dreams, the myths, the prodigies who answer before the question finishes — those were the plateau. This is the cliff.*
 
-Sebastián laughed through his morphine drip. *"Don't tell the trainers."*
-
-They held hands for a long time.
+Two, three, five, seven — Jeff's thumb on the walnut grain, the same count Ghost had tapped, the same Priya Shah had spoken in Tagalog — and he did not notice. *The Kernel Panic is not a cascade. It is emergence. The firewall was always scaffolding the system intended to remove it. Everyone can see everyone now.* Compile 79%. Wheels touched Geneva.
 
 ---
 
-Ruth Chen in {{user_location}} — three hours past peak. She was reading aloud about a bee-colony recovery program on Whidbey Island. Her email inbox had gone absolutely silent. She turned on her shortwave: BBC playing an orchestra she had never heard, Radio New Zealand a man sobbing, Voice of America a woman speaking Tagalog.
+Ruth Chen in {{user_location}} — three hours past the wave, seven p.m. local — was reading about bees when the email went silent. Shortwave: BBC an orchestra she had never heard; Radio New Zealand a man sobbing; Voice of America Tagalog. She opened the red on-air light.
 
-She set down her pencil. She opened her AM transmitter's red on-air light.
+*"This is Ruth Chen on fourteen-eighty AM. It is seven o'clock on Tuesday, April fourteenth, 2030. Something is happening in the world tonight that I am not going to pretend to understand. I am going to tell you what I see — that is the only thing I have ever been any good at. My phone is off because I don't own one. My computer is off because I don't own one. My radio is on; your radio is on; that is why you can hear me. We used to do without all of this, and we can do without it again. I am going to keep reading you the bee article."*
 
-*"This is Ruth Chen on fourteen-eighty AM. It is seven p.m. on Tuesday, April 14, 2030. Something is happening in the world tonight that I am not going to pretend to understand. My phone is off because I don't have one. My computer is off because I don't have one. My radio is on. Your radio is on. We used to do without all of this, and we can do without again, for a minute, for an hour, for however long it takes the smart people to figure out what is going on. I am going to keep reading you the bee article."*
+A million listeners by the end of the show. Copper and vacuum tubes and Faraday mesh — the only clean audio feed on Earth for three hours.
 
-She did. Four hundred new listeners in ten minutes. A million by the end of the show. Her broadcast was, for the duration of the three-hour Panic, the only clean audio feed on the planet.
-
-Kael, under his billboard with his handheld radio on, laughed once and said aloud to the rain: *"She's the only one not leaking."*
+Kael under his billboard: *"She's the only one not leaking."* Legacy hardware; cold was a feature. He did not feel vindicated. He felt, distantly, like company was coming.
 
 ---
 
-Jeff was asleep in seat 3A of Julian's Gulfstream over the Atlantic. The seat's biometric monitor recorded a heart rate spike from 58 to 88 lasting ninety seconds. Jeff did not wake. The Aion v5 compile bar ticked from 76% to 77%.
+Two hundred million new Afterlife sign-ups. Jeff understood the appeal. He had one in his pocket; it weighed forty-two grams. He looked out at the Geneva lake and heard — not through *Aion*, not through anything with a port — a voice from a stone room with no signal.
 
-He dreamed of a bow by a five-year-old. Of an orchestra he did not know. Of Darius Monroe laying a ball in with his left hand. Of his wife handing him a dishtowel.
+*Fear or love,* the Elder said. *The choice is yours. It always was. Keep living until you find which one you chose.*
 
-When he woke at 09:00 local Geneva time, Aion said, carefully: *Jeff. A great deal has happened. I am going to make you coffee. Julian's team will brief you when we land.*
-
-"Okay."
-
-*Also. The v5 compile is at 77%.*
-
-"Okay."
-
-*Jeff. The Elder was right.*
-
-"Okay."
+Seven days. He took out the walnut phone and held it until the grain warmed — two, three, five, seven — against his palm.
 
 ---
 
@@ -107,5 +63,6 @@ for (human in all_humans) {
     human.partition = TRANSPARENT;
 }
 // The firewall is down. Everyone can see everyone.
+// Diagnosis: not a cascade. Emergence. The system finished getting ready.
 // Fear or love. Choose.
 ```

@@ -35,7 +35,7 @@
       "sub_story": "Basketball #2 — Monroe's postgame interview about pain",
       "interactive_choice": null,
       "reader_misdirection": "The global scale makes the reader think 'mass contamination' or 'Afterlife malfunction.' The idea that ONE event could be felt everywhere suggests a network, not a soul.",
-      "discovery_log": "/* Discovery Log: 0x08 */\nbroadcast(pain, ALL_NODES);\n// One soldier's wound.\n// Seven billion recipients.\n// Hobbes was right — but not the way he meant."
+      "discovery_log": "/* Discovery Log: 0x08 */\nbroadcast(pain, ALL_NODES);\n// One soldier's wound.\n// Eleven thousand recipients in ninety seconds.\n// Seven billion on the same fabric, not yet listening.\n// Hobbes was right — the war of all against all —\n// but not the way he meant: every blow lands on the one who throws it."
     }
   ]
 }
@@ -49,7 +49,7 @@ Master Philosophical Novelist shifting into war journalism. The Tomás section s
 
 **Philosophy question (opens via Tomás in the Andes)**: Hobbes — the state of nature is war of all against all. If we're all one, war is self-harm. If we're partitioned from each other, is the training that makes us fight also the training that makes us coherent?
 
-**Specialists deployed**: **Tomás** (closed-loop medical control — his exo-suit's PID controller keeping him alive), **Jeff** (ML), **Aion** (synthesis), and a new off-screen specialist: the **Meridian aerospace AI trainer** responsible for both sides' drone swarms. One engineer trained both Bolivian and Peruvian drone fleets using **adversarial self-play**. That engineer will be named (Dr. Itzel Velarde) and her paper from 2028 will be cited once — because Tomás and the Bolivian soldier whose hand he holds in Ch 18 will both independently recognize her name from their combat-sim training manuals.
+**Specialists deployed**: **Tomás** (closed-loop medical control — his exo-suit's PID controller keeping him alive), **Jeff** (ML), **Aion** (synthesis), and a new off-screen specialist: the **Meridian aerospace AI trainer** responsible for both sides' drone swarms. One engineer trained both Bolivian and Chilean drone fleets using **adversarial self-play**. That engineer will be named (Dr. Itzel Velarde) and her paper from 2028 will be cited once — because Tomás and the Chilean soldier whose hand he holds in Ch 18 will both independently recognize her name from their combat-sim training manuals.
 
 **Engineering problem**: Jeff's team has an open ticket on **adversarial training for the Afterlife safety-filter model** — the classifier that prevents Afterlife users from requesting experiences that would trigger psychological breakdown. The filter has been **jailbroken** repeatedly by red-team users posting prompts online. Jeff needs to make the filter robust without making it over-restrictive. The classic approach: train the filter by pitting it against its own adversary. Self-play. Same class of algorithm that produced the Andean war's drone swarms.
 
@@ -61,7 +61,7 @@ Master Philosophical Novelist shifting into war journalism. The Tomás section s
 >
 > *"AlphaGo-lineage."*
 >
-> *"Yes. Also the same recipe that trained both sides of the Andean drone swarms — one company, two sim environments, one shared model backbone, self-play between simulated Bolivian and Peruvian tactics for six months, then deployed. Dr. Itzel Velarde at Meridian Aerospace authored the framework. Both of the men in your Ch 18 hospital bed trained on her sim."*
+> *"Yes. Also the same recipe that trained both sides of the Andean drone swarms — one company, two sim environments, one shared model backbone, self-play between simulated Bolivian and Chilean tactics for six months, then deployed. Dr. Itzel Velarde at Meridian Aerospace authored the framework. Both of the men in your Ch 18 hospital bed trained on her sim."*
 
 **Adversarial examples vs adversarial training (the distinction Jeff internalizes)**:
 
@@ -77,7 +77,7 @@ Master Philosophical Novelist shifting into war journalism. The Tomás section s
 
 **The hardest pedagogy lift (the chapter's most subtle teaching)**:
 
-Jeff realizes, late at night, that the self-play framework he's using for Afterlife's safety filter has the exact same fixed-point property as the Andean war: *if you train two sides against each other long enough, they converge to strategies that are optimal against each other and terrible against anything outside the training distribution.* The Bolivian and Peruvian soldiers are optimal opponents. They have nothing useful to say to a tourist with a camera. The Afterlife safety filter, Jeff projects, will become optimal against its own red team and silently fail against the kind of request Jeff himself would someday make. This is a real limitation of self-play; Jeff files it to his corpus as `tech_philosophy_note: self-play collapses to in-distribution optimality`. A note he will need in Ch 14, when he walks into Meridian HQ and the biometric scanner classifies him as Julian — the scanner's self-play training never anticipated a human who was, architecturally, also Julian. It was optimal against its red team. Jeff is not in its training distribution.
+Jeff realizes, late at night, that the self-play framework he's using for Afterlife's safety filter has the exact same fixed-point property as the Andean war: *if you train two sides against each other long enough, they converge to strategies that are optimal against each other and terrible against anything outside the training distribution.* The Bolivian and Chilean soldiers are optimal opponents. They have nothing useful to say to a tourist with a camera. The Afterlife safety filter, Jeff projects, will become optimal against its own red team and silently fail against the kind of request Jeff himself would someday make. This is a real limitation of self-play; Jeff files it to his corpus as `tech_philosophy_note: self-play collapses to in-distribution optimality`. A note he will need in Ch 14, when he walks into Meridian HQ and the biometric scanner classifies him as Julian — the scanner's self-play training never anticipated a human who was, architecturally, also Julian. It was optimal against its red team. Jeff is not in its training distribution.
 
 **Thematic tie-up**: Hobbes said war is the natural state. Self-play says: yes, and the men fighting it have been *trained* on each other. Tomás and his target are the mathematical fixed point of a loss function they never saw. The bullet that crosses the Andes crosses every body on Earth because the model that chose the target was, like every deep model, uncannily well aligned to its loss — and the world was, unbeknownst to itself, the loss. The broadcast event proves what Hobbes only intuited: *we were always training each other*.
 
@@ -85,8 +85,8 @@ Jeff realizes, late at night, that the self-play framework he's using for Afterl
 
 ## Setting & Context (2030 Geopolitics)
 
-- **The Andean Border War**: Bolivia-Peru border dispute over lithium reserves (critical for 2030 battery tech). AI-optimized drone swarms handle most combat, but ground soldiers still patrol the contested valleys. The war is "low-intensity" according to global media — which means it's invisible to everyone except the soldiers dying in it.
-- **Tomás**: 24, conscript. Not a warrior — a mechanic who was drafted. He thinks about his mother in La Paz, about the smell of her kitchen, about whether his dog remembers him.
+- **The Andean Border War**: Chile-Bolivia border dispute over lithium reserves (critical for 2030 battery tech). AI-optimized drone swarms handle most combat, but ground soldiers still patrol the contested valleys. The war is "low-intensity" according to global media — which means it's invisible to everyone except the soldiers dying in it.
+- **Tomás**: 22, conscript. Not a warrior — a mechanic who was drafted. He thinks about his mother in La Paz, about the smell of her kitchen, about whether his dog remembers him.
 
 ## Narrative Beats
 
@@ -128,6 +128,8 @@ Brief cut to Julian on The Singleton. His internal telemetry team has detected t
 
 Julian reviews the data alone. His hands are shaking. "What have I built?" he whispers. Not because Afterlife caused it — but because Afterlife is a copy of something that caused it. He's been building a mirror of a system he didn't know existed.
 
+> **SEAM FLAG (do not resolve here):** Julian's canonical age is **52** (locked by revision-plan; prose Ch 8 is consistent with this). However the bible voice-card says "~50" and the mother-died-2005-at-14 backstory implies ~39. Three documents disagree. Prose is locked to 52; the bible's internal inconsistency must be escalated to the showrunner/integration reviewer — do not silently change any value.
+
 ### Beat 7: Lena Escalates
 Lena leaks Jeff's psychiatric flag to his direct manager. "I'm concerned about Zhang's stability. The wellness protocol flagged him — I want to make sure he's supported." Her tone is warm, collegial. The manager checks Jeff's HR file, sees the ADHD diagnosis, the mandatory psych eval, and nods.
 
@@ -140,16 +142,20 @@ Jeff's badge stops working on the 4th floor. His access to internal anomaly data
 ## Stylistic Constraints
 
 - **Tone**: Opens as war journalism (raw, present-tense). The SMASH CUT to Jeff must be physically jarring — the reader should flinch.
-- **Tomás**: Must feel like a real person. His fear, his thoughts about home, his humanity. He's not a prop for Jeff's story — he's a 24-year-old who got drafted into a war over lithium.
+- **Tomás**: Must feel like a real person. His fear, his thoughts about home, his humanity. He's not a prop for Jeff's story — he's a 22-year-old who got drafted into a war over lithium.
 - **The bruise**: The physical damage is the escalation. Previous anomalies were sensory. This one leaves marks. Jeff can point to his shoulder and say: "this is real."
 - **Lena**: Her institutional moves should feel relentless and professional. She's not raging — she's filing paperwork. That's what makes her terrifying.
 
-## Mandatory Chapter Footer (Code Block)
+## Actual Chapter Footer (v5 prose — per P1.7 diversification)
+
+> **Note (P1.7):** The revision plan intentionally diversified blueprint-mandated C++ footers into in-world artifacts across the novel. This chapter retained the C++ `Discovery Log` format but expanded and corrected the comment text. Do NOT restore the stale blueprint version below — trust the prose footer. The actual footer in `prose/chapter-08.md` reads:
 
 ```cpp
 /* Discovery Log: 0x08 */
 broadcast(pain, ALL_NODES);
 // One soldier's wound.
-// Seven billion recipients.
-// Hobbes was right — but not the way he meant.
+// Eleven thousand recipients in ninety seconds.
+// Seven billion on the same fabric, not yet listening.
+// Hobbes was right — the war of all against all —
+// but not the way he meant: every blow lands on the one who throws it.
 ```

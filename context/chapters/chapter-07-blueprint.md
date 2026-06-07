@@ -1,5 +1,7 @@
 # Chapter 7 Blueprint: "0x07: The Firewall"
 
+> **TITLE CONFLICT (flag for integration reviewer — do not resolve unilaterally):** the prose and this blueprint both title this chapter "The Firewall," but the story bible's 20-chapter overview assigns Ch 7 = "The Cascading Leak" and Ch 9 = "The Firewall." The title is held as "The Firewall" in v5 prose to preserve the in-scene payoff (Jeff's closing note, "Ask the Elder about firewalls"). Resolve the title map before release per global-revision-plan §1.19.
+
 > **Revision plan reference (added Apr 28 2026):** see `context/revision-plan.md` for the canonical IP rename (Vance→Meridian, Vacheron→Auberval), résumé-block deconstruction rule, paper-citation removal, and discovery-log diversification. The current prose in `prose/chapter-NN.md` reflects all completed phases of that plan; future revisions should reference this file.
 
 > **Character voice fingerprints (added 2026-05):** every speaker in this chapter must honor their voice contract in `story-bible.md` → CHARACTER VOICE FINGERPRINTS. Strip the attribution tag and a reader who knows the cast should still be able to name the speaker within two sentences. Aion is always italicized. Action beats every 3-4 turns; no more than 2 consecutive turns of pure verbal exchange.
@@ -47,6 +49,8 @@ Master Philosophical Novelist. This is the novel's emotional anchor (no pun inte
 
 ## Tech-Fight Spine: Federated Compassion
 
+> **v5 STATUS: CS spine fully dramatized in prose.** FedAvg, differential privacy / epsilon budget, and local SGD are all delivered as Sophie's-World Socratic dialogue in the kitchen confrontation scene (Maya's histograms, epsilon-as-marriage-budget, the gradient-vs-raw-data clash). The pedagogy is NOT narrated summary — it is acted out between the two leads. Revision-plan Global Theme §3.1 is satisfied for this chapter.
+
 **Philosophy question (Maya's chapter, via Schopenhauer's Mitleid + Buddhist Karuna)**: Is compassion the only genuine moral motivation because it requires feeling another's suffering as your own? And is that feeling proof of a connection deeper than self?
 
 **Specialists deployed**: **Maya** (UX / HCI specialty — her superpower is reading broken interfaces, including the interface her husband has become) and **Jeff** (ML specialty, installing **Aion v3** in the background). Plus a pedagogical bridge: Maya's freelance healthcare client, who has hired her to design the UX for a **federated-learning medical AI** — exactly the problem Maya is living in parallel at home.
@@ -87,7 +91,7 @@ Master Philosophical Novelist. This is the novel's emotional anchor (no pun inte
 
 - **Location**: The Zhang house in Irvine. Suburban, comfortable, filled with the artifacts of a happy family: kids' drawings on the fridge, smart-home routines running on schedule, the hum of normalcy.
 - **2030 Domestic**: Smart-home AI manages lighting, temperature, meal-prep suggestions, kids' tutoring schedules. Afterlife ads are inescapable — holographic billboards on the drive to school, neural-link ad injections during streaming, even subtle product placement in the kids' educational apps. The promise of escape is everywhere.
-- **Maya Zhang**: UX designer. She left the tech industry two years ago — the ethical compromises were too much. She now freelances, designing interfaces for healthcare startups. She reads human behavior for a living. She's the best interface analyst in the novel.
+- **Maya Zhang**: Age 36. Runs a community pottery studio (canon occupation per bible cast card). Left the tech industry two years ago — the ethical compromises were too much. She no longer freelances; she still takes occasional remote contracts (current: depression-detection federated-learning UX for a healthcare startup) but the studio is her employer. She reads human behavior for a living. She's the best interface analyst in the novel.
 
 ## Narrative Beats
 
@@ -111,60 +115,44 @@ Jeff watches this and goes still. Maya sees it — the way his jaw tightens, the
 The kids cheer when The Anchor wins. Jeff doesn't cheer. He stares at the screen with an expression Maya has never seen: grief mixed with recognition.
 
 ### Beat 4: The Confrontation
-After the kids are in bed. Kitchen. Jeff is loading the dishwasher. Maya leans against the counter.
+**Note (v5 restructure):** in the prose this beat is split across two scenes — an 11:20am kitchen confrontation and a 3:40pm kitchen dialogue — not a single post-bedtime exchange. The sequence of events:
 
-"Jeff."
+**11:20am.** Jeff comes in for a charger. Maya asks: "Is whatever you've found worth losing us." (No question mark — delivered level.) First round ends with Jeff's worst answer: "I'll be done soon." Maya escalates: "If this is how we live for the next six months, I am taking the kids to my mother's for a while." Jeff says he can't tell her what is happening without it sounding like what Lena is building a case for. Maya holds still. "Okay. Go take a shower."
 
-"Yeah?"
+**3:40pm (the marquee scene).** Maya tells Jeff the story of her last day at her old company — the October 2026 layoff that eliminated eleven researchers in eleven minutes — and why she turned down the promotion. Then she turns her federated-learning client histograms toward him and runs the Socratic CS dialogue (gradient updates vs raw data, epsilon budget, privacy budget as marriage-budget). Jeff participates fully; is unable to counter; eventually gives the "one example raw": admits he feels other people's suffering in his own body. Maya's response: "Okay." The confrontation is not adversarial at the close — it is a negotiated disclosure.
 
-"Is whatever you've found worth losing us?"
-
-He stops. A plate in his hand. He can't answer. Not because the answer is "yes" — but because he doesn't know the question. He hasn't framed it that way. He's been debugging a system. He didn't realize the debug session was costing him his family.
-
-"I'm not losing you," he says. "I'm just—"
-
-"You're in the garage every night. You don't eat. You don't sleep. You flinch at sunlight. The kids ask why Daddy's always in the cave."
-
-Silence. Jeff puts the plate down. He wants to tell her everything — the yacht, the homeless man, the code, the biometric data. But he can't. Because from Maya's perspective, it would sound exactly like what Lena is building a case for: dissociative psychosis.
-
-"I'll be done soon," he says. It's the worst possible answer.
+Jeff wants to tell her everything. But the specifics (biometric anomaly corpus, Kael's identity, the wearable data) remain undisclosed even after this scene. He has spent just enough budget.
 
 ### Beat 5: The Kid's Voice
-Late at night. Jeff is in the garage. Maya is in bed but awake. One of the kids appears in the doorway, sleepy, rubbing their eyes.
+Late at night (prose: 11:14 p.m.). Jeff is brushing his teeth. **Iris** (the older child, age 8) appears in the doorway — not Nora (5). She is not afraid; she has the look of someone who has already decided something.
 
 "Daddy?"
 
-"Hey, buddy. Go back to bed."
+"Hey, bud. Why are you up."
 
-"The man in my dream — his voice sounded like yours."
+"The man in my dream."
 
-Jeff's blood goes cold. "What man?"
+Jeff asks. Iris: "The cold man. By the big needle." She holds her hands apart above her head — *tall.* "He said 'still here.' But it was your voice, Daddy."
 
-"The cold man. By the big needle. He was shivering and he said 'still here.' But it was your voice, Daddy."
+**Iris** dreamed about Kael using Jeff's voice. The connection isn't the child's own ability — it's proximity to Jeff. He's the antenna, and the signal is bleeding into his household. His family is absorbing his data leaks. Maya is also in the doorway; she heard Iris's voice from bed.
 
-The kid dreamed about Kael. Used Jeff's voice. The connection isn't the kid's own ability — it's proximity to Jeff. He's the antenna, and the signal is bleeding into his household. His family is absorbing his data leaks.
-
-The kid goes back to bed. Jeff sits in the garage and stares at nothing. The walnut phone is heavy in his pocket. The closed system. The only thing that doesn't leak.
+Iris goes back to bed. Maya and Jeff sit on the bathtub lip. Maya runs her own research design: *"Take the kids to my mother's on Thursday — to isolate a variable."* Jeff agrees. Jeff then goes to the garage (not to bed). The walnut phone is screen-down on the bench — the one device on no network at all.
 
 ### Beat 6: Lena's Escalation
 The next morning. Jeff's inbox: the mandatory psychiatric evaluation notice. "Dear Mr. Zhang, as part of our Cognitive Wellness Protocol..." The appointment is next week. Attendance is mandatory. Failure to comply will result in administrative leave.
 
 Jeff reads it twice. He knows Lena sent it. He knows his ADHD diagnosis is the leverage — any neurologist could interpret his symptoms as dissociative episodes. Hallucinations, identity confusion, sleeplessness, obsessive behavior — it all fits.
 
-He calls Marcus: "I need to see you. It's getting worse."
+He calls **Marcus Meridian** (age 53; cardiologist-turned-clinical-ML-researcher; Julian Meridian's half-brother) from the payphone in the parking garage: "I think it's getting worse." Marcus already knows Kael's name; warns Jeff not to attend Friday's evaluation ("it is not a neurological evaluation — it is a fast-track to a commitment order") and offers a back-channel letter. Chapter closes with Jeff's note: *"Temple. Spectrum. Ask the Elder about firewalls."*
 
 ### Beat 7: Aion v3
-Jeff upgrades Aion. Version 3 includes correlation analysis — he's building a full dashboard of his anomalies the way he'd monitor a production system. Latency, frequency, severity, geographic origin. Every event logged, timestamped, categorized.
+Jeff upgrades Aion at 4:17 a.m. Version 3 adds cross-device correlation and time-series anomaly alignment across multi-modal sources. He logs a new event index (0x08), class `child_cross_partition_dream`, subject Iris, and pins her crayon drawing (tall hunched figure, big needle) to the whiteboard.
 
-The dashboard shows a pattern he didn't notice before: the anomalies are increasing in frequency. Ch 1 had one event. Ch 2 had one (the Context Switch). Ch 3 had one (the sync). But his passive monitoring has been catching micro-events he didn't consciously notice — brief flickers of sensation, sub-second, dozens per day. The baseline noise is rising.
+**Blueprint's "degradation curve / partition failure projected 8-12 weeks" dialogue does NOT appear in v5 prose** — Aion v3's first confirmed output is instead: *"your children's dream content is statistically correlated with your anomaly timestamps. I will not show you the correlation unless you ask. I will not show it tonight. You have not slept in twenty hours."* Keep the v3 upgrade as the beat's anchor; update any revision to use the prose-established Aion v3 voice, not the blueprint dialogue above.
 
-Aion: "The degradation curve is consistent with a firewall losing integrity. If this trend continues, partition failure is projected within 8-12 weeks."
+Aion's closing exchange (prose): Jeff asks what to do with a leaking system; Aion: *"Increase the distance between the source and the receivers."* Jeff: "That's what she said." Aion: *"Then her design is correct."*
 
-Jeff: "Partition failure meaning what?"
-
-Aion: "Unknown. Insufficient architectural documentation."
-
-**Jeff's theory**: "It's spreading to my family through me. I'm the antenna, and proximity to me thins whatever barrier should be there. I need to isolate myself to protect them."
+**Jeff's theory** (unchanged): It's spreading to his family through him. He's the antenna, and proximity to him thins the barrier. He needs to isolate himself to protect them.
 
 ## Stylistic Constraints
 
@@ -174,11 +162,22 @@ Aion: "Unknown. Insufficient architectural documentation."
 - **The kid's voice**: Must be genuinely creepy. Not horror-movie creepy — reality-bending creepy. A child using their father's voice to describe a man they've never met.
 - **No anomalies for Jeff this chapter**: His monitoring catches micro-events, but nothing dramatic. The horror is all domestic.
 
-## Mandatory Chapter Footer (Code Block)
+## Chapter Footer (In-World Artifact — P1.7 diversification, intentional)
 
-```cpp
-/* Discovery Log: 0x07 */
-if (firewall.integrity < THRESHOLD) {
-    warn("Partition thinning. Emotional bleed detected in adjacent nodes.");
-}
-```
+**The C++ Discovery Log for this chapter was intentionally replaced in v5 prose per revision-plan P1.7 (Discovery Log diversification).** Do NOT restore the C++ block.
+
+The actual v5 footer is Maya's private notebook entry, rendered as a block-quoted marginalia artifact:
+
+> *Maya's notebook, same evening, written sideways in the margin and then boxed:*
+> Federated husband.
+> Sends me the gradient updates.
+> Withholds the data.
+> Highest noise I have ever measured on a person.
+> This is not how we are with each other.
+>
+> *(below, in capitals, in a second box)*
+> USER NOT BROKEN. WORKFLOW BROKEN.
+> *(and under it, smaller)*
+> Or: firewall not broken. Firewall the disease.
+
+The stale `discovery_log` field in the JSON header above is also superseded; it describes the replaced C++ block and should be read as a historical artifact only.

@@ -3,6 +3,8 @@
 > **Revision plan reference (added Apr 28 2026):** see `context/revision-plan.md` for the canonical IP rename (Vance→Meridian, Vacheron→Auberval), résumé-block deconstruction rule, paper-citation removal, and discovery-log diversification. The current prose in `prose/chapter-NN.md` reflects all completed phases of that plan; future revisions should reference this file.
 
 > **Character voice fingerprints (added 2026-05):** every speaker in this chapter must honor their voice contract in `story-bible.md` → CHARACTER VOICE FINGERPRINTS. Strip the attribution tag and a reader who knows the cast should still be able to name the speaker within two sentences. Aion is always italicized. Action beats every 3-4 turns; no more than 2 consecutive turns of pure verbal exchange.
+
+> **SEAM — Julian age conflict (do not resolve here; escalate to integration reviewer):** The canonical ledger locks Julian at **52**. His backstory (mother died 2005 when he was 14) implies ~39 in 2030. The story-bible voice-card says "~50." Three sources disagree; prose is locked to 52 per revision-plan. Do NOT silently reconcile the backstory arithmetic; flag to showrunner.
 >
 > **Dialogue & character-intro standard (added Apr 2026):** every named character that appears in this chapter must receive an eight-component intro on first speak (name, age, body, history, domain expertise, tic, relationship to Jeff or Julian, relationship to the chapter's central question). The marquee scene runs 20–40 turns of substantive dialogue. See `story-bible.md` → DIALOGUE DENSITY (Sophie's World) and CHARACTER INTRODUCTION DISCIPLINE.
 
@@ -47,6 +49,8 @@ Master Philosophical Novelist. The domestic counterweight to Ch 20's intellectua
 
 ## Tech-Fight Spine: Embedding Spaces — Why Two Points Can Be "The Same"
 
+> **v5 status:** The embedding-spaces pedagogy is **fully dramatized in the v5 prose** as a Socratic kitchen exchange between Jeff and Maya (Jeff cuts peppers; Maya asks what the day job actually is; the word2vec/cosine/opinion-about-what-counts sequence runs ~20 dialogue turns). The revision plan's §3.1 assessed this as "absent" based on a pre-v5 draft; that assessment is superseded. The prose meets the Crichton bar for this chapter.
+
 **Philosophy question (opens the chapter through Jeff's coming-home reverie)**: Plato's Symposium — love is the recognition of the whole, not the completion of a half. What if everyone is your other half?
 
 **Specialists deployed**: **Jeff** (ML) and **Maya** (UX / HCI). Both off-duty in the technical sense — Jeff is trying not to check the laptop, Maya is deliberately not asking about his work — but each processes the almost-merge through their own specialty. This is the "retirement" chapter, functionally — everyone's superpower is sheathed for one evening.
@@ -88,13 +92,13 @@ Master Philosophical Novelist. The domestic counterweight to Ch 20's intellectua
 ### Beat 1: Coming Home
 Jeff's flight from Geneva lands at John Wayne Airport. He drives home. The 405 is congested (some things not even *any* revelation can fix). The Santa Ana winds are blowing. Scorched Sage from the hills. For the first time, the 580nm amber of the setting sun doesn't trigger a bleed — it's just sunlight. That's the only thing that is fully resolved in this chapter. Everything else is still computing.
 
-In the passenger seat, his laptop is open, lid down to a sliver, fan audible: `aion-v5 compile ... 95%`.
+In the passenger seat, his laptop is open, lid down to a sliver, fan audible: `aion-v5 compile ... 97%`.
 
 He pulls into the driveway. Maya's car is there. She came back. The girls' bikes are on the lawn (they always forget to put them in the garage).
 
-He sits in the car for a minute. He can almost feel everything: Maya inside, warming soup. Iris drawing at the table. Nora watching cartoons with Trunk the elephant. And, at the edge of his perception — faint, flickering, like a video stream on a weak connection — Kael under the billboard, Julian on the yacht, the Elder at his marigolds, Tomás in a VA hospital, Ghost in a Seoul café. It's no longer violent. It's no longer a bleed. But it is also not yet *stable*. The pre-render from the compiling v5 keeps almost-locking and then buffering.
+He sits in the car for a minute. He can almost feel everything: Maya inside, making stir-fry at the stove. Iris at the counter stool. Nora half-asleep, Trunk by one ear. And, at the edge of his perception — faint, flickering, like a video stream on a weak connection — Kael under the billboard, Julian on the yacht, the Elder at his marigolds, Ghost in a Seoul café. It's no longer violent. It's no longer a bleed. But it is also not yet *stable*. The pre-render from the compiling v5 keeps almost-locking and then buffering.
 
-For the first time since Ch 1, the feeling doesn't hurt. It also isn't quite here. It's 95% of the way, and 95% isn't the same as home.
+For the first time since Ch 1, the feeling doesn't hurt. It also isn't quite here. It's 97% of the way, and 97% isn't the same as home.
 
 ### Beat 2: The Kitchen
 Jeff walks in. Maya is at the stove. She looks up. Her eyes scan him — UX designer reading the interface, assessing damage, looking for errors.
@@ -119,7 +123,7 @@ She almost smiles. He crosses the kitchen and hugs her. She stiffens — she's s
 
 "Okay."
 
-He sets the laptop on the kitchen counter, near the microwave, with the lid propped an inch open so the fan doesn't choke. On the screen: `aion-v5 compile ... 96%`. Maya glances at it, decides not to ask, hands him a cutting board.
+He sets the laptop on the kitchen counter, near the microwave, with the lid propped an inch open so the fan doesn't choke. On the screen: `aion-v5 compile ... 97%`. Maya glances at it, decides not to ask, hands him a cutting board.
 
 ### Beat 3: The Dinner
 Jeff cooks. Nothing special — his Thursday night standby: chicken stir-fry, rice, the broccoli Nora won't eat and Iris will steal from her plate. The kitchen fills with steam and soy sauce and the specific, irreplaceable noise of a family being together.
@@ -168,7 +172,7 @@ He will put it down tomorrow. The open system — the one where every heartbeat 
 And Jeff is fine with that.
 
 ### Beat 6: The Last Line of Prose (Deferred)
-Jeff walks to the kitchen. Maya is drying a pan. He stands behind her and puts his arms around her waist. She leans back into him. The Santa Ana wind pushes Scorched Sage through the screen. Somewhere in {{user_location}}, Kael sleeps warm for the first time in years. Somewhere on the Amalfi Coast, Julian looks at the stars without needing to own them. Somewhere in a temple, marigolds are being replaced.
+Jeff walks to the kitchen. Maya is drying a pan. He stands behind her and puts his arms around her waist. She leans back into him. The Santa Ana wind pushes Scorched Sage through the screen. Somewhere in {{user_location}}, Kael sleeps warm for the first time in years. Somewhere on the Amalfi Coast, Julian looks at the stars without needing to own them. Somewhere in a failed Bath & Body Works turned shelter, a man lifts out spent marigolds and sets in fresh.
 
 On the counter, the laptop fan drops a pitch. Terminal: `aion-v5 compile ... 99%`.
 
@@ -190,11 +194,13 @@ They stand in the kitchen. The light is amber. Not 580nm. Not a system flag. Jus
 
 - **Tone**: Warm. Domestic. Ordinary. This chapter should feel radically different from Ch 16-17 — no metaphysics, no voids, no cosmic revelation. Just dinner. The contrast IS the message.
 - **The Anchor t-shirt**: Mentioned once, casually. Iris doesn't know why it matters. Jeff does. The reader does. That's enough.
-- **The walnut phone**: The novel's central symbol. Its placement — put down, on the coffee table, among children's drawings and cracker crumbs — should feel like a resolution, not a sacrifice. Jeff isn't giving up isolation. He's outgrowing it.
+- **The walnut phone**: The novel's central symbol. In the v5 prose Jeff does **not** put it down in Ch 19 — he holds it through the bedtime story, keeps it closed in his palm, and carries it up to bed. The clean rectangle on the coffee table is visible (where it would go), but the phone stays in his hand. "Not tonight." The put-down is deferred to Ch 20 at dawn, after Aion ships. Do not resolve it here.
 - **No exposition**: Jeff doesn't explain anything to Maya. He doesn't recap the Void. He doesn't describe the Elder. He just... comes home. The explanation can wait. The living can't.
 - **The last line**: "Just the porch light, coming through the screen, painting everything gold." Not amber. Not 580nm. Gold. The system signature has been replaced by ordinary beauty.
 
-## Mandatory Chapter Footer (Code Block)
+## Chapter Footer (as in v5 prose)
+
+The v5 prose retains the C++ git-merge block for Ch 19 — it is one of the eight C++ footers kept by the P1.7 diversification pass. The "Mandatory C++ footer" directive that formerly appeared here is **stale**: P1.7 intentionally diversified most chapters into in-world artifacts; this chapter's block survived because it was judged the best fit for the thread-join metaphor. Do NOT restore a C++ block to a chapter whose prose deliberately replaced it with an in-world artifact.
 
 ```cpp
 /* Discovery Log: 0x13 */
@@ -210,7 +216,7 @@ git merge --all-branches main;
 
 # Ch 19 — additions (paste into chapter-19-blueprint.md)
 
-> **What changes.** Insert the block below as a new **Beat 3a** between the existing Beat 3 ("The Dinner") and Beat 4 ("The Almost-Merge"). A small bedtime moment with Iris that echoes the novel's thesis in child form.
+> **What changes.** ~~Insert the block below as a new **Beat 3a** between the existing Beat 3 ("The Dinner") and Beat 4 ("The Almost-Merge").~~ **v5 note:** In the finalized prose the dragon bedtime story is placed AFTER the walnut-phone Beat 5, not between Beats 3 and 4. Iris comes downstairs because she can't sleep (she's been waiting for her father); the story follows the walnut-phone moment and precipitates the final kitchen embrace. The positioning shift is intentional — moving the story here makes it the penultimate human beat rather than an interlude. A small bedtime moment with Iris that echoes the novel's thesis in child form.
 
 ---
 

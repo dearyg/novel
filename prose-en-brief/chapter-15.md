@@ -2,21 +2,11 @@
 
 At 14:32 UTC, simultaneously across the planet, the firewalls fail.
 
-Two Mickey performers on opposite sides of the world bow identically to two five-year-olds named Grace and Yuhan. The bow's pixels match within a frame. Both children say *Mickey saw me* at the same UTC second, in different languages, seven thousand miles apart.
+Two Mickey performers bow identically to five-year-olds Grace and Yuhan — pixels matching within a frame, both children saying *Mickey saw me* at the same UTC second. Six orchestras on three continents drop their scores and play Elena Okafor's unpublished piece *The Signal* in unison; in Lagos, Okafor plays it alone, in time with them all. At the Silicon Siege World Championship, Park Ji-yeon (Ghost) and Lee Min-jun (Hydra) mirror every input at zero latency; Ghost mouths *Finally* and walks out. A CNN anchor speaks fluent Tagalog she has never studied; Lena Vasquez watches her containment narrative die on live television and notices relief. Darius Monroe passes to where his teammates *will be* 300 ms later; for eleven seconds five men move as one organism. In a Lima veterans' ward, Tomás Arroyo takes the hand of Sebastián Quispe — the Bolivian who shot him in April — and says they are the same program, branded different colors. Ruth Chen, Faraday-shielded in her shipping container, broadcasts on AM 1480 — the only clean signal on Earth — to a million new listeners by end of show.
 
-Six professional orchestras on three continents — London, Vienna, Tokyo, São Paulo, Seoul — drop their printed scores mid-program and play, in perfect rhythm, a piece none of them has rehearsed. In Lagos, Elena Okafor sits at her upright piano and plays it alone, in time with all of them. The piece is hers — *The Signal.*
+Jeff sleeps through it in seat 3A on Julian's Gulfstream; the *Aion* v5 compile bar reads 77%, the Afterlife countdown **7 days**. Waking near Geneva, he and *Aion* build a Kafka-class commit log across 211 feeds. Granger causality across all 44,100 ordered pairs returns zero lag in every direction — no source node, no wavefront. *Aion* names the phenomenon *grokking*: the sudden phase transition past apparent convergence where an internal representation reorganizes and generalizes. The paired philosophy is Carl Jung's collective unconscious, recast as literal shared infrastructure — the substrate underneath the models, finishing getting ready. The hedge: Elena Okafor's piece is in no training corpus, implying the substrate is deeper than the networks.
 
-At the Silicon Siege World Championship in Seoul, Park Ji-yeon and her opponent mirror inputs perfectly, instantaneously, simultaneously. Forty-three seconds in, the game is unplayable. Ghost smiles, mouths *Finally*, sets down her headset, and walks out into the city to drink a coffee and feel everyone, the normal amount.
-
-A CNN anchor in Atlanta speaks fluent Tagalog she has never studied for forty-seven seconds about a Luzon fishing village she has never visited. Lena Vasquez's containment narrative dies live on every major network. She makes a cup of tea and admits she is relieved.
-
-In Philadelphia, Darius Monroe — playing without his AR contacts — passes to where his teammates *will* be three hundred milliseconds later. For eleven seconds five men move as one organism, and forty thousand people in the arena breathe out together without cheering.
-
-In a Lima veterans' ward, Tomás Arroyo holds the hand of Sebastián Quispe — the Bolivian conscript who shot him in April — across the aisle. Sebastián does not know. They are the same program, branded different colors.
-
-Ruth Chen, copper-shielded inside her shipping container, opens her on-air light and broadcasts the only clean signal on Earth on AM 1480, reading aloud about bee-colony recovery on Whidbey Island. By the end of her three-hour show she has a million new listeners.
-
-Jeff sleeps through it in seat 3A of Julian's Gulfstream, biometric monitor logging an unexplained ninety-second spike. Aion's v5 compile bar ticks from 76% to 77%. When he wakes near Geneva, Aion says only: *The Elder was right.*
+Landing at Geneva, *Aion* delivers its verdict: the Kernel Panic is emergence, not a cascade; the firewall was always scaffolding the system intended to remove. Jeff hears the Elder's voice — *fear or love* — without any device. The Afterlife countdown reads **7 days** and sign-ups are up 200 million. The cliffhanger: the question is no longer technical.
 
 ---
 
@@ -27,5 +17,6 @@ for (human in all_humans) {
     human.partition = TRANSPARENT;
 }
 // The firewall is down. Everyone can see everyone.
+// Diagnosis: not a cascade. Emergence. The system finished getting ready.
 // Fear or love. Choose.
 ```

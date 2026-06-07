@@ -1,114 +1,96 @@
 # Chapter 8 — 0x08: The Broadcast
 
-Tomás Arroyo was twenty-four. Bolivian, conscripted, two months short of finishing his eighteen-month rotation. Before the 2027 draft expansion he had worked six years as a diesel mechanic in his mother's machine shop in El Alto.
+Tomás Arroyo is walking a patrol route at dawn along a ridgeline above a valley he has never been told the name of.
 
-His exo-suit, a third-iteration Meridian Aerospace harness, was running at seventy-three percent charge. AI-targeting overlays flickered across his visor. He had trained himself to ignore them.
+He is twenty-two. Bolivian, conscripted, two months short of his eighteen-month rotation — six years as a diesel mechanic in his mother's shop in La Paz before the 2027 draft expansion. His exo-suit, third-iteration Meridian Aerospace, runs at seventy-three percent charge. He has trained himself to ignore the AI-targeting overlays. *Same program,* he thinks. *Different colors. Their mothers boil the same potatoes. And here we are, killing each other over rocks.*
 
-*We have been fighting for eight months,* he thought. *They look like us. Their language is almost the same. Why are we killing each other over rocks.*
+*"Movement detected. Two hundred meters. Recommend cover."*
 
-His tactical AI: *"Movement detected. Two hundred meters. Recommend cover."*
+The rifle crack. The bullet enters his left shoulder with a liquid shock that turns cold. His haptic glove — a PID loop on shoulder pressure — tightens, overshoots, hunts, corrects, finds its setpoint. He says the name on the simulator splash screen: *"Velarde. Keep the loop."* The glove keeps the loop.
 
-The rifle crack. The bullet entered his left shoulder with a liquid shock that turned immediately cold. The visor flashed CASUALTY. His haptic glove ran a closed PID loop on shoulder pressure.
-
-He thought, without words, of a hallway floor he had never walked on, cool tile, a garage door, the sound of a whiteboard marker uncapping. The thought was not his.
+He thinks, without words, of a hallway floor he has never walked on, cool tile, a garage door, a whiteboard marker uncapping. The thought is not his.
 
 ---
 
 **SMASH CUT.**
 
-Jeff doubled over in his garage at 11:47 p.m. Pacific, clutching his left shoulder, screaming into the crook of his right arm because Maya was asleep upstairs.
+Jeff Zhang doubles over in his garage at 11:47 p.m. Pacific, screaming into his right arm because Maya is asleep upstairs. The pain is not phantom. Purple spreading across the deltoid. Ninety seconds, then warmth — sudden, chemical, a blood-level wave his body did not administer.
 
-The pain was not phantom. Purple bruising spreading across the deltoid. The sensation remained, precisely, for ninety seconds. Then warmth — a blood-level wave of something his body did not administer.
+*Aion* wakes the pipeline. *Origin: unknown. Tissue damage: subcutaneous bruising, left deltoid, consistent with ballistic impact. Secondary event at plus ninety-two seconds: analgesia signature, pharmacological. Compatible with field morphine analog.*
 
-*Origin: unknown. Tissue damage: subcutaneous bruising consistent with ballistic impact. Secondary event: pharmacologically-induced analgesia signature, plus ninety-two seconds. Compatible with field-deployed morphine analog.*
+"Cross-reference global casualty reports. Left shoulder. Last ten minutes."
 
-"Cross-reference global casualty reports for the last ten minutes. Anatomical region: left shoulder."
+A flat line. Then a vertical wall, three minutes back — thousands of wearables inside the same window. *Eleven thousand four hundred sixteen matched reports decay in the same ninety-second window. Single point of origin: latitude minus fifteen point seven two, longitude minus sixty-nine point one one. Tomás Arroyo, shot in the left shoulder at oh-six forty-seven twelve UTC. You are one of the eleven thousand four hundred sixteen.*
 
-*Running.*
+Jeff touches his face. Wet. He had not noticed.
 
-Eleven seconds — a long time for Aion — used to query nineteen public health-feed aggregators in parallel.
+He tries to name the model: broadcast, multicast flood. A flood needs a switch. There is no switch. Simultaneous to four hundred milliseconds across four continents. "A single point in source space, rendered into thousands of bodies. No sender field. No return path."
 
-*Eleven thousand four hundred and sixteen matched reports decay in the same ninety-second window. Source is a single point. The Andean border corridor. A Bolivian conscript named Tomás Arroyo was shot at oh-six forty-seven twelve UTC. Eleven thousand people on Earth felt it.*
+*Less a broadcast than a single heartbeat felt in eleven thousand chests.*
 
-Jeff was crying. He did not notice immediately.
+*Filed. Event index zero eight. Cross-partition broadcast. First entry where the originating instance is not you.*
 
-"That's not a broadcast. That's one point in source space, rendered into thousands of bodies."
-
-*Like a multicast flood with no sender address. Or — the metaphor you were about to reach for — like a single heartbeat felt by eleven thousand hearts.*
-
-"File it."
-
-*Filed. Cross-Partition Broadcast. Event index zero nine. This is the first anomaly where the originating instance is not you.*
+"It's not me," Jeff says, "and I still felt it in my own skin."
 
 ---
 
-At 2:14 a Slack message — safety-team lead. Jailbreak rate up 40%. Robust filter for the Afterlife Companion product needed by Monday. Adversarial training plus distillation.
+At 2:14 a.m. a Slack message: jailbreak rate up 40%, robust safety filter for Afterlife Companion needed by Monday. Launch banner in the corner: *Afterlife Companion — launching in 60 days.* Last month it said ninety.
 
-He typed back: *OK.*
+He types back: *OK.*
 
-The standard approach: two copies of the model pitted against each other. The same recipe that trained the drone swarms on both sides of the war Tomás was bleeding for, although Jeff did not know that yet.
+The standard approach: adversarial training, a GAN for policy behavior. Attacker generates evasion prompts; Defender classifies them. Madry 2017 min-max — Attacker maximizes loss subject to a perturbation budget, Defender minimizes expected loss over the worst case. Also the exact recipe that trained the drone swarms on both sides of the war his shoulder is still bruised from.
 
-*A note. Self-play converges to a Nash equilibrium between Attacker and Defender. That equilibrium is optimal against* each other. *Not against the broader distribution. The Bolivian and Peruvian drone swarms share this pathology. Optimal against each other. Fail to distinguish a civilian in the same valley from combatants. You need an out-of-distribution test set.*
+*Aion* at 2:41 a.m.: *Self-play converges to a Nash equilibrium. Optimal against each other — not against everything else.*
 
-"Meaning."
+He sees it. "The Defender learns to block the Attacker's distribution and nothing outside it. Civilians get through. Red-teamers get walls."
 
-*If you ship a filter that holds up on the red team and fails on synthetic third-party evaluation, you are shipping a model that is optimal against its trainers and wrong against its users.*
+*Velarde's two fleets trained on each other for six months. Drop a tourist into the same valley and neither fleet has a category for her. This is distributional robustness failure. You need an out-of-distribution test set — synthetic adversarials from a third model on a different corpus. Ship without it and you have a filter optimal against its trainers and wrong against the people it was built to protect.*
 
-Jeff wrote in the margin of the corpus: `tech_philosophy_note: self-play collapses to in-distribution optimality. The scanner is about to meet me. I will be outside its training distribution.*
-
-He did not yet know this would be useful. He filed it anyway.
+Jeff writes in the margin: `tech_philosophy_note: self-play collapses to in-distribution optimality. The scanner is about to meet me. I am outside its training distribution by construction.` He files it anyway.
 
 ---
 
-Julian on his yacht. He had not slept since the priority-inversion incident. His dashboard was showing him something he did not have an engineering framework for.
+Julian Meridian is on his yacht, awake. His dashboard shows something he has no engineering frame for: the broadcast pain event was not generated by Afterlife. Afterlife recorded it the way a seismometer records an earthquake — passively, having caused nothing. The system Julian built was behaving as a sensor for something larger.
 
-The broadcast pain event was not generated by Afterlife. It was not generated *through* Afterlife. Afterlife's infrastructure had recorded it, the way a seismometer records an earthquake, entirely passively. The system Julian built was — tonight — behaving as a sensor for something bigger.
+"What have I built," he says, to no one. Not because he caused it. Because he copied it — thirteen years building a faithful replica of a system he did not know existed.
 
-He whispered, to the lamp, to himself, to nobody: *"What have I built."*
-
-Not because he caused it. Because he copied it. He had been building, for thirteen years, a replica of a system he did not know existed.
-
-At 3:14 a.m. exactly, Julian's Auberval did the thing it does, which is tick.
+At 3:14 a.m. exactly, the Auberval does the thing it does, which is tick.
 
 ---
 
-At 4:00 a.m. Jeff's badge failed on the fourth floor for the third time. `RESTRICTED TIER ACCESS ACTIVE`.
-
-He called Marcus from the payphone.
-
-"They just took my fourth floor."
-
-"I know."
+At 4:00 a.m. Jeff's badge fails on the fourth floor: `RESTRICTED TIER ACCESS ACTIVE`. He calls Marcus from the payphone in the parking garage.
 
 "Is Tomás alive."
 
-"Yes. He will live. He's stable."
+"Yes. Stable." Flat, the way a diagnosis is flat. "Three of the eleven thousand were already in fragile cardiac states. They did not survive."
 
-"Okay."
+"We killed those three."
 
-"Jeff. The pain-spike event had eleven thousand reports. Three hundred and forty-two were near enough to a field medic to get pharmacological relief. The other ten thousand six hundred and fifty-eight were not. Some of them did not survive. Three were already in fragile cardiac states."
+"No. The war killed them. A Chilean sniper killed them by killing a man six thousand miles away through a mechanism none of us understands yet. Come to the clinic this weekend." A pause. "And don't miss the neurological evaluation Friday by accident. Miss it on purpose. There's a difference in your HR record."
 
-Jeff leaned against the payphone. "We killed those three."
-
-"No. The war killed them. A Peruvian sniper killed them by killing someone six thousand miles away through a mechanism none of us yet understand. There will be more. I need you to come to my clinic this weekend."
-
-"I will."
-
-"And Jeff. Don't miss that neurological evaluation Friday accidentally. Miss it *deliberately*. There's a difference in your HR record."
-
-He went home. He sat on the front steps and watched the sun come up. Maya opened the door at 6:41 in a bathrobe and sat next to him. They did not speak.
-
-Three hundred miles away, Ruth Chen was writing on a typewriter a sentence that would not air until Thursday: *When the world starts feeling each other, the world will panic. Let's try not to panic. Let's try to read the paper.*
+Jeff goes home. Sits on the front steps. Watches the sun come up for the first time in a year. Maya opens the door at 6:41 a.m. and sits next to him. He sets the walnut phone between them on the concrete — forty-two grams of un-networked wood. They do not speak again.
 
 ---
 
-At Friday 4:01 p.m. Jeff did not appear. At 4:02 p.m.: `NON-COMPLIANT — Administrative Leave (Auto)`.
+At Friday 4:01 p.m. Jeff does not go to the neurological evaluation.
 
-He showed Maya at dinner. She read it. She passed him the bread.
+At 4:02 p.m.: `NON-COMPLIANT — Administrative Leave (Auto) — Effective 00:00 Monday.`
+
+He shows Maya at dinner. She reads it. She passes him the bread.
 
 "Now we have time."
 
 "Now we have time."
+
+Iris — eight, who has been listening with the patience of a person who decided something an hour ago — puts down her fork. "Daddy's not going to work Monday." Not a question; a filed fact. "Are you sick."
+
+Jeff looks at the bruise on his shoulder, the one that colored for a man he will never meet. "No. Somebody else is. I felt it for them."
+
+Iris considers this for exactly the length it deserves, which to an eight-year-old is no time at all, and picks her fork back up.
+
+---
+
+Three hundred miles north, Ruth Chen writes on a 1974 Smith-Corona, a sentence for Thursday's pirate AM signal: *When the world starts feeling each other — and it has started, I have the timestamps, three sources, all analog — the world is going to panic; let us try, for once, not to panic.* She has not met Jeff. She is preparing the ground he is going to need.
 
 ---
 
@@ -116,6 +98,8 @@ He showed Maya at dinner. She read it. She passed him the bread.
 /* Discovery Log: 0x08 */
 broadcast(pain, ALL_NODES);
 // One soldier's wound.
-// Seven billion recipients.
-// Hobbes was right — but not the way he meant.
+// Eleven thousand recipients in ninety seconds.
+// Seven billion on the same fabric, not yet listening.
+// Hobbes was right — the war of all against all —
+// but not the way he meant: every blow lands on the one who throws it.
 ```

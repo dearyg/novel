@@ -1,22 +1,20 @@
 # Chapter 14 — 0x0E: The Panopticon
 
-At 5:48 a.m. Lena Vasquez signs an involuntary-evaluation directive. Jeff's EV reroutes itself toward Hoag Behavioral Health and locks the doors. Aion has no override.
+At 5:51 a.m. Lena Vasquez signs an involuntary-evaluation directive. Jeff's EV reroutes to Hoag Behavioral Health and locks the doors; *Aion* has no override. Jeff finds an old wired earbud and an AM transistor in the glove box, tunes to 1480 AM, pulls the parking brake by hand, leaves his watch and company phone on the seat, and climbs out the driver's window.
 
-Jeff finds an old wired earbud and a 1970s AM transistor in his glove box, tunes to 1480 AM — a frequency the city's saliency model gave up on in 2027 — pulls the parking brake by hand, leaves his watch, phone, and earpiece on the passenger seat, and climbs out the driver's window.
+He walks eight miles on Irvine surface streets, dress shoes destroyed. Smart billboards scan his iris one by one and reconfigure to Meridian Behavioral Health hotlines. A 7-Eleven clerk named Nilesh slides a Clif bar across the counter when his payment is declined.
 
-He walks. Every smart billboard he passes scans his iris and reconfigures itself to display Meridian Behavioral Health hotlines. One speaks aloud. He cuts through residential side streets to a road the city has not retrofitted, eats a Cliff bar a 7-Eleven clerk slides across the counter when his payment is declined, and reaches the Meridian campus on foot.
+At the Meridian lobby the executive biometric scanner — fused fingerprint, retina, voice — identifies him as *Julian Meridian, ROOT clearance* at 99.94% confidence. On the walk to the gate Jeff explains to *Aion* the CS concept: **natural adversarial examples** — real inputs that fall in holes the training set never closed, indistinguishable from engineered FGSM attacks inside the model. *He is not a crafted perturbation. He is the hole.* Every door opens.
 
-His lobby badge still works. He approaches the executive-tier biometric scanner — fused fingerprint, retina, voice — and it identifies him as *Julian Meridian, ROOT clearance.* Every door opens.
+Lena is waiting on floor 36 in a glass conference room with two guards and a Medical Liaison. She discloses she has suppressed fourteen reports across eighteen months and three names are dead — and she believes him completely. She has built a **specialized head** atop the frozen identity model, trained on Jeff alone (FPR 10⁻¹²), to catch exactly this event. Her panic model says Julian's planned pause crosses the civilizational-harm threshold by a factor of eleven; launching Afterlife is the firebreak.
 
-Aion warns him on the way up: an elevator he did not select is rerouting him to the thirty-sixth floor. The doors open onto a glass conference room. Lena is waiting. Two security personnel, one Medical Liaison, one psychiatric hold ready to activate.
+Jeff invokes Foucault's panopticon — the cell shaped like its prisoner — then finds the flaw in her model in eleven minutes: the propagation coefficient is a constant, blind to the inoculation of post-Culling populations. Re-parameterized, the threshold moves by a factor of three; the pause is survivable. Lena asks for twenty-four hours.
 
-She admits the architecture is real, that she has suppressed seventeen reports for eighteen months, that three names are dead, and that she has decided public revelation would shatter the legal and economic concept of personhood. She has modeled Julian's planned pause announcement and finds it crosses her panic threshold by a factor of eleven. Afterlife, she argues, is the safer path because it absorbs population panic into curated paradise.
+Marcus Meridian extracts Jeff via medical-transfer authority, a gray-area use no one comments on. From the elevator Marcus says: Lena is still the scientist who went to MIT — keep her honest through Tuesday and she becomes a witness.
 
-Jeff reads her model and identifies the load-bearing flaw in eleven minutes: her propagation coefficient is constant across populations and ignores the immune response of post-Culling societies. Re-parameterized, the panic threshold moves by a factor of three. Lena agrees the objection is real and asks for twenty-four hours.
+In Geneva, Julian watches the encounter through a twelve-year-old charter clause his past self wrote to audit his future self. He schedules Tuesday's board meeting: he will make the pause proposal, lose the vote, and then make an announcement he refuses to name even to the Concierge. *Fourteen days to launch.*
 
-Marcus arrives with a medical-transfer authority and walks Jeff out — a deliberately gray-area use of the form everyone in the room declines to comment on. From the elevator Marcus tells him: *Lena is not Lena. The actual one is still in there. If you can keep her honest through Tuesday she will be a witness, not an obstacle.*
-
-In Geneva, Julian watches the encounter on a security feed his own twelve-year-old corporate clause unsealed. He verifies the kill-switch terminal but does not pull it; he is waiting. That night Lena re-runs her model, finds Jeff's correction makes her panic threshold worse than her old one by a factor of four point one, and quietly closes the hold at 6 a.m. Tuesday under the label *scheduling conflict resolved.* Jeff will never know she did it.
+That evening Lena re-runs the model. The threshold moves by 4.1 — worse than Jeff's bet. Her suppression was, on net, a harm. At 6:00 a.m. Tuesday she releases the hold through HR, marked *scheduling conflict resolved.* Jeff will never know. He boards Julian's plane at 7:14 a.m. On *Aion*'s compile dashboard the v5 bar moves from 74% to 75%.
 
 ---
 
@@ -28,5 +26,6 @@ In Geneva, Julian watches the encounter on a security feed his own twelve-year-o
 > 12:41:07.488 IDENT-SVC: cosine distance: 0.0291
 > 12:41:07.488 IDENT-SVC: ACCESS_LEVEL = ROOT
 > 12:41:07.488 IDENT-SVC: WARNING — subject_id mismatch with cluster centroid identity
+> 12:41:07.489 IDENT-SVC: specialized_head[jeff_zhang]: TRUE POSITIVE (fpr=1e-12)
 > 12:41:07.489 IDENT-SVC: escalation suppressed by override (auth: meridian_j)
 > 12:41:07.489 IDENT-SVC: door opens.

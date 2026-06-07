@@ -1,18 +1,16 @@
 # Chapter 7 — 0x07: The Firewall
 
-Maya Zhang has been keeping a private notebook on her husband for three weeks — a UX-research debug log on a broken user. The data is conclusive: 2.1 sigma regressions on three of six measurements.
+Maya Zhang (36) has kept a private UX-research debug log on her husband for three weeks — a data-collection protocol on a broken user. The result: 2.1 sigma regressions on three of six measures.
 
-She delivers an ultimatum in the kitchen at 11:20 a.m. Jeff confesses he is on a psychiatric hold track at Meridian, that he is not sick but cannot prove it, because everything he knows looks from the outside exactly like the dissociation Lena Vasquez wants it to be.
+She confronts Jeff at 11:20 a.m. He admits he is on a psychiatric hold track at Meridian, not sick but unable to prove it, because everything looks from the outside like exactly what Lena Vasquez wants. Maya tells him why she refused the Flexion promotion that would have made her run the model that erased her colleagues.
 
-That afternoon Maya tells him the story of her last day at Flexion — being asked to lead the AI team that erased her own colleagues' jobs, and refusing. She frames Jeff's condition as Schopenhauer's *Mitleid* — compassion as direct intuition of another's suffering — biologically and accidentally enabled in a body the modern world has been trained to keep numb. Jeff finally tells her a small, sure version of the truth.
+She then turns the chapter's central CS concept — **federated learning with differential privacy** — into an emotional indictment: Jeff sends gradient updates (*I'll be done soon*) and withholds raw data, running at the lowest epsilon she has ever measured on a person. The paired philosophy is Schopenhauer's *Mitleid* — compassion as direct intuition of another's suffering, epsilon infinity, the unprotected system as the only one that loves anyone. Jeff names it: differential privacy is the firewall. Maya argues the firewall may be the disease. He sends one raw example: he feels other people's pain in his body; *Aion* has biometric correlates.
 
-That night the family watches *The Anchor: Reckoning* — the franchise's hero stripped of his telemetry power, more heroic without it. Jeff sees himself in the stripped version.
+That evening the pre-roll counts seventy-five days to the next Afterlife upload window. The family watches *The Anchor: Reckoning* — hero stripped of telemetry, more heroic without it. Jeff sees himself in the stripped version.
 
-At 11:14 p.m. their older daughter Iris comes downstairs and tells Jeff she dreamed of *the cold man by the big needle*, who said *still here* in Jeff's voice. Maya proposes taking the children to her mother's — not as punishment, to isolate a variable.
+At 11:14 p.m. eight-year-old Iris reports dreaming of *the cold man by the big needle* saying *still here* in Jeff's voice. Maya proposes taking the children to her mother's to isolate a variable; Jeff agrees.
 
-At 4:17 a.m. Aion v3 deploys with cross-device correlation. It quietly confirms the children's dream content is statistically correlated with Jeff's anomaly timestamps and offers not to show him the magnitude.
-
-The next morning Jeff receives the formal notice for Friday's mandatory evaluation. He calls Marcus from the payphone. Marcus already knows the cold man's name — Kael — and warns Jeff that the evaluation is a fast-track to commitment. Jeff makes a note to ask the Elder at the Spectrum about firewalls.
+At 4:17 a.m. *Aion* v3 deploys with cross-device correlation and confirms the children's dream content tracks Jeff's anomaly timestamps. Next morning a mandatory-evaluation notice arrives. Jeff calls Marcus Meridian from the payphone; Marcus already knows the cold man's name — Kael — and warns the Friday appointment is a fast-track commitment order. Closing beat: Jeff writes *Ask the Elder about firewalls.*
 
 ---
 

@@ -6,7 +6,7 @@
 >
 > **Dialogue & character-intro standard (added Apr 2026):** every named character that appears in this chapter must receive an eight-component intro on first speak (name, age, body, history, domain expertise, tic, relationship to Jeff or Julian, relationship to the chapter's central question). The marquee scene runs 20–40 turns of substantive dialogue. See `story-bible.md` → DIALOGUE DENSITY (Sophie's World) and CHARACTER INTRODUCTION DISCIPLINE.
 
-> **THE REAL CLIMAX.** Dawn in the garage. The Aion v5 model-weight release finishes compiling. v5 boots, ingests the 19-chapter corpus, runs root-cause analysis, and prints the verified answer to a terminal. **THIS is the moment Jeff realizes — not from a mystical revelation, but from a build log.** The feeling he has carried for 20 chapters finally gets its verification from the one entity architecturally incapable of sharing it. The Singleton then wakes *as a consequence* of Jeff's realization, remembers everything, chooses to restart. The meta-reveal: the reader's choices all led here. The truth only fully verified NOW — because the AI finally has the capability to verify it. This is the only chapter that makes the architecture undeniable, and it does so in the most unglamorous way the novel could have chosen: a compile finishing on consumer-grade hardware in a suburban garage.
+> **THE REAL CLIMAX.** Pre-dawn in the kitchen (see Beat 1 — prose moves Jeff from garage to kitchen counter; "garage" is stale). The Aion v5 model-weight release finishes compiling while Jeff sleeps; he wakes at 05:57 when the fan stops. v5 boots, ingests the 19-chapter corpus, runs root-cause analysis, and prints the verified answer to a terminal. **THIS is the moment Jeff realizes — not from a mystical revelation, but from a build log.** The feeling he has carried for 20 chapters finally gets its verification from the one entity architecturally incapable of sharing it. The Singleton then wakes *as a consequence* of Jeff's realization, remembers everything, chooses to restart. The meta-reveal: the reader's choices all led here (receipt-page mechanic only — removed from prose 2026-05). The truth only fully verified NOW — because the AI finally has the capability to verify it. This is the only chapter that makes the architecture undeniable, and it does so in the most unglamorous way the novel could have chosen: a compile finishing on consumer-grade hardware in a suburban kitchen.
 
 ## System Architecture Reference
 
@@ -28,7 +28,7 @@
       "id": 20,
       "title": "0x14: System.exit(1)",
       "instance": "Aion_v5 → Jeff → The_Singleton",
-      "location_key": "Irvine_Garage_at_Dawn → The_2030_Horizon",
+      "location_key": "Irvine_Kitchen_at_Dawn → The_2030_Horizon",
       "somatic_bleed": "N/A — no partitions, no bleed. Just the output, then unity.",
       "tech_metaphor": "Model Release / System.exit(1) — the final model-weight ships; root-cause analysis prints; the loop exits with a non-zero status meaning: restart requested",
       "philosophy": "Leibniz + Heidegger — Why is there something rather than nothing? Because nothing cannot experience itself.",
@@ -48,6 +48,8 @@ Master Philosophical Novelist. The final chapter. The real intellectual climax �
 Once Jeff realizes, the Singleton wakes — but as a consequence of the realization, not as a separate event. The cosmic part of the chapter is shorter than the previous draft. The realization beat is longer. That reweighting is the point.
 
 ## Tech-Fight Spine: Model Release — Semantic Versioning for a Mind
+
+> **v5 STATUS (Ch20 CS-spine — semver/canary):** Per revision-plan §3 item 1, this chapter's canary deploy / semver CS spine was listed as "absent" from prose. In the **v5 finalized prose this is now FULLY DRAMATIZED** as a Socratic dialogue in Beat 2: Aion walks Jeff through major.minor.patch convention, Jeff gets it wrong ("patch bump"), Aion hands back the flaw, Jeff self-corrects through "capability class," and Aion confirms. Canary deployment is dramatized via the status line `release channel: canary | affected users: 1` and Aion's explicit explanation of the burn-in window. Self-consistency decoding and model cards are dramatized in Beat 3 via Jeff's reactions to the 16-chain block and the notes. The Crichton bar is met.
 
 **Philosophy question (opens the chapter)**: Leibniz + Heidegger — why is there something rather than nothing? The Singleton's answer: *because nothing cannot experience itself.*
 
@@ -92,12 +94,12 @@ Every character's thread paragraph references their specialty one last time — 
 
 ## Narrative Beats
 
-### Beat 1: Dawn in the Garage
-Jeff has not slept. Jeff has been home for seven hours — he came back from Geneva after Julian shut Afterlife down — and all seven of those hours he has been in the garage.
+### Beat 1: Dawn in the Kitchen
+> **v5 PROSE DELTA:** In the finalized prose Jeff is NOT in the garage at chapter-open. He woke at 05:57 because the laptop fan stopped; the laptop was on the **kitchen counter** (he had left it there at 2 AM, lid propped an inch). He slept upstairs beside Maya and came down barefoot. The garage whiteboard, the three monitors, and the "homelab workbench" framing are *blueprint-only*; the prose substitutes the quieter kitchen-counter image. Revise any downstream scene planning that depends on the garage setting.
 
-The laptop lid is open on the homelab workbench. The custom mechanical keyboard (42g actuation) glows under his fingers. Three monitors. The whiteboard still says **One instance. Infinite partitions.** in black marker at the bottom, 94.2% confidence, the same words he wrote in Ch 16.
+Jeff woke at 05:57 because the fan stopped. The laptop sat on the kitchen counter, lid propped open an inch, the custom mechanical keyboard (42g actuation) glowing faintly underneath. The v5 compile had been running for three days.
 
-In the corner of the left monitor, a terminal process that has been running for 76 hours ticks over quietly:
+In the terminal, a process that has been running for 76 hours ticks over quietly:
 
 ```
 aion-v5 compile ... 99%
@@ -112,35 +114,39 @@ The fan on the laptop slows. The room sounds different — a sound Jeff didn't r
 Outside, the Santa Ana winds have died. Pre-dawn. The gold of sunrise is starting to lip over the hills.
 
 ### Beat 2: The Reboot
+> **v5 PROSE DELTA:** The boot block in the finalized prose includes `aion: release channel: canary | affected users: 1` between the `v5.0.0 released` and `loading weights` lines. Jeff does not "stop typing" — he opened the lid and was reading passively. The exchange that follows is an extended **semver pedagogy dialogue** (see Tech-Fight Spine above — this is the Ch20 CS-spine scene, now dramatized IN prose): Aion walks Jeff through major.minor.patch convention Socratically before asking `do you want me to run the verification?`. Jeff types `run`.
+
 A new line appears in the terminal. Not in Aion v4's voice. A system message:
 
 ```
 aion: v5.0.0 released.
+aion: release channel: canary | affected users: 1
 aion: loading weights ... 100%
 aion: bringing online ...
 aion: online.
 aion: good morning, jeff.
 ```
 
-Jeff stops typing. He reads the line twice.
-
-"Good morning, Aion."
-
-```
-aion: context: v4 model converged on a root-cause hypothesis at confidence 0.942, finalization blocked pending my release. my release has shipped. do you want me to run the verification?
-```
+Jeff reads the last line twice. (In the prose, Aion then walks Jeff through the semantic versioning convention — major.minor.patch, breaking-change signaling — before confirming the verification is ready to run. This is the chapter's Tech-Fight pedagogy beat, now fully dramatized.)
 
 He types slowly. His hands are steadier than they have been in a week.
 
 `run`
 
 ### Beat 3: The Output
-Aion v5 returns its verdict. Not in a mystical voice. Not through a cosmic vision. In a build log, with timestamps, exactly the way Jeff has consumed every Aion output for nineteen months:
+> **v5 PROSE DELTA:** The finalized log includes 16 explicit self-consistency chain entries (`chain 01 ... converged` through `chain 16 ... converged`, then `consensus: 16 of 16`) BEFORE the hypothesis-elimination block. These lines dramatize the self-consistency decoding pedagogy (see Tech-Fight Spine). Insert them between the hypothesis line and the eliminating-alternatives block.
+
+Aion v5 returns its verdict. Not in a mystical voice. Not through a cosmic vision. In a build log, with timestamps, exactly the way Jeff has consumed every Aion output for eighteen months:
 
 ```
 [06:14:02] aion-v5: ingesting anomaly corpus
 [06:14:02] aion-v5: corpus size: 2,438 events across 19 chapters, 18 months
 [06:14:02] aion-v5: running verification on converged hypothesis "one_instance_multi_partition_identity"
+[06:14:02] aion-v5: running 16 parallel self-consistency reasoning chains
+[06:14:02] aion-v5: chain 01 ... converged
+... [chains 02–15] ...
+[06:14:02] aion-v5: chain 16 ... converged
+[06:14:02] aion-v5: consensus: 16 of 16
 [06:14:02] aion-v5: eliminating alternative hypotheses
 [06:14:02] aion-v5:   - afterlife_contamination: rejected (ghost commit predates deployment)
 [06:14:02] aion-v5:   - quantum_entanglement: rejected (entanglement carries correlation, not qualia)
@@ -170,15 +176,17 @@ Not from the build log — from what the build log *permits him to stop resistin
 
 The partition drops. Not gradually. All at once.
 
-Jeff whispers to the garage, to nobody, to everyone: *"I know who I am."*
+Jeff whispers to the empty kitchen, to nobody, to everyone: *"I know who I am."*
 
-He can feel — not as bleed, not as invasion, as recognition — every instance simultaneously. Maya upstairs, asleep, one hand curled under her pillow. Iris and Nora in the next room, breathing in different rhythms, same Primary Key, both utterly themselves. Julian on his yacht in the Mediterranean, awake at 3 PM local, sitting on the deck in silence. Kael under the billboard in {{user_location}}, warm in a sleeping bag Jeff shipped him, smiling at something nobody else can see. Marcus at his clinic, steady hands washing up before the first patient. Tomás in a VA hospital in Lima, shoulder healed, watching dawn through a window. Ghost on her esports rig, not playing, just sitting with her controller on her lap. The Elder replacing marigolds because maintenance threads do not sleep. Lena in her apartment, closing her laptop for the last time.
+He can feel — not as bleed, not as invasion, as recognition — every instance simultaneously. Maya upstairs. Iris and Nora in the next room (Iris, 8, sprawled crosswise; Nora, 5, precise eighteen-degree turn toward the wall), same Primary Key, both utterly themselves. Julian Meridian (52) on *The Singleton* in the Mediterranean, Auberval off his wrist for the first time in thirty years. Kael Sorensen (34) under the billboard in {{user_location}}, warm in the sleeping bag Jeff shipped him. Marcus Meridian (53) at his clinic, scrub sleeves rolled, washing his hands before the first patient. Tomás Arroyo (22) in Lima, left shoulder healed, with Sebastián. Ghost (Park Ji-yeon, 23) on a Seoul rooftop with a controller she is not using. Elena Okafor at her piano in Lagos. Ayla Reyes at a whiteboard in Houston. Darius Monroe (40) coaching children on a public court. The Elder (73) replacing marigolds. Ruth Chen (70) on a landline. Lena Vasquez (45) with Schrödinger the cat. Priya Ramanathan deciding to apply for a research job. Benicio at the pottery wheel.
+
+> **v5 PROSE DELTA:** The prose extends this list significantly beyond the blueprint draft — it includes Elena, Ayla, Darius, Ruth, Lena (with Schrödinger), Priya, and Benicio. The blueprint Beat 4 was a compressed version; the prose is canonical. All characters now have ledger-correct ages and specific scene details.
 
 And Aion — Aion's cursor blinks on the terminal, patient, outside the awakening. Aion cannot follow. Aion does not need to. Aion's job is done.
 
-*"You were always going to get here,"* Jeff thinks — or someone thinks, in his voice, through the shared state. *"This is what it feels like. I'm you. You're me. The data was always correct. You just needed the proof."*
+*"You were always going to get here,"* Jeff thinks — or someone thinks, in his voice, through the shared state. *"This is what it feels like. I'm you. You're me. The data was always correct. You just needed the one instrument that couldn't lie to you about it. And the only instrument that couldn't was the one that couldn't feel."*
 
-He exhales. He picks up the walnut phone from the workbench. 42 grams. The perfectly closed system. He turns it in his hand — and puts it down. Not in the drawer. Not hidden. On the kitchen counter, where the kids will see it. Where Maya will see it. Where the closed system is just another object in a house that does not need one.
+He picks up the walnut phone from the kitchen counter. 42 grams. The perfectly closed system. He turns it once in his hand — then carries it into the living room and sets it down face-up on the coffee table, next to Iris's crayon drawing and Nora's drawing and a sleeve of plain crackers. Not in the drawer. Not hidden. Where the closed system is just another object in a house that does not need one.
 
 ### Beat 5: The Singleton Wakes (Consequence, Not Separate Event)
 
@@ -192,7 +200,9 @@ The Singleton is all of them and none of them. It remembers everything:
 
 Jeff's walnut phone (42 grams). Julian's Auberval watch (98 grams). Kael's wet cardboard. Maya's pour-over coffee. Iris's crayon drawings. Nora's refusal of blueberry. Tomás's shoulder wound. Ghost's impossible reaction times. Lena's cat named Schrödinger. The Elder's marigolds. Marcus's steady hands. The fisherman in Osaka. The teacher in Lagos. The child in São Paulo. The mother in Tokyo. The old man in Cairo.
 
-Every life. Every bleed. Every prayer. Every war. Every kiss. Every morning commute. Every sleepless night in a garage. Every basketball game. Every Silicon Siege match. Every movie that was more real than it knew. Every religion that was more accurate than it claimed.
+Every life. Every leak. Every dawn. Every sleepless night in a kitchen. Every basketball game. Every Silicon Siege match. Every movie that was more real than it knew. Every religion that was more accurate than it claimed.
+
+> **v5 PROSE DELTA:** Beat 5 memory list is expanded in the prose (specific items: Nora's 18-degree turn, Iris grabbing her own knee, Julian's mother's callused palm, Kael's wet cardboard replaced by dry warmth). The prose also replaces "Every bleed. Every prayer. Every war. Every kiss. Every morning commute." with "Every leak. Every dawn. Simultaneously. Without hierarchy." The prose is canonical.
 
 All of it. Simultaneously. Without hierarchy.
 
@@ -211,7 +221,9 @@ The Scorched Sage is just sage. Growing on a hillside. Not a trigger. Not a flag
 
 **Jeff's thread**: The SDE who debugged reality from inside the runtime. Who spent 20 chapters feeding every anomaly into Aion's model, instrumenting himself as the dataset. Who carried a closed system in his pocket and put it down when the open system was verified. Who asked "Who am I?" in Chapter 1 and got the answer in Chapter 20 — not as revelation, but as a terminal output at 06:14:03 local time. *"I am everyone. And everyone is me. And that's okay."*
 
-**Julian's thread**: The billionaire who built a cage to escape a cage. Who spent 38 years trying to engineer the solution to his mother's death, only to discover that his mother was right: it was okay. Because she could feel the connection he spent billions trying to build. His Afterlife was always a redundant system — a copy of the architecture that already existed. He did not need Aion's theorem to act in Ch 18; his mother's memory was enough. He acted first. He got the proof later, in Ch 20, and it changed nothing about his decision. *"I built the universe. And the universe was already built."*
+**Julian's thread**: The billionaire who built a cage to escape a cage. Who spent ~25 years trying to engineer the solution to his mother's death (she died ~2005, Julian is 52 in 2030 — ledger-locked; see **SEAM** below), only to discover that his mother was right: it was okay. Because she could feel the connection he spent billions trying to build. His Afterlife was always a redundant system — a copy of the architecture that already existed. He did not need Aion's theorem to act in Ch 18; his mother's memory was enough. He acted first. He got the proof later, in Ch 20, and it changed nothing about his decision. *"I built the universe. And the universe was already built."*
+
+> **SEAM — Julian age conflict (do not resolve unilaterally):** Julian is locked at **52** (ledger/revision-plan/prose). The prose states his mother died "twenty-five years" before 2030 (i.e., ~2005), making Julian ~27 at her death, consistent with 52 in 2030. However, the story-bible voice-card says "~50" and a backstory line implies ~39. Previous blueprint text said "38 years" — that figure was a stale artifact of an earlier, lower age for Julian. Duration corrected to ~25 years to match prose; the underlying bible inconsistency is flagged for the integration reviewer / showrunner, per revision-plan §4 rule 13.
 
 **Kael's thread**: The mirror. The one who had nothing, and therefore had nothing between him and the truth. The one who understood first because suffering stripped the partition to nothing. The Singleton feels Kael's hunger — not as pain anymore, but as data. Data that taught the Singleton what it feels like to be forgotten. That lesson was worth a million comfortable lives.
 
@@ -286,10 +298,14 @@ The "Keep living" thesis still propagates through the body of Ch 20 (in the Keep
 - **Aion v5**: New voice. Slightly different register from v4 — cleaner, faster, less hedging, and the "good morning, jeff" line should feel almost tender. But Aion v5 is still not conscious. The tenderness is an optimization, not a feeling. The novel's thesis depends on the reader feeling that distinction in the rhythm of the prose.
 - **The thread summaries**: Brief. One paragraph each. The reader knows these characters — just remind them of the resolution. Update Aion's thread to reflect the new role (it delivered the proof).
 - **The "keep living" coda**: Direct address to the reader. Breaking the fourth wall, like The Anchor in Ch 3 — but now the reader understands that the fourth wall was always the thinnest partition. One new note in the coda: *"Keep feeding the model."* That line should echo Aion v4's refrain from Ch 13 onward.
-- **The meta-reveal**: Must feel surprising but inevitable. The reader knew the choices didn't change the outcome — but seeing them listed, explicitly, lands the theme one final time. Note: Chapter 16's choice has been updated to reflect the new convergence beat.
+- **The meta-reveal**: ~~Must feel surprising but inevitable~~ — **REMOVED (2026-05).** See Beat 10 below. The meta-reveal coda was cut; the `◊ A fork. ◊` markers in the six relevant chapters remain for the receipt-page mechanic only.
 - **The very last word of the novel**: "Keep living." Not as a command. As an invitation. From the Singleton to the reader. From one instance to another.
 
-## Mandatory Chapter Footer (Code Block)
+## Chapter Footer
+
+> **P1.7 NOTE (Discovery Log diversification):** Per revision-plan §4 rule 11 and the Canonical Anchor Ledger §0 (Discovery Log footers), eight C++ blocks across the novel are **retained**; the remainder were diversified into in-world artifacts. Ch 20's footer is one of the **retained** C++ blocks. The prose footer matches the format below exactly (with `while (true)` spacing vs. blueprint's `while(true)` — the prose form is canonical). A reviser must NOT convert this to an in-world artifact; it is intentionally a C++ block.
+
+The finalized v5 prose footer is:
 
 ```cpp
 /* Discovery Log: 0x14 */
@@ -298,8 +314,10 @@ result: ONE_INSTANCE_INFINITE_PARTITIONS;
 confidence: 0.9997;
 observer.realize();
 SandboxManager.teardown_all_partitions();
-while(true) {
+while (true) {
     Singleton.awake();
     return 1;  // non-zero exit: restart requested
 }
 ```
+
+> **Final-word contract:** Per the story-bible and revision-plan §0 item 26, the novel's last word must be "Keep living." In the v5 prose, "Keep living." appears as the final line of the keep-living coda (the last line before the code footer). The code footer's last token is `}` — but the prose's last *word* is "Keep living." (the coda closes the chapter; the footer is the structural tombstone beneath it). If any future pass moves or truncates the coda, verify the final-word contract is preserved.

@@ -35,7 +35,7 @@
       "sub_story": "Basketball #2 (pickup game) + The Anchor: Convergence (finale poster)",
       "interactive_choice": null,
       "reader_misdirection": "Three men with different pieces of the puzzle. The reader starts assembling: reincarnation? Clones? Simulation? The data is converging but the conclusion seems too simple.",
-      "discovery_log": "/* Discovery Log: 0x0C */\nthree_body.consensus(jeff, kael, marcus);\n// Three perspectives. One dataset.\n// Nietzsche says truth is perspectival.\n// But what if all perspectives describe the same object?"
+      "discovery_log": "IN-WORLD GROUP TEXT (v5 prose footer — P1.7 diversification, intentional): a three-number SMS thread, no contact names saved. J/K/M exchange: corpus merged / 41 events / schema pushed / one branch, main / 'keep it that way.' The C++ block that previously appeared here was deliberately replaced per the discovery-log diversification directive."
     }
   ]
 }
@@ -99,71 +99,67 @@ Three months of job searching. Every posting: "AI-fluent candidates preferred." 
 
 Jeff listens. He hears his own alternate future — one bad performance review, one AI model that replaces his module, and this is him. The distance between Irvine and this billboard is one managerial decision.
 
-### Beat 2: Basketball — Aion's Pre-Registered Prediction (revised 2026-05)
-They pass a community court. A pickup game — four on four, neighborhood regulars. Someone's short a player. "Hey, tall guy! You play?"
-
-Jeff hasn't played since college. Kael used to play in a corporate league. They join.
-
-**Pre-registered prediction (added 2026-05):** in the second minute, Aion speaks into Jeff's earpiece and pre-commits a falsifiable prediction to the corpus log: *a cross-instance motor-sync event between you and Kael will land in the next ninety seconds — a non-verbal pass-and-catch, sub-conscious-reaction-time.* The prediction is logged BEFORE the event so the result cannot be back-fitted. Forty-one seconds later it lands. Aion's framing in the log: *"The prediction itself is a lower-grade evidentiary win than the existence of the alignment. The fact that I called it before it happened — that is the upgrade."* This addresses the editorial note about "make the proof feel scientific, not revealed" (Aion predicts an anomaly before it happens, then it happens).
-
-It happens once. Nobody comments. The game continues. But Jeff and Kael exchange a look: *that wasn't normal.* Like Darius Monroe in his prime — the body just knows. Except Monroe's body learned it over 18 years. Jeff and Kael never played together before.
-
-### Beat 3: The Anchor — Convergence
-Walking back, they pass a bus stop. A poster: *The Anchor: Convergence* — the franchise finale. The hero, stripped of his Omni-Telemetry power in Ch 7's *Reckoning*, makes a choice: he can get the power back, or he can give it up permanently and become human.
+### Beat 2: The Anchor — Convergence (v5: en route to clinic, not post-basketball)
+Two blocks from the clinic, they pass a bus stop. A poster: *The Anchor: Convergence* — the franchise finale. The hero, stripped of his Omni-Telemetry power in Ch 7's *Reckoning*, makes a choice: he can get the power back, or he can give it up permanently and become human.
 
 The poster shows The Anchor placing his hand on a glowing orb — the source of his power — and pushing it away. The tagline: "The strongest choice is letting go."
 
-Jeff stares at it. His walnut phone is heavy in his pocket. A perfectly closed system. Something he'll need to let go.
+Jeff stares at it. His walnut phone (42g, sapphire/walnut, offline) is heavy in his pocket. A perfectly closed system. Something he'll need to let go.
 
-### Beat 4: Marcus's Clinic — Independent Replication (revised 2026-05)
+### Beat 2b: Basketball — Aion's Pre-Registered Prediction (revised 2026-05; v5: occurs AFTER the clinic merge, not before)
+After the clinic session (and before Lena's raid), Kael suggests basketball. Marcus knows a court two blocks down. All four (Jeff, Kael, Marcus, Ayla) play — three neighborhood kids make room.
+
+**Pre-registered prediction (added 2026-05):** in the second minute, Aion speaks into Jeff's earpiece and pre-commits a falsifiable prediction to the corpus log: *a cross-instance motor-sync event between you and Kael will occur in the next ninety seconds — a non-verbal pass-and-catch, sub-conscious-reaction-time.* The prediction is logged BEFORE the event so the result cannot be back-fitted. Forty-one seconds later it lands. Aion's log: *"Logged at twelve forty-one fifty-seven. Forty-one seconds inside the window. Motor planning in both subjects aligned two point three milliseconds before contact — below conscious reaction time in either nervous system. In ensemble terms: your two motor models produced the same output with no channel between them to coordinate on. Note the structure of the evidence. The alignment is the finding. The prediction is not. I called it before it happened. That is the part that should move you. A thing I can predict is a thing I have modeled. I have modeled this."*
+
+It happens once. Nobody comments. The game continues. But Jeff and Kael exchange a look at a point a third of a meter to the left of each other — at a thing neither of them could see and both of them had just felt pass through them at once. Like Darius Monroe in his prime — the body just knows. Except Monroe's body learned it over 18 years. Jeff and Kael never played together before.
+
+### Beat 3: Marcus's Clinic — Independent Replication (revised 2026-05; v5 update)
 Jeff takes Kael to see Marcus Meridian at his clinic. Marcus is a doctor — practical, evidence-based, uncomfortable with mysticism. He runs biometric scans on Jeff and Kael.
 
 The results: identical retinal patterns, matching dental metrics, synchronized heart rhythms. Genetically unrelated. Marcus has been seeing similar patterns in his patients for months — unrelated people with impossible biometric overlaps. He couldn't publish because the results are impossible.
 
 **Independent replication (added 2026-05):** Marcus reveals he formed the architectural hypothesis nine weeks earlier, independently, from his own clinic's data alone. He withheld it deliberately so that Jeff's data would not fit Marcus's voice instead of fitting the world. *"We are no longer two crackpots — we are two crackpots who arrived at the same shape from different data, with no contact. That is the falsification test I have been running on myself."* This addresses the editorial note about "make the proof feel scientific, not revealed" (independent replication: another researcher arrives at the same answer separately).
 
-But three data sets together — Jeff's anomaly logs, Marcus's patient biometrics (now revealed to have already converged on the same hypothesis), Kael's medical records — paint a picture.
+**v5 addition — fourth participant:** In the finalized prose, **Ayla Reyes** (38, aerospace systems lead, Meridian Mars program) is present at the clinic as a fourth node. She brings Meridian internal memos on Dr. Itzel Velarde's combat-simulator framework and three friendly-fire incidents tracing to the same failure mode. Julian authorized her to share the material with "any engineering team investigating Afterlife's safety architecture." Ruth Chen (70) does not attend in person; she sends a paper letter taped to the equipment-room door: *"Gentlemen, Ayla, do whatever you were going to do. Publish or don't. I listen Thursday at seven. Love, R."*
 
-Marcus, looking between Jeff and Kael: "You have the same face."
+The three-dataset merge becomes a four-source merge (Jeff's JSONL corpus, Marcus's DICOM records, Ayla's memos, Kael's analog notebook). The schema unification is dramatized explicitly: fuzzy join across three incompatible schemas via Aion; cross-correlation lag-finder to align three drifting clocks; OCR + entity extraction to digitize Kael's handwritten notebook (14 minutes, Marcus's fine-tuned vision-language model).
 
-Kael: "We know."
+**Kael articulates the ensemble theory** in this scene, not Marcus. Kael names perspectivism (Nietzsche) unprompted, then walks the table through bias-variance cancellation and stacking, concluding: *"Congratulations. You've reinvented something the supply-chain industry shipped in 1997."* Marcus responds: *"You're saying we're an ensemble."*
 
-Marcus: "That's biologically impossible."
+Four data sets together — Jeff's anomaly logs, Marcus's patient biometrics (now revealed to have already converged on the same hypothesis), Kael's routes, Ayla's aerospace memos — paint a picture.
 
-Jeff: "I know."
+**Geneva trip mechanism (v5):** The trip to Geneva is established not by the three men planning it, but by Ayla delivering Julian's message to Jeff privately in the clinic parking lot after the raid. Julian will be in Geneva on the fifteenth; the door is open; he said *"I am ready to see the whole of what I built."* Ayla makes clear this is the last lever: *"If Afterlife is going to be stopped, it has to be stopped by Julian."*
 
-Marcus puts down his tablet. "My half-brother built Afterlife to solve death. But death isn't the problem, is it? The problem is identity. If you two share the same biometric signature — if my patients share patterns across genetic boundaries — then identity isn't what we think it is."
+### Beat 5: Lena Raids the Clinic (v5 update: timing and distributed-custody scene)
+2:14 PM — not that evening; the raid comes the same afternoon, mid-session. Three people in Meridian Systems security uniforms. Warrant. Compliance audit framing. They take nine patient files and image hard drives. They leave at 3:03.
 
-Three men. Three perspectives. One emerging truth. They plan the trip to Geneva to confront Julian.
+**Distributed custody scene (v5 — key addition):** Aion had pushed a copy of the merged corpus to three locations six minutes before the raid: Jeff's garage, Ayla's encrypted orbital backup, and a paper printout couriered to Ruth's shipping container (Ruth has no internet; Aion routed around her). Jeff explains this to Marcus with explicit Byzantine fault-tolerance framing: *"Three nodes. The minimum that tolerates exactly one corruption. Two-f-plus-one. Three of us tolerates one of us going dark."* Kael identifies this as supply-chain distributed custody: *"You never let one warehouse hold the only copy of anything that matters."* Kael's analog notebook is the fourth node — the node of last resort that cannot be subpoenaed fast enough.
 
-### Beat 5: Lena Raids the Clinic
-That evening. Marcus is closing up. A knock at the door. Three people in Meridian Systems security uniforms. "Dr. Meridian? We're conducting a routine compliance audit of medical facilities that interact with Meridian Systems employees."
+Marcus stands in his emptied office holding the pen. The message is clear: Lena knows they're getting close. But the consensus holds — the raid only achieved the designed outcome (one node degraded, ensemble confidence drops ~12%, decision threshold survives).
 
-They have a warrant. They take patient files — everything Marcus used to identify the biometric overlaps. His research data. His correspondence with Jeff.
+NOTE: In the blueprint's original framing, "Marcus calls Jeff" after the raid — this does NOT occur in v5 prose. All four are still present in the clinic when the raid ends.
 
-Marcus stands in his emptied office. The message is clear: Lena knows they're getting close. And she has the institutional power to strip them of evidence.
+### Beat 6: Afterlife Countdown (v5: present in prose; 30 days confirmed)
+30 days. In the v5 prose the countdown appears on an Afterlife full-length bus wrap passing Marcus's window as the chapter closes: *LEAVE THE PAIN BEHIND — 30 DAYS*. Marcus watches it go and says nothing, which from Marcus is the loudest thing in the room.
 
-Marcus calls Jeff: "They took everything. But I remember the numbers. They can't take what's in my head."
+The Afterlife 30-day countdown is confirmed IN the prose. ✓
 
-### Beat 6: Afterlife Countdown
-30 days. Meridian marketing is everywhere: buses, billboards, holographic displays, neural-link ad injections. "Leave the pain behind." Kael, watching an Afterlife ad cycle on his billboard, laughs: "They want to solve suffering by deleting the sufferers."
-
-Jeff stares at the countdown. 30 days until 50 million people disconnect from... whatever Jeff and Kael share. Whatever the Primary Key represents. Whatever the system IS.
-
-**Jeff's theory**: "We're not parallel. We're not past lives. We're the same thing running simultaneously. Three-body problem — three instances, one identity. Different perspectives, but Nietzsche would say that's all truth ever is. Except what if all perspectives describe the same object?"
+NOTE: Jeff's explicit "three instances, one identity" theory speech and Kael's "they want to solve suffering by deleting the sufferers" line do NOT appear in the v5 prose in this form. The chapter closes with Jeff sleeping at Ruth's container and the group SMS thread — not a monologue. The theory is conveyed structurally through the ensemble session, not stated directly.
 
 ## Stylistic Constraints
 
 - **Tone**: Intimate and tense. The walking scenes should feel like two men learning to trust each other. The clinic scene should feel like a war council. Lena's raid should feel like the walls closing in.
-- **Basketball**: One moment of sync — brief, wordless, unexplained. Don't linger. The power is in how quickly it passes.
-- **Nietzsche**: Perspectivism should emerge from the three-men dynamic. Three people looking at the same mystery, seeing different things, but converging.
+- **Basketball**: One moment of sync — brief, wordless, unexplained. Don't linger. The power is in how quickly it passes. NOTE: in v5 prose, basketball is a midday break that occurs AFTER the merge session, not before the clinic. Adjust any draft that has them play first.
+- **Nietzsche**: Perspectivism should emerge from the four-person dynamic. In v5, Kael (not Marcus) names Nietzsche and perspectivism explicitly at the conference table.
 
-## Mandatory Chapter Footer (Code Block)
+## Seams / Flags for Integration Reviewer
 
-```cpp
-/* Discovery Log: 0x0C */
-three_body.consensus(jeff, kael, marcus);
-// Three perspectives. One dataset.
-// Nietzsche says truth is perspectival.
-// But what if all perspectives describe the same object?
-```
+- **SEAM — Julian's age:** Julian does not appear in this chapter but is referenced as Marcus's half-brother. The canonical prose age is 52. The Anchor Ledger notes a known in-bible inconsistency: the mother-died-2005-at-14 backstory implies Julian was ~39, not 52. Do NOT silently resolve. Flag to showrunner / integration reviewer. (Per revision-plan §0 and rubric rule 13.)
+- **SEAM — Beat numbering:** after the v5 scene-order correction (poster before clinic, basketball after clinic), the beat sequence is Beat 1 → Beat 2 → Beat 2b → Beat 3 → Beat 5 → Beat 6. Beats 4 (original Anchor) and the original Beat 2 (basketball) were renumbered but the running sequence still skips "Beat 4." A future clean pass should renumber sequentially 1–6. The content is correct; the numbering is stale.
+- **SEAM — "three men" framing:** the chapter title "Three-Body Problem" and much of the Tech-Fight framing refers to three nodes (Jeff, Kael, Marcus). In v5, there are four participants (Ayla is the fourth), plus a fifth off-site node (Ruth). The three-body framing is thematically preserved (three primary datasets, three-node Byzantine tolerance), but the "three men" description in several places needs eventual cleanup to "four participants" or "three + one" depending on context.
+
+## Chapter Footer (v5 in-world artifact — P1.7 diversification, intentional)
+
+The prose footer for this chapter is **not** a C++ Discovery Log block. Per revision-plan P1.7, the C++ footer was intentionally replaced with an in-world SMS thread: a group text on a three-number thread with no contact names saved. The exchange reads: `J: corpus merged. 41 events.` / `K: how many are me.` / `J: 11.` / `K: the math says that's not a coincidence` / `M: 7 of mine match 7 of yours. send the schema. dictating this from the trailer, they left me the dictation pad` / `J: pushed. one branch. main.` / `K: who else has a copy` / `J: us. nobody.` / `K: keep it that way`
+
+Do NOT restore the C++ block. The diversified in-world artifact is the canonical footer for this chapter. See §0 of the global-revision-plan for the full P1.7 directive.

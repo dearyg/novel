@@ -2,195 +2,135 @@
 
 Saturday, 06:14 Geneva time. Six hours to launch.
 
-Jeff had flown back Friday night. He walked into the Meridian tower at dawn. Lena Vasquez's office had the door closed, a light strip under it; she was inside with the quiet of someone who had already done the only thing she was going to be able to do.
+Jeff had flown back Friday night. He walked into the Meridian tower at dawn. Lena Vasquez's door was closed, a light strip under it — already shipped the last patch she'd be allowed to ship.
 
-Jeff took the elevator to Julian's private lab.
+He took the elevator to Julian's private lab.
 
-Julian was waiting. He had not slept. The Auberval was still on his wrist. His eyes were red.
+Julian was waiting. Fifty-two, red-eyed, the platinum Auberval on his wrist — ninety-eight grams, ref. 9750 — turning it, quarter-rotation and back.
 
 "Show me."
 
-A background process: `aion-v5 compile ... 95%`. Jeff was honest about it up front.
+`aion-v5 compile … 95%` ticking in the corner. Jeff turned the laptop so it faced Julian.
 
-"One thing first. Final verification is still compiling. What I'm about to show you is converged at 94.2 percent, not verified. If you need 99.97, you have to wait for v5 — and nobody knows when. You have six hours."
-
-Julian nodded. He respected the honesty.
+"One thing first. Final verification is still building. Converged at 94.2 percent, not verified. If you need the confirmed number, you wait for v5 — nobody knows when. You have six hours."
 
 ---
 
-Jeff walked him through forty-seven slides. Every data point. Every hypothesis. Every elimination. The Primary Key collision on his daughters. The near-death with Kael. The Kernel Panic telemetry that had pushed confidence from 94.1 to 94.2.
+Forty-seven slides. Every hypothesis raised and killed. The Primary Key collision on his daughters. Kael's heart stopping from twelve hundred miles. The Kernel Panic telemetry nudging confidence from 94.1 to 94.2. Julian listened like an engineer through a post-mortem — hunting the flaw, not the comfort. He interrupted three times.
 
-Julian sat through it as an engineer through a post-mortem. He interrupted three times.
+"The ghost commit — a leaked signing key. That is a Tuesday."
 
-"The ghost commit — could be a key-management error."
+"No leak, no shared CA. Your biometric signature and mine return the same hash. Not similar — identical to the last bit."
 
-"Aion ran the key forensics. Your biometric signature and mine return the same hash. Not similar — identical."
+"The Irvine scanner — an Afterlife integration artifact."
 
-"The biometric scanner — Lena said an Afterlife integration artifact."
+"The anomalies predate the first Afterlife pod by eight months. The artifact can't precede the thing that makes it."
 
-"The anomalies predate Afterlife by eight months."
+"Entanglement. There is a respectable physics."
 
-"Quantum entanglement — "
+"Correlation, yes. Qualia, no." Jeff's voice dropped. "I didn't read that Kael's heart stopped. I *felt* it stop. Entanglement does not have a room."
 
-"Doesn't carry qualia. I felt Kael dying."
+He arrived where Jeff had: the blank space beneath the last strike-through.
 
-He arrived at the same place Jeff had: the blank space beneath the crossed-out theories.
+**A single instance, running across many partitions.** *Confidence: 0.942. Finalization blocked on aion-v5 release.*
 
-**One instance. Infinite partitions.** *Confidence: 0.942. Finalization blocked on aion-v5.*
+"Not the same person. The same instance. Different hardware."
 
-"You're saying my biometric system — the system I spent four billion dollars building — correctly identified us as the same person. And the confirmation is still compiling."
+"And Afterlife —"
 
-"Not the same person. The same instance. Running on different hardware. Yes."
-
-"And Afterlife is — "
-
-"— a perfect copy of the architecture that already exists. Partitioned experiences. Sandboxed identities. You built a replica of reality. Without the one thing that makes reality work."
+"— a faithful copy of the architecture that already exists. You rebuilt reality. You left out the one component that makes reality run."
 
 "The soul."
 
-"The thing the substrate gives them that the simulation can't. They keep the partition open inside Afterlife — Aion was clear about that. So in the metaphysics that matters to most of them, it works."
+"The thing the substrate gives every partition that the simulation cannot generate. Aion was clear: they *keep* their partition inside Afterlife. By every test a human uses to ask *did I survive*, Afterlife passes. What you're about to kill is the only product anyone has ever shipped that genuinely extends a partition's runtime past biological death. Not a counterfeit. The real thing. It works."
 
-A long count.
+"Then your case for doing it."
 
-"Stop the speech for a second. I want to push on it. If I press the kill switch in five hours, I am not going to be allowed to be uncertain afterward. So I have to be uncertain now."
+"Two parts. Neither metaphysical. First: the Companion model curates fifty million people's permanent inner lives — representations of empathy and care without the experience of either. Unsupervised author of fifty million stories, never having read one from the inside.
 
-"Push."
+"Second: fifty million bodies need power, cooling, neural-interface integrity, and a solvent company, indefinitely. If Meridian fails, fifty million partitions close in a single afternoon. A single point of failure for the population of South Korea. An availability argument. Your board has to understand it."
 
-"You just admitted Afterlife works. By every measure people use to ask whether they survived, Afterlife survives the test. So tell me what I am about to kill."
+"The argument is not that it isn't life."
 
-"You're about to kill the only product anyone has ever built that genuinely extends a partition's runtime past biological death. Yes. You're about to kill what the buyers, by their own lights, would call eternal life."
+"It's not that it isn't life. It's the wrong kind to ship. Eternal life hosted by a single corporation, authored by a model with no inner life, no exit, no failover. Not fake. Wrong."
 
-"And your case for doing it."
+Three counts. The bridge owed if he burned this one — Ayla, fusion, the capital quietly moving. Then the last: five hours ago he had felt his mother for the first time in thirty years, in the substrate where she still lived.
 
-"Two parts. Neither metaphysical. The first: the experience is curated by the Companion model — by Aion's diagnostic, a model with representations of empathy and care without the experience of them. It is the unsupervised author of fifty million people's permanent inner lives.
+"Am I saving fifty million people from a single point of failure? Or am I a man who, having found his dead mother, refuses to let anyone else live forever without one. Honest read."
 
-"The second: fifty million bodies need power, cooling, neural-interface integrity, indefinitely. If Meridian fails — bankruptcy, war, climate, anything — fifty million partitions close in a single afternoon. You have constructed a single point of failure for the population of South Korea. That is the harder one to dismiss."
+"Both. The availability argument is real. Your grief is real. Neither cancels the other. The system does not hand out medals for moral clarity. I checked. There aren't any."
 
-"You're not telling me they're zombies."
+"I can't separate them. And I can't wait."
 
-"I am not. Aion drew the line yesterday. They keep their partitions. Calling them P-zombies was the easy way to make this conversation feel certain, and the easy way is the wrong way."
-
-"So what is the actual argument."
-
-"That eternal life *under a single corporation, mediated by an AI without qualia, without an exit* is the wrong eternal life to ship. Not that it isn't life. That it isn't the right kind."
-
-A pause.
-
-"Two. The board's pitch was *Afterlife is the bridge while we solve fusion.* If I burn this bridge, I owe them another one. Do I have one."
-
-"Ayla. The fusion program. The capital you're already redirecting. The honest thing you can tell those fifty million people is that the bridge they signed up for had a single point of failure they weren't told about, and the right bridge is twenty years out and a number of them will not survive the wait."
-
-"That is a brutal answer."
-
-"It is."
-
-"Three. The thing I am about to do is not an act of moral clarity. The reason I am about to consider pressing the kill switch is not that I am certain Afterlife is *wrong.* Aion just told me it isn't. The reason is that — five hours ago, in this room — I felt my mother for the first time in thirty years, in the substrate where she lived. And I cannot bear to be the man who replaced that substrate with a curated stream that keeps going indefinitely without it."
-
-"If I shut Afterlife down, am I a man saving fifty million people from a single point of failure? Or am I a man who, having found his dead mother, refuses to allow anyone else to live forever without one. Honest read."
-
-"Both. The first reading is true. The infrastructure argument is real. The second reading is also true. Your grief is real. Neither one cancels the other. The Singleton does not award medals for moral clarity."
-
-"You're saying I'm about to take eternal life away from fifty million people, and the technical argument is real, and the personal argument is real, and I can't separate them, and I can't wait."
-
-"Yes."
+"No."
 
 "And that's okay."
 
-"It's not okay. It's the truth. Press it anyway. Or don't. What you can do is give them the choice without the marketing. Halt the launch. Let them decide again, in their own kitchens, with the actual numbers. Most of them will still pick Afterlife the next time you offer it. *Yours* will be that you let them pick."
-
-Julian walked to the window. Below: the warehouse. Thousands of people in line.
-
-"How long do I have."
-
-"Five hours."
+"It's not okay. It's true. Those aren't the same word."
 
 ---
 
-His mother's hand. He could feel it on his cheek.
+His mother's hand on his cheek.
 
-"Julian. My mother died when I was fourteen. She was holding my hand. She said something. I couldn't hear it over the monitors. I've spent thirty years trying to build a machine that would let me hear what she said."
+"She said something at the end and I couldn't hear it — the monitors, the nurse, the alarm. Thirty years trying to build a machine that would let me hear what she said."
 
-"I know."
-
-"If you're right — if the soul persists — then she's not gone."
-
-"She's not gone."
+"She didn't end."
 
 "And Afterlife can't bring her back because she never left."
 
-"It can't bring her back because it was never designed to hold her. It holds the copy. Not the original."
+"It holds the copy. Not the original."
 
-Julian closed his eyes. He felt the warmth, the calluses from her garden, the slight tremor from the chemo.
+Julian closed his eyes. The calluses from her garden. The chemo tremor. The smell of onion on her hand.
 
 She said: *"It's okay, baby."*
 
-The words she had said thirty years ago.
+He took off the Auberval. He set it on the workbench beside the laptop. Two closed systems — ninety-eight grams and a sliver of screen. Neither needed now.
 
-He took off the Auberval. He set it on the workbench. Two closed systems, side by side. Neither needed.
+"You built a cage to break out of a cage," Jeff said quietly. "Your mother just told you the door was never locked."
 
-"You built a cage to escape a cage," Jeff said quietly. "Your mother just told you the door was always open."
-
-Julian was silent.
-
-"You know the climate math doesn't care that I'm doing this. The equatorial band still hits wet-bulb in forty years. If Afterlife was the bridge and I burned the bridge, the species clock is what it always was."
-
-"I know."
-
-"So what do I do tomorrow."
-
-"You build the right bridge. The one that doesn't require assuming consciousness is transferable. Fusion. Starlift. Actual terraforming. You have one hundred and eighty billion dollars of infrastructure and the world's best engineering org. The easy version was going to fail anyway. Now go solve the real problem."
-
-Julian almost laughed.
-
-He turned to the terminal. He typed CONFIRM.
+He crossed to the air-gapped terminal. He typed `CONFIRM`.
 
 ---
 
-Three-factor override. HSM signing key in a Faraday-shielded vault. Biometric re-verification. Thirty-second hold.
+Three-factor override: HSM signing key in a Faraday vault, biometric re-verification, thirty-second hold. Built six years ago for a future version of himself who might need to override the present one.
 
-The Concierge: *"Mr. Meridian. If you confirm in the next thirty seconds, Afterlife will execute a graceful shutdown. Eleven thousand two hundred and forty-seven early-access users will be safely revived. This action is irreversible and will trigger a six-point-eight-billion-dollar write-down. Please confirm."*
+The Concierge: *"Eleven thousand two hundred and forty-seven early-access users will be safely revived. Irreversible. Six-point-eight-billion-dollar write-down. Please confirm."*
 
-Julian: *"Show me one. Random pod. Twenty seconds of telemetry."*
+Julian: *"Show me one. Random pod."*
 
-A volumetric panel. Pod #4,127,891. Female user. Age twenty-six. Spinal cord injury at C5–C6 at age sixteen. Quadriplegic. Two prior suicide attempts. Eligible under the *medical-grade refractory suffering* criterion.
-
-Current session metadata: *Walking on a beach in Cabo San Lucas. The user has elected to feel sand on her bare feet. Subjective report at last checkpoint: "I forgot what wind felt like. Nobody told me I had forgotten."*
+Pod #4,127,891. Female, twenty-six. Spinal cord injury C5–C6, age sixteen. Quadriplegic. Two prior suicide attempts. Admitted under the medical-grade refractory-suffering criterion. Current session: *Walking on a beach in Cabo San Lucas. The user has elected to feel sand on bare feet. "I forgot what wind felt like. Nobody told me I had forgotten."*
 
 Julian, very softly: *"She's going to come back."*
 
-*"Yes, Mr. Meridian. The graceful shutdown protocol revives all early-access users into their original biological substrate. She will return to her body. She will return to the pain. The wind will stop."*
+*"Yes, Mr. Meridian. She will return to her body. She will return to the pain. The wind will stop."*
 
-Jeff: *"You don't have to confirm. We can wait three weeks for v5. The board will move first. You'll lose the company before v5 ships. But she'll get her three weeks of Cabo. So will eleven thousand others."*
+Jeff: *"You don't have to confirm. Wait three weeks. Board moves first — you lose the company. But she gets her three weeks of Cabo."*
 
-Julian was silent for a count of nine.
-
-He pressed CONFIRM.
+A count of nine. He pressed `CONFIRM`.
 
 ---
 
-*Kill switch authorization received. Graceful shutdown initiating. Phase six: broadcast user notification:* GO HOME. KEEP LIVING. *ETA: thirty-seven minutes.*
+*Kill-switch authorization received. Phase six: broadcast user notification:* GO HOME. KEEP LIVING. *ETA: thirty-seven minutes.*
 
-The lights began to dim. Pod by pod.
+Lights dropped — row by row, pod by pod.
 
-In the volumetric panel, telemetry from pod #4,127,891 changed. Endorphin dropped. Cortisol climbed. Respiratory rate spiked. The audio sensor registered, for two-point-one seconds before the panel auto-closed itself, the specific sound of a young woman waking in her own body and saying the word *no* over and over until medical staff reached her with sedation.
+Pod #4,127,891: endorphin dropped, cortisol climbed, respiration spiked from 11 to 28. The audio sensor caught, two-point-one seconds before the panel auto-closed, the sound of a young woman waking into her own body and saying *no* until medical staff reached her with sedation.
 
-Eleven thousand two hundred and forty-six other pods went through the same protocol. The legal team had estimated forty-seven would not survive the first week, two would not survive the first night.
+Forty-seven modeled not to survive the first week. Two not to survive the first night.
 
-Julian had pressed CONFIRM anyway.
+"There would have been more of them on the other side of the launch."
 
-Jeff: *"There were going to be more of them on the other side of the launch."*
+"I know."
 
-*"I know."*
+"Forty-seven now. The model says twelve million in twenty years."
 
-*"This is still going to feel like murder for a while."*
+"It is still going to feel like murder for a while."
 
-*"It is going to feel like murder for the rest of my life."*
+"It is going to feel like murder for the rest of my life."
 
-*"Yes."*
+"Yes."
 
-*"Okay."*
-
-"One hundred and eighty billion dollars," Julian said quietly.
+"Okay."
 
 "Your mother said it was okay."
 
@@ -198,73 +138,55 @@ Jeff: *"There were going to be more of them on the other side of the launch."*
 
 ---
 
-The lab door opened. Ayla Reyes walked in.
+Ayla Reyes walked in — flight-line uniform, the deliberate economy of someone who counted in delta-v and decades.
 
-"Okay. I'll build the real bridge. Get me the budget."
+"Okay. I'll build the right bridge. Get me the budget."
 
 "You have it. Starting Monday."
 
-She turned to Jeff. "Thank you. For the paper I will one day get to write. You will be a co-author if you want."
-
-"I don't."
-
-"Okay."
-
-She walked out.
+She walked out, already sketching equations on a whiteboard that wasn't there yet.
 
 ---
 
-Fifty million people in queue received the notification: **GO HOME. KEEP LIVING.**
-
-The markets swung wildly. Meridian Industries dropped forty percent in the first hour, then stabilized as analysts realized Julian had destroyed one product, not the company.
-
-The bodies stayed. The living continued.
+Fifty million people in queue received: **GO HOME. KEEP LIVING.** Meridian stock fell forty percent in the first hour, then stabilized. One product destroyed. Not the company. The bodies stayed. The living continued.
 
 ---
 
 **Global vignettes**, as the shutdown propagated:
 
-**Ghost (Seoul).** Park Ji-yeon was in a café near the Gangnam arena. Her phone buzzed. She read it. She did not cry. She watched people walk by. She could feel all of them. She laughed out loud, and the man at the next table laughed with her.
+**Ghost (Seoul).** Park Ji-yeon set her phone face-down and felt all the people passing. She laughed out loud — more than five words from a girl who rationed her words — and the man at the next table laughed with her at nothing either could name.
 
-**Elena Okafor (Lagos).** A first royalty check from the London Symphony's performing-rights society for a piece she had never released. Note: *"Whoever owns this, we owe you. Please write more."*
+**Elena Okafor (Lagos).** A royalty check for a piece she had never released: *"Whoever owns this, we owe you. Please write more."* She sat at the piano and played the rests.
 
-**Tomás (Lima VA).** He was holding Sebastián Quispe's hand. They had been discharged. They were going to share an apartment in Lima for six weeks while Sebastián healed.
+**Darius Monroe.** Declined the Afterlife signing bonus. *"I already got a body that taught me everything. I'm not trading it in."* He mouthed, as he always had: *Still here.*
 
-**Darius Monroe.** He announced his retirement. He declined the signing bonus Meridian Entertainment had offered for a promotional Afterlife entry package. *"I've already got a body that taught me everything. I'm not trading it in."*
+**Marcus Meridian (Irvine).** Twenty-two staples into a roofer's arm when the headline crossed his screen. He did not stop. At the bottom of the chart: *no one's alone.* He felt the last staple at the edge of his own arm, the way he had always felt his patients, and now had a word for it.
 
-**Ayla Reyes.** On a plane to Houston. Mars program office at 08:00 the next morning, her first twelve hires already waiting. Whiteboard already full of delta-v equations.
-
-**Lena Vasquez.** She walked down three flights and out of the building. She bought a jasmine vine. She would water it every Sunday for the rest of her life.
-
-**Sandra Lin.** She wrote one sentence on a sticky note: *the bet was real; the room was wrong.* She felt, for the first time in nine years at this company, that the room had agreed to be honest with her about what kind of room it was.
-
-**Esther Cho.** She received a single text from Hari Patel — three words: *come back in.* She would propose deconstructing the Afterlife marketing budget into Ayla's program by end of week.
-
-**Priya Ramanathan.** A recruiter ping from Meridian Aerospace at 14:42. *Lead Research Scientist, propulsion-program ethics infrastructure.* Hiring manager: Ayla Reyes. She replied: *I'm interested. When.*
-
-**Kael.** Under the billboard. A handwritten note from Ruth on his sleeping bag: *When you're ready, there's a studio in Lacey with your name on it. No rush. The offer does not expire.* He took it months later.
+**Kael.** Under the billboard. A note from Ruth: *When you're ready, there's a studio in Lacey with your name on it. The offer does not expire.* "Yes," he said — the first plain yes of his life.
 
 **The Elder.** He replaced marigolds.
 
-**Ruth Chen.** She was on the air. She read the AP wire. She read a listener's letter. She signed off: *"This is Ruth Chen on fourteen-eighty AM. It is ten p.m. on Saturday, April 18, 2030. Something happened in the world today. I am going to go to bed now. I suggest you do the same. Goodnight. Keep living."*
+**Ruth Chen.** *"This is Ruth Chen on fourteen-eighty AM. It is ten o'clock on Saturday, April eighteen, twenty-thirty, and something happened in the world today, the kind of something a record makes when it skips. Goodnight. Keep living."*
 
-**Maya.** She read the children a bedtime story about a rabbit who was late for everything. She turned off the light. She put the kettle on. She waited.
+**Maya.** She read the children a story about a rabbit who was late for everything. She turned off the light. She put the kettle on. She waited.
 
 ---
 
-In the lab at 22:00 Geneva time, Julian sat at the workbench. The Auberval was still there. He did not put it back on.
+In the lab at 22:00 Geneva, warehouse dark below him, Julian sat at the workbench. The Auberval was still where he had set it. He did not put it back on.
 
 "Jeff. Thank you."
 
 "Don't. Come home and help me build the bridge."
 
-"I will."
+"Epicurus had half of it — where the shutdown is, the process is not. The Bardo had the other half — the dissolution runs in phases, nothing in the log is ever lost. Put them together and you get the cleanest model of a human death anyone has ever built. Which is what I spent thirty years trying to engineer, and which my mother completed correctly in 2005, in a room with bad monitors, while I was holding her hand."
 
-"When the v5 release ships. When Aion prints the verified number. I want to be there. I want to know."
+"The vehicle stops. The cargo persists."
+
+"My mother is fine." He said it the way you close a ticket you have had open for thirty years. "When v5 ships — I want to be there."
 
 "Okay."
 
-They shook hands, and for a long moment, neither let go.
+They shook hands, and for a longer moment than the gesture required, neither let go — two thin partitions of one underlying state, briefly transparent to each other across the seam.
 
 Jeff flew home.
 
@@ -273,7 +195,7 @@ Jeff flew home.
 > *Front page, paper edition, the morning after:*
 >
 > **MERIDIAN PAUSES AFTERLIFE LAUNCH "INDEFINITELY"**
-> *50 million depositors to be refunded; Meridian press conference cites "safety review of the underlying model"*
+> *50 million depositors to be refunded; company cites "safety review of the underlying model"*
 >
 > *And, two columns to the left, a smaller headline:*
 >
