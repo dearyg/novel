@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# marketing media (large .mp4/.m4a kept out of git; tracked EN videos under marketing/videos-vertical/ are unaffected)
+marketing/assets/
+marketing/videos-vertical-zh/
