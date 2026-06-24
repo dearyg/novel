@@ -204,7 +204,7 @@ Jeff stopped smoothing the wooden phone.
 
 *You are thirty-eight.*
 
-"So thirty years is wrong and fifty-two is wrong." He turned the wooden case over once, slow. "But I didn't author either number. They came in pre-converged. Like a config I didn't write got merged into my branch." He made himself say the true number out loud first, the way you assert a value before you trust it. "I'm thirty-eight. Why did fifty-two feel like a *correction*."
+"So thirty years is wrong and fifty-two is wrong." He turned the wooden case over once, slow. "But I didn't author either number. They came in pre-converged. Like a config I didn't write got merged into my branch." He held on the word, made himself say the held one first. "I'm thirty-eight. Why did fifty-two feel like a *correction*."
 
 *Unclear.*
 
