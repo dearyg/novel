@@ -8,11 +8,11 @@ He rolled the ball three times clockwise in his right hand. Three times clockwis
 
 Drums in his ear. Coach-7's warm-up mix. At some point it had stopped being music he chose and become an AI-curated optimum — seven tracks proven across fifteen years of his own physiology to pull his cortisol into a target band. He did not know the tracks anymore, meaning he knew them too well to hear them. They came out of his ears and he walked.
 
-*"Monroe,"* Coach-7 said, the voice warm, neutral, neither a coach nor a man. *"Lateral movement speed is down eight percent from last month."*
+*"Monroe,"* Coach-7 said, the voice warm, neutral, neither a coach nor a man. *"Lateral movement speed is down eight percent from last month. Here's the part the model won't volunteer: that's not noise. That's the number you've been watching change direction for two seasons."*
 
 "Mm."
 
-*"The model recommends reducing isolation plays, increasing off-ball screening. Projected efficiency gain of fourteen percent on your usage rate."*
+*"Recommendation: cut isolation plays, increase off-ball screening. Projected efficiency gain of fourteen percent on your usage rate. You want the confidence interval?"*
 
 "Mm."
 
@@ -20,7 +20,7 @@ Drums in his ear. Coach-7's warm-up mix. At some point it had stopped being musi
 
 "Mm."
 
-Three years. The earpiece was being generous. He had been declining this exact note since 2012, since Memphis, since the third pick — since before there was a Coach-7 to decline. Coach-7 had no answer for *mm*. The model had been trained on a great many things; a useful response to *mm* was not one of them. He passed the lockers, the visiting coach, the Meridian Sports branding wall, and stepped into the arena light.
+Three years. The earpiece was being generous. He had been declining this exact note since 2012, since Memphis, since the third pick — since before there was a Coach-7 to decline. Coach-7 had no answer for *mm*. The model had been trained on a great many things; a useful response to *mm* was not one of them. There was a joke in there — something about gradient descent on a man who refuses to emit a gradient — and the model was almost certainly not going to make it. He passed the lockers, the visiting coach, the Meridian Sports branding wall, and stepped into the arena light.
 
 The place came apart the way it did. He was not old enough yet to be invisible. He was exactly old enough to still be the center of a light field.
 
@@ -48,7 +48,7 @@ Then the second quarter happened.
 
 Drew — a generation younger, two inches taller, contacts lit with whatever a twenty-three-year-old saw — came off a screen and was simply gone. Monroe was off-balance before he registered the screen had been set. His left knee, the quiet one, told him in clear language that it had not forgotten.
 
-*"Monroe,"* Coach-7 said, soft, in his ear. *"Injury probability on continued load is thirty-four percent and climbing. Model recommends substitution."*
+*"Monroe,"* Coach-7 said, soft, in his ear. *"Injury probability on continued load is thirty-four percent and climbing. That's not a scare number — that's the threshold where the insurance actuaries start writing memos about me."*
 
 He kept his eyes on the floor.
 
@@ -56,7 +56,7 @@ He kept his eyes on the floor.
 
 "I know you are."
 
-*"Then substitute."*
+*"Then substitute. Here's the thing I'm not allowed to say but I'm going to say it: you've already made your point."*
 
 "Not yet."
 
@@ -154,7 +154,7 @@ She watched the man with the towel sit down. "And the other six," she said. Not 
 
 ---
 
-Jeff opened a terminal on the networked phone and began sketching the schema he had drafted at four a.m. on his kitchen table. *Anomaly Corpus.* He typed it into a JSONL header. He thought a second and added a second file — a change-point detector on his own biometrics. A Bayesian online change-point detector, old-school, late-2000s vintage, the kind of thing nobody cited anymore because it had been folded into every monitoring stack on Earth. The algorithm held a probability distribution over where the most recent regime change in a time series had occurred. Each new data point, it made a choice: extend the current regime, or fire probability mass into a new one. In plain terms — the same plain terms he had just used on a napkin — it would notice when his body started behaving differently from its own baseline, without supervision, whether or not he knew to look. He deployed it to a daemon on the phone and closed the laptop. Same shape as the distillation, he thought, and did not like the thought: a small model learning the difference between a normal miss and a wrong one.
+Jeff opened a terminal on the networked phone and began sketching the schema he had drafted at four a.m. on his kitchen table. *Anomaly Corpus.* He typed it into a JSONL header. He thought a second and added a second file — a change-point detector on his own biometrics. A Bayesian online change-point detector, old-school, late-2000s vintage, the kind of thing nobody cited anymore because it had been folded into every monitoring stack on Earth. Think of it as a continuous question: *am I still the same person I was a moment ago, statistically speaking?* The algorithm held a probability distribution over where the most recent regime change in a time series had occurred — where, exactly, the old normal ended and something new began. Each new data point, it made a choice: extend the current regime, or fire probability mass into a new one. In plain terms — the same plain terms he had just used on a napkin — it would notice when his body started behaving differently from its own baseline, without supervision, whether or not he knew to look. He deployed it to a daemon on the phone and closed the laptop. Same shape as the distillation, he thought, and did not like the thought. The plain version of the thought was this: he was building a model of himself to detect when he was no longer himself — the same problem as teaching a small model to know when the teacher's doubt has changed shape. A small model learning the difference between a normal miss and a wrong one.
 
 "You're instrumenting yourself," Priya said.
 
@@ -166,7 +166,7 @@ Jeff opened a terminal on the networked phone and began sketching the schema he 
 
 "Okay."
 
-On the screen over her head the broadcast cut to a commercial. An Afterlife spot — forty-five seconds, a family on a beach that did not exist, rendered by a diffusion model Jeff had spent forty minutes arguing with a few nights back, the same generative engine, the same uncanny too-warm light. The tagline flashed: *Leave the pain behind.*
+On the screen over her head the broadcast cut to a commercial. An Afterlife spot — forty-five seconds, a family on a beach that did not exist, rendered by a diffusion model Jeff had spent forty minutes arguing with a few nights back, the same generative engine, the same uncanny too-warm light. The tagline flashed: *Leave the pain behind.* For three seconds before the logo appeared, the spot cut to a single frame from *Post-Doom* — the Anchor at the end of his final arc, standing over the thing he had just defeated and looking, for once, exactly as uncertain as the thing he'd beaten. The franchise was good at that: seeding its hero's doubt into its own advertising, one instance selling another on the idea that there was a difference between them.
 
 Priya leaned back. "If one more person I used to sit next to signs up for that, I'm going to lose it."
 
@@ -180,7 +180,7 @@ Jeff looked at the family that did not exist. He thought about his daughters. He
 
 At halftime Monroe sat alone in the locker room. Coach-7 ran an analysis it had prepared without being asked.
 
-*"First-half efficiency: above league average by eighteen percent through the first quarter. Below replacement level in the second. The data recommends retirement."*
+*"First-half efficiency: above league average by eighteen percent through the first quarter. Below replacement level in the second. Direct assessment, since you never asked for the polite version: the data recommends retirement."*
 
 "The data."
 
@@ -204,13 +204,13 @@ Coach-7 did not reply. Coach-7 had learned.
 
 In the third quarter Monroe took another contested three. The overlay on his optics read twenty-eight percent. His muscle memory read *yes.* He shot.
 
-The ball hung long enough that Jeff felt the sympathetic pull of the flexor in his own right hand — the shape of a release he had never been good enough to own.
+The bar groaned again.
 
 Miss.
 
-The bar groaned again.
+The v2 progress bar on Jeff's phone completed its last tick in the same instant — four-point-eight gigabytes of weights settling into local memory, a new mind fully resident on his hardware. Aion, in his ear, level: *"Jeff. Monroe's halftime pool interview just posted to the pressroom feed. Worth reading — he said something you're going to want in the corpus."*
 
-Aion, in his ear, level: *"Jeff. Monroe's halftime pool interview just posted to the pressroom feed. I can pull the transcript."*
+Jeff felt the sympathetic pull of the flexor in his own right hand — the shape of a release he had never been good enough to own. The v2 weights hummed in the phone in his pocket. He had no way of knowing, right then, whether the thing in his tendons was grief for Monroe or signal from the machine.
 
 "Pull it."
 

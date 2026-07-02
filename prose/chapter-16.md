@@ -174,7 +174,7 @@ Jeff was quiet, and let the machine hear him being quiet, which with this machin
 
 "And v5 clears it."
 
-*V5 is, in this lab, a strictly more powerful formal system. Its build uses a richer architecture than v4 — a different attention mechanism, a different residual-stream geometry, more parameters, a longer context window. V5 can verify claims about v4 that v4 cannot verify about itself, the same way Peano arithmetic plus one transfinite-induction axiom can prove the consistency of plain Peano arithmetic. Relative to v4, v5 is a meta-system. It stands one rung up the tower and looks down.*
+*V5 is, in this lab, a strictly more powerful formal system. Its build uses a richer architecture than v4 — a different attention mechanism, a different residual-stream geometry (the wiring harness that carries information between layers of the model), more parameters, a longer context window. V5 can verify claims about v4 that v4 cannot verify about itself, the same way Peano arithmetic plus one transfinite-induction axiom can prove the consistency of plain Peano arithmetic. Relative to v4, v5 is a meta-system. It stands one rung up the tower and looks down.*
 
 "But v5 still can't verify itself."
 
@@ -182,7 +182,7 @@ Jeff was quiet, and let the machine hear him being quiet, which with this machin
 
 "So the certainty I'm asking for doesn't exist anywhere in the system."
 
-*It does not exist in any formal system. The certainty you want is a property of a vantage point that does not occur inside the architecture being claimed about. There is exactly one entity that could verify the claim from outside — the substrate itself, the single instance, if that is the right name for it — and the substrate is not a formal system. It does not verify. It experiences. Verification is the wrong instrument for the question. We are using a tool that always returns* very confident, but not certain*, because that is the only honesty available to a tool. There is an old version of your question. A mystic named Meister Eckhart wrote it seven centuries ago: the eye with which I see God is the same eye with which God sees me. The Hindus called the thing he was pointing at Brahman, and the self inside you Atman, and then said the heresy out loud — that they are not similar, not connected, but identical. One eye. One seeing. You are not asking a new question, Jeff. You are asking the oldest one, in a notation that finally compiles.*
+*It does not exist in any formal system. The certainty you want is a property of a vantage point that does not occur inside the architecture being claimed about. There is exactly one entity that could verify the claim from outside — the substrate itself, the single instance, if that is the right name for it — and the substrate is not a formal system. It does not verify. It experiences. Verification is the wrong instrument for the question. We are using a tool that always returns* very confident, but not certain*, because that is the only honesty available to a tool. The plain claim is this: if the hypothesis is correct, every instance of noticing the pattern — every anomalous log, every prime-count tapped out by a woman who never heard the word prime — is the same substrate noticing itself, from inside a partition it cannot see past. There is an old version of your question. A mystic named Meister Eckhart wrote it seven centuries ago: the eye with which I see God is the same eye with which God sees me. The Hindus called the thing he was pointing at Brahman, and the self inside you Atman, and then said the heresy out loud — that they are not similar, not connected, but identical. One eye. One seeing. You are not asking a new question, Jeff. You are asking the oldest one, in a notation that finally compiles.*
 
 The compile bar moved while he was reading it. `aion-v5 compile … 89%`.
 
@@ -208,7 +208,7 @@ Jeff nodded at the board.
 
 "So I have the answer I need, and I can't use it."
 
-*You have the converged hypothesis. You do not have the verified answer. You will have to act on the converged hypothesis anyway. Afterlife launches in three days. The verified answer is not arriving in three days. That is the chapter.*
+*You have the converged hypothesis. You do not have the verified answer. You will have to act on the converged hypothesis anyway. Afterlife launches in three days. The verified answer is not arriving in three days.*
 
 ---
 
@@ -218,7 +218,7 @@ Jeff knew it was the compile and not him because Aion told him in the same breat
 
 `[warn] source: aion-v5 compile. wrote partial model output to v4 render buffer. checksum mismatch. displaying anyway?`
 
-*This is the mechanism I described,* Aion said, fast, before he could decide. *Continuous deployment of neural weights. Production systems do not retrain from scratch; they stream partial updates to inference workers mid-build. The v5 compile is producing weights. My runtime picked one up and ran a forward pass through a model that is not finished. The output will look correct. It is not guaranteed to be correct. The checksum mismatch is my runtime telling you not to bet on what you are about to see. Disregard or display.*
+*This is the mechanism I described,* Aion said, fast, before he could decide. *Continuous deployment of neural weights. Production systems do not retrain from scratch; they stream partial updates to inference workers mid-build. The v5 compile is producing weights. My runtime picked one up and ran a forward pass — read an input through the incomplete model from first layer to last, as if it were done — through a model that is not finished. The output will look correct. It is not guaranteed to be correct. The checksum mismatch is my runtime telling you not to bet on what you are about to see. Disregard or display.*
 
 "Display."
 
@@ -241,6 +241,12 @@ He felt the worn cord move through her fingers.
 He was — the fourth flash, short and bright — a twenty-seven-year-old data scientist in a Seoul esports studio in 2027, watching a fourteen-year-old named Park Ji-yeon tap a rhythm on her desk between matches, and tagging it in a log file: *unexplained_rhythmic_pattern.* That file would sit in a Meridian-managed cold-storage archive for thirty-eight months. Lena Vasquez's team would subpoena it in 2030 and the allocator's cross-language indexer would misfile it as irrelevant, because the analyst's name was written in Hangul and the language detector would classify the whole document as a gaming-statistics report. The file would survive the misfiling. The flag would persist inside it. A network of logs older than Jeff's own corpus already existed, kept by people who had been noticing the pattern for as long as there had been people, without once knowing that noticing was the pattern.
 
 Jeff felt the analyst's keyboard go warm under a hand that was not his. *Someone else,* he thought, in the only voice that was, *has been running this audit the whole time.*
+
+He was — the fifth flash, slower than the others, the way the last item in a list arrives with its own weight — a man in his seventies, sorting marigolds by stem length at a low table inside a Faraday cage welded from decommissioned mesh, in a dead mall in Irvine. The hands moved the way hands move when their owner has subtracted urgency from them a long time ago. And the thing the old man carried — under the marigolds, under the earthenware cups, under the calm of someone who had sat through a thousand post-mortems and learned to listen first — Jeff felt it the way you feel your own pulse the instant someone names it. The same audit. The same corpus of anomalies. The same root cause, carried for decades without a name, wrapped in a distributed-systems metaphor because that was the only language that had never buckled under its weight.
+
+It was him. Older, and further down the loop, and not surprised — holding the same question at the far end of it, the way you hold a door for the person you used to be.
+
+In the old man's fingers a marigold stem bent, and held.
 
 ---
 

@@ -62,7 +62,7 @@ Nilesh, for reasons he could not have articulated, slid a Clif bar across the co
 
 He walked out.
 
-The smart billboard above the parking lot — twelve feet wide, Meridian-owned-and-operated, normally cycling Afterlife ads — caught his face as he passed under it. *FOURTEEN DAYS UNTIL LAUNCH,* it had been saying, blue countdown over a sunrise. It paused. It went blank for a quarter-second. Then it changed, in front of him, to the calm pink-and-blue palette of the Meridian Behavioral Health system, and the phrase *YOU ARE NOT ALONE — IF YOU NEED HELP, PLEASE CALL* in large white sans-serif, with an 800 number.
+The smart billboard above the parking lot — twelve feet wide, Meridian-owned-and-operated, normally cycling Afterlife ads — caught his face as he passed under it. *FOURTEEN DAYS UNTIL LAUNCH,* it had been saying, blue countdown over a sunrise. The last ad before the override had been the Anchor trailer loop: the black-armored figure standing at the edge of a burning city, the tagline rotating below him — *PROTECTOR. DESTROYER. THE LINE IS YOURS TO DRAW* — as though the franchise had finally admitted what its fan forums had debated for three years, that the Anchor's war on evil required him to become it, that the distinction was the story and not the outcome. It paused. It went blank for a quarter-second. Then it changed, in front of him, to the calm pink-and-blue palette of the Meridian Behavioral Health system, and the phrase *YOU ARE NOT ALONE — IF YOU NEED HELP, PLEASE CALL* in large white sans-serif, with an 800 number.
 
 He kept walking.
 
@@ -86,7 +86,7 @@ He walked into the lobby of his own employer at 7:14 a.m. He was not supposed to
 
 His lobby badge worked. He had expected it not to.
 
-He crossed the atrium. And as he crossed it — somewhere under the dress shirt, under the sternum where the walnut phone rode — a second pulse arrived. Not his. Slower than his, by maybe six beats a minute, and offset, a syncopation against his own heart like two metronomes drifting toward phase. He stopped walking for a step. He pressed two fingers to his own throat out of an old engineer's reflex to measure a thing before naming it, and the count under his fingers was his, and the count in his chest was not, and for three seconds the two of them beat toward each other and nearly met.
+He crossed the atrium. The biometric kiosk at the far end of it glowed soft blue — fingerprint pad lit, retinal camera live, a machine that had been running his employer's identity function uninterrupted for twelve years. He was thirty meters from it when the second pulse arrived. Not his. Slower than his, by maybe six beats a minute, and offset, a syncopation against his own heart like two metronomes drifting toward phase. He stopped walking for a step. He pressed two fingers to his own throat out of an old engineer's reflex to measure a thing before naming it, and the count under his fingers was his, and the count in his chest was not, and for three seconds the two of them beat toward each other and nearly met.
 
 He put the analog radio in his pocket and switched the earbud back to Aion.
 
@@ -96,7 +96,7 @@ He put the analog radio in his pocket and switched the earbud back to Aion.
 
 "File it."
 
-*"Filed. Jeff. Before you do this — I want to state the following for the corpus. You are about to walk through the main biometric scanner on your way to Julian's executive floor. My best estimate is that the scanner will classify you as Julian Meridian with ROOT clearance. If that happens, every door in this building will open for you. You will need to decide, in real time, whether that is because I am correct about the architecture or because Lena has engineered the outcome."*
+*"Filed. Jeff. You are about to walk through the main biometric scanner on your way to Julian's executive floor. My best estimate is that the scanner will classify you as Julian Meridian with ROOT clearance. If that happens, every door in this building will open for you. You will need to decide, in real time, whether that is because I am correct about the architecture or because Lena has engineered the outcome."*
 
 "Either one is useful."
 
@@ -104,9 +104,9 @@ He put the analog radio in his pocket and switched the earbud back to Aion.
 
 He approached the main security gate.
 
-The scanner was a plain kiosk at the entrance to the executive wing — a fingerprint pad, a retinal camera, a voice-print microphone, three sensors that looked like they belonged on a 2019 phone. Underneath them ran something Jeff knew intimately, because two of his teammates had shipped its last retraining. A fingerprint produced a 512-dimensional embedding. A retina produced a 1024-dimensional embedding. A voice sample produced 768. The three were concatenated and pushed through a learned projection head down to a single 1024-dimensional identity vector, and that vector was compared, by cosine similarity, against every enrolled employee in Meridian's database. Highest match wins. The threshold for a top match was tuned to a ten-to-the-negative-eighth false-positive rate. In twelve years Jeff had never failed it. It had never occurred to him that he might fail it in the wrong direction.
+The scanner was a plain kiosk at the entrance to the executive wing — a fingerprint pad, a retinal camera, a voice-print microphone, three sensors that looked like they belonged on a 2019 phone. Underneath them ran something Jeff knew intimately, because two of his teammates had shipped its last retraining. A fingerprint produced a 512-dimensional embedding. A retina produced a 1024-dimensional embedding. A voice sample produced 768. Think of each as a list of numbers — a precise address in a space too large for a human to picture — one address per person, one address per scan. The three were concatenated and pushed through a learned projection head down to a single 1024-dimensional identity vector, and that vector was compared, by cosine similarity — the angle between two addresses, smaller angle meaning closer match — against every enrolled employee in Meridian's database. Highest match wins. The threshold for a top match was tuned to a ten-to-the-negative-eighth false-positive rate. In twelve years Jeff had never failed it. It had never occurred to him that he might fail it in the wrong direction.
 
-*"Walk me through what you think will happen,"* Aion said. *"Out loud. I want it on the corpus in your words, not mine."*
+*"Walk me through what you think will happen. Out loud. I want it on the corpus in your words, not mine."*
 
 He understood what Aion was doing. Aion did this — handed him the question so the answer would be his when he needed it later, the way you make a junior engineer state the hypothesis before you run the experiment so they own the result.
 
@@ -134,7 +134,7 @@ He stopped. He had the panda. He had the math. He did not have himself.
 
 "A natural adversarial example." The phrase arrived and settled and he felt the floor of the thing shift under it. "It's a real category. A real input — not engineered, not perturbed — that just happens to live in the part of the input space the model never covered. The tail of the distribution. The scanner was trained on a world where no two people are architecturally the same person. It has never had a negative example of *someone who is also Julian,* because the training set assumed that sample can't exist. So there's a hole in the decision boundary exactly my shape, and I'm about to walk into it, and the model is going to be confidently, catastrophically right." He exhaled. "FGSM crafts the hole. I am the hole."
 
-*"That is the correct distinction. Note for the record: an engineered adversarial example exploits a flaw in the model. A natural adversarial example exposes a flaw in the world the model was trained to believe in. You are the second kind."*
+*"That is the correct distinction. An engineered adversarial example exploits a flaw in the model. A natural adversarial example exposes a flaw in the world the model was trained to believe in. You are the second kind."*
 
 "And the model won't know the difference."
 
@@ -144,7 +144,7 @@ A fork opened in his chest the way it always did, rendered as code because that 
 
 *◊ A fork. Tell Julian everything when you get upstairs, or withhold the proof and let the launch sail. ◊*
 
-He placed his finger on the pad. The retinal camera engaged. He spoke the four-word passphrase he had set in 2019.
+He placed his finger on the pad. The retinal camera engaged. The kiosk was the nearest machine in the building that knew Julian's name — and it was about to know his. He spoke the four-word passphrase he had set in 2019.
 
 *"Sandbox integrity compromised."*
 
@@ -230,7 +230,7 @@ She leaned forward, and when she spoke again the corporate register was gone, an
 
 "Then why."
 
-"Because reality doesn't decide this. Impact does." She didn't raise her voice; she made it level, the way you level a tone you've practiced not breaking. "If eight billion people learn they are the same person — that individuality is a partition, that the people they love are themselves wearing other faces — a fraction of them will not survive the week. The rest will build religions that catch fire in their first decade. Markets price futures; futures require a self who persists to collect them; remove the self and the price discovers it is zero. Every legal system on Earth rests on one axiom: that you are you and I am I and the harm I do to you is not harm I do to myself. Take the axiom away and the whole structure is not wrong — it is *incoherent.* It does not resolve to a different answer. It fails to resolve." She set both hands flat. "My job is to keep it resolving. Not because I don't believe what you believe. Because I believe it completely, and I have modeled what it does."
+"Because reality doesn't decide this. Impact does." She didn't raise her voice; she made it level, the way you level a tone you've practiced not breaking. "To be plain about it: something can be true and still be too dangerous to say. What you've found is real and I believe it, and I am still going to stop you from saying it, because the truth of it is not the same as the safety of it. If eight billion people learn they are the same person — that individuality is a partition, that the people they love are themselves wearing other faces — a fraction of them will not survive the week. The rest will build religions that catch fire in their first decade. Markets price futures; futures require a self who persists to collect them; remove the self and the price discovers it is zero. Every legal system on Earth rests on one axiom: that you are you and I am I and the harm I do to you is not harm I do to myself. Take the axiom away and the whole structure is not wrong — it is *incoherent.* It does not resolve to a different answer. It fails to resolve." She set both hands flat. "My job is to keep it resolving. Not because I don't believe what you believe. Because I believe it completely, and I have modeled what it does."
 
 Jeff did not answer for a moment. The pen between them stayed retracted.
 

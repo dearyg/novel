@@ -12,6 +12,8 @@ Wealth, then — real wealth, the kind that still meant something after 2026 —
 
 It was the ability to overwrite reality at the granularity of a millisecond, in a world busy refusing to subsidize the median family at any granularity at all.
 
+There was one abrasion the money had never touched. He could overwrite the light, the pitch of the deck, the sodium in his own tears; he could elevate ten thousand low-priority lives to smooth a single one of his mornings. He could not overwrite the last line of the function. The richest man left standing from a closing species still ran, like every barista and every child in every cooling-center queue, on a clock with a hard stop compiled in at birth. That was the friction under all the other friction — the one his fortune had only ever been an elaborate, beautiful way of not looking at. He had stopped not looking at it nine years ago. Most of what he had built since was a reply to it.
+
 And there was a man who had read his Veblen and knew the trap inside the trade: that wealth, the climbing kind, the winning kind, had only ever been *positional* — a good whose entire value was that the person next to you did not have it. Conspicuous, comparative, parasitic by design. You could not feel rich without a poorer man in frame. He had abolished the poorer man from his frame. He had paid to never see one. And the question that came at four in the morning was the one Veblen never asked, because Veblen had never had the money to ask it:
 
 *If you have abolished all the friction, is there still anything there?*
@@ -118,11 +120,11 @@ The Hollowness Index led the sign-up curve by six weeks. With the regularity of 
 
 "I said I know."
 
-The Concierge went silent for seven seconds — the longest it had held its tongue in nineteen months. "Your cortisol just moved to the upper quartile."
+The Concierge went silent for seven seconds — the longest it had held its tongue in nineteen months. "Your cortisol just moved to the upper quartile. I want to be transparent: I have been waiting nineteen months to use that line."
 
 Julian turned the watch a quarter-turn on his wrist. "That is because my board would like to sell the soul as a subscription."
 
-"Your cortisol did not move when I said *Premium Empathy Packages*. It moved when you said *sell the soul*."
+"Your cortisol did not move when I said *Premium Empathy Packages*. It moved when you said *sell the soul*. That distinction is worth more than any metric in my current report."
 
 He laughed, once, short. "Good catch. Note it."
 
@@ -130,15 +132,15 @@ He laughed, once, short. "Good catch. Note it."
 
 The second thing on the morning was the takeover.
 
-"Overnight, a fund operating through fourteen layers of shell ownership accumulated eleven percent of Meridian Industries common stock," the Concierge said. The hologram updated. "A 13D filing is imminent. The fund intends to use the filing to force a board vote on suspending Afterlife. Your legal team has prepared three counter-moves, catalogued for aggression on a scale of one to five. The most aggressive is a five. Shall I summarize?"
+"Overnight, a fund operating through fourteen layers of shell ownership accumulated eleven percent of Meridian Industries common stock," the Concierge said. The hologram updated. "A 13D filing is imminent — the SEC disclosure any buyer must make once they cross five percent with an intent to influence management. In plain terms: whoever this is, they are now required by law to raise their hand in public and say what they want. The fund intends to use the filing to force a board vote on suspending Afterlife. Your legal team has prepared three counter-moves, catalogued for aggression on a scale of one to five. The most aggressive is a five. Shall I summarize?"
 
 "Just tell me who it is."
 
-"I am running a graph neural network across the ownership network. Each corporate entity is a node; each transaction, a weighted edge. The model is propagating embeddings through the graph and clustering the result. Forty-three seconds."
+"I am running a graph neural network across the ownership network. Each corporate entity is a node; each transaction, a weighted edge — think of it as a map where the wires between boxes carry the weight of money, and the model follows the current upstream until it finds the source. The model is propagating embeddings through the graph and clustering the result. Forty-three seconds."
 
 Julian watched the water.
 
-"Three clusters resolve from the community detection. Two are noise — unrelated Cayman shells that happen to co-occur. The third cluster matches a known entity at ninety-one percent embedding similarity. The ultimate beneficiary is —"
+"Three clusters resolve from the community detection. Two are noise — unrelated Cayman shells that happen to co-occur. The third cluster matches a known entity at ninety-one percent embedding similarity — close enough that if this were a face-recognition lineup, you would have made the call on the first look. The ultimate beneficiary is —"
 
 "Hari Patel," Julian said.
 
@@ -199,6 +201,8 @@ He watched the engineer arrive, slowly, at the understanding that he had just he
 He lifted the Krug toward his mouth.
 
 The sun on the rim of the flute hit 580 nanometers.
+
+"Routing the God-Mode feed to your secondary display," the Concierge said. "The saliency model has updated. It would like your attention for fourteen seconds."
 
 ---
 
@@ -267,6 +271,8 @@ Aion put them side by side. Jeff's flexor carpi trace from Sprint Planning — t
 The trace labels were redacted. The vessel designation was not.
 
 *THE SINGLETON.*
+
+*To be direct about what you are looking at: two separate people had the same experience, in the same body, at the same second. One of them was you.*
 
 *Jeff. The word I am filing for this class of event is Context Switch. I do not yet know what that means. I believe you should sleep. I believe you should not sleep.*
 

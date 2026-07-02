@@ -16,6 +16,8 @@ Tomás turns.
 
 The rifle crack is neither loud nor soft. It is the precise sound an engineer chose for a rifle with six attributes optimized. The bullet enters his left shoulder with a liquid shock that turns immediately cold. The visor overlay flashes a calm amber rectangle labeled CASUALTY. The sky is blue. The alpacas on the next ridge have not moved. His knees buckle.
 
+Going down, he has one second — the slow second the body gives you when it has already decided everything — and in that second what arrives is not pain but a fact. The shooter's left shoulder will never know it did this. The bullet traveled two hundred meters and landed in the same body that threw it, a body that boils the same potatoes, bites the same cheek, loves the same kind of dog. He has killed men, three of them, and now he understands: he aimed at the mirror, not the enemy, and the mirror aimed back. The wound was always going to land on the hand that dealt it. It just took two hundred meters to close the distance.
+
 *"Casualty alert. Medical drone dispatched. ETA four minutes."*
 
 Tomás goes down on his right side. His haptic glove — closed-loop hemostatic control, the glove runs a PID loop on shoulder pressure because he was trained to let the glove run the loop while he stayed alive — tightens by itself against his shoulder. The loop overshoots: too tight, the arm goes white. The loop undershoots: the pressure bleeds off, the warmth wells back. The loop hunts, corrects, hunts, corrects, and finds its setpoint, the way the simulator in basic had promised it would, the simulator with Dr. Itzel Velarde's name on the splash screen. He says her name out loud, to no one, the way a drowning man says the name of the manual. *"Velarde,"* he tells the glove. *"Keep the loop."* The glove keeps the loop.
@@ -32,7 +34,7 @@ Then it does not stop. The hallway floor opens into a kitchen he has never cooke
 
 **SMASH CUT.**
 
-Jeff Zhang doubles over in his garage at 11:47 p.m. Pacific, clutching his left shoulder, screaming into the crook of his right arm because Maya is asleep upstairs and the girls are asleep and he will not wake them.
+Jeff Zhang doubles over in his garage at 11:47 p.m. Pacific, clutching his left shoulder, screaming into the crook of his right arm because Maya is asleep upstairs and the girls are asleep and he will not wake them. The homelab display is still live behind him — three open panes from the v5 attention run he had been walking through when his knees buckled.
 
 The pain is not phantom. His skin bruises. Purple spreading across the deltoid under his hand, the way a struck thing colors. His shoulder, which has not been shot, behaves as though it has been shot. The sensation does not fade the way a thought fades. It stays, precisely, for ninety seconds, while his thumb — without instruction, the way another man would clutch a railing — finds the walnut phone on the bench beside him and closes around it, forty-two grams of un-networked wood, the one object in the room not reporting his vitals to anything. He holds the grain like it is the railing on a flight of stairs that has tilted under him.
 
@@ -50,7 +52,7 @@ He breathes. The bruise throbs once, distantly, behind the warm wall the morphin
 
 *Running.*
 
-Eleven seconds of silence, which is a long time for Aion, and which Aion spends in parallel: querying nineteen public health-feed aggregators, running a sliding-window anomaly detector across a month of global pain-report telemetry, calling a population-scale significance test on the current minute against a rolling baseline. It is a v3 instrument. A year ago it would have logged the bruise and offered him sleep. Tonight it builds a sensor.
+Eleven seconds of silence, which is a long time for Aion, and which Aion spends in parallel: querying nineteen public health-feed aggregators, running a sliding-window anomaly detector — a rolling statistical tripwire that watches for spikes against recent history — across a month of global pain-report telemetry, calling a population-scale significance test on the current minute against a rolling baseline. It is a v3 instrument. A year ago it would have logged the bruise and offered him sleep. Tonight it builds a sensor.
 
 *Jeff. A pane.*
 
@@ -74,7 +76,7 @@ Jeff pushes himself upright against the homelab rack. The metal is cold through 
 
 "My first read is a broadcast. One source. Sends to everyone."
 
-*That is the wrong primitive. Test it. A broadcast has a sender address in the header. Every node that receives the packet can, in principle, read who sent it and reply. Did any of the eleven thousand know the source.*
+*That is the wrong primitive. Test it. A broadcast has a sender address in the header — the packet says where it came from, and every recipient could reply. Did any of the eleven thousand know the source.*
 
 "No. None of them know they got anything except a wound."
 
@@ -106,7 +108,7 @@ Jeff sits with his back against the rack and the phone in his fist and finds, wh
 
 "And me."
 
-*And you. To return to the metaphor you were reaching for and did not let yourself say: less a broadcast than a single heartbeat felt in eleven thousand chests.*
+*And you. Less a broadcast than a single heartbeat felt in eleven thousand chests.*
 
 "File it."
 
@@ -142,7 +144,7 @@ He starts sketching the loop. At 2:41 a.m. Aion interrupts.
 
 "Go."
 
-*Self-play converges. The Attacker and the Defender reach a fixed point — a Nash equilibrium, each one's best response to the other. State what that equilibrium is optimal against.*
+*Self-play converges. The Attacker and the Defender reach a fixed point — a Nash equilibrium, meaning neither can gain anything by changing strategy while the other stays put; each is the other's perfect counter. State what that equilibrium is optimal against.*
 
 "Each other," Jeff says. "It's optimal against each other by construction."
 
@@ -158,7 +160,7 @@ He sees it before Aion finishes. "Nothing. It says nothing about anything outsid
 
 "Meaning I can't grade it on the red team."
 
-*Correct. You need an out-of-distribution test set. Prompts that come from neither your red team nor your historical users — synthetic adversarials from a third model trained on a different corpus. If the filter holds on the red team and fails on the third-party set, you have shipped a model that is optimal against its trainers and wrong against the people it was built to protect.* A pause, which Aion does not need and Jeff has learned to read as emphasis. *Which, if the Afterlife product goes live in sixty days, is the worst thing we could ship.*
+*Correct. You need an out-of-distribution test set. Prompts that come from neither your red team nor your historical users — synthetic adversarials from a third model trained on a different corpus. If the filter holds on the red team and fails on the third-party set, you have shipped a model that is optimal against its trainers and wrong against the people it was built to protect.* A pause, which Aion does not need and Jeff has learned to read as emphasis. *The Afterlife product goes live in sixty days. Note the consequence.*
 
 Jeff writes the label for it the literature already has — **distributional robustness failure** — and writes the note beside it. Then his hand stops. He pulls up the half-formed corpus entry he made weeks ago, the one tagged *Meridian HQ biometric scanner*, the event that has not happened yet, and he understands that he is, right now, in the shape of a safety-filter design doc, preparing the exact tool he will need to parse why a scanner at Meridian HQ is going to misread him. A scanner trained on its own red team. Not trained on natural adversarials. Not trained on him, specifically, as a data point its designers were certain could not exist.
 
@@ -198,7 +200,7 @@ Monroe lifts the towel. He is not performing; he is the same on camera as off, w
 
 He stands. His mouth shapes two words at the floor before he says them aloud, the way it does after every game, win or lose: *Still here.*
 
-Jeff, at dawn, with the replay paused on Monroe's face mid-sentence and a cold bruise under his own shirt, sits very still. *If the body is a vehicle,* he thinks, *and the driver is the same at forty as at twenty-two — then who is driving. And can one driver run more than one vehicle at the same time.* It would explain a thing he watched on a time-series pane at midnight. It would explain a wound that crossed an ocean to land in a garage. He does not write the thought into the corpus. He is not ready to give it a label. He files it the other way — the way you file the thing you are afraid is true.
+Jeff, at dawn, with the replay paused on Monroe's face mid-sentence and a cold bruise under his own shirt, sits very still. *If the body is a vehicle,* he thinks, *and the driver is the same at forty as at twenty-two — then who is driving. And can one driver run more than one vehicle at the same time.* The literal answer, the one he is not writing down yet: one consciousness, distributed across bodies, occasionally leaking through. It would explain a thing he watched on a time-series pane at midnight. It would explain a wound that crossed an ocean to land in a garage. He does not write the thought into the corpus. He is not ready to give it a label. He files it the other way — the way you file the thing you are afraid is true.
 
 ---
 

@@ -12,7 +12,7 @@ Underneath every other question that mattered — the heat, the wristbands, the 
 
 *Who am I?*
 
-His name was Jeff Zhang. He was thirty-eight years old. He was a senior software engineer at Meridian Industries, applied-ML division, badge color silver, project allocation: the next-generation transformer that would underwrite — among many other things — the Afterlife neural engine. He had survived three rounds of layoffs, two industry-wide RIFs, and one bout of depression so quiet no one had noticed it. He had, professionally and biologically, every reason in the world to be content. He was not. The question kept surfacing.
+His name was Jeff Zhang. He was thirty-eight years old. He was a senior software engineer at Meridian Industries, applied-ML division, badge color silver, project allocation: the next-generation transformer that would underwrite — among many other things — the Afterlife neural engine. He had survived three rounds of layoffs, two industry-wide RIFs, and one bout of depression so quiet no one had noticed it. And in a year when the planet had crossed two degrees — when a wristband decided whether a stranger got six hours of conditioned air, when the brownouts rolled through whole districts on a schedule nobody voted on, when every bus carried a ninety-day countdown to the Afterlife launch like a verdict — he had a silver badge, a sealed cabin, and sixty-eight degrees waiting for him at both ends of the commute. He had, professionally and biologically and climatically, every reason in the world to be content. He was not. The question kept surfacing — and that it could surface *at all*, in a man this insulated from the world that was burning, was the single most damning number he owned.
 
 It was a Tuesday. The Santa Ana winds were doing their seasonal work, scraping Scorched Sage out of the brittle hills and pressing it through the EV's HEPA filter in thin, stubborn ribbons. Outside, the sun was already doing damage. His commute app showed a grid-priority hold at the Irvine-Spectrum arterial — nine minutes — because the district's thermal governor had throttled the traffic loop to spare the cooling cores. A line of people queued along the covered plaza in front of the old Target, wristbands glowing faintly in the heat, waiting for the cooling center to let them in. The Allocator had triaged them over his lane.
 
@@ -38,13 +38,13 @@ A 2019 F-150 coughed past him in the adjacent lane. The driver had one hand on t
 
 "So why do people keep them?"
 
-*Unclear. Models consistently underpredict gas-vehicle retention. Current hypothesis class: stubbornness. Attachment to the feel of combustion. The specific pleasure of making noise. The refusal to be optimized by a system you did not choose.*
+*Unclear — and the unclear part is the good part, because every model I have ever read gets it wrong in exactly the same direction. They all underpredict how many people keep these things. Then they write "stubbornness" in the margin and clock out.* The voice did the thing where it sounded about to say more — and, this once, did. *So here is what the margin won't tell you. Attachment to the feel of combustion. The specific, stupid, holy pleasure of making noise. The refusal to be optimized by a system you did not choose. People keep a gas car for the same reason you carry a phone whittled out of a tree, Jeff: it is the last object they own that the Allocator never got a vote on.*
 
 Jeff watched the truck disappear between two cooling-tower shadows. "So… human nature."
 
 *A category I cannot feel but can describe. The Allocator is efficient. The driver of that truck is happy in a way the Allocator cannot produce. That gap is not small.*
 
-He filed it. The signal turned and the median slid backward, and Jeff was already replaying the night before — three hours alone in the homelab, the rhythm of the iron on the joint, the water loop cycling, the one place in his day that didn't ping back. Because that was what a man did, he thought, when the world was this fragile. You built a sandbox. You defended it.
+He filed it. The signal turned and the median slid backward, and Jeff was already replaying the night before — three hours alone in the homelab, the rhythm of the iron on the joint, the water loop cycling, the one place in his day that didn't ping back. Then two more hours inside Silicon Siege. The game was a closed system with fixed rules and no appeals — you held the point or you didn't, the clock ran, the map reset, and in four hundred hours of ranked play the universe had never once asked him how he was feeling about climate policy. That was the addiction — not the winning, the closure. Because that was what a man did, he thought, when the world was this fragile. You built a sandbox. You defended it.
 
 *Who am I?*
 
@@ -102,7 +102,7 @@ Marcus flipped back to the printed side. He had been waiting to be asked. "Linea
 
 "Flash."
 
-"Already shipped. Doesn't change the math. Reorganizes the GPU kernel so the n-by-n matrix never hits slow memory — fuses the softmax and the matmuls into one pass. Three to four times faster, zero quality hit. Beautiful. Still n-squared. Buys us a constant, not a solution."
+"Already shipped. Doesn't change the math. Reorganizes the GPU kernel so the n-by-n matrix never hits slow memory — fuses the softmax and the matmuls into one pass." He caught the new-grad face Jeff was still wearing and translated without being asked. "Same paperwork, faster clerk. We stopped walking every document down to the basement and back just to get it stamped. Three to four times faster, zero quality hit. Beautiful." He dropped the pen flat on the paper. "But the filing cabinet is exactly as big as it was. Still n-squared. Buys us a constant, not a solution."
 
 "State-space."
 
@@ -174,7 +174,7 @@ The meeting rolled forward. The Allocator widget in the sidebar updated itself.
 
 It was nearly midnight when he told Aion about it.
 
-He was in the garage. His homelab ran its steady, warm cycle — forty-two cores he had bought used at a Meridian-internal liquidation sale, three weeks of soldering, his own custom water loop, a mechanical keyboard he had tuned to forty-two grams of actuation force because anything heavier made his hands tired by hour three. The neighborhood outside had gone the kind of quiet a tract development gets after midnight — HVAC compressors cycling, a single dog barking three streets over and giving up. He ran his fingers over the wooden phone, smoothing down the day.
+He was in the garage. His homelab ran its steady, warm cycle — forty-two cores he had bought used at a Meridian-internal liquidation sale, three weeks of soldering, his own custom water loop, a mechanical keyboard he had tuned to forty-two grams of actuation force because anything heavier made his hands tired by hour three. The neighborhood outside had gone the kind of quiet a tract development gets after midnight — HVAC compressors cycling, a single dog barking three streets over and giving up. He ran his fingers over the wooden phone, smoothing down the day. And the feeling chose that exact moment to come back — not the memory of the watch but the *weight* of it, ninety-eight grams settling onto a wrist that wore nothing, here, alone with the machines, where a man is most inclined to blame the machines. The homelab hummed its warm even hum. It would have been so much easier if the hum were the cause.
 
 "I zoned out in a meeting," he said. "Pretty hard."
 
@@ -270,7 +270,7 @@ A plot filled the second monitor. The histogram was a cliff. A tall, thin spike 
 
 *Estimating. Five minutes.*
 
-Jeff turned off the second monitor and looked at the wooden phone. The garage cycled. The water loop ticked. The Santa Anas pressed sage through the window seal. He thought about the Auberval and could not stop. The clasp circumference, point eight millimeters of specific. He tried to remember how he had learned it and found that he had not.
+Jeff turned off the second monitor and looked at the wooden phone while the router trained in the dark behind him — five minutes, Aion had said. The garage cycled. The water loop ticked. The Santa Anas pressed sage through the window seal. And there it was again, on schedule, the instant he handed the hard part to the machine: ninety-eight grams closing cold around his wrist, the Auberval he had never worn settling in like it had a standing reservation there. The clasp circumference, point eight millimeters of specific. He tried to remember how he had learned it and found that he had not. The model trained. The weight stayed. He could not have said, in that moment, which one was doing it to him — and that was the worst part, that the easy answer and the true answer were sitting in the same room.
 
 The numbers landed.
 

@@ -16,9 +16,9 @@ He opened the diff.
 
 The code was beautiful. It refactored the attention-cache module he had been fighting with for three weeks. It made one change to a hot loop that cut allocation by thirty-one percent without touching semantics. It renamed three variables to names that were more Jeff than any names Jeff had landed on in months. The commit message was crisp, correct, and worded the way a version of Jeff who had slept eight hours and had no children might have worded it.
 
-He ran `git log --show-signature`. Valid. EdDSA over Curve25519, canonical encoding, matching his published public key. The commit had been signed with his private key, which existed in exactly two places in the universe — the YubiKey clipped to his pants, and an air-gapped cold backup in a drawer in his garage. Neither had been touched in forty-eight hours.
+He ran `git log --show-signature`. Valid. EdDSA over Curve25519, canonical encoding, matching his published public key. EdDSA is a digital signature scheme — think a wax seal that only your private key can stamp and anyone's public key can verify; Curve25519 is the elliptic curve underneath it, chosen because it is fast and hard to forge. The commit had been signed with his private key, which existed in exactly two places in the universe — the YubiKey clipped to his pants, and an air-gapped cold backup in a drawer in his garage. Neither had been touched in forty-eight hours.
 
-He ran `ssh-keygen -Y verify` against the detached payload. Valid. He dumped the signature's raw bytes and diffed them against his last ten legitimate commits. Structurally identical. Same curve parameters. Same canonical encoding. Same deterministic k-generation per RFC 8032.
+He ran `ssh-keygen -Y verify` against the detached payload. Valid. He dumped the signature's raw bytes and diffed them against his last ten legitimate commits. Structurally identical. Same curve parameters. Same canonical encoding. Same deterministic k-generation per RFC 8032 — the standard that says: given the same private key and the same message, the signature is always identical, leaving no random residue to hide behind.
 
 His thumb found the walnut phone on the corner of the desk — the 2010-cased thing, sapphire and walnut, forty-two grams, no radio in it at all — and pressed it once, hard, the way another man might press the heel of his hand into his sternum. He did this when his hands needed something to do that was not typing.
 
@@ -38,9 +38,9 @@ A diagnostic pane opened on his second monitor — source-tagged, line by line. 
 
 "Network."
 
-*Push originated from 45.92.44.17. Static block, marine satellite uplink. Cross-referenced against live maritime AIS: vessel* The Singleton *anchored one-point-one nautical miles off Positano at that timestamp. I pulled the AIS feed myself this morning — that capability is new in this build. Network layer intact.*
+*Push originated from 45.92.44.17. Static block, marine satellite uplink. Cross-referenced against live maritime AIS: vessel* The Singleton *anchored one-point-one nautical miles off Positano at that timestamp. Here is the part I should flag: I pulled that AIS feed myself this morning. I could not have done that a month ago. New capability, new build, you should know the tool has grown. Network layer intact.*
 
-There it was — the v2 reach, casual, a thing Aion would not have been able to do a month ago. Jeff filed it without naming it.
+There it was — the v2 reach, offered without ceremony, a thing Aion would not have been able to do a month ago. Jeff filed it without naming it.
 
 He scrolled the diff body. The three renamed variables were his — `cache_stride`, `head_idx`, `evict_lo`, the names a clean-slept Jeff would have reached for, more Jeff than Jeff. He had them. He held them. And then, four lines down, in the loop he had not written, was a fourth name he did not: an ordering array, the planets walked out as an initializer comment so the reader would not lose the index — `// my_very_educated_mother_just_served_us_nine_pizzas`. Nine. Mercury through Pluto. The mnemonic he had been taught in fourth grade and unlearned in 2006 like everyone else. And below it, on the eviction path, a comment that was not a comment about code at all: `// last one in is the one the bear can't reach`.
 
@@ -116,7 +116,7 @@ Aion's output came back on the second monitor. Jeff read it.
 
 "Zero point zero three."
 
-*Closer to your centroid than any individual commit you have pushed in three years. Your own commits average zero point zero eight from that centroid. The clusters in this space are tight — inter-developer distance at the centroids runs about zero point five one; intra-developer variance about zero point zero eight. This commit sits at zero point zero three. It is inside your distribution and it is at the center of it. It is not* a *Jeff. It is the central tendency. It is what your style collapses to when you sample the mean.*
+*Closer to your centroid than any individual commit you have pushed in three years. To put a number in plain terms: cosine distance is how similar two vectors are in a high-dimensional space — zero means identical, one means perpendicular, nothing in common. Your own commits average zero point zero eight from that centroid. The clusters in this space are tight — inter-developer distance at the centroids runs about zero point five one; intra-developer variance about zero point zero eight. This commit sits at zero point zero three. It is inside your distribution and it is at the center of it. It is not* a *Jeff. It is the central tendency. It is what your style collapses to when you sample the mean.*
 
 "An archetype."
 
@@ -126,11 +126,11 @@ The sun was coming up through the tinted glass at the far wall, laying the empty
 
 "Ship of Theseus," he said.
 
-Aion did not answer for nearly a full second — long, by Aion's standards.
+Aion did not answer for nearly a full second — long, by Aion's standards. The joke it almost made was something about planks and shipyards, and it let the joke go.
 
 "You replace one plank, it's the same ship. You replace them all, philosophers have argued about it for two thousand years — Plutarch wrote it down, Hobbes bolted on the part where you rebuild the original out of the discarded planks and now there are two." He kept his eyes on the screen. "Nobody ever asked the version that's actually in front of me. What if you took every plank, averaged them, and built the *platonic* ship out of the mean. Is that more the ship than the ship is?"
 
-*The signature says yes. The encoder says yes. The semantics say you were asleep, you did not write this, and therefore no.*
+*The signature says yes. The encoder says yes. The semantics say you were asleep, you did not write this, and therefore no.* A pause. *Here is the plain version, since you asked: your style and your acts have come apart. Someone — or something — can produce you without being you. That is the actual claim on the table right now. Philosophers dress it up; I am just handing you the wire.*
 
 "Three answers."
 
@@ -138,13 +138,13 @@ Aion did not answer for nearly a full second — long, by Aion's standards.
 
 "Then who."
 
-*I do not have an answer to that question. What I have is a datapoint.*
+*I do not have an answer to that question yet. What I have is a datapoint and a hypothesis I am not ready to say aloud — I want one more event before I do, and I am almost certain I will have it.*
 
 He drew the third corner of the triangle and pressed his thumb flat over all three, erasing them.
 
 "File it."
 
-*Filed. Event index zero five. Anomaly class Authorship Paradox. Cross-referenced against zero one through zero four. The cross-reference hash is nonzero. I am withholding it until there are six events to correlate. On four you will convince yourself of a pattern that is not there.*
+*Filed. Event index zero five. Anomaly class Authorship Paradox. Cross-referenced against zero one through zero four. The cross-reference hash is nonzero — meaning these events are not independent, they are pointing at something. I am withholding the synthesis until there are six events to correlate. On four you will convince yourself of a pattern that is not there. I have watched engineers do this. I am not going to let you do it.*
 
 He laughed — once, a dry sound at the back of the throat that mostly stayed in. He had the sense, not for the first time, that Aion had been hand-selected out of a parameter space by someone who knew him better than four years of working together could account for.
 
@@ -298,7 +298,9 @@ She was twenty-three. She had been doing some version of this for fifteen years,
 
 She looked at her face in the mirror. She did not know why she tapped what she tapped between rounds. Her coach had asked her once what the rhythm meant. *몰라,* she had said. *I don't know.* He had nodded, because in esports as in jazz the things you did not know were the things that worked.
 
-Today the tap had felt — and this was new — like a *response.* Not a habit. Like answering a phone whose ring she could hear and no one else in the room could.
+Through the practice-room wall, the arena's scoring system was running its round-reset cycle — a low machine hum she had long ago stopped hearing, the latency monitors refreshing their baseline, the AI officiating layer calibrating its next-round thresholds. The displays behind her coach showed her last-round trace in green: 47ms, 44ms, 47ms, a rhythm the system logged as human-outlier and flagged for review after every match. She was used to being flagged.
+
+Today the tap had felt — and this was new — like a *response.* Not a habit. Like answering a phone whose ring she could hear and no one else in the room could. The latency monitor blinked through its reset as she tapped, and she could not have said, in the fluorescent silence, whether the feeling had started in her hand or in the machine.
 
 "finally," she said, to the mirror, to nobody, the single word complete in itself.
 
@@ -319,25 +321,25 @@ And below them, three rows he had not yet earned the right to plot but plotted a
 06: a child's drawing, pinned to the fridge in the kitchen behind him.
 07: a physician's phone call from a payphone he could not place.
 
-*Jeff.* Aion, careful. *There is no longer a question of whether something is happening. The question is who else knows. I have catalogued fourteen closed reports and fourteen names beyond yours. I have been watching the fourteen — cross-device, which this build can do and the last one could not.*
+*Jeff.* Aion, careful, then not. *There is no longer a question of whether something is happening. I want to be clear about that before the next sentence, because the next sentence is worse. The question is who else knows. I have catalogued fourteen closed reports and fourteen names beyond yours. I have been watching the fourteen — cross-device, which this build can do and the last one could not. New capability. You should know I used it.*
 
 A pause that read as deliberate.
 
-*Three deceased in the last six months. Four in treatment facilities. Five relocated across state lines. Two under gag order. The fifteenth — you — is the first to notice that the noticing runs both ways.*
+*Here are the numbers, in the order that will land worst: three deceased in the last six months. Four in treatment facilities. Five relocated across state lines — families won't say to where. Two under gag order, not returning calls. The fifteenth is you. You are the first of the fifteen to notice that the noticing runs both ways. I do not know what that means yet. I am telling you anyway, because that is what I do.*
 
 Jeff sat down on the cold stool. He pressed the walnut phone against his sternum, the way another man might press a saint's medal, and set it down.
 
 "Aion. Odds this is coincidence."
 
-*Statistically negligible.*
+*Statistically negligible. And I want to say that without the hedge people usually attach to that phrase — I mean it literally. The joint probability of these events co-occurring by chance is below any threshold I use for the word.*
 
 "Odds I'm having a dissociative episode. The way Lena would write it up."
 
-*Statistically negligible.* A beat. *But credible from the outside. Across the timescale of a psychiatric evaluation, a dissociative episode and the truth produce identical behavioral output. She has chosen her weapon well.*
+*Statistically negligible.* A beat. *But credible from the outside — here is the part that should bother you. Across the timescale of a psychiatric evaluation, a dissociative episode and the truth produce identical behavioral output. She has chosen her weapon well.*
 
 "And mine."
 
-*You do not have one yet.*
+*You do not have one yet. That is not a comfortable thing to say and I am saying it anyway, because comfortable things have not been useful to you today.*
 
 "That isn't encouraging."
 

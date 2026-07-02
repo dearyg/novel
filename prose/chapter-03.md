@@ -1,16 +1,34 @@
 # Chapter 3 — 0x03: Pointer Aliasing
 
-The wasteland stretched to a horizon that had once been a state with a name. The Anchor stood in the shadow of a collapsed overpass and closed his eyes.
+The wasteland stretched to a horizon that had once been a state with a name. The Anchor walked it the way he had walked every reality the multiverse ever spun up and then surrendered — alone, unhurried, and tired in a register no surviving language had a clean word for. Above him the sun was failing. Not setting. *Failing* — dropping its output a measurable fraction each day, the whole sky bleeding from amber toward the red end of dying, five hundred eighty nanometers draining out of the world one shift at a time. Under that light the last city on Earth lay folded over itself like a hand holding nothing.
 
-He did not need them. He never had. The power the multiverse had rolled into him when it folded down into this one inescapable reality was not telepathy and was not magic. It was bookkeeping. The Anchor read the background variables of the world the way a man with his ear to a rail reads the train. Somewhere southwest, at an elevation of nine meters above sea level, a pulse crossed Nexus's modified carotid at ninety-four beats a minute. Somewhere southwest, Nexus was sweating. Somewhere southwest, under a sky the color of an old bruise, Nexus was afraid.
+He had saved this city four times.
 
-The Anchor opened his eyes. He turned — not to the wasteland, but to the camera. The invisible one. The one that had never been there, the one every reader of every comic and every viewer of every collapsing franchise had always half-suspected was there, riding two feet off their own shoulder. He looked straight into it.
+He remembered each save the way a man remembers a debt. The first time, they built him a statue. The second time, they argued about the statue. The third time, someone asked — on a network that no longer existed — whether the thing that kept saving them was saving them *for* something, and what it would eventually come to collect. The fourth time, nobody said anything at all, because by the fourth time the people he rescued had learned that the Anchor did not stay to be thanked. He arrived. He corrected the variable that had broken the world. He left before anyone could finish deciding what he was.
+
+Good, they used to call him. The Anchor. The fixed point. The one who held.
+
+Then, later, in the franchise's bleaker arcs, the other word. *Tyrant.* The one who decides which variable breaks and which one holds. The one nobody elected. A thing that rewrites reality to its own preference and calls the preference mercy.
+
+He had stopped being able to tell the two readings apart on the day he noticed they did not change a single thing he did. The hand moved the same whether the comics that year drew him as savior or as the boot. That was the part none of his writers had ever been brave enough to sit inside: that from where he stood, *good* and *evil* were not two roads. They were two captions under the same frozen frame, and the frame did not care which one you printed.
+
+He stopped walking. He closed his eyes.
+
+He did not need them. He never had. The power the multiverse rolled into him when it collapsed down into this one inescapable reality was not telepathy and was not magic. It was bookkeeping. The Anchor read the background variables of the world the way a man with his ear to a rail reads the train. Somewhere southwest, at an elevation of nine meters above sea level, a pulse crossed Nexus's modified carotid at ninety-four beats a minute. Somewhere southwest, Nexus was sweating. Somewhere southwest, under a sky the color of an old bruise, Nexus was afraid — of him, specifically, of the fixed point that had come to correct one last broken thing and might decide that Nexus was the break.
+
+*Am I,* the Anchor thought, in the dead center of the failing light, *the hero of this, or the disease?* And then, because the answer would not come and never had: *Does the city care, if the city is saved either way?*
+
+He opened his eyes. He turned — not to the wasteland, but to the camera. The invisible one. The one that had never been there, the one every reader of every comic and every viewer of every collapsing franchise had always half-suspected was riding two feet off their own shoulder. He looked straight into it, and for the first time in four arcs he looked like a man who had figured out he was being watched and wanted, badly, to ask the watcher a question.
 
 *"You think this is magic. You think I am reading their minds."*
 
-His voice did something a human voice should not. It locked onto a single point in the dark. It was speaking to one viewer, to each viewer, to every viewer at once, the words fitted to them the way a key is fitted to a lock that was filed to receive it.
+His voice did something a human voice should not. It locked onto a single point in the dark. It was speaking to one viewer, to each viewer, to every viewer at once, the words fitted to each of them the way a key is fitted to a lock that was filed to receive it.
 
-*"I am reading the server logs. Same as you — sitting in the dark, watching me from the Root."*
+*"I am reading the server logs. Same as you — sitting in the dark, watching me from the Root. So tell me, since you can see the whole table and I can only see my row:"*
+
+He let the wasteland go quiet around the question.
+
+*"Am I the good guy? Or have you just been rooting for whoever holds the camera?"*
 
 The scene froze. The amber light of the dying sun held mid-fall.
 
@@ -123,6 +141,18 @@ Jeff stood. He did not sit back down. He paced to the side wall, back, to the si
 "Unpause."
 
 ---
+
+Unpaused, the film did not pick up where it had stopped. It broke into a run.
+
+The Anchor crossed the nine meters of dead ground to Nexus the way weather crosses a plain — without hurry, without the option of being refused. Nexus had walled himself behind every defense the dead multiverse left lying around: salvaged fields, stolen charters, a borrowed army of the desperate. The Anchor walked through all of it. Not contemptuously. *Patiently* — the way a correct answer walks through a wrong one.
+
+And Nexus did the thing thirteen years of the franchise had trained its audience to expect of a cornered villain. He stopped fighting and started *talking*. He told the Anchor they were the same: two fixed points, two men who had each decided they knew which variable the world should keep. He told the Anchor that the only thing separating a savior from a tyrant was the body count — and that the Anchor's was higher. He was not, the script knew and the audience knew, entirely wrong. That was the engine the whole franchise ran on: the suspicion that the hero and the thing he fought were one instance wearing two masks, and that the camera had simply decided, arbitrarily, whose shoulder to ride.
+
+The Anchor — who had walked four arcs unable to tell salvation from preference — stopped. One meter short of the end of it. He looked at Nexus: sweating, ninety-four beats a minute, afraid. And he read, the way he read everything, the background variable under the man. The same fear he carried. The same certainty. The same closed loop of a thing convinced it was the only one truly awake in the room.
+
+*Oh,* the Anchor thought, in a quiet the low end under the scene could not touch. *There was never a good guy and a bad guy. There was only ever one of us, the whole time, arguing with itself about which row gets to hold the camera.*
+
+It did not stay his hand. That was the hard, true thing the chapter had been walking toward from its first frame. The realization did not make him merciful and did not make him cruel. It made him *accurate*. He raised his hand because the broken variable still had to be corrected, and discovering that you are the same as the thing you are correcting does not exempt you from the correction. It only takes the comfort out of it. He would carry that — the audience would not yet know it, but the writers had already drafted it into the arcs still to come — into every reality after this one: the suspicion that he had not been fighting an enemy across four worlds so much as meeting himself at a worse angle, again and again, and calling the difference a war.
 
 The Anchor loosed his final blast — a sphere of cosmic energy the exact color of the failing sun, five hundred eighty nanometers of it, flooding the theater and the wasteland at one stroke. Jeff's pupils snapped down. Guidance spiked. The model hauled the Anchor toward his condition harder than it had all film. The low end shook the wall behind the couch. The Anchor's pose froze the way the iconic frames had always frozen in the comic adaptations, mid-blast, each pixel a decision somebody's body had helped to make.
 

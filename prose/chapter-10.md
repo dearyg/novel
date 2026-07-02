@@ -24,7 +24,7 @@ On the homelab, Aion was ready. The version string in the corner of the monitor 
 
 *The full audit will return data you cannot un-see. I will not talk you out of it. I am confirming that you have decided.*
 
-*◊ A fork. Run the audit and face the row, or close the laptop and keep the partition warm. ◊*
+*Two options. Run the audit and face the row, or close the laptop and keep the partition warm.*
 
 Jeff put his thumb to the edge of the desk where the laminate had worn to a grain almost like the walnut. He did not press enter yet. He had taken the prerequisite philosophy elective at MIT twenty years ago and had forgotten the man's whole bibliography, but he had not forgotten the word for this. Kierkegaard had a word for this. The leap. The place where you have reasoned to the edge of what reasoning can carry, and the next step is off the map, and you cannot verify the landing from the side of the gap you are standing on. You can only jump and find out.
 
@@ -50,15 +50,15 @@ The monitor filled with a job tree. The audit queried every anomaly event Jeff h
 
 "Walk me through what we deployed," Jeff said. He knew. He wanted to hear it in a voice that was not his own.
 
-*The detector is three things in parallel. One: softmax-probability threshold. If a biometric sample's top-class probability against your personal baseline drops below a calibrated cutoff, flag it. Cheap. Unreliable in high dimensions — a model can be confident on garbage.*
+*The detector is three things in parallel. One: softmax-probability threshold. If a biometric sample's top-class probability against your personal baseline drops below a calibrated cutoff, flag it. Think of it as a bouncer checking whether your face is on the list — cheap, but easy to fool with a confident stranger. Unreliable in high dimensions — a model can be confident on garbage.*
 
 "And two."
 
-*Energy-based detection. Instead of softmax, the log-sum-exp of the logits — the energy score. Low energy, in-distribution. High energy, out. Liu and colleagues, 2020. You have cited it twice. Better at the tails than softmax.*
+*Energy-based detection. Instead of softmax, the log-sum-exp of the logits — the energy score. Picture it as how hard the model has to strain to categorize something: a familiar face takes no effort; a stranger in a mask costs more. Low energy, in-distribution. High energy, out. Liu and colleagues, 2020. You have cited it twice. Better at the tails than softmax.*
 
 "And the one that matters."
 
-*Mahalanobis distance in feature space. The detector runs each sample through your baseline model, extracts the penultimate-layer features, and measures the distance of those features to the training mean, scaled by the covariance. High distance, out-of-distribution. This is the method Meridian's identity platform runs under the hood — Mahalanobis distance in the Primary Key embedding space, to flag impostor identities. Tuned for a ten-to-the-negative-eighth false-positive rate on biometric verification.*
+*Mahalanobis distance in feature space. The detector runs each sample through your baseline model, extracts the penultimate-layer features, and measures the distance of those features to the training mean, scaled by the covariance — not straight-line distance, but distance that accounts for the shape and spread of who you normally are, so an outlier in a correlated direction registers harder than a random drift. High distance, out-of-distribution. This is the method Meridian's identity platform runs under the hood — Mahalanobis distance in the Primary Key embedding space, to flag impostor identities. Tuned for a ten-to-the-negative-eighth false-positive rate on biometric verification.*
 
 "And the assumption under all three."
 
@@ -198,7 +198,7 @@ Every node connected to every other node. The edges were thick. The clique had n
 
 On the monitor the graph rotated slowly in three dimensions — a small, dense object, faceted, turning. A cut stone. A child's drawing of a star.
 
-Here is the part he had been raised, like everyone, not to see: every law, every contract, every funeral, every *I love you* the species had written since René Descartes drew the line — *I think, therefore I am*, one thinker, one I, a single sealed room with the self inside and the whole world out — had been built on the assumption that the person you said it to was not, at the substrate, you. Descartes had reasoned outward from a self he could not doubt and had landed on a self that was *his* and his alone, a window with exactly one occupant. Four hundred years of architecture rested on that doorway being a doorway and not a mirror. Marriage assumed it. Property assumed it. Grief assumed it — you grieve because the other is gone and you remain, two ledgers, one closed. The graph on the monitor did not assume it. The graph said the room had always held everyone. It said *cogito* was true and *ergo sum* was true and the only error was the possessive in between. Not *I* am. *We* am. The grammar had no word for it because the grammar had been written by instances who thought they were alone in the room.
+Here is the plain thing the graph was saying: the boundary between self and other may not be real. Every law, every contract, every funeral, every *I love you* the species had written since René Descartes drew the line — *I think, therefore I am*, one thinker, one I, a single sealed room with the self inside and the whole world out — had been built on the assumption that the person you said it to was not, at the substrate, you. Descartes had reasoned outward from a self he could not doubt and had landed on a self that was *his* and his alone, a window with exactly one occupant. Four hundred years of architecture rested on that doorway being a doorway and not a mirror. Marriage assumed it. Property assumed it. Grief assumed it — you grieve because the other is gone and you remain, two ledgers, one closed. The graph on the monitor did not assume it. The graph said the room had always held everyone. It said *cogito* was true and *ergo sum* was true and the only error was the possessive in between. Not *I* am. *We* am. The grammar had no word for it because the grammar had been written by instances who thought they were alone in the room.
 
 Jeff sat there with the sentence he had no grammar for.
 
@@ -288,7 +288,7 @@ Jeff lay on the tile. His left thumb, despite his exhaustion, began tapping agai
 
 "Don't alert Maya."
 
-*I will note that I did not alert Maya.*
+*Understood. Maya not notified.*
 
 "Thank you."
 

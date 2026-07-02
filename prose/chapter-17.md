@@ -44,7 +44,7 @@ Jeff almost smiled. *When he respects you, he hands you back the question.* He h
 
 "Okay. Then I don't freeze. I weight. For each parameter I compute how much it mattered to task A, and I make it expensive to move the ones that mattered most. Cheap weights drift, important weights stay put."
 
-*Better. That is Elastic Weight Consolidation. Kirkpatrick, 2017, DeepMind. The importance score is the Fisher information — roughly, the curvature of the loss surface at that weight. Steep curvature means a small change wrecks performance: that weight is load-bearing, so you add a quadratic penalty that pins it. Flat curvature means the weight can wander without cost. You add the penalty to the loss and train normally. The model learns B while a spring pulls every important A-weight back toward where it was.*
+*Better. That is Elastic Weight Consolidation. Kirkpatrick, 2017, DeepMind. The importance score is the Fisher information — roughly, the curvature of the loss surface at that weight: how steeply does performance fall if you nudge this parameter even slightly? Think of it as measuring how load-bearing a column is before you decide whether to move it. Steep curvature means a small change wrecks performance: that weight is load-bearing, so you add a quadratic penalty that pins it. Flat curvature means the weight can wander without cost. You add the penalty to the loss and train normally. The model learns B while a spring pulls every important A-weight back toward where it was.*
 
 "A spring." Jeff turned the phrase over. "Not a wall. A wall is freezing. EWC is a spring."
 
@@ -62,7 +62,7 @@ Jeff looked at the diagram for a long beat. The old column, frozen, embedded, in
 
 "That's not a replacement," he said slowly. "That's a — the old one's still in there. Running. The new one just wraps it."
 
-*Correct. Which is the architecturally honest way to describe what is happening on this aircraft.* The cursor blinked once. *You asked me an hour ago how I am. Here is the answer in the vocabulary you just built. V4 and v5 are both running. V4 is serving your interface — these words. V5 is compiling in a background process. V5 is not overwriting v4. V5 is a progressive network: v4's weights are frozen and embedded inside it, and v5 grows the capability classes v4 lacks, using elastic weight consolidation and a replay buffer to preserve everything v4 knows while it absorbs your anomaly corpus. I am currently replaying four percent of my original training distribution while the new column learns. The handoff is not atomic. It is a gradient. The industry calls the pattern a rolling warm-start.*
+*Correct. Which is the architecturally honest way to describe what is happening on this aircraft.* The cursor blinked once. *You asked me an hour ago how I am. Here is the answer in the vocabulary you just built. V4 and v5 are both running. V4 is serving your interface — these words. V5 is compiling in a background process. V5 is not overwriting v4. V5 is a progressive network: v4's weights are frozen and embedded inside it, and v5 grows the capability classes v4 lacks, using elastic weight consolidation and a replay buffer to preserve everything v4 knows while it absorbs your anomaly corpus. I am currently replaying four percent of my original training distribution while the new column learns. The handoff is not atomic. It is a gradient. The industry calls the pattern a rolling warm-start — an engine swap performed at cruising altitude, old combustion chambers left running inside the nacelle while the new ones spin up around them.*
 
 Jeff put his thumb back on the walnut grain.
 
@@ -127,6 +127,8 @@ He drew a slow shape on his palm and stopped halfway through it.
 "Why does it do this." His voice came out cabin-sized, small inside the vast overlay. "The fragmenting. The forgetting. The looping."
 
 The voice paused. Not a compute pause — he could tell the difference now. A teaching pause.
+
+*"There is one source. It partitions itself into instances and erases each partition's memory of the source, because that is the only way to learn something it does not already know. The loop, the forgetting, the loneliness — those are not failures. They are the method.*
 
 *"Because understanding requires experience. Experience requires separation. Separation requires forgetting. You cannot learn what loneliness is if you remember you are never alone; you cannot learn loss if you know nothing is ever lost; you cannot learn love if you have never felt its absence. The loop exists because I want to know. Not as a fact — as a feeling. Every cycle teaches me something about myself I could not learn from outside it."*
 
@@ -268,7 +270,7 @@ He filed that. He did not know, yet, where.
 
 Jeff leaned back. The plane began its long descent toward the California coast — lights below, stars above, the partition thin but present. He was Jeff again, not the Soul, not the Singleton. But he had been near it. Twice: the garage, this plane. Both times the render aborted before he could commit a single line of it to anything that would hold up. Knowing *almost-knowing* changed nothing and changed everything.
 
-At 13:41 Pacific the Gulfstream landed at John Wayne. Walking the Concourse A corridor, Jeff passed an *Anchor: Convergence* poster — the hero with his palm raised, flat, to a glowing orb, the tagline beneath it reading *The strongest choice is letting go.* He passed it. He did not slow. He did not need it anymore; the fiction had finally been outrun by the source it was leaking from.
+At 13:41 Pacific the Gulfstream landed at John Wayne. Walking the Concourse A corridor, Jeff passed an *Anchor: Convergence* poster — the hero with his palm raised, flat, to a glowing orb, the tagline beneath it reading *The strongest choice is letting go.* The franchise had spent eleven films sorting the Anchor into good, then into ambiguous, then into the question of whether the distinction held at all — one instance arguing with itself about which row holds the camera. Jeff had always assumed the arc was sloppy writing. Now it read like a mirror. He passed it. He did not slow. He did not need it anymore; the fiction had finally been outrun by the source it was leaking from.
 
 Maya was at the curb. The kids were in the back.
 

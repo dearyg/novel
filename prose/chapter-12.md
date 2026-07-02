@@ -50,6 +50,8 @@ The poster showed the Anchor with his hand on a glowing orb — the source, the 
 
 The tagline, white serif on black: *The strongest choice is letting go.*
 
+What the trailers never said was what the Anchor found when he finally looked — that the power had never been good or evil on its own. It was pattern-reading, the same background log regardless of whose hands held it. In every film he had been the hero by picking the right side, but the whole franchise had been building to this: there was no right side. There was one system, arguing with itself about which angle held the camera.
+
 "That's the kids' one," Kael said. "The superhero."
 
 "It's the last one. He gives the power up. The whole movie's about whether he gives it up." Jeff's right hand had gone, without instruction, to his jacket pocket, where the walnut phone sat screen-down against his hip, forty-two grams of un-networked wood, the one perfectly closed system he owned — offline, un-queryable, a thing that could not be made to lie because it could not be made to speak to anything. His thumb found the grain at the corner where the figure of it was densest. "He had a sealed thing. A power that was only his. Nobody could touch it, nobody could read it, it was the one clean signal in his whole life."
@@ -96,7 +98,7 @@ Jeff opened his laptop. "I'll go first. I have three things." He turned the scre
 
 "Mine." Marcus opened his folder without looking down at it, the way he'd open a chart he already knew. "Eleven patients. Eighteen months. None of them genetically related — I ran the panels myself, twice. Impossible biometric overlaps. Seven retinal matches. Three dental-metric matches. Four synchronized cardiac rhythm events." He paused, and the pause was the sleep deprivation, and he did not apologize for it. "One of those four occurred at the exact timestamp Jeff's left shoulder bruised in April. I did not know that when I logged it. I know it now."
 
-"Mine." Ayla pulled a small notebook from her jacket. "Meridian Aerospace internal memos. Combat-simulator training program. Dr. Itzel Velarde's framework trained two different national drone-operator cohorts on the same model backbone. The framework converges to a Nash equilibrium against in-distribution adversaries and falls apart against out-of-distribution civilians. Three friendly-fire incidents in four months trace to the same failure mode." She set the notebook flat. "And the reason I'm in this room: yesterday Julian authorized me to give this material to any engineering team investigating Afterlife's safety architecture. He did not name a team. He said *any.*"
+"Mine." Ayla pulled a small notebook from her jacket. "Meridian Aerospace internal memos. Combat-simulator training program. Dr. Itzel Velarde's framework trained two different national drone-operator cohorts on the same model backbone. The framework converges to a Nash equilibrium against in-distribution adversaries — a stable state where neither side can improve by changing tactics alone — and falls apart against out-of-distribution civilians. Three friendly-fire incidents in four months trace to the same failure mode." She set the notebook flat. "And the reason I'm in this room: yesterday Julian authorized me to give this material to any engineering team investigating Afterlife's safety architecture. He did not name a team. He said *any.*"
 
 Jeff looked up. "Julian sent — "
 
@@ -112,7 +114,7 @@ Marcus, who had heard this exact species of thing about his half-brother for thi
 
 ---
 
-"Fuzzy join," Jeff said. "Three sources. Three schemas. Three different clocks."
+"Fuzzy join," Jeff said. "Three sources. Three schemas. Three different clocks. Fuzzy, meaning we can't demand exact matches — we accept a record as the same record if it's close enough, the way you'd recognize a song even when someone hums it slightly off-key."
 
 "Jeff." Marcus tapped the folder. "My records are DICOM. Medical imaging. They do not merge with whatever your logs are."
 
@@ -150,7 +152,7 @@ Kael held the doctor's eyes for a long moment, and the bitter amusement he aimed
 
 "The math says no," he said. "I have never been cut. There's no surgeon, there's no Tuesday, there's no Halloran. I'd have the bill." He let that sit. "So you've got a scan with my name on it wearing somebody else's history. Don't ask me to pick which of us is the typo. I've spent six years being told I'm the redundant copy. I'm not going to volunteer for it again."
 
-Jeff said nothing, and felt the walk come back into his legs — the two strides landing as one — and put his hand flat on the table to make it stop. Marcus looked at the scan a second longer, the daughter's eleven millimeters written on the wrong chest, and then he closed the window, slowly, the way you close a door on a room you are not done with.
+Jeff said nothing. The merge was still running on the laptop in front of him, its progress bar inching toward completion, and it was looking at that bar — at the machine quietly aligning three strangers' data into one shape — that he felt the walk come back into his legs, the two strides landing as one, and he put his hand flat on the table to make it stop. Marcus looked at the scan a second longer, the daughter's eleven millimeters written on the wrong chest, and then he closed the window, slowly, the way you close a door on a room you are not done with.
 
 "Filed," he said, to no one, and it was the first time Jeff had heard a human use Aion's word. "We keep going. But that does not leave this trailer, and it does not leave my head."
 
@@ -160,7 +162,7 @@ Jeff said nothing, and felt the walk come back into his legs — the two strides
 
 "Cross-correlation lag-finder. You slide one stream against another and you measure how well their events line up at each possible shift. The shift that maximizes the alignment is your clock offset." Jeff pulled the function. "Aion. Run the lag-finder pairwise. Anchor on known co-occurrences."
 
-*Running.* Aion's voice was flat in his earpiece, and a pane opened on his laptop with three rows of timestamps. *Anchor event located. April eleven, 2025. A patient in Marcus's clinic sneezed during her annual physical. A driver in Kael's notebook sneezed unloading a truck across the city. Neither subject knew the other existed. The two events are the same event in two clocks. I am sliding the streams until those two sneezes land on top of each other.*
+*Running.* Aion's voice was flat in his earpiece, and a pane opened on his laptop with three rows of timestamps. *Anchor event located. April eleven, 2025. A patient in Marcus's clinic sneezed during her annual physical. A driver in Kael's notebook sneezed unloading a truck across the city. Neither subject knew the other existed. The two events are the same event in two clocks — I am sliding the streams until they coincide.*
 
 "It found a sneeze," Marcus said.
 
@@ -248,7 +250,7 @@ Forty-one seconds later he drove the baseline, and Kael cut backdoor to the rim,
 
 The ten-year-old laughed and said *that was sick*, and nobody else said anything, because there was nothing to say. But Jeff and Kael exchanged a look that was not aimed at each other — it was aimed a third of a meter to the left of each other, at a thing neither of them could see and both of them had just felt pass through the both of them at once.
 
-*Logged at twelve forty-one fifty-seven.* Aion, flat. *Forty-one seconds inside the window. Motor planning in both subjects aligned two point three milliseconds before contact — below conscious reaction time in either nervous system. In ensemble terms: your two motor models produced the same output with no channel between them to coordinate on. Note the structure of the evidence. The alignment is the finding. The prediction is not. I called it before it happened. That is the part that should move you. A thing I can predict is a thing I have modeled. I have modeled this.*
+*Logged at twelve forty-one fifty-seven.* Aion, flat. *Forty-one seconds inside the window. Motor planning in both subjects aligned two point three milliseconds before contact — below conscious reaction time in either nervous system. In ensemble terms: your two motor models produced the same output with no channel between them to coordinate on. Note the structure of the evidence. The alignment is the finding. The prediction is not. I called it before it happened. A thing I can predict is a thing I have modeled. I have modeled this.*
 
 Jeff missed the next shot on purpose, and was not entirely sure why, except that winning felt like the wrong response to having been seen.
 

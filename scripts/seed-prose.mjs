@@ -266,7 +266,16 @@ async function seedManifest(novelId) {
     .update({ manifest: md })
     .eq("id", novelId);
   if (error) {
-    console.error(`  ✗ manifest update: ${error.message}`);
+    // The `manifest` column is optional. If the schema does not have it yet,
+    // skip gracefully instead of erroring (run supabase-update-prose.sql to enable).
+    const columnMissing =
+      error.code === "PGRST204" ||
+      /could not find the .*manifest.* column|schema cache/i.test(error.message || "");
+    if (columnMissing) {
+      console.log(`  - novels.manifest column not present in schema; skipping (optional).`);
+    } else {
+      console.error(`  ✗ manifest update: ${error.message}`);
+    }
   } else {
     console.log(`  ✓ manifest updated (${md.length} chars)`);
   }

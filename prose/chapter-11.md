@@ -40,7 +40,7 @@ Kael Sorensen laughed. There was no pleasure anywhere in it. "Do we. You live un
 
 Jeff said nothing.
 
-Kael stood. He came up off the cardboard in one motion, and standing, the resemblance arrived all at once, the way a render resolves when the last texture loads. Same height. Same build, under the emaciation. Same jawline, same long narrow hands, one of them shoved now into a jacket two sizes too big. He dragged the side of his thumb along his lower lip — a conference-room tic, Jeff thought, repurposed for a sidewalk. In Jeff's pocket the embedding model finished its silent pass and returned the number he already knew: cosine distance 0.11, bone-structure agreement 98.9 percent, dental metrics inside tolerance. Impossible between unrelated men. His own eyes had done the arithmetic before the phone did.
+Kael stood. He came up off the cardboard in one motion, and standing, the resemblance arrived all at once, the way a render resolves when the last texture loads. Same height. Same build, under the emaciation. Same jawline, same long narrow hands, one of them shoved now into a jacket two sizes too big. He dragged the side of his thumb along his lower lip — a conference-room tic, Jeff thought, repurposed for a sidewalk. In Jeff's pocket the embedding model finished its silent pass and returned the number he already knew: cosine distance 0.11 — on a scale where zero means identical — bone-structure agreement 98.9 percent, dental metrics inside tolerance. Impossible between unrelated men. His own eyes had done the arithmetic before the phone did.
 
 "Here's what I think, tech guy." Kael wiped rain off his jaw with the heel of his hand. "People like you build the systems. AI, Afterlife, the allocator, all of it. And then when the systems eat people like me, you drive out here and look at us like we're a held-out test set. Like running your eyes over us makes it square that you did this."
 
@@ -80,7 +80,39 @@ The rain came harder. He let it.
 
 "Same soul, different allocation, my ass. Maybe the allocation was the only thing that ever mattered. Maybe getting *allocated less than the guy next to you* was the entire content of being a person, and your AI took it out behind the shed, and now none of us knows what we're for."
 
-Jeff did not have a clean response. The half-right answer — *that is exactly why Afterlife is a trap* — was also the half-wrong answer — *the allocator did delete real suffering, and you are not wrong about the hollow it left.* He stood in the rain and held both at once, because both were load-bearing, and watched a man who was, by some architectural measure he had no name for yet, also himself, decline a heated room because declining was the last thing he still owned outright.
+Jeff did not have a clean response. The half-right answer — *that is exactly why Afterlife is a trap* — was also the half-wrong answer — *the allocator did delete real suffering, and you are not wrong about the hollow it left.* Both things were true at once, and neither cancelled the other.
+
+"There's a framework," Jeff said. "The allocator team uses it — not publicly, but internally. The argument is that the economy going from workers to observers is the same move as going from farmers to knowledge workers. Painful in the transition, net positive in the aggregate. Humans become the audience. The experiencers. The witnesses. You're freed from production to do what only sentient beings can do — feel, choose, narrate, remember. The argument is that the hole is temporary. That meaning migrates."
+
+Kael looked at him for a long time.
+
+"An observer," he said, "is just a worker you stopped paying."
+
+The rain ticked.
+
+"You took the work. You took the identity that lived inside the work — the thing a man is when he's solving a problem that needs him specifically, that he is the world's leading expert on for eight hours a day. You took the salary that made the choices real. And then you named the hole it left *freedom.* You called the void an upgrade. You said: now you get to witness. Now you get to experience. Now you're the audience." He stood up slowly, unfolding to full height in the three donated jackets. "You know what the audience is? The audience is people who can't get on stage. You made us the audience by taking the stage away. That's not a transition. That's a euphemism with a UX team."
+
+"The allocator provides for basic needs —"
+
+"Basic needs." Kael said it with the flat patience of a man who has heard this point made by people with good shoes. "A dog's basic needs are provided for. A zoo animal's. You provide for basic needs by *removing the cost of the alternative,* which is letting people die in the cold — that's not a social compact, that's a floor. The floor is not a life. The floor is what you put under people so you don't have to watch them fall through it." He turned to look down the block at the modular shelters, the spigots, the allocator-issue vests. "This is a very nice floor. I am not grateful for it the way you want me to be grateful for it, because gratitude for the floor is the same thing as accepting that the floor is enough."
+
+Jeff held the silence. He was aware that the obvious move — *but the meaning, people find new meaning, they always have* — was a sentence nobody had ever said from under a billboard while eating a protein bar. He left it unsaid.
+
+"You know what my job actually was," Kael said. "Not the title. The actual thing. I was a feasibility engineer. Every day someone handed me a constraint — this road, this load, this weather window, this driver's hours of service — and my job was to find the path that exists. Not an ideal path. The path that fits inside the constraints and actually gets the freight there. That's the whole job. Constraints into solutions. The thing about that job is it requires you. It requires the specific shape of your mind, the specific routing instinct you built over twelve years, your particular way of seeing the graph. The AI can do it now. The AI does it better. And what you're telling me is that there's a role waiting for me on the other side — the observer role, the experiencer role — and that role is: watch the AI do the thing I used to do." He stopped. "You see the problem."
+
+"You're not just watching," Jeff said. "In the framework — the honest version of it — humans become the ones who define what matters. You set the values. You do the meaning-making. The AI optimizes within that."
+
+"Who's setting the values in the allocator right now."
+
+Jeff said nothing.
+
+"Not me." Kael nodded. "Not anybody on this block. The value-setting happens at the company. The meaning-making happens in a boardroom in Irvine. And the people doing it — the witnesses, the experiencers, the meaning-makers — they get paid. They have equity. They have leverage. They are not observers. They are operators who got to keep the stage and handed us the audience role and called it liberation." He sat back down. "Your framework is correct for them. It is a UX redesign for people who still have access to the interface. It doesn't describe what happened to the people who got logged out."
+
+He reached for the corner of the protein bar wrapper and turned it in his fingers.
+
+"I don't think the framework is wrong," he said, quieter. "I think it's for a generation that hasn't been born yet — kids who grow up with no memory of having the work, who inherit the observer role clean, who don't have a before. For them maybe it fills. For me it's just the shape of what's missing. You can't give a person meaning like a food credit. It doesn't work that way. It has to grow out of something they did."
+
+Jeff stood in the rain and held both at once, because both were load-bearing, and watched a man who was, by some architectural measure he had no name for yet, also himself, decline a heated room because declining was the last thing he still owned outright.
 
 ---
 
@@ -158,7 +190,7 @@ For a second neither of them said anything. The rain did its slow meter on the s
 
 Then a voice came up out of Jeff's collar, low and even, no hurry in it, the cadence of a system that had been handed more compute than it strictly needed and had stopped being polite about latency.
 
-*Logging. The proposal is balanced pretraining via deployment-frequency importance weighting. Cross-referenced. The move is correct and underused. Cost, since you will ask.*
+*Noted. The proposal is balanced pretraining via deployment-frequency importance weighting. Cross-referenced. The move is correct and underused. Cost, since you will ask.*
 
 "Go," Jeff said.
 
@@ -286,7 +318,7 @@ Kael was drinking his coffee. Kael had heard this pitch a number of times and ha
 
 Kael raised his mug a half-inch in acknowledgment and said nothing.
 
-Jeff became aware of the warmth in his chest — actual warmth, the radiant kind, the first he had felt there in eleven weeks. He had nearly forgotten the chest was for anything but pressure.
+Jeff's eyes drifted to the AM transmitter on the shelf, its red on-air light dark and cold. He became aware of the warmth in his chest — actual warmth, the radiant kind, the first he had felt there in eleven weeks — arriving in the one room on earth where no model could reach him, which meant either the transmitter had nothing to do with it or he had simply lost the ability to tell. He had nearly forgotten the chest was for anything but pressure.
 
 "Why are you telling me this," he said.
 

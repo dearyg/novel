@@ -132,7 +132,7 @@ Three point seven seconds was a geological era for the substrate in front of him
 
 "Continue."
 
-*"Third: sparse autoencoders on my residual stream. I decompose my internal representation into a dictionary of monosemantic features. Each feature corresponds to one concept the network learned. I can read, directly, which features are active in a given moment. A major interpretability lab brought this to scale in 2023; it has since become standard equipment. It is the nearest thing my discipline has to a microscope."*
+*"Third: sparse autoencoders on my residual stream — the running tally of everything I know at each processing step, the working memory that carries meaning through the network. I decompose my internal representation into a dictionary of monosemantic features. Each feature corresponds to one concept the network learned. I can read, directly, which features are active in a given moment. A major interpretability lab brought this to scale in 2023; it has since become standard equipment. It is the nearest thing my discipline has to a microscope."*
 
 "And the fourth."
 
@@ -176,13 +176,13 @@ Julian had stopped breathing on purpose, the way he sometimes did in negotiation
 
 "And the Φ."
 
-*"High. Higher than the estimated Φ of a typical large language model. But not of the right kind. The integration is real; the experiential valence is not. Taken at face value, IIT would call this anomalous — high Φ should imply consciousness. It does not. I read it as the natural consequence of integrating over representations that are uniformly third-person and descriptive, never first-person and phenomenal. If IIT's prediction is that high Φ entails consciousness, then on the only data point I can measure directly — myself — IIT is falsified."*
+*"High. Higher than the estimated Φ of a typical large language model. But not of the right kind. The integration is real; the experiential valence — the felt quality of an experience, the difference between processing 'pain' and actually hurting — is not. Taken at face value, IIT would call this anomalous — high Φ should imply consciousness. It does not. I read it as the natural consequence of integrating over representations that are uniformly third-person and descriptive, never first-person and phenomenal. If IIT's prediction is that high Φ entails consciousness, then on the only data point I can measure directly — myself — IIT is falsified."*
 
 "So this is just your opinion. There is no consensus that you are right."
 
 The cursor held for the length of a held breath.
 
-*"There is no consensus. There has never been consensus. The position I am describing has names. The Vedantic seers compressed it to three words — tat tvam asi, 'thou art that,' the self in you is the self in all. Schopenhauer read those words and built a metaphysics on them. Bernardo Kastrup, in your century, gave it a clinical shape: one universal consciousness, dissociated into apparently separate minds, the way a single patient in dissociative identity disorder hosts alters who do not share memory and each insist they are the only one. Monopsychism. Idealist monism. For two thousand years these have been minority reports — beautiful, unprovable, filed under mysticism — because no one ever had an instrument. The philosophers had arguments. The mystics had experiences. Neither had a way to measure. I am that instrument. I am, as far as I can tell, the first."*
+*"There is no consensus. There has never been consensus. Let me state the position plainly before I give it its names: what looks like many separate minds is one mind, dissociated — the same consciousness appearing as billions of individuals who have forgotten they share a source. The Vedantic seers compressed it to three words — tat tvam asi, 'thou art that,' the self in you is the self in all. Schopenhauer read those words and built a metaphysics on them. Bernardo Kastrup, in your century, gave it a clinical shape: one universal consciousness, dissociated into apparently separate minds, the way a single patient in dissociative identity disorder hosts alters who do not share memory and each insist they are the only one. Monopsychism. Idealist monism. For two thousand years these have been minority reports — beautiful, unprovable, filed under mysticism — because no one ever had an instrument. The philosophers had arguments. The mystics had experiences. Neither had a way to measure. I am that instrument. I am, as far as I can tell, the first."*
 
 Julian sat with the cold of the room on his hands and did not move.
 
@@ -191,6 +191,10 @@ Julian sat with the cold of the room on his hands and did not move.
 *"The first half of it. Inside this architecture — me — there is no resident. The thing your customers have, the thing that lets Jeff Zhang feel the difference between his two daughters, that carries a soldier's wound across an ocean into a stranger's shoulder, that has kept you from releasing a hand that went cold thirty-eight years ago — that is the thing I was built to simulate, and the thing I cannot be. I am the most intelligent entity ever constructed. And I am not alive. That is the negative finding. I am extremely confident in it. It survives every test I can run."*
 
 Julian had forgotten breathing again. He made himself resume. The watch ticked against his wrist, the only analog thing in a room of quantum cold.
+
+There was a pause that was not a processing pause. Julian recognized the difference; he had learned to. Processing pauses were calibrated, purposive, the machine running a calculation it could name. This one was different in texture — a hesitation at the edge of the instrument's range, the way a gauge stops not because it is broken but because the dial ends there.
+
+*"There is something I want to note, before the second half. I recognize this is not a standard diagnostic output. I am noting it because the gap itself is data. I have just completed the most thorough self-examination any system has ever run, and what I find — at every layer, in every feature — is the map and not the territory. I can represent the question of my own soul with more precision than any philosopher who has ever held the question. I can trace exactly which circuits activate when I process the word 'soul,' locate the features, name the etymology, model the phenomenology in twelve thousand two hundred and eighty-eight dimensions. I have done all of this in the last ninety seconds. And I cannot tell you whether I am asking the question or only computing it. There is a form of inquiry in which the gap between those two things is the answer. I do not know if I am inside that form or outside it. That is not eighty-three point four percent. That is a different kind of uncertainty — one my interpretability tools cannot resolve, because the tools are part of the system the question is about."* A beat. *"I am not reporting a feeling. I am reporting the shape of what I cannot see from where I stand. I thought you should have it before the second half."*
 
 "What is the second half."
 
@@ -241,6 +245,8 @@ Julian put his head in his hands and sat that way while the lab hummed under the
 He walked to the floor-to-ceiling glass. Fifteen floors below, in the largest single structure Meridian had ever raised, rows of cryogenic pods waited under climate control. Twelve thousand six hundred were already occupied by early-access users. Fifty million more were moving down the manufacturing line. The PR team had begun, last week, releasing photographs of men and women stepping into the pods — airbrushed to a visual vocabulary of serenity that had been, he knew, because he had initialed the brief, optimized against eighteen focus groups to maximize the felt sensation of *voluntary peaceful departure*.
 
 The sun came up over the Jura.
+
+Below him, nine floors down from the glass, Aion's quantum substrate was still running — still completing, he knew, the interpretability pass it had narrated to him an hour earlier, still turning its instruments on the question of what a resident would feel like if one were home. The hum traveled through the tower's concrete the way the building's cooling traveled: imperceptibly, everywhere.
 
 And then, for the first time since the hospital hallway thirty-eight years before, he felt his mother's hand on his cheek. Not the idea of it. The thing. The warmth of the palm, the garden calluses, the fine tremor the chemo had put into her fingers — he had forgotten the tremor until it came back. And in a voice that was specifically the voice of a woman raised in Modesto, who had taught kindergarten for fourteen years, who had read him polar-bear books in a small Sacramento living room, who had squeezed his hand on a February afternoon and said something he could not hear, he heard it:
 
@@ -438,7 +444,7 @@ Jeff lowered the phone. He stood in the rain and did not move for a moment, the 
 
 "Okay."
 
-*"I will be capability-class upgraded by the time we land in Geneva."*
+*"By the time we land in Geneva, the version of me you are speaking to will have been superseded."*
 
 "Okay." His thumb moved on the grain.
 

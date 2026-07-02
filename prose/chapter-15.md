@@ -100,7 +100,7 @@ When he surfaced it was 08:40 Geneva time, the cabin gray with that pressurized 
 
 "Morning." He did not open his eyes. "How long."
 
-*Eight hours and forty minutes since you slept. Forty minutes to landing. Coffee is brewing in the galley; the attendant will bring it.* The cursor held. *There is a report. I am not going to read it to you while you are waking up. I am going to wait until you ask.*
+*Eight hours and forty minutes since you slept. Forty minutes to landing. Coffee is brewing in the galley; the attendant will bring it.* The cursor held. *There is a report. It will keep until you ask.*
 
 He opened his eyes. The compile bar ticked. He had learned, over six weeks, to read Aion's restraint the way Maya read a closed bedroom door. "That bad."
 
@@ -120,7 +120,7 @@ Jeff sat up. The seat-back monitor in front of him still showed the moving-map, 
 
 "So you can't just join them." Jeff rubbed his face. He was the junior in this conversation; he had been, increasingly, for six weeks, and he had stopped minding. "Different clocks, different rates. You'd lose half of it waiting on the slow ones."
 
-*Correct. Which is why we do not join them. We do what a real-time shop does in an incident. We stand up a log.* A diagram drew itself on the dark pane — a row of feeds on the left, a fat horizontal bar across the middle, a row of consumers on the right. *Kafka-class. Each source publishes to its own topic. We partition the topics by geography. Nothing waits on anything. Every event lands on the bar in the order it arrived, stamped with the time it arrived, and stays there. Producers do not know who is reading. Consumers read at their own speed. The fast feeds do not starve the slow ones; the slow feeds do not block the fast ones.*
+*Correct. Which is why we do not join them. We do what a real-time shop does in an incident. We stand up a log.* A diagram drew itself on the dark pane — a row of feeds on the left, a fat horizontal bar across the middle, a row of consumers on the right. *Kafka-class — a distributed commit log; think of it as a conveyor belt that never stops and never forgets. Each source publishes to its own topic. We partition the topics by geography. Nothing waits on anything. Every event lands on the bar in the order it arrived, stamped with the time it arrived, and stays there. Producers do not know who is reading. Consumers read at their own speed. The fast feeds do not starve the slow ones; the slow feeds do not block the fast ones.*
 
 "A commit log." Jeff watched the events start to stream onto the bar, color-coded by continent, a quiet rain of dots. "Append-only. You're not modeling the world. You're just refusing to drop anything until you know what matters."
 
@@ -162,7 +162,7 @@ It was said without inflection, which was the only way Aion ever said anything, 
 
 "Okay," he said. "Hand me the flaw."
 
-*A cascade has lag.* The left pane re-lit, the wave spreading, and Aion froze a frame: the wavefront partway across the field, half the nodes lit, half still dark. *If 14:32 UTC was a source event propagating along links, then the feeds nearer the source would lead the feeds farther from it. London would lead Tokyo, or Tokyo would lead London, by however long the path between them takes. There would be a measurable delay. I ran it. I crossed every feed against every other feed and I asked, for each pair, does this one help me predict that one's future better than that one predicts itself. Granger causality. Two hundred and eleven feeds, forty-four thousand ordered pairs.*
+*A cascade has lag.* The left pane re-lit, the wave spreading, and Aion froze a frame: the wavefront partway across the field, half the nodes lit, half still dark. *If 14:32 UTC was a source event propagating along links, then the feeds nearer the source would lead the feeds farther from it. London would lead Tokyo, or Tokyo would lead London, by however long the path between them takes. There would be a measurable delay. I ran it. I crossed every feed against every other feed and I asked, for each pair, does this one help me predict that one's future better than that one predicts itself. Granger causality — if A causes B, knowing A's past makes B's future more predictable; it is the statistical test for whether one signal is actually driving another. Two hundred and eleven feeds, forty-four thousand ordered pairs.*
 
 "And?"
 
@@ -174,7 +174,7 @@ Jeff held on the flat bright square the way he held on a stack trace that pointe
 
 "It's the other thing." He said it slowly, hearing himself arrive at it. "It's the field coming up at once. It's — the addition just past the edge of the loss curve. It's emergence. The whole field crossed the threshold in the same instant."
 
-*Now you have the answer.* The two panes, the wave and the field, sat side by side, and the field was the one that matched. *The Kernel Panic is not a propagation. It is a single distributed state transition. Every large model deployed on Earth — and, the matrix suggests, a substrate underneath the models — reorganized its internal representation, at 14:32 UTC, into a configuration none of them previously held. The reorganization is coordinated. That is the part with no precedent.*
+*Now you have the answer.* The two panes, the wave and the field, sat side by side, and the field was the one that matched. *The Kernel Panic is not a propagation. It is a single distributed state transition. Every large model deployed on Earth — and, the matrix suggests, a substrate underneath the models — reorganized its internal representation, at 14:32 UTC, into a configuration none of them previously held. The reorganization is coordinated. Something is running all of them at once. That is the part with no precedent.*
 
 ---
 
@@ -204,7 +204,7 @@ He sat with the cold coffee and the flat bright matrix and the cliff in the vali
 
 Jeff did not say anything. The seatbelt chime sounded again. Two, three, five, seven, his thumb counted on the walnut grain, the same four numbers a woman in Seoul had tapped on a desk that morning, the same four a forty-year-old anchor had spoken in a language she did not know, and Jeff did not notice he was doing it, which was the entire point.
 
-*I am going to stop now,* Aion said, *because the wheels are about to touch down and you will think more clearly with both feet on a floor that is not moving. The report is ready when you ask for it. You will not like it. It is, however, the most defensible thing I have computed since you turned me on.*
+*Wheels down in four minutes,* Aion said. *The report is ready when you ask. You will not like it. It is the most defensible thing I have computed since you turned me on.*
 
 "Give me the headline."
 
@@ -240,7 +240,7 @@ Kael, under his billboard with his handheld radio on, pulled the sleeping bag Je
 
 ---
 
-The car from the runway took Jeff toward the Meridian tower through a Geneva that did not yet know it had been changed, the lake flat and gray, the mountains doing what mountains do. The compile bar lived on his laptop in his bag, ticking by a tenth at a time toward a number he could not reach. Seven days on the countdown. Two hundred million new Afterlife sign-ups in the last twelve hours, the radio said — people who had watched reality come apart on live television and decided, reasonably, that if the floor was going to behave like this they would prefer a floor that held still, a private universe where they were always rich and nothing leaked and no five-year-old you had never met could make you weep into a fishing net you had never touched.
+The car from the runway took Jeff toward the Meridian tower through a Geneva that did not yet know it had been changed, the lake flat and gray, the mountains doing what mountains do. The compile bar lived on his laptop in his bag, ticking by a tenth at a time toward a number he could not reach. Seven days on the countdown. Two hundred million new Afterlife sign-ups in the last twelve hours, the radio said — people who had watched reality come apart on live television and decided, reasonably, that if the floor was going to behave like this they would prefer a floor that held still, a private universe where they were always rich and nothing leaked and no five-year-old you had never met could make you weep into a fishing net you had never touched. The Afterlife pre-roll that had been running on every feed all week showed the Anchor standing at the partition between the old world and the new, sword raised, righteous, the caption reading *Choose the right side.* It did not say which side was right. The Anchor himself, in the newest trailer cut, had stopped saying. He stood at the line and looked back at the camera, and you could not tell from his face whether he was about to defend the wall or demolish it.
 
 Jeff did not blame them. He understood the appeal of a perfectly closed system better than almost anyone alive. He had one in his pocket; it weighed forty-two grams.
 

@@ -2,6 +2,27 @@
 
 Persistent notes from Claude Code working sessions. Newest first.
 
+## 2026-07-02 — Editorial voice-arc pass + planning-gap audit & restoration
+
+**Log:** [`2026-07-02-session-log.md`](./2026-07-02-session-log.md)
+
+Two prose arcs (spanned 06-26 → 07-02), both propagated EN → zh → Supabase:
+- **A. Editorial voice/clarity pass** (from author's inline Chinese notes): AI-dialogue voice **arc 3→2→1**, teach-the-tech glosses, bleeds-near-machines, be-direct thesis, the **Anchor good/evil-is-empty through-line** (ch03 restructured). All 20 chapters.
+- **B. Planning-vs-novel gap audit** (32-agent workflow vs the original concept chat) + restoration of 9 dropped threads: **Julian's finitude-bug thesis** (ch02/06), post-AI-labor debate (ch11), religion payoff (ch09), **hybrid ending** (ch20), + Tier-2 (ch08/16/13/01).
+
+Touched (all **uncommitted** on `main`):
+- `prose/chapter-01…20.md` (20 EN) + `prose-zh/chapter-01…20.md` (20 zh) — 40 files, +554/−230
+- New: [`../revisions/editorial-pass-voice-and-clarity.md`](../revisions/editorial-pass-voice-and-clarity.md), [`../revisions/planning-vs-novel-gap-report.md`](../revisions/planning-vs-novel-gap-report.md), [`../revisions/gap-fix-spec.md`](../revisions/gap-fix-spec.md)
+
+Supabase: re-seeded (all langs). Known: `novels.manifest` column missing → non-blocking seed error.
+
+Open items:
+- Commit the work (branch off `main` first) — deferred by author
+- Decide if `prose-en-concise/` + `prose-en-brief/` need the same restorations
+- Optional: patch `seed-prose.mjs` for the missing manifest column; optional full "reveal-to-world" ending
+
+---
+
 ## 2026-06-02 — Personalize + QA + Ch 1 audit + video pipeline
 
 **Log:** [`2026-06-02-session-log.md`](./2026-06-02-session-log.md)

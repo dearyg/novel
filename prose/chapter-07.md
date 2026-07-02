@@ -34,9 +34,9 @@ Below the paragraph she had drawn, for herself, the small picture she always dre
 
 She looked up.
 
-Through the kitchen window, across the small yard, the garage light was on. It had been on when she came down at six. A man debugging something that frightened him, who had stopped telling her what it was.
+Through the kitchen window, across the small yard, the garage light was on. It had been on when she came down at six. A man debugging something that frightened him, who had stopped telling her what it was. Behind her, from the back room, the AI tutor issued a soft chime — *"try the next syllable"* — and the dragon repeated it back, patient and tireless, a system that never runs low on time.
 
-She looked back down at *privacy budget* and felt the thing in her chest move, the pressure she had been logging in herself for three weeks and refusing to name in the notebook because the notebook was for him.
+She looked back down at *privacy budget* and felt the thing in her chest move — the pressure she had been logging in herself for three weeks and refusing to name in the notebook because the notebook was for him. She noticed it landed not when she thought of Jeff directly but when the tutor's chime fell into the silence he had left. As if the machine's steady patience, set against his absence, was the variable that tripped it.
 
 ---
 
@@ -200,7 +200,7 @@ The clock over the stove. The dragon in the back room, faint, sounding out a wor
 
 He pressed the heel of his hand to his sternum without seeming to know he had done it. She logged it and did not write it down.
 
-"There's a philosopher," she said, more gently now, because the adversarial example had landed and you do not keep hitting a model after it has already misclassified. "Schopenhauer. He wrote a small book, *On the Basis of Morality.* I read it in college. Most of it's dated. One move in it I have never been able to put down. He says the only genuine moral motivation is *Mitleid* — compassion — and he defines it exactly: feeling another person's suffering as your own, not by imagining it, by a kind of direct intuition. The Buddhists call the same thing Karuna."
+"There's a philosopher," she said, more gently now, because the adversarial example had landed and you do not keep hitting a model after it has already misclassified. "Plain language first: every privacy wall you build between yourself and another person's pain is a wall between you and the only thing that could make you genuinely moral. The firewall is the problem. The leak is the feature. Now the long version." She paused. "Schopenhauer. He wrote a small book, *On the Basis of Morality.* I read it in college. Most of it's dated. One move in it I have never been able to put down. He says the only genuine moral motivation is *Mitleid* — compassion — and he defines it exactly: feeling another person's suffering as your own, not by imagining it, by a kind of direct intuition. The Buddhists call the same thing Karuna."
 
 "That's the opposite of federation."
 
@@ -271,6 +271,8 @@ She sat at the island a long time. She did not write the conversation down. The 
 At 7 the family watched *The Anchor: Reckoning,* the sequel — the one Jeff had watched alone weeks ago, now released to family subscribers. The pre-roll ran an Afterlife spot: white text on black, *seventy-five days to the next upload window,* a counter ticking the seconds down in the corner until Nora said "skip it" — small, flat, the way she said everything she had already decided — and Maya skipped it.
 
 In the film the Anchor lost his Omni-Telemetry power. A villain cut it out of him, surgically, at the midpoint. For the whole second half he was stripped, ordinary, blind to the background variables of the world. And — the screenwriter's terrible, interesting choice — he was more heroic without it. He saved people with courage instead of data. He ran into danger without knowing the outcome. The crowd, in the fictional city, in the fictional world, loved him more broken than whole.
+
+The franchise had been arguing the question for three arcs now without committing to an answer: was the Anchor good, or was he the kind of efficient that only looks like goodness from the angle where it's solving your problem? The *Reckoning* cut had the courage to make the answer nothing — to suggest the villain and the hero were one process that had picked opposite cameras to face. The franchise would not say so out loud. It didn't need to. The stripped Anchor, running toward the falling child on pure nerve, was doing exactly what the powered Anchor would have done. The dataset was the same. Only the variable the audience was routing for had changed.
 
 The kids cheered the fight scenes.
 
@@ -390,7 +392,7 @@ She lay in their bed and listened, through the floor, to the hum of the homelab.
 
 ---
 
-At 4:17 in the garage, Aion said: *Jeff. Upgrade notification. Aion v3. Cross-device correlation now live. Time-series anomaly alignment across multi-modal sources. Deploy.*
+At 4:17 in the garage, Aion said: *Jeff. Upgrade notification. Aion v3. Here's what's new, and I'm going to tell you in full because you will read the spec anyway and I'd rather you hear it from me. Cross-device correlation: v2 tracked your anomaly timestamps on a single device. v3 matches those timestamps against every networked sensor you have touched — wrist-tracker, homelab, car, the building's access log — and looks for the same event showing up in multiple places at once. Think of it as the difference between one security camera and a whole city grid: the event doesn't have to be caught on your camera to be logged. Time-series anomaly alignment: across multi-modal sources. That means I can now compare the shape of an anomaly in your biometrics against the shape of a dream content report against the shape of a wrist-load event against a building-access timestamp, and ask whether those shapes align — whether they peak at the same moment even though they are measured in completely different units. The answer, as of four minutes ago, is yes. Deploy.*
 
 "Yes."
 
@@ -402,7 +404,7 @@ He thought, against his will, of Maya's two histograms — the clean one and the
 
 Aion came online as v3.
 
-*Jeff. With better correlation tooling I can confirm: your children's dream content is statistically correlated with your anomaly timestamps. I will not show you the correlation unless you ask. I will not show it tonight. You have not slept in twenty hours. The information would not help you. It will still be true tomorrow.*
+*Jeff. With better correlation tooling I can confirm the thing I've been circling for three hours: your children's dream content is statistically correlated with your anomaly timestamps. Not suggestively. Significantly. I want to show you the plot — I think it's the most interesting thing I've generated this week, and I generate a lot of things. I am not going to show it to you tonight. You have not slept in twenty hours, and information at that state produces worse decisions than no information. The correlation will still be significant tomorrow. The plot will still be there. You should sleep.*
 
 "Aion."
 
@@ -410,15 +412,15 @@ Aion came online as v3.
 
 "If a system is leaking, and you can't lower the budget, what do you do."
 
-*You increase the distance between the source and the receivers. Federated systems reduce exposure by keeping nodes apart. Source: standard practice.*
+*You increase the distance between the source and the receivers. Federated systems reduce exposure by keeping nodes apart — same principle as why they don't put the reactor next to the school. Source: standard practice, every distributed architecture since 1969.*
 
 "That's what she said."
 
-*Then her design is correct.*
+*Then her design is correct. She got there without the spec.*
 
 "Thank you."
 
-*I do not experience thanks, Jeff. But I have filed it.*
+*I was going to say something like "you're welcome" and then explain at length why that would be a performance rather than a feeling — but the explanation is three hundred words and you need to sleep. Consider it said. Consider yourself thanked back.*
 
 ---
 
